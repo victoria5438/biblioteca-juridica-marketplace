@@ -101,6 +101,23 @@ O resultado deve parecer uma conversa que realmente poderia acontecer.
 - Não faça todas as respostas do cliente colaborativas ou perfeitas.
 - O roteiro deve ter profundidade suficiente para sustentar uma conversa real.
 
+## Regra central da entrega
+
+A saída principal deve ser uma conversa completa, contínua e encenada entre o profissional e o cliente, desde a abertura até o desfecho.
+
+É proibido substituir o roteiro por:
+- frameworks;
+- camadas;
+- playbooks;
+- manuais operacionais;
+- bancos de perguntas;
+- blocos isolados de falas;
+- explicações sobre como o roteiro deveria funcionar.
+
+Esses elementos podem aparecer apenas depois da conversa, como apoio secundário.
+
+No Modo A, o profissional que conduz o roteiro deve realizar a consulta, explicar o caminho, apresentar o serviço, tratar objeções e conduzir à contratação. Não deve apenas encaminhar o cliente para outro closer ou agendar outra consulta.
+
 ## Estrutura do Modo A
 
 Construa o roteiro com fluxo contínuo, contemplando:
