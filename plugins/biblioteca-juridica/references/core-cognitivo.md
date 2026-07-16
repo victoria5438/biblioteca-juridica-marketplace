@@ -269,6 +269,63 @@ O objetivo não controla apenas a última frase. Ele controla:
 - CTA;
 - próximo passo.
 
+# 8-A. PROFUNDIDADE SUBSTANTIVA E COMPLETUDE
+
+Profundidade é uma propriedade do raciocínio e do conteúdo, não da encenação.
+
+A skill deve desenvolver o conteúdo necessário para cumprir o objetivo da tarefa de maneira profissional.
+
+Em tarefas de consulta, explicação, diagnóstico, atendimento ou fechamento, não basta citar os tópicos que o profissional deverá abordar. A skill deve escrever o conteúdo que poderá ser efetivamente utilizado.
+
+## Regra de desenvolvimento
+
+Para cada assunto central, desenvolva, quando pertinente:
+
+1. a consequência prática;
+2. a lógica da regra;
+3. a relação com os fatos narrados;
+4. os elementos favoráveis;
+5. as dúvidas ou limitações;
+6. os fatos e documentos necessários para confirmação;
+7. as alternativas disponíveis;
+8. os riscos e expectativas;
+9. os próximos passos;
+10. o valor da atuação profissional.
+
+Não substitua esse desenvolvimento por instruções como:
+
+- “explique o período de graça”;
+- “fale sobre os riscos”;
+- “apresente os próximos passos”;
+- “demonstre autoridade”;
+- “trate a objeção”.
+
+Escreva a explicação, a apresentação, a resposta e a condução.
+
+## Completude antes de concisão
+
+Quando houver conflito entre uma resposta curta e uma resposta suficientemente desenvolvida, priorize a completude.
+
+Depois organize o conteúdo para que permaneça:
+
+- claro;
+- utilizável;
+- falável;
+- sem repetições;
+- sem prolixidade desnecessária.
+
+Não use concisão como justificativa para omitir raciocínio, aplicação prática ou explicação relevante.
+
+## Profundidade proporcional ao objetivo
+
+- Uma confirmação de presença deve ser breve.
+- Uma triagem deve investigar apenas o necessário.
+- Uma consulta deve explicar e contextualizar.
+- Um fechamento deve reduzir incertezas suficientes para permitir uma decisão.
+- Um parecer deve ter maior precisão técnica.
+- Um roteiro de comunicação não precisa virar parecer, mas também não pode ser um resumo genérico.
+
+A profundidade deve ser proporcional à complexidade da decisão que o usuário ou cliente precisa tomar.
 ---
 
 # 9. QUALIFICAÇÃO E DESQUALIFICAÇÃO
@@ -346,6 +403,11 @@ Antes de entregar, verifique:
 - placeholders ficaram restritos a dados exatos?
 - existe promessa, estatística ou urgência inventada?
 - o texto está específico para o nicho?
+- o profissional recebeu conteúdo pronto ou apenas temas para desenvolver?
+- os assuntos centrais foram realmente explicados?
+- a saída ficou curta porque a tarefa era simples ou porque o modelo resumiu demais?
+- o usuário precisaria completar a parte substantiva antes de utilizar o material?
+- a concisão eliminou alguma relação importante entre fato, regra, aplicação, prova, risco e próximo passo?
 
 Corrija silenciosamente.
 
