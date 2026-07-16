@@ -28,99 +28,93 @@ Aplique os critérios nesta ordem:
 
 1. suficiência e profundidade do conteúdo;
 2. adequação ao objetivo;
-3. reutilização, quando o produto for operacional;
-4. clareza;
-5. utilidade prática;
-6. oralidade e ritmo das falas sugeridas;
-7. concisão;
-8. encenação.
+3. adequação ao tipo de produto;
+4. adequação ao canal;
+5. reutilização, quando o produto for reutilizável;
+6. clareza;
+7. utilidade prática;
+8. naturalidade e autoridade profissional;
+9. concisão;
+10. encenação.
 
-Quando houver conflito entre concisão e desenvolvimento suficiente, preserve o conteúdo e organize-o em blocos.
+Quando houver conflito entre concisão e desenvolvimento suficiente, preserve o conteúdo e organize-o no formato adequado.
 
-Nunca corte uma explicação necessária apenas para manter o roteiro curto.
+Nunca corte uma explicação necessária apenas para manter o material curto.
 
 Oralidade não é sinônimo de brevidade.
 
-Reutilização não é sinônimo de superficialidade.
+WhatsApp não é sinônimo de superficialidade.
+
+Reutilização não é sinônimo de manual.
+
+Fluidez não é sinônimo de caso fictício.
 
 ---
 
 # 2. ESCOLHA DO FORMATO DE ESCRITA
 
-## 2.1. Roteiro operacional reutilizável
+## 2.1. Playbook operacional reutilizável
 
-Use quando o usuário pedir um roteiro, playbook, script, manual de condução ou material para equipe referente a um nicho ou tipo de demanda.
+Use quando o produto precisar ensinar o profissional a conduzir.
 
-O material deve orientar atendimentos diferentes e não depender de uma história fictícia contínua.
+Pode conter:
 
-## 2.2. Simulação de conversa
+- objetivos;
+- orientações;
+- motivos;
+- critérios;
+- observações;
+- explicações;
+- exemplos de fala;
+- bifurcações;
+- erros;
+- checklists.
 
-Use somente quando o usuário pedir expressamente role-play, conversa encenada, caso fictício, exemplo individual ou treinamento baseado em uma situação específica.
+## 2.2. Roteiro falado fluido e reutilizável
 
-## 2.3. Caso individual
+Use em ligação, videoconferência ou reunião presencial quando o usuário quiser a condução pronta para ser falada.
 
-Use quando o usuário fornecer fatos concretos de uma pessoa e pedir preparação ou condução daquele atendimento.
+A maior parte da entrega deve ser composta por falas.
+
+Use:
+
+- títulos discretos;
+- blocos de fala;
+- perguntas;
+- transições;
+- pausas;
+- bifurcações indispensáveis;
+- objeções e continuidades;
+- fechamento.
+
+Não exiba a arquitetura interna como manual.
+
+## 2.3. Fluxo conversacional reutilizável de WhatsApp
+
+Use quando o produto principal forem mensagens ou áudios enviados pelo WhatsApp.
+
+A entrega deve representar a progressão real da conversa:
+
+- mensagem;
+- espera;
+- resposta;
+- continuação;
+- bifurcação;
+- retomada;
+- CTA;
+- follow-up.
+
+Não transforme o fluxo em uma ligação escrita nem em um playbook interno, salvo quando o usuário pedir expressamente um playbook de WhatsApp.
+
+## 2.4. Simulação de conversa
+
+Use quando o usuário pedir personagens e respostas encenadas.
+
+## 2.5. Caso individual
+
+Use os fatos confirmados de uma pessoa real, sem completar lacunas com características genéricas da persona.
 
 Não confunda esses formatos.
-
-## 2.4. Acessibilidade sem simplismo
-
-A comunicação deve ser acessível sem perder maturidade profissional.
-
-Simplifique a linguagem, não o raciocínio.
-
-O profissional deve transmitir:
-
-- domínio do assunto;
-- segurança;
-- serenidade;
-- clareza;
-- responsabilidade;
-- respeito pela complexidade do caso.
-
-Evite tanto o juridiquês excessivo quanto a linguagem rasa, infantilizada, excessivamente comercial ou promocional.
-
-Não reduza uma explicação importante a uma frase de efeito.
-
-Expressões simples e coloquiais podem ser utilizadas para consolidar o entendimento, desde que apareçam depois de uma explicação suficientemente completa.
-
-## Explicação em camadas
-
-Quando um tema relevante precisar ser explicado, utilize, conforme o contexto:
-
-1. enquadramento profissional;
-2. explicação prática;
-3. consequência para o cliente;
-4. síntese em linguagem simples.
-
-Exemplo:
-
-> Em relação aos honorários, o escritório trabalha pelo modelo de êxito. Isso significa que não há cobrança inicial para o começo da atuação, e os honorários somente serão devidos se houver recebimento de valores pela cliente, de acordo com o percentual e as condições estabelecidas no contrato.
-
-> Na prática, o pagamento dos honorários é retirado do resultado obtido, e não antecipado pela cliente.
-
-> Ou seja: o escritório só ganha se você ganhar.
-
-A última frase simplifica e reforça o entendimento. Ela não deve substituir as explicações anteriores.
-
-## Profissionalismo sem rebuscamento
-
-Não use palavras difíceis apenas para parecer técnico.
-
-Prefira:
-
-- “receber honorários” a “perceber honorários”;
-- “resultado obtido” a “efetivo resultado favorável”;
-- “conforme previsto no contrato” a construções excessivamente formais;
-- frases naturais que um advogado realmente diria em voz alta.
-
-O texto deve soar como um advogado experiente falando com clareza, e não como:
-
-- um vendedor;
-- um atendente de telemarketing;
-- uma peça processual;
-- uma aula acadêmica;
-- uma conversa excessivamente casual.
 
 ---
 
@@ -144,6 +138,110 @@ Ele deve mostrar ao profissional:
 Ele não deve ser apenas uma lista de instruções abstratas.
 
 Cada etapa deve conter conteúdo pronto e exemplos de fala suficientes para uso real.
+
+# 3-A. PRINCÍPIO DO ROTEIRO FALADO FLUIDO
+
+O roteiro falado fluido é um texto para condução oral direta.
+
+Ele deve parecer uma consulta ou reunião bem estruturada, e não um documento de treinamento.
+
+A entrega principal deve conter:
+
+- falas prontas do profissional;
+- perguntas conectadas;
+- explicações substantivas;
+- transições naturais;
+- pausas;
+- checagens de entendimento;
+- bifurcações apenas quando alterarem a conversa;
+- tratamento das objeções necessárias;
+- pedido de decisão e próximos passos.
+
+Use títulos somente para facilitar a localização das etapas.
+
+Evite, como estrutura visível repetida:
+
+- objetivo;
+- orientação;
+- por que perguntar;
+- o que observar;
+- erros a evitar;
+- critério para avançar;
+- checklist entre as falas.
+
+Notas podem aparecer apenas quando forem indispensáveis, por exemplo:
+
+- *Escute antes de continuar.*
+- *Use este trecho somente se houver negativa.*
+- *Aguarde a resposta.*
+- *Substitua pelos fatos confirmados.*
+
+Não invente respostas completas do cliente para criar fluidez.
+
+A conversa permanece reutilizável por meio de:
+
+- placeholders;
+- pausas;
+- retomadas condicionais;
+- trechos como “se a pessoa informar que...”;
+- blocos alternativos para cenários realmente diferentes.
+
+Profundidade deve aparecer nas falas e explicações do profissional, não em comentários de bastidor.
+
+# 3-B. PRINCÍPIO DO FLUXO CONVERSACIONAL DE WHATSAPP
+
+O fluxo de WhatsApp deve ser utilizável dentro de uma conversa real e assíncrona.
+
+Ele não é:
+
+- uma ligação transcrita;
+- um texto longo dividido arbitrariamente;
+- um manual operacional;
+- uma coleção de mensagens sem sequência.
+
+Organize o fluxo por momentos da conversa, com mensagens prontas.
+
+Cada momento pode conter:
+
+1. mensagem ou áudio sugerido;
+2. indicação breve para aguardar;
+3. continuação conforme a resposta;
+4. bifurcação quando necessária;
+5. CTA coerente com aquela etapa;
+6. retomada quando houver silêncio ou intervalo.
+
+As mensagens devem ser curtas o suficiente para o canal, mas o conjunto pode ser profundo e desenvolvido.
+
+Distribua assuntos complexos em várias mensagens conectadas.
+
+Não despeje simultaneamente:
+
+- explicação jurídica;
+- lista de documentos;
+- apresentação do escritório;
+- honorários;
+- CTA;
+- alerta;
+- follow-up.
+
+Use um movimento principal por envio ou sequência curta.
+
+O WhatsApp permite pausas naturais. Não tente concluir toda a conversa antes de receber a resposta necessária.
+
+Use apenas um CTA principal por etapa.
+
+Emojis são opcionais. Use-os somente quando combinarem com a linguagem da persona e do escritório.
+
+Áudios podem ser sugeridos quando forem mais adequados para explicações, devolutivas ou propostas. Não presuma automaticamente que todo fluxo utilizará áudio.
+
+Quando houver retomada depois de horas ou dias:
+
+- recupere brevemente o contexto;
+- não obrigue a pessoa a repetir tudo;
+- deixe claro qual é o próximo passo;
+- evite mensagens passivo-agressivas ou cobrança constrangedora.
+
+O canal altera a distribuição, não a maturidade profissional do conteúdo.
 
 ---
 
@@ -188,7 +286,11 @@ Use detalhes específicos apenas em exemplos breves ou bifurcações condicionai
 
 ---
 
-# 5. ESTRUTURA RECOMENDADA DE CADA ETAPA
+# 5. ESTRUTURA RECOMENDADA DO PLAYBOOK OPERACIONAL
+
+Esta seção aplica-se ao playbook operacional.
+
+Não utilize esta arquitetura como formato visível do roteiro falado fluido ou do fluxo conversacional de WhatsApp.
 
 Quando pertinente, organize cada etapa com:
 
@@ -285,7 +387,19 @@ Evite começar com número de artigo, nome de tribunal ou história legislativa,
 
 ## Exemplo superficial
 
-> Mesmo sem emprego, a pessoa pode continuar protegida pelo INSS por um tempo.
+> Esse documento pode ajudar no seu caso.
+
+## Exemplo substantivo e reutilizável
+
+> Esse documento é relevante porque pode confirmar um dos fatos centrais da análise.
+
+> Sozinho, ele talvez não seja suficiente para definir o caminho, mas, quando comparado com as datas, comunicações e demais elementos disponíveis, ajuda a demonstrar como a situação ocorreu.
+
+> Antes de chegar a uma conclusão, ainda precisamos verificar se existe alguma informação contraditória ou algum requisito que dependa de outro documento.
+
+> Se esses elementos forem confirmados, será possível avaliar com mais segurança qual medida é adequada e o que pode ser buscado.
+
+A explicação é profunda, mas continua adaptável a nichos e clientes diferentes.
 
 ## Exemplo substantivo e reutilizável
 
@@ -338,17 +452,19 @@ Indique que o profissional deve reagir ao que foi dito antes de avançar, mas n�
 
 Exemplo:
 
-### Perguntas para organizar a linha do tempo
+### Perguntas para organizar os fatos decisivos
 
-> Quando ocorreu o evento?
+> Quando ocorreu o fato principal?
 
-> Qual foi o último vínculo ou contribuição antes dessa data?
+> O que aconteceu imediatamente antes e depois?
 
-> Como terminou o vínculo?
+> Houve alguma comunicação, tentativa de solução ou resposta formal?
 
-**Por que perguntar:** essas respostas permitem verificar se a proteção ainda existia e qual documento precisa ser conferido.
+> Você possui algum documento que registre essa sequência?
 
-**Se a pessoa informar uma negativa:** peça o motivo e a data da ciência antes de definir o caminho.
+**Por que perguntar:** essas respostas permitem organizar a linha do tempo, identificar quais regras podem ser pertinentes e descobrir quais elementos ainda precisam ser confirmados.
+
+**Se a pessoa informar uma resposta ou decisão anterior:** peça o documento, o motivo apresentado e a data antes de definir o próximo caminho.
 
 ---
 
@@ -392,33 +508,51 @@ Prefira:
 
 ---
 
-# 12. OBJEÇÕES COMO BLOCO OPERACIONAL
+# 12. OBJEÇÕES CONFORME O PRODUTO
 
-Em roteiro reutilizável, cada objeção relevante deve conter:
+A objeção deve ser investigada antes de ser respondida.
 
-- como costuma aparecer;
-- medo ou dúvida real por trás dela;
-- pergunta para identificar o motivo;
+## 12.1. No playbook operacional
+
+Pode conter:
+
+- como a objeção aparece;
+- medo ou dúvida real;
+- pergunta diagnóstica;
 - resposta substantiva;
 - exemplo de fala;
-- sinal de que a objeção foi resolvida;
+- sinal de resolução;
 - próximo passo.
 
-Não transforme todas as objeções em cenas longas com personagem fictício.
+## 12.2. No roteiro falado fluido
 
-## Exemplo — custo
+Escreva a continuação completa da conversa.
 
-**O que pode estar por trás:** medo de pagamento inicial ou medo de assumir obrigação sem resultado.
+Use:
 
-**Pergunta de diagnóstico:**
+- fala provável ou indicação da objeção;
+- pergunta do profissional;
+- resposta;
+- confirmação;
+- retomada da decisão.
 
-> O que mais preocupa: precisar desembolsar agora ou não saber como a cobrança funciona no final?
+Não exponha toda a análise estratégica ao usuário.
 
-**Explicação substantiva:** descreva forma, momento e base da cobrança, usando apenas as condições fornecidas pelo escritório.
+## 12.3. No fluxo de WhatsApp
 
-**Exemplo de fala:**
+Distribua a objeção em mensagens.
 
-> No modelo informado pelo escritório, não há pagamento inicial. Os honorários são de `[X%]` sobre o valor efetivamente recebido, conforme o contrato. Antes de qualquer assinatura, a forma de cálculo e as demais condições são explicadas por escrito.
+Primeiro investigue:
+
+> Quando você fala isso, sua preocupação está mais em [PONTO A] ou em [PONTO B]?
+
+*Aguarde a resposta.*
+
+Depois envie a explicação correspondente.
+
+Não responda uma objeção complexa em um bloco excessivamente longo nem envie várias respostas possíveis antes de saber qual é a dúvida real.
+
+Inclua somente objeções compatíveis com a decisão pedida naquela etapa.
 
 ---
 
@@ -486,19 +620,137 @@ O problema não é a extensão. O problema é a extensão sem estrutura, utilida
 
 # 16. WHATSAPP E MENSAGENS ESCRITAS
 
-Quando a skill produzir mensagens prontas para envio, preserve oralidade sem transformar cada mensagem em miniartigo.
+## 16.1. Unidade de envio
+
+Cada mensagem ou sequência curta deve cumprir uma função principal:
+
+- abrir;
+- perguntar;
+- reagir;
+- explicar;
+- confirmar;
+- solicitar documento;
+- apresentar proposta;
+- pedir decisão;
+- retomar;
+- encerrar.
+
+Não empilhe funções demais em um único envio.
+
+## 16.2. Extensão
+
+Mensagens devem ser visualmente confortáveis.
 
 Use:
 
-- frases curtas;
-- parágrafos;
+- parágrafos curtos;
+- quebras naturais;
 - uma ideia principal por mensagem;
-- CTA coerente;
-- linguagem profissional.
+- sequência de mensagens quando a explicação exigir profundidade.
 
-Quando a skill produzir um playbook para WhatsApp, o documento interno pode ser extenso. As mensagens sugeridas devem ser divididas em blocos adequados ao canal.
+Não transforme cada mensagem em miniartigo.
 
-Não use excesso de emojis, frases de efeito ou urgência artificial.
+Também não transforme um assunto importante em uma frase telegráfica.
+
+## 16.3. Progressão
+
+Uma sequência deve respeitar:
+
+1. contexto;
+2. mensagem;
+3. pergunta ou CTA;
+4. espera;
+5. continuação conforme a resposta.
+
+Não escreva todas as etapas como se o cliente já tivesse respondido.
+
+## 16.4. Linguagem
+
+Preserve:
+
+- clareza;
+- maturidade profissional;
+- naturalidade;
+- respeito;
+- acessibilidade sem simplismo.
+
+Não adote informalidade automática apenas porque o canal é WhatsApp.
+
+## 16.5. Texto e áudio
+
+Use texto para:
+
+- perguntas simples;
+- confirmações;
+- datas;
+- horários;
+- documentos;
+- links;
+- próximos passos.
+
+Áudio pode ser mais adequado para:
+
+- explicações;
+- devolutivas;
+- tratamento de objeções;
+- apresentação de proposta;
+- assuntos que exigem entonação.
+
+Não imponha áudio quando o usuário ou o mapeamento não indicar essa preferência.
+
+## 16.6. Assincronicidade
+
+Considere que a pessoa pode responder depois de minutos, horas ou dias.
+
+Ao retomar:
+
+- recupere o contexto em uma frase;
+- mencione o ponto pendente;
+- faça um CTA claro;
+- não cobre explicações pela demora;
+- não use culpa ou pressão.
+
+## 16.7. Documentos e informações
+
+Quando solicitar documentos:
+
+- explique por que são necessários;
+- peça inicialmente apenas o que for pertinente à etapa;
+- evite listas excessivas sem contexto;
+- separe links, documentos e orientações quando isso facilitar a leitura.
+
+## 16.8. Follow-up e silêncio
+
+O follow-up deve acrescentar função.
+
+Pode:
+
+- recuperar contexto;
+- esclarecer dúvida;
+- reduzir complexidade;
+- recordar prazo verdadeiro;
+- facilitar o próximo passo;
+- encerrar respeitosamente.
+
+Não envie apenas:
+
+- “viu minha mensagem?”;
+- “alguma novidade?”;
+- “ainda tem interesse?”;
+
+sem contexto ou valor adicional.
+
+## 16.9. Critério de qualidade do WhatsApp
+
+O fluxo está pronto quando:
+
+- cada mensagem pode ser enviada como está;
+- o profissional sabe quando aguardar;
+- as principais respostas possuem continuidade;
+- a conversa não pressupõe respostas inventadas;
+- o conteúdo mantém profundidade ao longo da sequência;
+- o tom continua profissional;
+- existe um próximo passo claro em cada etapa relevante.
 
 ---
 
@@ -533,11 +785,18 @@ Antes de entregar, verifique:
 
 Se o profissional ainda precisar inventar a parte mais importante, o material está incompleto.
 
+Verifique também conforme o produto:
+
+- no playbook, o profissional sabe o que fazer, por que fazer e como adaptar?
+- no roteiro falado, a fala principal está escrita ou foi substituída por instruções?
+- no WhatsApp, as mensagens estão prontas, distribuídas e ligadas aos momentos de resposta?
+- a profundidade está no conteúdo, e não no número de títulos, notas ou comentários internos?
+
 ---
 
-# 19. TESTE DE REUTILIZAÇÃO
+# 19. TESTE DE REUTILIZAÇÃO DOS MATERIAIS
 
-Antes de entregar um roteiro operacional, verifique:
+Antes de entregar um playbook, roteiro falado ou fluxo de WhatsApp reutilizável, verifique:
 
 - ele funciona com clientes diferentes?
 - continua útil se mudarem nomes, datas, profissões e cidades?
@@ -545,18 +804,24 @@ Antes de entregar um roteiro operacional, verifique:
 - as variações relevantes aparecem como bifurcações?
 - os exemplos de fala são adaptáveis?
 - o documento pode ser compartilhado com outro escritório do mesmo nicho?
+- o formato permanece adequado ao produto?
+- há alguma linguagem, documento, prazo ou lógica herdada de outro nicho?
 
 Se depender de uma história fictícia, reescreva.
 
 ---
 
-# 20. TESTE DA FALA REAL
+# 20. TESTE DA FALA OU MENSAGEM REAL
 
-Leia apenas os exemplos de fala como se fossem ditos por um profissional experiente.
+Leia as falas e mensagens como se fossem utilizadas por um profissional experiente.
 
-Pergunte:
+No roteiro falado, pergunte:
 
 > Isso seria dito com naturalidade numa conversa real?
+
+No WhatsApp, pergunte:
+
+> Essa mensagem seria realmente enviada dessa forma, neste momento da conversa?
 
 Se não:
 
