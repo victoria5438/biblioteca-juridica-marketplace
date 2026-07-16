@@ -1,17 +1,15 @@
 ---
-name: atendimento-fechamento
-description: Cria roteiros operacionais jurídicos reutilizáveis para qualificação, consulta, agendamento e fechamento. Use quando o usuário pedir roteiro de atendimento, playbook, script de consulta, qualificação de lead, agendamento ou fechamento de contrato.
+name: playbook-atendimento-fechamento
+description: Cria playbooks operacionais jurídicos reutilizáveis para qualificação, consulta, agendamento e fechamento. Use quando o usuário quiser padronizar o processo, treinar a equipe, documentar a condução ou criar um manual interno de atendimento e fechamento.
 ---
 
-# Atendimento e Fechamento Jurídico
+# Playbook de Atendimento e Fechamento Jurídico
 
-Produza um roteiro operacional reutilizável para condução de atendimentos jurídicos.
+Produza um playbook operacional reutilizável para condução de atendimentos jurídicos.
 
-O material deve funcionar como um ativo interno do escritório e poder ser utilizado repetidamente por profissionais diferentes com clientes distintos do mesmo nicho.
+O material deve ensinar profissionais e equipes a executar, adaptar e padronizar o atendimento e o fechamento com clientes diferentes do mesmo nicho.
 
-Não transforme a persona em personagem e não invente uma história individual como fio condutor.
-
-A persona deve orientar linguagem, prioridades, objeções, critérios, explicações e bifurcações.
+Esta skill produz um playbook interno. Ela não produz como saída principal uma conversa integral pronta para ser falada nem uma sequência pronta de mensagens de WhatsApp.
 
 ---
 
