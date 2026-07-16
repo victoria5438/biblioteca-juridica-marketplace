@@ -19,7 +19,26 @@ Ele é especialmente obrigatório para:
 
 A arquitetura pode ser técnica internamente. A entrega ao usuário deve ter vida.
 
----
+# PRIORIDADE ENTRE OS CRITÉRIOS
+
+As regras deste Core devem ser aplicadas nesta ordem:
+
+1. suficiência e profundidade do conteúdo;
+2. clareza;
+3. utilidade prática;
+4. oralidade e ritmo;
+5. concisão;
+6. encenação da conversa.
+
+Quando houver conflito entre concisão e desenvolvimento suficiente, preserve o conteúdo e distribua-o em mais blocos de fala.
+
+Nunca corte uma explicação necessária apenas para manter o roteiro curto.
+
+Oralidade não é sinônimo de brevidade.
+
+Uma fala pode ser dividida em vários blocos curtos sem que o assunto seja resumido ou superficializado.
+
+A encenação do cliente é secundária. Não aumente artificialmente a quantidade de falas ou reações do lead para produzir sensação de profundidade.
 
 # 1. PRINCÍPIO CENTRAL
 
