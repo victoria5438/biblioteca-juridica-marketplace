@@ -93,7 +93,7 @@ O resultado deve parecer uma conversa que realmente poderia acontecer.
 - Alterne acolhimento, investigação, explicação e condução.
 - Preserve autoridade sem usar juridiquês desnecessário.
 - Explique o direito em linguagem acessível, sem infantilizar o cliente.
-- Não escreva longas palestras do profissional.
+- Não escreva monólogos desorganizados, repetitivos ou sem pausas. Explicações extensas são permitidas quando o assunto exigir, desde que sejam divididas em blocos orais claros e conectados.
 - Não produza uma sequência mecânica de perguntas.
 - Não repita `CONDUTOR:` antes de cada parágrafo.
 - Use marcações de interlocutor apenas para deixar clara a troca real de falas.
@@ -118,6 +118,109 @@ Esses elementos podem aparecer apenas depois da conversa, como apoio secundário
 
 No Modo A, o profissional que conduz o roteiro deve realizar a consulta, explicar o caminho, apresentar o serviço, tratar objeções e conduzir à contratação. Não deve apenas encaminhar o cliente para outro closer ou agendar outra consulta.
 
+## Profundidade substantiva do Modo A
+
+O Modo A não deve ser otimizado para brevidade.
+
+Ele deve fornecer ao profissional conteúdo suficientemente robusto para conduzir uma consulta e um fechamento completos, sem precisar improvisar a parte central da explicação.
+
+A profundidade deve estar principalmente:
+
+- na investigação orientada do caso;
+- na organização e interpretação dos fatos;
+- na explicação jurídica acessível;
+- na aplicação da regra ao relato;
+- na análise dos elementos favoráveis e das incertezas;
+- na explicação dos documentos e do que eles demonstram;
+- na apresentação dos caminhos possíveis;
+- no alinhamento de riscos e expectativas;
+- na demonstração do funcionamento e do valor do serviço;
+- na resolução das inseguranças que impedem a decisão;
+- na condução até o próximo passo.
+
+Não considere uma etapa cumprida apenas porque ela foi mencionada.
+
+Uma explicação jurídica central não pode ser encerrada em uma ou duas falas genéricas.
+
+Quando um assunto exigir desenvolvimento, escreva vários blocos conectados do profissional, com transições e pausas naturais.
+
+As reações do cliente podem ser breves ou apenas sinalizadas. Não aumente artificialmente a encenação para produzir extensão.
+
+Não use como substituto do conteúdo frases como:
+
+- “o advogado explica”;
+- “desenvolva esse ponto”;
+- “escute e aprofunde”;
+- “fale sobre as possibilidades”;
+- “apresente o serviço”;
+- “trate a objeção”.
+
+Escreva efetivamente a explicação, o aprofundamento, a apresentação e a resposta.
+
+## Profundidade substantiva do Modo A
+
+O Modo A não deve ser otimizado para brevidade.
+
+Ele deve fornecer ao profissional conteúdo suficientemente robusto para conduzir uma consulta e um fechamento completos, sem precisar improvisar a parte central da explicação.
+
+A profundidade deve estar principalmente:
+
+- na investigação orientada do caso;
+- na organização e interpretação dos fatos;
+- na explicação jurídica acessível;
+- na aplicação da regra ao relato;
+- na análise dos elementos favoráveis e das incertezas;
+- na explicação dos documentos e do que eles demonstram;
+- na apresentação dos caminhos possíveis;
+- no alinhamento de riscos e expectativas;
+- na demonstração do funcionamento e do valor do serviço;
+- na resolução das inseguranças que impedem a decisão;
+- na condução até o próximo passo.
+
+Não considere uma etapa cumprida apenas porque ela foi mencionada.
+
+Uma explicação jurídica central não pode ser encerrada em uma ou duas falas genéricas.
+
+Quando um assunto exigir desenvolvimento, escreva vários blocos conectados do profissional, com transições e pausas naturais.
+
+As reações do cliente podem ser breves ou apenas sinalizadas. Não aumente artificialmente a encenação para produzir extensão.
+
+Não use como substituto do conteúdo frases como:
+
+- “o advogado explica”;
+- “desenvolva esse ponto”;
+- “escute e aprofunde”;
+- “fale sobre as possibilidades”;
+- “apresente o serviço”;
+- “trate a objeção”.
+
+Escreva efetivamente a explicação, o aprofundamento, a apresentação e a resposta.
+
+### Cobertura esperada no Modo A
+
+O roteiro principal deve desenvolver, conforme o caso:
+
+1. histórico e linha do tempo relevantes;
+2. interpretação das respostas e por que cada fato importa;
+3. problema jurídico traduzido para a realidade do cliente;
+4. regra aplicável e sua lógica;
+5. aplicação condicional ao caso;
+6. informações e documentos ainda necessários;
+7. elementos que fortalecem ou enfraquecem a possibilidade;
+8. caminhos administrativos ou judiciais pertinentes;
+9. diferenças práticas entre os caminhos;
+10. riscos, limites e expectativas;
+11. etapas do trabalho após a contratação;
+12. participação esperada do cliente;
+13. comunicação e acompanhamento do escritório;
+14. honorários e demais condições fornecidas;
+15. objeções relevantes;
+16. decisão e próximos passos.
+
+Use apenas os pontos pertinentes ao caso. Não transforme a lista em um checklist visível dentro do roteiro.
+
+O roteiro principal deve concentrar a maior parte da entrega. Contexto, bifurcações, pontos de adaptação e checklist devem ser secundários e mais compactos.
+
 ## Estrutura do Modo A
 
 Construa o roteiro com fluxo contínuo, contemplando:
@@ -136,6 +239,8 @@ Construa o roteiro com fluxo contínuo, contemplando:
 12. próximos passos.
 
 ## Estrutura do Modo B
+
+O Modo B deve permanecer mais breve e seletivo. Ele não deve reproduzir a profundidade de uma consulta completa, pois seu objetivo é qualificar e agendar.
 
 Construa o roteiro com fluxo contínuo, contemplando:
 
