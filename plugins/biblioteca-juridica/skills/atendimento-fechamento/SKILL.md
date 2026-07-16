@@ -118,6 +118,76 @@ Quando o nicho tiver subperfis relevantes:
 
 Não escolha um subperfil como personagem principal, salvo se o usuário pedir expressamente um recorte.
 
+## Tom profissional da consulta
+
+O roteiro deve ser conduzido por um advogado ou profissional jurídico que demonstra domínio, segurança e maturidade.
+
+A linguagem deve ser clara e acessível, mas não simplista.
+
+Não escreva falas rasas apenas porque o público não domina o Direito.
+
+Ao explicar:
+
+- o enquadramento do caso;
+- os riscos;
+- os caminhos possíveis;
+- o trabalho do escritório;
+- os honorários;
+- as condições da contratação;
+
+desenvolva primeiro a explicação profissional e, quando útil, encerre com uma síntese simples.
+
+Uma frase como:
+
+> “O escritório só ganha se você ganhar.”
+
+pode ser utilizada como reforço final, mas não pode ser toda a explicação sobre honorários.
+
+A apresentação dos honorários deve esclarecer, quando aplicável:
+
+1. qual é o modelo de cobrança;
+2. se existe ou não pagamento inicial;
+3. sobre qual base incide o percentual;
+4. em que momento os honorários são pagos;
+5. onde as condições estarão registradas;
+6. se existem despesas ou custos separados;
+7. qual é a consequência caso não haja resultado.
+
+Não invente condições não fornecidas. Utilize placeholders e sinalizações de validação quando necessário.
+
+## Adaptação ao canal
+
+O canal altera a forma de apresentação, mas não reduz o nível profissional da comunicação.
+
+### WhatsApp
+
+No WhatsApp:
+
+- distribua o conteúdo em mensagens ou áudios menores;
+- evite blocos excessivamente longos;
+- mantenha conexão lógica entre as mensagens;
+- não transforme a comunicação em frases telegráficas;
+- não adote informalidade automática apenas por ser WhatsApp;
+- preserve explicações completas, dividindo-as em partes;
+- mantenha o tom de um profissional jurídico, e não de um atendimento comercial genérico.
+
+O WhatsApp é o meio da consulta, não uma autorização para empobrecer o conteúdo.
+
+As mensagens podem ser mais curtas, mas o conjunto da explicação deve permanecer suficientemente desenvolvido.
+
+### Ligação ou videoconferência
+
+Em ligação ou videoconferência:
+
+- desenvolva a explicação de modo mais contínuo;
+- utilize transições naturais entre investigação, diagnóstico, orientação e proposta;
+- permita falas mais extensas e articuladas;
+- indique pausas e momentos de checagem de entendimento;
+- evite fragmentar artificialmente a consulta como se fosse uma sequência de mensagens;
+- preserve uma linguagem oral, profissional e natural.
+
+O roteiro deve parecer uma consulta jurídica conduzida por um profissional experiente, e não uma sequência de mensagens lidas.
+
 ---
 
 ## Modos de execução
