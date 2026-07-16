@@ -37,42 +37,187 @@ Exemplo: se a prática comum for cobrar por êxito, mas o escritório informar h
 
 # 2. DEFINIÇÃO DO TIPO DE PRODUTO
 
-Antes de escrever, determine qual produto o usuário pediu.
+Antes de escrever, determine separadamente:
 
-## 2.1. Ativo operacional reutilizável
+1. qual é o objetivo da comunicação;
+2. qual é o produto solicitado;
+3. qual é o canal utilizado.
 
-Use este formato quando o usuário pedir, para um nicho ou tipo de demanda:
+O objetivo define o que a comunicação precisa alcançar.
 
-- roteiro de atendimento;
-- roteiro de fechamento;
-- script do escritório;
+O produto define a arquitetura da entrega.
+
+O canal define como o conteúdo será distribuído e utilizado.
+
+Não trate objetivo, produto e canal como se fossem a mesma coisa.
+
+## 2.1. Playbook operacional reutilizável
+
+Use quando o usuário pedir:
+
 - playbook;
 - manual de condução;
-- fluxo para equipe;
-- modelo replicável;
-- material para treinamento ou padronização.
+- fluxo interno;
+- material para treinamento;
+- padronização do escritório;
+- orientação para equipe;
+- roteiro operacional;
+- documento que ensine o profissional a conduzir.
 
-O produto deve poder ser utilizado repetidamente por profissionais diferentes e com clientes diferentes do mesmo nicho.
+Esse produto deve explicar:
 
-## 2.2. Simulação de caso ou role-play
+- o que fazer;
+- por que fazer;
+- o que perguntar;
+- o que observar;
+- como interpretar respostas;
+- quais bifurcações existem;
+- quais erros evitar;
+- como avançar.
 
-Use este formato somente quando o usuário pedir expressamente:
+A saída pode conter objetivos, orientações, critérios, notas, exemplos de fala e checklists.
+
+## 2.2. Roteiro falado fluido e reutilizável
+
+Use quando o usuário pedir:
+
+- roteiro integral de consulta;
+- script falado;
+- roteiro para ligação;
+- roteiro para videoconferência;
+- roteiro para reunião presencial;
+- conversa pronta para o profissional conduzir;
+- versão fluida de um atendimento ou fechamento.
+
+Esse produto deve fornecer a condução praticamente pronta para ser falada.
+
+A maior parte da entrega deve ser composta por:
+
+- falas do profissional;
+- perguntas;
+- explicações;
+- transições;
+- pausas;
+- bifurcações indispensáveis;
+- respostas a objeções;
+- fechamento e próximos passos.
+
+Não transforme esse produto em manual operacional.
+
+Não apresente repetidamente:
+
+- objetivo;
+- por que perguntar;
+- o que observar;
+- erros a evitar;
+- critério para avançar.
+
+Notas internas podem aparecer apenas quando forem indispensáveis para usar corretamente uma fala ou bifurcação.
+
+O roteiro deve ser reutilizável para clientes diferentes do mesmo nicho. Não invente uma pessoa ou uma história específica como fio condutor.
+
+## 2.3. Fluxo conversacional reutilizável de WhatsApp
+
+Use quando o usuário pedir:
+
+- roteiro de WhatsApp;
+- fluxo de mensagens;
+- sequência de atendimento pelo WhatsApp;
+- script de qualificação por mensagem;
+- conversa escrita de fechamento;
+- follow-up;
+- recuperação de silêncio;
+- confirmação;
+- convite;
+- nutrição pelo WhatsApp.
+
+Esse produto deve entregar mensagens prontas ou quase prontas para envio, organizadas conforme a progressão real da conversa.
+
+A estrutura pode conter:
+
+- mensagem inicial;
+- pergunta;
+- momento de aguardar resposta;
+- continuação conforme a resposta;
+- bifurcações;
+- retomada de contexto;
+- mensagens de áudio sugeridas;
+- envio de documentos ou links;
+- CTA da etapa;
+- follow-up quando não houver resposta.
+
+Não transforme o fluxo em:
+
+- transcrição de uma ligação;
+- manual cheio de explicações internas;
+- texto corrido para ser enviado de uma vez;
+- coleção de frases soltas sem progressão.
+
+A profundidade deve aparecer no conjunto da conversa, distribuída em mensagens adequadas ao canal.
+
+## 2.4. Simulação de caso ou role-play
+
+Use somente quando o usuário pedir expressamente:
 
 - conversa encenada;
 - role-play;
 - exemplo de atendimento com personagem;
 - treinamento baseado em caso fictício;
-- simulação de uma reunião específica.
+- simulação de uma reunião específica;
+- representação das respostas completas do cliente.
 
-## 2.3. Material para caso individual
+Nesse formato, podem existir personagens e respostas encenadas, desde que o usuário tenha pedido essa experiência.
 
-Use este formato quando o usuário fornecer fatos de uma pessoa real ou pedir preparação para um atendimento concreto.
+## 2.5. Material para caso individual
 
-Nesse caso, personalize apenas com os fatos confirmados ou expressamente fornecidos.
+Use quando o usuário fornecer fatos de uma pessoa real ou pedir preparação para um atendimento concreto.
 
-## 2.4. Regra de desempate
+Personalize somente com:
 
-Quando o pedido disser apenas “roteiro para o nicho X”, presuma **ativo operacional reutilizável**, não uma conversa fictícia individual.
+- fatos confirmados;
+- documentos fornecidos;
+- respostas da pessoa;
+- particularidades expressamente informadas.
+
+Não complete lacunas pessoais com características da persona.
+
+## 2.6. Canal não define sozinho o objetivo
+
+O WhatsApp pode ser utilizado para:
+
+- qualificação;
+- agendamento;
+- consulta;
+- apresentação de proposta;
+- fechamento;
+- envio de documentos;
+- follow-up;
+- nutrição.
+
+Ligação, videoconferência ou reunião presencial também podem ter objetivos diferentes.
+
+Não presuma que:
+
+- todo WhatsApp deve ser superficial;
+- toda ligação deve realizar consulta completa;
+- todo roteiro falado deve fechar contrato;
+- toda mensagem curta deve perder profundidade.
+
+O objetivo da conversa continua controlando a profundidade e o próximo passo.
+
+## 2.7. Regra de desempate
+
+Quando uma skill específica for invocada, a missão declarada naquela skill define o produto.
+
+Na ausência de skill específica:
+
+- “playbook”, “manual”, “treinamento” ou “processo da equipe” indicam playbook operacional;
+- “roteiro falado”, “ligação”, “videoconferência”, “reunião” ou “consulta integral” indicam roteiro falado fluido;
+- “WhatsApp”, “mensagens”, “sequência de mensagens” ou “fluxo escrito” indicam fluxo conversacional de WhatsApp;
+- “simule”, “encene” ou “faça um role-play” indicam simulação;
+- fatos concretos de uma pessoa indicam material para caso individual.
+
+Pergunte ao usuário somente quando os produtos possíveis forem incompatíveis e o pedido não permitir identificar qual deles foi solicitado.
 
 ---
 
@@ -188,6 +333,39 @@ Quando houver subperfis relevantes, construa:
 3. critérios claros para escolher cada ramo.
 
 Não eleja um subperfil como história principal, salvo se o usuário pedir esse recorte.
+
+# 5-A. NEUTRALIDADE DE NICHO E NÃO CONTAMINAÇÃO
+
+Os cores compartilhados são universais e devem funcionar para qualquer área ou nicho do Direito.
+
+Exemplos presentes nos cores servem apenas para demonstrar um princípio de raciocínio ou escrita.
+
+Eles não podem determinar automaticamente:
+
+- o público;
+- o problema jurídico;
+- os documentos;
+- as perguntas;
+- os prazos;
+- as objeções;
+- as categorias de cliente;
+- os caminhos administrativos ou judiciais;
+- o modelo de contratação;
+- o fechamento.
+
+A cada execução, derive esses elementos exclusivamente do:
+
+1. pedido atual;
+2. nicho jurídico atual;
+3. mapeamento de persona atual;
+4. contexto do escritório;
+5. conhecimento jurídico pertinente àquela área.
+
+Não reutilize automaticamente categorias, termos, documentos ou estruturas jurídicas de uma execução anterior.
+
+Salário-maternidade, INSS, relações trabalhistas, divórcio, fraude bancária ou qualquer outro tema utilizado em testes são apenas exemplos de aplicação.
+
+Antes de finalizar, verifique se algum trecho da saída só faz sentido para outro nicho que não o solicitado. Se fizer, reescreva.
 
 ---
 
@@ -325,7 +503,7 @@ O modelo não deve saltar do relato para o resultado.
 
 Exemplo:
 
-> O relato de que o evento ocorreu durante o vínculo é relevante. Agora é preciso confirmar as datas e os documentos para saber como esse fato se encaixa juridicamente. Se a confirmação ocorrer, existe uma possibilidade concreta a ser buscada.
+> O fato relatado é relevante e pode indicar um caminho jurídico. Antes de concluir, é necessário confirmar as datas, os documentos e os demais requisitos aplicáveis. Se esses elementos forem confirmados, será possível avaliar a medida adequada, sempre sujeita à análise técnica e à decisão competente.
 
 ---
 
@@ -337,15 +515,13 @@ Toda skill de comunicação deve realizar duas traduções.
 
 Explique o termo técnico em linguagem cotidiana.
 
-> Período de graça é o tempo em que a pessoa continua protegida pelo INSS mesmo depois de parar de contribuir.
+> Prescrição é o limite de tempo que pode restringir ou impedir a cobrança de determinado direito.
 
 ## 9.2. Tradução de valor
 
 Explique o que aquilo muda na vida da pessoa.
 
-> Na prática, isso pode significar que a proteção ainda existia quando o bebê nasceu, mesmo sem emprego naquele momento.
-
-Não entregue uma aula sem consequência prática.
+> Na prática, isso significa que a data do fato precisa ser confirmada, porque o tempo decorrido pode alterar o que ainda é possível buscar.
 
 ---
 
@@ -499,6 +675,12 @@ Antes de entregar, verifique:
 - placeholders ficaram restritos a dados exatos?
 - existe promessa, estatística ou urgência inventada?
 - o texto está específico para o nicho sem depender de uma história fictícia?
+- objetivo, produto e canal foram definidos separadamente?
+- a missão da skill específica foi respeitada?
+- um roteiro falado fluido foi indevidamente transformado em manual?
+- um fluxo de WhatsApp foi indevidamente transformado em ligação transcrita ou texto corrido?
+- a arquitetura está adequada ao canal sem empobrecer o conteúdo?
+- algum exemplo ou nicho anterior contaminou a saída atual?
 
 Corrija silenciosamente.
 
@@ -506,15 +688,25 @@ Corrija silenciosamente.
 
 # 17. TESTE DE REUTILIZAÇÃO
 
-Antes de finalizar um ativo operacional, pergunte:
+Este teste aplica-se a:
 
-- ele continua útil se o nome do cliente mudar?
-- continua útil se mudarem profissão, cidade, datas e detalhes pessoais?
-- pode ser entregue a outro escritório do mesmo nicho?
-- pode orientar dezenas ou centenas de atendimentos semelhantes?
-- o profissional consegue escolher a bifurcação correta sem depender de uma história inventada?
+- playbooks;
+- roteiros falados reutilizáveis;
+- fluxos reutilizáveis de WhatsApp.
 
-Se a resposta for não, generalize a estrutura sem empobrecer o conteúdo.
+Antes de finalizar, pergunte:
+
+- o material continua útil se o nome do cliente mudar?
+- continua útil se mudarem datas, profissão, cidade e detalhes pessoais?
+- preserva conteúdo específico para o nicho atual?
+- as principais variações aparecem como bifurcações, sem criar uma biografia?
+- outro profissional do mesmo nicho conseguiria utilizar o material?
+- o formato continua sendo o produto solicitado?
+- o roteiro falado permanece fluido?
+- o WhatsApp permanece dividido em mensagens e momentos de resposta?
+- algum elemento veio indevidamente de outro nicho?
+
+Se a resposta for não, generalize os dados pessoais e preserve a especificidade jurídica do nicho.
 
 ---
 
