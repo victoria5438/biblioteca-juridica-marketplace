@@ -70,6 +70,19 @@ A conversa deve demonstrar:
 - explicação interrompida por checagem de entendimento;
 - variação de ritmo;
 - escuta.
+- 
+A simulação não precisa inventar respostas extensas do cliente.
+
+Quando a finalidade principal for fornecer um roteiro ao profissional, a participação do cliente pode ser representada por:
+
+- respostas breves;
+- reações pontuais;
+- pausas;
+- notas como “escute” ou “aguarde a resposta”.
+
+A profundidade deve estar principalmente no conteúdo fornecido ao profissional, e não na quantidade de falas encenadas do cliente.
+
+As pausas e reações servem para organizar a condução. Elas não substituem o desenvolvimento substantivo da explicação.
 
 Não produza apenas uma lista de falas independentes.
 
@@ -240,34 +253,59 @@ Evite começar com história legislativa, número de artigo ou nome de tribunal,
 
 ---
 
-# 8. PROFUNDIDADE SEM MONÓLOGO
+# 8. PROFUNDIDADE SUBSTANTIVA SEM PROLIXIDADE
 
-Profundidade não é tamanho de parágrafo.
+Profundidade significa desenvolver o conteúdo necessário para que o profissional consiga conduzir a conversa sem precisar inventar, completar ou improvisar a explicação central.
 
-Aprofunde por camadas ao longo da conversa:
+Não confunda profundidade com:
 
-- primeiro o fato;
-- depois a importância;
-- depois a regra;
-- depois a aplicação;
-- depois o ganho;
-- depois o limite.
+- quantidade de reações do cliente;
+- repetição;
+- excesso de adjetivos;
+- parágrafos enormes;
+- história legislativa desnecessária;
+- enumeração de conceitos técnicos.
 
-Não entregue todas as camadas numa única fala.
+Também não confunda oralidade com superficialidade.
 
-## Exemplo
+Quando um assunto for importante para a compreensão ou para a decisão, desenvolva-o por completo, ainda que isso exija vários blocos de fala.
 
-> Pelo que você contou, a gravidez começou enquanto o contrato ainda existia.
+Uma explicação substantiva pode contemplar, conforme a tarefa:
 
-*Confirme.*
+1. o que está acontecendo na prática;
+2. por que esse fato é juridicamente relevante;
+3. qual é a lógica da regra aplicável;
+4. como essa regra pode se relacionar com o caso narrado;
+5. quais fatos ainda precisam ser confirmados;
+6. quais documentos ajudam a confirmar ou enfraquecer o caminho;
+7. quais alternativas existem;
+8. quais são os limites e riscos;
+9. o que acontece depois;
+10. como o trabalho profissional resolve ou organiza o problema.
 
-> Isso importa porque a proteção não depende apenas do dia em que você descobriu a gravidez.
+Não considere um assunto suficientemente desenvolvido quando ele tiver sido apenas mencionado em uma ou duas frases genéricas.
 
-*Espere a reação.*
+## Exemplo superficial
 
-> Se os documentos confirmarem as datas, pode ser discutido o período em que você ficou sem salário.
+> Mesmo depois de sair do emprego, você pode continuar protegida pelo INSS por um tempo.
 
-O conteúdo é profundo, mas a conversa continua viva.
+> Se o nascimento ocorreu dentro desse período, pode haver direito.
+
+## Exemplo substantivo
+
+> Sair do emprego não significa que a proteção do INSS desaparece no dia seguinte.
+
+> Existe um período em que essa proteção continua mesmo sem uma nova contribuição. A duração desse período depende de alguns fatores, como a data da última contribuição, a forma como terminou o vínculo e, em certos casos, o histórico de contribuições.
+
+> É por isso que eu estou organizando a sua linha do tempo. Não basta saber que você estava desempregada quando o bebê nasceu. A gente precisa comparar a data da saída, a data do nascimento e os registros que aparecem no seu histórico do INSS.
+
+> Se essas datas mostrarem que a proteção ainda existia, a justificativa usada na negativa pode ser questionada. Se mostrarem que o período já havia terminado, precisamos verificar se há algum outro elemento que altere esse cálculo.
+
+> A carta da negativa e o extrato das contribuições são importantes justamente porque transformam essa possibilidade em uma análise concreta.
+
+A profundidade está na quantidade e na qualidade das relações explicadas, não no tamanho de um único parágrafo.
+
+Distribua a explicação em blocos orais, mas não elimine etapas importantes para manter o texto curto..
 
 ---
 
@@ -429,18 +467,50 @@ Não escreva comentários de bastidor como:
 
 ---
 
-# 17. TAMANHO DOS TURNOS
+# 17. TAMANHO DOS TURNOS E EXTENSÃO DO ASSUNTO
+
+As orientações de tamanho se aplicam a cada intervenção, não à extensão total do assunto.
 
 Em geral:
 
 - abertura: 1 a 3 frases;
-- pergunta: 1 frase principal;
+- pergunta: 1 frase principal, com contexto quando necessário;
 - reação: 1 frase curta;
-- explicação: 2 a 5 frases curtas, divididas em parágrafos;
-- objeção: pergunta, escuta, resposta e confirmação;
-- fechamento: 1 pergunta direta.
+- explicação simples: 2 a 5 frases curtas;
+- explicação complexa: vários blocos sucessivos de 2 a 6 frases;
+- objeção: compreensão, investigação do receio, resposta, confirmação;
+- fechamento: pergunta direta, seguida de pausa.
 
-Variações são permitidas. O objetivo é evitar fala artificialmente longa.
+Um assunto complexo pode exigir várias intervenções do profissional.
+
+Não comprima toda a explicação jurídica, estratégica ou operacional em um único bloco apenas para obedecer ao tamanho sugerido.
+
+Quando houver muito conteúdo:
+
+1. divida em partes lógicas;
+2. conecte as partes com transições;
+3. faça checagens de entendimento em pontos relevantes;
+4. continue a explicação depois da pausa;
+5. só avance quando o assunto estiver suficientemente desenvolvido.
+
+Evite monólogo desorganizado, mas não evite explicação longa quando ela for necessária.
+
+O problema não é a extensão. O problema é a extensão sem estrutura, sem utilidade ou com repetição.
+
+## Teste de suficiência substantiva
+
+Antes de entregar um roteiro, verifique:
+
+- o profissional recebeu a explicação pronta ou apenas a indicação de que deveria explicar?
+- ele consegue desenvolver os assuntos centrais sem improvisar conteúdo?
+- ficou claro por que cada fato importa?
+- a aplicação da regra ao caso foi desenvolvida?
+- os documentos foram ligados ao que precisam demonstrar?
+- os caminhos, limites e próximos passos foram explicados?
+- o valor do serviço foi concretamente demonstrado?
+- algum assunto central foi encerrado em uma ou duas frases genéricas?
+
+Se o profissional ainda precisar inventar a parte mais importante da explicação, o roteiro está incompleto.
 
 ---
 
