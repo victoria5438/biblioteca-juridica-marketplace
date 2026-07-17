@@ -1,17 +1,21 @@
-# Biblioteca Jurídica Marketplace — versão inicial
+# Biblioteca Jurídica Marketplace — versão 0.5.0
+
+Marketplace de plugins para criação de materiais jurídicos estratégicos, reutilizáveis e adaptados ao perfil do público.
+
+## Estrutura do repositório
 
 Este repositório contém:
 
 - o catálogo do marketplace em `.claude-plugin/marketplace.json`;
 - o plugin `Biblioteca Jurídica`;
-- os cores cognitivo e de escrita;
-- a primeira skill funcional: `mapear-persona`.
+- referências cognitivas e de escrita compartilhadas;
+- skills especializadas para mapeamento de persona, playbooks operacionais e roteiros de atendimento.
 
-## Skill disponível
+## Skills disponíveis
 
-`/biblioteca-juridica:mapear-persona`
+### Mapear persona
 
-## Observação
+Cria um mapeamento aprofundado da persona jurídica, incluindo dores, medos, desejos, linguagem, objeções, nível de consciência e fatores de decisão.
 
-Esta é a versão 0.1.0 para validar instalação e execução no Claude Cowork.
-As próximas skills serão adicionadas ao mesmo plugin após o teste.
+```text
+/biblioteca-juridica:mapear-persona
