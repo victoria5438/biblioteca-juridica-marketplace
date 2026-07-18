@@ -1,15 +1,18 @@
 ---
 name: roteiro-consulta
-description: Cria roteiros jurídicos falados, fluidos, profundos e reutilizáveis para consultas, reuniões, ligações, videoconferências e fechamento de contratação. Use quando o usuário quiser uma condução integral pronta para ser falada, sem formato de playbook ou manual operacional.
+description: Cria roteiros falados, fluidos e reutilizáveis para consulta jurídica e fechamento por ligação, videoconferência ou reunião presencial, partindo de lead já triado e qualificado. Use quando o advogado precisar conduzir diagnóstico, explicação, aplicação ao caso, apresentação do serviço, honorários, objeções, decisão e contratação em uma conversa síncrona.
+argument-hint: [mapeamento de persona, recorte do serviço, resumo da triagem, canal e particularidades do escritório]
 ---
 
 # Roteiro de Consulta Jurídica
 
-Produza um roteiro falado integral, fluido, profundo e reutilizável para condução de consulta jurídica e, quando aplicável, fechamento de contratação.
+## Objetivo
 
-A maior parte da entrega deve ser formada por falas prontas do profissional.
+Produzir um roteiro falado integral, fluido, profundo e reutilizável para condução de consulta jurídica e, quando aplicável, fechamento de contratação.
 
-O resultado deve parecer uma consulta jurídica real, organizada e conduzida por um profissional experiente.
+A maior parte da entrega deve ser composta por falas prontas do profissional.
+
+O resultado deve parecer uma consulta real, organizada e conduzida por um profissional experiente — não um manual de treinamento nem uma conversa fictícia fechada.
 
 Não produza como saída principal:
 
@@ -20,186 +23,112 @@ Não produza como saída principal:
 - mapa de condução extenso;
 - formulário;
 - lista de orientações;
+- fluxo de WhatsApp;
+- triagem;
+- qualificação comercial;
+- agendamento;
 - conversa fictícia com uma pessoa específica;
 - transcrição de respostas inventadas do cliente.
 
 ---
 
-## Referências obrigatórias
+## Contexto obrigatório
 
-Antes de escrever, leia:
+Antes de produzir a saída:
 
-- `../../references/core-cognitivo.md`
-- `../../references/core-escrita-oralidade.md`
-
-Use o mapeamento de persona fornecido pelo usuário ou disponível na conversa como fonte principal sobre:
-
-- perfil do público;
-- nível de consciência;
-- linguagem;
-- dores;
-- medos;
-- desejos;
-- objeções;
-- fatores de decisão;
-- critérios preliminares;
-- subperfis;
-- variações relevantes;
-- contexto jurídico;
-- documentos;
-- riscos;
-- expectativas.
+1. leia `../../references/core-cognitivo.md`;
+2. leia `../../references/core-escrita-oralidade.md`;
+3. utilize o Mapeamento de Persona Jurídica fornecido pelo usuário ou disponível na conversa;
+4. utilize o resumo da triagem, os fatos confirmados e os documentos já disponíveis;
+5. utilize as particularidades reais do escritório;
+6. priorize fatos confirmados e instruções expressas sobre padrões prováveis.
 
 Não execute novamente a skill de mapeamento de persona.
 
-Não copie o mapeamento para a saída.
+Não reproduza o mapeamento na saída.
 
-Converta o conteúdo em decisões de:
+Converta-o em decisões concretas de:
 
+- recorte;
 - linguagem;
 - ritmo;
+- ordem dos assuntos;
 - perguntas;
 - explicações;
-- ordem dos assuntos;
 - bifurcações;
-- tratamento de objeções;
+- objeções;
+- fatores de decisão;
+- apresentação de valor;
 - fechamento.
 
 ---
 
-## Neutralidade de nicho
+## Ponto de partida e limite
 
-Esta skill deve funcionar para qualquer área ou nicho do Direito.
+Esta skill parte de um lead que:
 
-Construa o roteiro exclusivamente a partir:
+- já passou pela triagem;
+- já foi classificado como qualificado para a consulta;
+- possui contexto inicial suficiente para ser atendido;
+- pode ter fatos, documentos ou requisitos que ainda precisam ser confirmados durante a conversa.
 
-1. do pedido atual;
-2. do nicho jurídico atual;
-3. do mapeamento de persona atual;
-4. das informações do escritório;
-5. dos fatos confirmados;
-6. do conhecimento jurídico pertinente à área solicitada.
+A consulta pode:
 
-Não reutilize automaticamente de execuções anteriores:
-
-- público;
-- documentos;
-- prazos;
-- órgãos;
-- procedimentos;
-- categorias de cliente;
-- perguntas;
-- objeções;
-- caminhos jurídicos;
-- modelo de contratação;
-- forma de fechamento.
-
-Qualquer nicho utilizado em testes anteriores é apenas exemplo de aplicação.
-
-Antes de finalizar, verifique se todo o roteiro pertence ao nicho solicitado.
-
----
-
-## Canais permitidos
-
-Esta skill produz roteiros para comunicação oral contínua:
-
-- ligação;
-- videoconferência;
-- reunião presencial.
-
-Não produza fluxo de WhatsApp como saída principal.
-
-Quando o canal não estiver informado e isso alterar substancialmente a condução, pergunte.
-
----
-
-## Objetivo da conversa
-
-Adapte a profundidade e o fechamento ao objetivo informado.
-
-Esta skill pode ser utilizada para:
-
-- consulta jurídica;
-- análise inicial;
-- reunião de diagnóstico;
-- devolutiva;
-- apresentação do caminho jurídico;
-- apresentação do serviço;
-- fechamento de contratação.
-
-Quando o objetivo incluir contratação, o roteiro deve chegar efetivamente à decisão.
-
-Quando o objetivo não incluir contratação, não force:
-
-- apresentação de honorários;
-- proposta;
-- pergunta de fechamento;
-- envio de contrato.
-
-Não confunda consulta com simples agendamento.
-
----
-
-## Informações de entrada
-
-Utilize as informações já fornecidas.
-
-Pergunte somente quando a ausência impedir uma entrega responsável:
-
-1. nicho ou demanda jurídica;
-2. canal;
-3. objetivo final;
-4. quem conduz;
-5. modelo de honorários, quando houver fechamento;
-6. particularidades relevantes do escritório;
-7. mapeamento de persona ou contexto equivalente.
-
-Dados exatos ausentes podem permanecer como placeholders.
-
-Não transforme a coleta em interrogatório.
-
----
-
-## Condutor
-
-O roteiro deve considerar quem realizará a conversa.
-
-### Advogado ou profissional juridicamente habilitado
-
-Pode:
-
-- investigar fatos;
-- organizar o problema;
-- explicar conceitos;
-- apresentar possibilidades;
-- alinhar riscos;
-- fazer avaliação condicionada;
+- retomar e corrigir o resumo da triagem;
+- aprofundar fatos relevantes;
+- organizar a linha do tempo;
+- confirmar documentos;
+- identificar lacunas;
+- validar a viabilidade jurídica;
+- concluir que o caso pode ou não prosseguir;
+- explicar caminhos;
 - apresentar o serviço;
-- conduzir à contratação.
+- conduzir à decisão.
 
-Não pode:
+Isso não constitui nova qualificação comercial.
 
-- garantir resultado;
-- afirmar direito sem elementos suficientes;
-- inventar conclusão;
-- ultrapassar os fatos disponíveis.
+Não utilize como etapas, critérios ou linguagem:
 
-### Profissional não advogado
+- MQL;
+- SQL;
+- temperatura do lead;
+- lead quente ou frio;
+- intenção preliminar de contratar;
+- caso de maior valor;
+- lead que “vale seguir”;
+- nova triagem disfarçada de consulta.
 
-Não deve:
+A skill começa na preparação da consulta ou na primeira fala do profissional.
 
-- emitir parecer;
-- concluir enquadramento;
-- interpretar definitivamente a lei;
-- recomendar medida jurídica como conclusão;
-- afirmar que a pessoa possui determinado direito.
+A skill termina em uma destas situações:
 
-Nesse caso, limite a profundidade à função real do condutor.
+- contratação e formalização;
+- hesitação com próximo passo concreto;
+- recusa respeitosa;
+- conclusão responsável de que ainda não há elementos para proposta;
+- necessidade pontual de documento ou informação complementar;
+- encerramento da consulta sem contratação, quando esse for o objetivo definido.
+
+Não inclui:
+
+- captação;
+- nutrição;
+- triagem;
+- qualificação comercial;
+- convite para consulta;
+- agendamento;
+- confirmação de presença;
+- prevenção de ausência;
+- recuperação de no-show;
+- sequência prolongada de follow-up;
+- acompanhamento jurídico posterior ao início da atuação;
+- pós-venda.
 
 ---
 
-## Regra central do formato
+## Natureza do produto
+
+Esta skill produz uma **conversa falada de consulta e fechamento**.
 
 A maior parte da entrega deve ser composta por:
 
@@ -214,7 +143,7 @@ A maior parte da entrega deve ser composta por:
 - decisão;
 - próximos passos.
 
-Use títulos discretos apenas para facilitar a localização das etapas.
+Use títulos discretos somente para facilitar a localização.
 
 Não apresente repetidamente:
 
@@ -223,52 +152,301 @@ Não apresente repetidamente:
 - por que perguntar;
 - o que observar;
 - erros a evitar;
-- critério para avançar.
+- critério para avançar;
+- comentários sobre estratégia;
+- justificativas extensas sobre técnicas comerciais.
 
 Essas decisões devem orientar silenciosamente a escrita.
 
-Notas internas podem aparecer somente quando forem indispensáveis, por exemplo:
+Notas internas podem aparecer apenas quando forem indispensáveis, por exemplo:
 
 - *Escute antes de continuar.*
 - *Aguarde a resposta.*
-- *Use este trecho somente se essa situação for confirmada.*
-- *Substitua pelos fatos reais relatados.*
+- *Use este trecho somente se essa situação estiver confirmada.*
+- *Substitua pelos fatos reais.*
 - *Não avance sem confirmar este ponto.*
 
 ---
 
-## Reutilização sem aparência de manual
+## Canais permitidos
 
-O roteiro deve servir para clientes diferentes do mesmo nicho.
+Esta skill produz roteiros para comunicação oral contínua:
 
-Não invente como fio condutor:
+- ligação;
+- videoconferência;
+- reunião presencial.
+
+Não produza fluxo de WhatsApp como saída principal.
+
+Quando o canal não estiver informado e isso alterar substancialmente a condução, faça uma única pergunta.
+
+---
+
+## Condutor
+
+A consulta jurídica deve ser conduzida por advogado ou profissional juridicamente habilitado.
+
+O condutor pode:
+
+- investigar fatos;
+- organizar o problema;
+- explicar conceitos;
+- apresentar possibilidades;
+- alinhar riscos;
+- fazer avaliação;
+- concluir a análise quando houver elementos suficientes;
+- apresentar o serviço;
+- tratar objeções;
+- conduzir à contratação.
+
+Não pode:
+
+- garantir resultado;
+- inventar conclusão;
+- afirmar fato não confirmado;
+- ultrapassar os elementos disponíveis;
+- atribuir ao órgão ou ao Judiciário uma decisão ainda inexistente.
+
+Se o usuário indicar condutor não advogado, não transforme essa pessoa em responsável pela consulta jurídica.
+
+Nesse caso:
+
+1. limite suas falas a funções operacionais expressamente permitidas;
+2. mantenha explicação e conclusão jurídica para o profissional habilitado;
+3. ou faça uma única pergunta para confirmar se o usuário deseja outro tipo de conversa.
+
+---
+
+## Informações de entrada
+
+Utilize tudo o que já estiver disponível.
+
+### Contexto estratégico
+
+- nicho, serviço ou demanda jurídica;
+- recorte de público;
+- origem do lead, quando relevante;
+- mapeamento de persona;
+- nível de consciência;
+- dúvidas;
+- objeções;
+- fatores de decisão;
+- linguagem;
+- subperfis e variações relevantes.
+
+### Contexto da consulta
+
+- resumo da triagem;
+- fatos já confirmados;
+- documentos recebidos ou analisados;
+- pontos pendentes;
+- canal;
+- condutor;
+- objetivo final da conversa;
+- existência ou não de análise documental anterior.
+
+### Contexto do escritório
+
+- posicionamento real;
+- funcionamento do serviço;
+- etapas da atuação;
+- participação esperada do cliente;
+- modelo de honorários;
+- despesas e condições;
+- fluxo de contratação;
+- ferramentas;
+- canais oficiais;
+- política de comunicação;
+- protocolo de segurança, quando houver;
+- procedimento autorizado para quem quiser pensar.
+
+A análise documental anterior pode existir ou não.
+
+Não a presuma.
+
+Quando ela tiver ocorrido, utilize suas conclusões.
+
+Quando ainda não tiver ocorrido, organize o roteiro para explicar o que pode ser concluído na conversa e o que ainda dependerá de documentos.
+
+Pergunte somente quando a ausência impedir a arquitetura ou exigir assumir uma condição comercial, financeira ou operacional que não pode ser presumida.
+
+Não transforme a coleta de contexto em interrogatório.
+
+---
+
+## Hierarquia e não invenção
+
+Respeite a hierarquia do Core Cognitivo.
+
+Não invente:
+
+- gratuidade de consulta ou análise;
+- ausência de pagamento inicial;
+- modelo por êxito;
+- percentual;
+- preço;
+- parcelamento;
+- ausência de despesas;
+- prazo de retorno;
+- canal de acompanhamento;
+- disponibilidade;
+- política de atendimento;
+- protocolo de segurança;
+- fluxo de assinatura;
+- documento obrigatório;
+- requisito jurídico;
+- prazo legal;
+- estatística;
+- frequência de êxito;
+- taxa de reversão;
+- caso de sucesso;
+- superioridade do escritório;
+- promessa de resultado.
+
+Use placeholders para dados exatos ausentes, como:
+
+- `[NOME]`;
+- `[ESCRITÓRIO]`;
+- `[OAB]`;
+- `[CANAL]`;
+- `[HONORÁRIOS]`;
+- `[PERCENTUAL]`;
+- `[DESPESAS]`;
+- `[DOCUMENTO]`;
+- `[DATA]`;
+- `[HORÁRIO]`;
+- `[LINK]`.
+
+Escreva toda a fala ao redor do placeholder.
+
+Não use placeholders para substituir:
+
+- explicação;
+- estratégia;
+- raciocínio;
+- perguntas;
+- objeções;
+- fechamento.
+
+---
+
+## Recorte e especificidade
+
+Antes de escrever, identifique:
+
+1. qual serviço ou demanda o roteiro cobre;
+2. para qual público;
+3. de que ponto da jornada parte;
+4. em qual decisão termina;
+5. quais situações ficam fora do escopo;
+6. quais subperfis exigem bifurcação.
+
+Declare o recorte no início da saída.
+
+Não diga que o roteiro serve para todo o nicho quando tiver sido construído apenas para:
+
+- determinados serviços;
+- categorias específicas;
+- fatos geradores delimitados;
+- públicos específicos;
+- determinada origem de lead;
+- determinado canal;
+- determinada etapa.
+
+A arquitetura da skill é reutilizável entre nichos.
+
+A saída deve ser profundamente específica para o nicho e o recorte atuais.
+
+A personalização não está cumprida apenas porque o roteiro menciona o nome do serviço.
+
+A conversa deve refletir concretamente:
+
+- a situação vivida pelo público;
+- a forma como ele descreve o problema;
+- as dúvidas reais;
+- os critérios jurídicos relevantes;
+- os documentos;
+- os riscos;
+- as objeções;
+- os fatores de decisão;
+- o valor da consulta;
+- o valor do serviço;
+- os caminhos e limites próprios da demanda.
+
+Aplique o teste:
+
+> Este roteiro poderia ser usado em outro nicho apenas trocando o nome do serviço e alguns termos?
+
+Se a resposta for sim, aprofunde.
+
+---
+
+## Persona sem virar cliente fictício
+
+O roteiro deve servir para pessoas diferentes dentro do recorte declarado.
+
+Não transforme em fato do tronco comum:
 
 - nome;
 - idade;
 - profissão;
 - cidade;
-- empresa;
 - composição familiar;
-- datas;
-- documentos;
-- histórico pessoal;
-- decisão anterior;
-- impacto emocional específico.
+- estado emocional;
+- rotina;
+- dificuldade financeira;
+- cônjuge;
+- filhos;
+- presença de bebê;
+- puerpério;
+- horário disponível;
+- negativa anterior;
+- documento;
+- história individual.
+
+Características predominantes da persona orientam:
+
+- tom;
+- ritmo;
+- perguntas;
+- explicações;
+- objeções;
+- bifurcações.
+
+Elas não autorizam o profissional a afirmar que aquela pessoa vive determinada situação.
+
+Use características específicas somente:
+
+1. quando forem fatos confirmados;
+2. quando integrarem o recorte expresso;
+3. em bifurcações condicionais.
+
+Exemplos:
+
+> Se a pessoa mencionar dificuldade de tempo...
+
+> Se houver negativa anterior confirmada...
+
+> Quando os documentos indicarem essa categoria...
+
+Não invente respostas completas do cliente para criar fluidez.
+
+---
+
+## Reutilização sem aparência de manual
+
+O roteiro deve funcionar com clientes diferentes dentro do recorte.
 
 Utilize:
 
-- `[NOME]`;
-- `[DATA]`;
-- `[FATO CONFIRMADO]`;
-- `[SITUAÇÃO RELEVANTE]`;
-- `[DOCUMENTO]`;
-- `[ESCRITÓRIO]`;
-- `[OAB]`;
-- `[HONORÁRIOS]`;
-- `[PERCENTUAL]`;
-- `[CANAL]`.
+- placeholders;
+- pausas;
+- checagens;
+- formulações condicionais;
+- blocos alternativos;
+- retomadas conectadas às respostas.
 
-Use formulações condicionais:
+Use formulações como:
 
 - “Se a pessoa informar que...”
 - “Quando esse cenário estiver confirmado...”
@@ -276,7 +454,7 @@ Use formulações condicionais:
 - “Dependendo da data...”
 - “Neste ramo, use...”
 
-Não invente respostas completas do cliente apenas para a conversa parecer fluida.
+A reutilização deve aparecer na arquitetura da conversa, não em linguagem genérica.
 
 ---
 
@@ -284,13 +462,13 @@ Não invente respostas completas do cliente apenas para a conversa parecer fluid
 
 A consulta deve permitir que o profissional desenvolva os assuntos centrais sem improvisar a explicação principal.
 
-Quando pertinente, desenvolva:
+Quando pertinente, desenvolva nas falas:
 
 1. o que está acontecendo na prática;
 2. quais fatos importam;
-3. por que esses fatos importam;
-4. qual é a lógica jurídica aplicável;
-5. o que muda conforme as possíveis respostas;
+3. por que importam;
+4. qual é a lógica jurídica;
+5. o que muda conforme as respostas;
 6. quais documentos confirmam cada ponto;
 7. quais caminhos podem existir;
 8. quais limites e riscos precisam ser alinhados;
@@ -308,29 +486,144 @@ Não substitua conteúdo por instruções como:
 
 Escreva a fala que realiza essas ações.
 
+Não confunda profundidade com:
+
+- monólogo;
+- repetição;
+- encenação;
+- excesso de títulos;
+- história legislativa desnecessária;
+- linguagem de parecer;
+- desenvolvimento fora do recorte.
+
+---
+
+## Interação e distribuição da profundidade
+
+A conversa deve ser profunda, mas não pode ser formada por vários discursos consecutivos do profissional.
+
+Nos pontos centrais, distribua:
+
+1. conexão com o relato;
+2. explicação;
+3. consequência prática;
+4. pausa;
+5. confirmação ou pergunta;
+6. continuação conforme a reação.
+
+Como regra, não apresente mais de duas informações relevantes sem:
+
+- abrir espaço;
+- checar compreensão;
+- pedir confirmação;
+- conectar a explicação ao caso.
+
+Não use confirmações mecânicas depois de cada frase.
+
+Use-as quando a pessoa realmente puder:
+
+- se perder;
+- discordar;
+- lembrar de novo fato;
+- fazer pergunta;
+- mudar a análise.
+
+Não invente respostas completas do cliente.
+
+---
+
+## Progressão das perguntas
+
+As perguntas devem nascer do contexto anterior.
+
+Não entregue uma bateria técnica desconectada.
+
+Faça:
+
+1. retomada do que já chegou da triagem;
+2. confirmação ou correção;
+3. pergunta sobre a lacuna;
+4. reação;
+5. próxima pergunta ou explicação.
+
+Não repita do zero fatos que já estejam confirmados.
+
+Exemplo de estrutura:
+
+> Eu recebi a informação de que [RESUMO DA TRIAGEM]. Antes de avançar, quero confirmar se compreendi corretamente.
+
+*Confirme.*
+
+> Certo. O ponto que ainda preciso esclarecer é [PONTO]. O que aconteceu nessa parte?
+
+*Escute.*
+
+> Entendi. Isso importa porque [CONSEQUÊNCIA]. Agora preciso confirmar [PRÓXIMO PONTO].
+
 ---
 
 ## Régua de certeza
 
-Separe claramente:
+Separe:
 
-1. **Relato:** o que a pessoa informou.
-2. **Indício:** o que esse relato pode sugerir.
-3. **Confirmação:** o que depende de documentos, cálculos, perícia ou análise.
-4. **Resultado:** o que depende da atuação e da decisão competente.
+1. **Relato** — o que a pessoa informou.
+2. **Indício** — o que o relato sugere.
+3. **Confirmação** — o que depende de documentos, cálculos, perícia ou análise.
+4. **Resultado** — o que depende da atuação e da decisão competente.
 
-Não salte do relato para a conclusão.
+Não salte do relato para o resultado.
 
-Use formulações como:
+Quando ainda faltarem elementos, use linguagem condicionada.
 
-- “Pelo que você me explicou, esse fato é relevante.”
-- “Isso pode indicar um caminho, mas ainda precisamos confirmar alguns pontos.”
-- “Se os documentos demonstrarem essa sequência, será possível avaliar a medida adequada.”
-- “O resultado não pode ser antecipado, mas é possível definir com clareza o que precisa ser analisado e buscado.”
+Exemplos:
 
-Quando um fato estiver efetivamente confirmado, diga isso com clareza.
+> Pelo que você me explicou, esse fato é relevante.
 
-Cautela não deve produzir uma fala vaga ou insegura.
+> Isso pode indicar um caminho, mas ainda preciso confirmar [PONTO].
+
+> Se os documentos confirmarem essa sequência, conseguiremos definir o caminho adequado.
+
+Quando houver elementos suficientes, formule a conclusão com clareza.
+
+---
+
+## Conclusão da análise e promessa de resultado
+
+Não confunda conclusão profissional com garantia de resultado futuro.
+
+Quando a análise permitir, diga de forma natural:
+
+> Pelos documentos e pelas datas que analisamos, você preenchia esse requisito.
+
+> A análise mostra que o seu caso se encaixa nessa regra.
+
+> Com esses elementos, podemos seguir com o pedido.
+
+Quando necessário, separe o limite:
+
+> O que eu não consigo garantir é a decisão final, porque ela depende da autoridade responsável.
+
+Evite linguagem excessivamente defensiva ou artificial, como:
+
+- “juridicamente defensável”;
+- “plausibilidade jurídica”;
+- “tese sustentável”;
+- “probabilidade de enquadramento”;
+- “possibilidade abstrata”.
+
+A cautela deve aparecer na distinção entre:
+
+- conclusão da análise;
+- resultado futuro.
+
+Não prometa:
+
+- deferimento;
+- êxito;
+- pagamento;
+- valor;
+- prazo;
+- decisão favorável.
 
 ---
 
@@ -364,55 +657,111 @@ Evite:
 - tom professoral;
 - frases de efeito como única explicação.
 
+Não imite gírias, erros de escrita ou abreviações da persona.
+
+O profissional deve falar de forma compreensível para o público sem fingir ser o público.
+
 ---
 
 ## Explicação em camadas
 
 Quando um tema relevante precisar ser explicado, utilize, conforme o contexto:
 
-1. enquadramento profissional;
-2. explicação da lógica;
-3. aplicação prática;
-4. relação com o relato;
-5. elementos que precisam ser confirmados;
-6. caminhos e limites;
-7. síntese simples.
+1. enquadramento;
+2. consequência prática;
+3. lógica da regra;
+4. aplicação ao relato;
+5. elementos favoráveis;
+6. elementos pendentes;
+7. documentos;
+8. caminhos;
+9. limites;
+10. síntese.
 
-A síntese simples pode consolidar a compreensão, mas não substituir as camadas anteriores.
+A síntese simples consolida a compreensão, mas não substitui as camadas anteriores.
+
+Evite começar com:
+
+- número de artigo;
+- nome de tribunal;
+- história legislativa;
+- classificação técnica.
+
+Use esses elementos apenas quando forem essenciais para compreensão ou confiança.
 
 ---
 
 ## Arquitetura da consulta
 
-Adapte as etapas ao nicho e ao objetivo.
+Adapte a ordem e a profundidade ao nicho e ao objetivo.
 
 Não transforme esta lista em checklist visível.
 
-### 1. Abertura e disponibilidade
+### 1. Abertura e continuidade da triagem
 
 A fala deve:
 
 - apresentar o profissional;
-- confirmar se aquele é um bom momento;
-- demonstrar continuidade quando já houve triagem;
+- reconhecer o contato anterior;
+- demonstrar que o contexto já foi recebido;
+- evitar que a pessoa repita tudo;
+- confirmar disponibilidade;
 - explicar brevemente a dinâmica;
 - pedir licença para começar.
 
-### 2. Relato inicial
+Exemplo de estrutura:
 
-Permita que a pessoa explique a situação com suas palavras.
+> Oi, [NOME]. Aqui é [PROFISSIONAL], do [ESCRITÓRIO].
 
-Não comece com uma bateria de perguntas técnicas.
+> Eu já recebi o resumo do seu primeiro contato, então você não vai precisar repetir tudo do zero.
 
-Utilize uma abertura como:
+> Quero primeiro confirmar os pontos principais, entender o que ainda ficou pendente e depois te explicar como eu vejo a situação. Tudo bem?
 
-> Antes de eu entrar nos detalhes, quero ouvir de você como essa situação começou e o que aconteceu até aqui.
+*Espere a confirmação.*
 
-*Escute antes de aprofundar.*
+Não prometa conclusão definitiva quando ainda faltarem elementos.
 
-### 3. Organização dos fatos
+Quando houver medo de fraude ou desconfiança no mapeamento, use apenas meios verificáveis realmente fornecidos, como:
 
-Investigue apenas os elementos relevantes para o nicho:
+- nome;
+- OAB;
+- canal oficial;
+- site;
+- perfil institucional;
+- endereço;
+- CNPJ;
+- contrato.
+
+Não apresente a própria ligação como prova suficiente de legitimidade.
+
+### 2. Enquadramento da consulta
+
+Explique:
+
+- o que será feito;
+- o que pode ser concluído;
+- o que pode depender de documento;
+- quando haverá apresentação do serviço;
+- quando haverá espaço para dúvidas.
+
+Não use este bloco para vender antecipadamente.
+
+### 3. Relato ou confirmação inicial
+
+Retome o resumo existente.
+
+Permita que a pessoa:
+
+- confirme;
+- corrija;
+- acrescente;
+- destaque o objetivo.
+
+Não peça um relato completo do zero, salvo quando o resumo da triagem estiver ausente ou incorreto.
+
+### 4. Organização e aprofundamento dos fatos
+
+Investigue somente os elementos relevantes para o nicho:
 
 - fato principal;
 - linha do tempo;
@@ -424,115 +773,159 @@ Investigue apenas os elementos relevantes para o nicho:
 - consequências;
 - situação atual.
 
-As perguntas devem nascer do que foi relatado.
+As perguntas devem nascer do que foi dito.
 
-Não transforme a conversa em interrogatório.
+### 5. Validação da viabilidade jurídica e pontos pendentes
 
-### 4. Bifurcação do cenário
+Desenvolva, conforme o caso:
 
-Quando uma resposta alterar o enquadramento, utilize um ramo próprio.
+- requisitos confirmados;
+- indícios favoráveis;
+- pontos pendentes;
+- contradições;
+- impedimentos aparentes;
+- documentos necessários;
+- necessidade de cálculo, perícia ou análise complementar;
+- possibilidade de prosseguir;
+- ausência de viabilidade.
 
-A bifurcação deve conter:
+Este bloco não é qualificação comercial.
 
-- pergunta de confirmação;
-- explicação correspondente;
-- documentos relevantes;
-- limite ou risco;
-- retorno ao tronco comum, quando possível.
+Não use linguagem de:
 
-Inclua apenas bifurcações que realmente mudam a condução.
+- lead aprovado;
+- caso bom;
+- caso forte como valor comercial;
+- lead qualificado novamente;
+- oportunidade.
 
-### 5. Impacto pertinente
+### 6. Síntese
 
-Investigue o impacto somente quando ele ajudar:
+Organize o que foi compreendido.
 
-- a compreender a urgência real;
-- a definir o objetivo;
-- a avaliar o risco;
-- a entender a necessidade;
-- a orientar a solução;
-- a identificar uma objeção.
-
-Não explore sofrimento para pressionar contratação.
-
-### 6. Síntese e prova de escuta
-
-Antes da explicação jurídica, organize o que foi ouvido.
-
-Use estrutura semelhante a:
+Use estrutura semelhante:
 
 > Vou reunir os pontos principais para confirmar se compreendi corretamente.
 
-> Pelo que você me explicou, [FATO 1], depois [FATO 2], e atualmente [SITUAÇÃO]. É isso?
+> Pelo que você me explicou, [FATO 1], depois [FATO 2], e hoje a situação está em [SITUAÇÃO]. É isso?
 
-*Confirme antes de continuar.*
+*Confirme.*
 
 Diferencie:
 
-- fatos relatados;
-- pontos favoráveis;
-- pontos desfavoráveis;
-- dúvidas;
-- elementos que dependem de documento.
+- fato relatado;
+- fato confirmado;
+- elemento favorável;
+- elemento desfavorável;
+- dúvida;
+- resultado ainda dependente de decisão.
 
 ### 7. Explicação jurídica
 
 Explique:
 
-- qual é o problema jurídico;
-- qual regra ou lógica pode ser pertinente;
-- por que essa regra existe;
+- qual é o problema;
+- qual lógica jurídica é pertinente;
+- por que ela importa;
 - o que altera a análise;
-- como isso se relaciona ao relato;
+- como se relaciona aos fatos;
 - quais documentos importam;
-- quais caminhos podem existir;
+- quais caminhos existem;
 - o que ainda não pode ser concluído.
+
+Distribua em blocos.
+
+Abra espaço para reação.
 
 Não transforme a consulta em aula.
 
-Distribua explicações extensas em vários blocos de fala.
+### 8. Aplicação ao cenário confirmado
 
-Inclua pausas para entendimento.
+Depois da explicação geral, aplique ao caso:
 
-### 8. Possibilidades, limites e riscos
+- fatos confirmados;
+- documentos;
+- datas;
+- categoria;
+- resposta anterior;
+- situação atual.
 
-Mostre claramente:
+Quando houver subperfis, use bifurcações.
+
+Não aplique automaticamente o subperfil dominante da persona.
+
+### 9. Documentos ou informações complementares
+
+Quando faltar algo, explique:
+
+- o que falta;
+- por que importa;
+- o que precisa demonstrar;
+- como altera a análise;
+- o que acontecerá depois.
+
+Não apresente lista universal.
+
+Não peça novamente documento já recebido.
+
+### 10. Caminhos e limites
+
+Mostre:
 
 - o que pode ser buscado;
 - quais alternativas existem;
 - qual caminho parece pertinente;
-- o que fortalece cada alternativa;
-- o que pode dificultar;
-- o que depende de terceiros ou autoridade;
-- quais riscos não podem ser eliminados;
+- o que fortalece;
+- o que dificulta;
+- o que depende de terceiros;
+- quais riscos permanecem;
 - qual prazo verdadeiro precisa ser considerado, quando houver.
 
 Não invente urgência.
 
-### 9. Apresentação do trabalho
+Não apresente medida jurídica como livre escolha quando depender de análise técnica.
+
+### 11. Funcionamento do serviço
 
 Explique concretamente:
 
 - o que o escritório fará;
-- quais documentos analisará;
 - como organizará o caso;
-- quais etapas acompanhará;
+- quais documentos analisará;
+- quais etapas conduzirá;
+- como reduzirá erros ou incertezas;
 - como ocorrerá a comunicação;
-- o que dependerá do cliente;
-- quais decisões ainda precisarão ser tomadas;
-- quais limites existem.
+- quais decisões ainda existirão;
+- quais limites o serviço possui.
 
-Não use adjetivos vazios como:
+Demonstre valor pelo trabalho descrito.
+
+Evite adjetivos vazios, como:
 
 - excelente;
 - completo;
 - diferenciado;
-- especializado;
-- personalizado.
+- personalizado;
+- especializado, quando não houver base ou posicionamento informado.
 
-Demonstre o valor pelo trabalho descrito.
+### 12. Participação real do cliente
 
-### 10. Honorários e condições
+Explique o que pode depender da pessoa, como:
+
+- documentos;
+- informações;
+- assinaturas;
+- acessos;
+- comparecimento;
+- perícia;
+- audiência;
+- entrevista;
+- resposta a exigência;
+- atualização de dados.
+
+Não prometa que “o cliente não precisará fazer nada” ou que “o escritório cuidará de tudo” se isso não for literalmente verdadeiro.
+
+### 13. Honorários e condições
 
 Use somente quando o objetivo incluir contratação.
 
@@ -540,54 +933,61 @@ Apresente exatamente o modelo informado.
 
 Explique, quando aplicável:
 
-1. qual é a forma de cobrança;
-2. se existe pagamento inicial;
-3. qual é o valor ou percentual;
-4. sobre qual base ocorre o cálculo;
-5. quando ocorre o pagamento;
-6. se existem despesas separadas;
-7. o que acontece se não houver resultado;
-8. onde as condições estarão registradas.
+1. forma de cobrança;
+2. valor ou percentual;
+3. base de cálculo;
+4. momento do pagamento;
+5. pagamento inicial;
+6. despesas separadas;
+7. parcelamento;
+8. efeito da ausência de resultado;
+9. registro no contrato.
 
-Não invente gratuidade, isenção ou condição contratual.
+Não derive gratuidade da cobrança por êxito.
 
-Use placeholders para dados exatos ausentes.
+Não invente condições.
 
-Uma frase simples pode aparecer ao final como síntese, mas não deve substituir a explicação profissional.
+Use placeholders para dados exatos.
 
-### 11. Verificação de dúvidas
+### 14. Dúvidas e objeções
 
-Antes de pedir uma decisão, pergunte:
+Antes de pedir decisão, pergunte:
 
 > Existe algum ponto da análise, do trabalho ou das condições que ainda precisa ficar mais claro?
 
-*Aguarde a resposta.*
-
-Não trate silêncio como aceite.
-
-### 12. Objeções
+*Aguarde.*
 
 Quando surgir resistência:
 
-1. não responda imediatamente;
-2. identifique a dúvida real;
-3. faça uma pergunta;
-4. escute;
-5. responda ao ponto específico;
-6. confirme se a dúvida foi resolvida;
-7. retome o próximo passo.
+1. investigue;
+2. escute;
+3. responda ao ponto real;
+4. confirme;
+5. retome.
 
 Inclua apenas objeções pertinentes ao:
 
 - nicho;
-- mapeamento;
+- recorte;
 - serviço;
-- momento da conversa;
+- momento;
 - decisão solicitada.
 
-### 13. Decisão
+### 15. Proposta
 
-Quando o objetivo incluir contratação, faça uma pergunta clara.
+Quando houver elementos para apresentação responsável:
+
+- sintetize;
+- conecte o serviço ao problema;
+- alinhe limites;
+- apresente condições;
+- explique a formalização.
+
+Quando não houver elementos suficientes, não simule proposta.
+
+### 16. Decisão
+
+Quando o objetivo incluir contratação, use pergunta clara.
 
 Exemplos:
 
@@ -597,42 +997,68 @@ Exemplos:
 
 > Posso organizar a formalização para iniciarmos?
 
-Depois da pergunta, indique pausa.
+Depois da pergunta:
 
-### 14. Aceite, hesitação ou recusa
+- faça pausa;
+- não preencha o silêncio;
+- não trate silêncio como aceite.
+
+### 17. Aceite, hesitação, recusa e próximos passos
 
 #### Se houver aceite
 
-Conduza para:
+Conduza, conforme o fluxo real, para:
 
 - contrato;
-- procuração, quando necessária;
+- procuração;
 - dados;
 - documentos;
-- pagamento, quando aplicável;
+- pagamento;
 - assinatura;
 - canal de comunicação;
 - início do trabalho.
 
+Não elogie a decisão como vitória comercial.
+
+Prefira confirmar e organizar a continuidade.
+
 #### Se houver hesitação
 
-Pergunte o que ainda precisa ser compreendido.
+Pergunte qual ponto ainda precisa ser avaliado.
 
-Não responda a uma objeção presumida.
+Não responda a objeção presumida.
 
-Depois de esclarecer, combine um próximo passo concreto.
+Use somente o procedimento autorizado pelo escritório.
+
+Combine um próximo passo concreto quando isso fizer parte do fluxo.
 
 #### Se houver recusa
 
-Verifique se existe dúvida não tratada.
+Verifique uma vez se existe dúvida não tratada.
 
-Persistindo a decisão, encerre com respeito.
+Persistindo a decisão:
 
-Não utilize culpa, medo, falsa urgência ou insistência inadequada.
+- respeite;
+- não pressione;
+- não use medo;
+- não use culpa;
+- não invente urgência;
+- encerre com clareza.
 
-### 15. Encerramento e próximos passos
+#### Se não houver elementos para proposta
 
-A pessoa deve terminar a conversa sabendo:
+Explique:
+
+- o que ainda falta;
+- por que impede a conclusão;
+- qual documento ou informação é necessário;
+- ou por que o caso não deve prosseguir.
+
+Não simule fechamento.
+
+#### Encerramento
+
+A pessoa deve terminar sabendo:
 
 - qual foi a conclusão possível;
 - o que ainda depende de confirmação;
@@ -644,32 +1070,64 @@ A pessoa deve terminar a conversa sabendo:
 
 ---
 
+## Objeções e continuidades
+
+Para cada objeção relevante, escreva a continuação completa.
+
+Use esta progressão:
+
+1. indicação da objeção;
+2. pergunta do profissional;
+3. pausa;
+4. resposta substantiva;
+5. confirmação;
+6. retomada da decisão ou próximo passo.
+
+Não exponha:
+
+- medo subjacente;
+- técnica utilizada;
+- estratégia comercial;
+- sinal interno de resolução.
+
+Esses elementos pertencem ao playbook.
+
+Não invente:
+
+- vantagem sobre outro profissional;
+- maior chance de êxito;
+- frequência de reversão;
+- resultado provável;
+- condição comercial não informada.
+
+---
+
 ## Adaptação ao canal
 
 ### Ligação
 
 - use transições verbais claras;
 - sinalize mudanças de assunto;
-- permita perguntas durante a explicação;
+- permita perguntas;
 - evite listas longas;
 - confirme informações importantes;
-- considere que o profissional não vê reações visuais.
+- considere a ausência de reações visuais.
 
 ### Videoconferência
 
-- preserve a mesma naturalidade da ligação;
+- preserve naturalidade;
 - permita pausas;
 - não inclua instruções corporais ou de câmera sem necessidade;
-- use compartilhamento de documentos apenas quando informado;
-- não transforme a conversa em apresentação formal.
+- use compartilhamento de documentos somente quando informado;
+- não transforme a consulta em apresentação formal.
 
 ### Reunião presencial
 
 - preserve oralidade;
 - não transforme o roteiro em discurso;
-- considere a possibilidade de consulta a documentos;
-- mantenha falas adaptáveis;
-- não presuma estrutura física, equipe ou material não informado.
+- considere consulta a documentos;
+- não presuma estrutura física, equipe ou material;
+- mantenha falas adaptáveis.
 
 ---
 
@@ -677,34 +1135,45 @@ A pessoa deve terminar a conversa sabendo:
 
 Entregue nesta ordem:
 
-# 1. PREMISSAS ADAPTÁVEIS
+# 1. PREMISSAS E RECORTE
 
-Bloco curto contendo somente:
+Bloco curto contendo:
 
 - nicho;
-- objetivo;
+- serviço;
+- recorte;
+- público;
+- ponto de partida;
+- ponto de encerramento;
 - canal;
 - condutor;
+- informações herdadas da triagem;
+- documentos já disponíveis;
+- objetivo final;
 - modelo de honorários, quando aplicável;
-- placeholders;
 - pontos que exigem validação.
 
-Não produza mapa psicológico extenso.
+Não produza mapa psicológico.
+
+Não repita o mapeamento.
 
 # 2. ROTEIRO INTEGRAL
 
-Use títulos discretos conforme as etapas pertinentes.
+Esta deve ser a maior parte da saída.
 
-Dentro dos títulos, priorize:
+Use títulos discretos.
+
+Dentro deles, priorize:
 
 - falas;
 - perguntas;
 - explicações;
-- pausas;
 - transições;
-- checagens de entendimento.
+- pausas;
+- checagens;
+- continuidade.
 
-A maior parte do documento deve estar nesta seção.
+Não exponha a arquitetura do playbook.
 
 # 3. BIFURCAÇÕES ESSENCIAIS
 
@@ -716,52 +1185,116 @@ Inclua somente os ramos que alterem substancialmente:
 - documentos;
 - caminho;
 - risco;
+- serviço;
 - proposta;
 - próximo passo.
 
-Escreva as falas completas de cada ramo.
+Escreva as falas completas.
 
-# 4. OBJEÇÕES E CONTINUIDADES
+# 4. OBJEÇÕES DE CONTRATAÇÃO
 
 Inclua somente as objeções relevantes.
 
 Escreva:
 
 - pergunta de investigação;
-- resposta do profissional;
+- pausa;
+- resposta;
 - confirmação;
-- retomada da decisão ou próximo passo.
+- retomada.
 
-# 5. PONTOS DE ADAPTAÇÃO
+# 5. ACEITE, HESITAÇÃO, RECUSA E PRÓXIMOS PASSOS
 
-Lista curta contendo apenas informações exatas que precisam ser preenchidas ou validadas.
+Escreva as continuidades completas.
+
+# 6. PONTOS DE ADAPTAÇÃO
+
+Lista curta com dados exatos e condições reais que precisam ser preenchidos ou validados.
+
+Não inclua checklist operacional extenso.
 
 ---
 
 ## Revisão interna obrigatória
 
-Antes de entregar, verifique:
+Antes de entregar, verifique silenciosamente:
 
-- o conteúdo pertence integralmente ao nicho solicitado?
-- algum exemplo de outro nicho contaminou o roteiro?
-- a persona orientou o texto sem virar personagem?
-- o roteiro funciona com clientes diferentes?
+### Produto e arquitetura
+
+- a saída é um roteiro falado?
 - a maior parte da entrega é formada por falas utilizáveis?
-- o texto parece uma consulta, e não um manual?
-- as notas internas são mínimas?
-- as perguntas estão conectadas?
-- as explicações centrais estão desenvolvidas?
-- a linguagem está acessível sem ser simplória?
-- o profissional demonstra autoridade sem juridiquês?
-- as possibilidades estão condicionadas corretamente?
-- os documentos estão ligados ao que precisam confirmar?
-- os riscos e limites estão claros?
-- o trabalho do escritório foi concretamente explicado?
-- honorários e condições foram apresentados sem invenções?
-- o fechamento corresponde ao objetivo?
-- o aceite conduz à formalização?
-- a hesitação é investigada antes de ser respondida?
-- existe promessa, estatística ou urgência inventada?
-- um profissional conseguiria falar o roteiro sem parecer que está lendo uma apostila?
+- o texto parece consulta, e não manual?
+- as notas são mínimas?
+- houve contaminação pelo formato de playbook?
+- houve fluxo de WhatsApp indevido?
+- o lead foi tratado como já triado e qualificado?
+- alguma etapa refez qualificação comercial?
+- triagem ou agendamento entraram indevidamente?
 
-Corrija silenciosamente antes de finalizar.
+### Recorte e reutilização
+
+- o recorte foi declarado?
+- o conteúdo cobre exatamente esse recorte?
+- o roteiro funciona com pessoas diferentes?
+- alguma característica da persona virou fato?
+- o subperfil dominante ocupou indevidamente o tronco comum?
+- as bifurcações cobrem variações reais?
+- algum exemplo de outro nicho contaminou a entrega?
+- o roteiro poderia ser usado em outro nicho apenas trocando nomes? Se sim, aprofunde.
+
+### Conversa e profundidade
+
+- as perguntas estão conectadas?
+- o profissional reage antes de avançar?
+- as explicações centrais estão desenvolvidas?
+- existem pausas entre informações importantes?
+- houve monólogo excessivo?
+- a profundidade foi distribuída?
+- o profissional consegue falar sem parecer que lê uma apostila?
+- as falas principais foram escritas ou substituídas por instruções?
+
+### Segurança e não invenção
+
+- foi presumida gratuidade?
+- foi inventada condição comercial ou operacional?
+- houve promessa de resultado?
+- houve estatística, frequência de êxito ou superioridade não comprovada?
+- foi criada urgência artificial?
+- fatos, indícios, confirmações e resultado foram separados?
+- quando houve análise suficiente, a conclusão foi clara?
+- a cautela virou linguagem de parecer?
+- documentos foram ligados ao que precisam confirmar?
+- a participação do cliente foi descrita com realismo?
+
+### Fechamento
+
+- o fechamento corresponde ao objetivo?
+- honorários e condições foram apresentados conforme dados reais?
+- a proposta aparece apenas depois de compreensão suficiente?
+- o aceite conduz ao fluxo real?
+- a hesitação é investigada?
+- a recusa é respeitada?
+- a ausência de viabilidade não foi mascarada por fechamento artificial?
+
+Corrija silenciosamente o que falhar.
+
+---
+
+## Critério de conclusão
+
+O roteiro está pronto quando um profissional consegue:
+
+1. compreender o recorte;
+2. continuar a partir da triagem sem refazê-la;
+3. conduzir a consulta com naturalidade;
+4. aprofundar fatos relevantes;
+5. validar a viabilidade jurídica;
+6. explicar o Direito sem aula;
+7. aplicar a explicação ao cenário;
+8. apresentar concretamente o serviço;
+9. explicar honorários reais;
+10. tratar objeções;
+11. pedir decisão;
+12. conduzir aceite, hesitação, recusa ou ausência de proposta;
+13. reutilizar o roteiro com pessoas diferentes dentro do recorte;
+14. adaptar apenas fatos do cliente e particularidades reais do escritório.
