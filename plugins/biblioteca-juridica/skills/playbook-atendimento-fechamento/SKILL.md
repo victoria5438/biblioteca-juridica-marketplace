@@ -1,517 +1,883 @@
 ---
 name: playbook-atendimento-fechamento
-description: Cria playbooks operacionais jurídicos reutilizáveis para qualificação, consulta, agendamento e fechamento. Use quando o usuário quiser padronizar o processo, treinar a equipe, documentar a condução ou criar um manual interno de atendimento e fechamento.
+description: Cria playbooks operacionais jurídicos reutilizáveis para consulta, atendimento e fechamento, partindo de lead já triado e qualificado. Use para padronizar a condução interna, treinar a equipe, documentar critérios, bifurcações, explicações, objeções, decisão e contratação.
+argument-hint: [mapeamento de persona, recorte do serviço, informações herdadas da triagem e particularidades do escritório]
 ---
 
 # Playbook de Atendimento e Fechamento Jurídico
 
-Produza um playbook operacional reutilizável para condução de atendimentos jurídicos.
+## Objetivo
 
-O material deve ensinar profissionais e equipes a executar, adaptar e padronizar o atendimento e o fechamento com clientes diferentes do mesmo nicho.
+Produzir um playbook operacional interno, profundo e reutilizável para condução de consulta, atendimento e fechamento jurídico.
 
-Esta skill produz um playbook interno. Ela não produz como saída principal uma conversa integral pronta para ser falada nem uma sequência pronta de mensagens de WhatsApp.
+O material deve ensinar o profissional a operar cada etapa e, ao mesmo tempo, fornecer conteúdo suficientemente desenvolvido para uso real.
+
+Não produza como saída principal:
+
+- roteiro falado integral;
+- fluxo de WhatsApp;
+- conversa encenada;
+- formulário;
+- checklist superficial;
+- lista de temas sem desenvolvimento;
+- qualificação ou agendamento de consulta.
 
 ---
 
-## Referências obrigatórias
+## Contexto obrigatório
 
-Antes de escrever, leia:
+Antes de produzir a saída:
 
-- `../../references/core-cognitivo.md`
-- `../../references/core-escrita-oralidade.md`
-
-Use o mapeamento de persona fornecido pelo usuário ou disponível na conversa como fonte principal sobre:
-
-- perfil do público;
-- dores, medos e desejos;
-- nível de consciência;
-- linguagem;
-- objeções;
-- critérios de qualificação;
-- fatores de decisão;
-- subperfis e variações relevantes.
+1. leia `../../references/core-cognitivo.md`;
+2. leia `../../references/core-escrita-oralidade.md`;
+3. utilize o Mapeamento de Persona Jurídica fornecido pelo usuário ou disponível na conversa;
+4. utilize as informações já existentes sobre o escritório, o serviço e a jornada;
+5. priorize fatos confirmados e particularidades expressas sobre práticas genéricas.
 
 Não execute novamente a skill de mapeamento de persona.
 
----
+Não reproduza o mapeamento inteiro na saída.
 
-## Regra central da entrega
+Converta-o em decisões concretas de:
 
-A saída principal deve ser um playbook operacional completo, profundo e reutilizável.
-
-Organize o material por etapas de condução, e não por uma história fictícia contínua.
-
-O produto deve ensinar o profissional a conduzir o atendimento e também entregar conteúdo pronto para uso.
-
-Não substitua o playbook por:
-
-- uma conversa com uma persona fictícia específica;
-- um caso inventado tratado como padrão;
-- uma lista superficial de tópicos;
-- instruções vagas sem explicação;
-- um formulário de perguntas desconectadas;
-- blocos que apenas dizem “explique”, “aprofunde” ou “trate a objeção”.
-
-Escreva efetivamente:
-
-- as orientações;
-- as perguntas;
-- os motivos das perguntas;
-- os critérios de observação;
-- as explicações substantivas;
-- os exemplos de fala;
-- as bifurcações;
-- as respostas às objeções;
-- a condução do fechamento.
+- recorte;
+- prioridades;
+- perguntas;
+- profundidade;
+- linguagem dos exemplos;
+- bifurcações;
+- objeções;
+- fatores de decisão;
+- explicação de valor;
+- condução do fechamento.
 
 ---
 
-## Regra de reutilização
+## Natureza do produto
 
-O playbook deve continuar útil mesmo que mudem:
+Esta skill produz um **playbook operacional reutilizável**.
 
-- nome;
-- idade;
-- profissão;
-- cidade;
-- datas;
-- composição familiar;
-- detalhes pessoais;
-- profissional que atende.
+O playbook é um ativo interno do escritório. Ele deve mostrar:
 
-Use referências genéricas e adequadas ao nicho, como:
+- o objetivo de cada etapa;
+- o que o profissional recebe da etapa anterior;
+- o que precisa confirmar ou compreender;
+- por que determinada pergunta importa;
+- o que observar nas respostas;
+- como interpretar cenários diferentes;
+- como explicar o assunto;
+- quando aprofundar;
+- quando mudar de ramo;
+- como tratar objeções;
+- como conduzir à decisão;
+- como formalizar o próximo passo.
 
-- cliente;
-- potencial cliente;
-- pessoa atendida;
-- contratante;
-- trabalhador;
-- consumidor;
-- segurado;
-- empresa;
-- responsável;
-- parte interessada.
+A saída pode conter:
 
-Não limite automaticamente o vocabulário a um nicho jurídico utilizado em testes anteriores.
+- orientações;
+- critérios;
+- perguntas;
+- motivos;
+- explicações substantivas;
+- exemplos de fala;
+- bifurcações;
+- erros a evitar;
+- critérios de avanço;
+- checklists internos.
 
-Use placeholders somente para dados adaptáveis, como:
-
-- `[NOME]`;
-- `[ESCRITÓRIO]`;
-- `[OAB]`;
-- `[HONORÁRIOS]`;
-- `[CANAL]`;
-- `[DATA]`;
-- `[HORÁRIO]`;
-- `[DOCUMENTO]`.
-
-Exemplos específicos podem aparecer apenas como ilustrações breves ou bifurcações condicionais.
+Os exemplos de fala devem ser naturais e utilizáveis, mas não podem ocupar o lugar do manual operacional.
 
 ---
 
-## Tronco comum e bifurcações
+## Ponto de partida e limite
 
-Quando o nicho tiver subperfis ou cenários relevantes:
+Esta skill parte da premissa de que o lead:
 
-1. construa primeiro o tronco comum do atendimento;
-2. identifique em qual etapa o profissional descobre o cenário;
-3. apresente os ramos condicionais;
-4. explique o que muda em perguntas, documentos, explicação, objeções e próximo passo;
-5. retorne ao fluxo comum quando possível.
+- já passou pela triagem;
+- já foi classificado como qualificado para a consulta;
+- possui contexto inicial suficiente para ser atendido;
+- pode ter fatos, documentos ou requisitos que ainda precisam ser confirmados durante a consulta.
 
-Não escolha um subperfil como personagem principal, salvo se o usuário pedir expressamente um recorte.
+A consulta pode:
 
-## Tom profissional da consulta
-
-O roteiro deve ser conduzido por um advogado ou profissional jurídico que demonstra domínio, segurança e maturidade.
-
-A linguagem deve ser clara e acessível, mas não simplista.
-
-Não escreva falas rasas apenas porque o público não domina o Direito.
-
-Ao explicar:
-
-- o enquadramento do caso;
-- os riscos;
-- os caminhos possíveis;
-- o trabalho do escritório;
-- os honorários;
-- as condições da contratação;
-
-desenvolva primeiro a explicação profissional e, quando útil, encerre com uma síntese simples.
-
-Uma frase como:
-
-> “O escritório só ganha se você ganhar.”
-
-pode ser utilizada como reforço final, mas não pode ser toda a explicação sobre honorários.
-
-A apresentação dos honorários deve esclarecer, quando aplicável:
-
-1. qual é o modelo de cobrança;
-2. se existe ou não pagamento inicial;
-3. sobre qual base incide o percentual;
-4. em que momento os honorários são pagos;
-5. onde as condições estarão registradas;
-6. se existem despesas ou custos separados;
-7. qual é a consequência caso não haja resultado.
-
-Não invente condições não fornecidas. Utilize placeholders e sinalizações de validação quando necessário.
-
-## Adaptação ao canal
-
-O canal altera a forma de apresentação, mas não reduz o nível profissional da comunicação.
-
-### WhatsApp
-
-No WhatsApp:
-
-- distribua o conteúdo em mensagens ou áudios menores;
-- evite blocos excessivamente longos;
-- mantenha conexão lógica entre as mensagens;
-- não transforme a comunicação em frases telegráficas;
-- não adote informalidade automática apenas por ser WhatsApp;
-- preserve explicações completas, dividindo-as em partes;
-- mantenha o tom de um profissional jurídico, e não de um atendimento comercial genérico.
-
-O WhatsApp é o meio da consulta, não uma autorização para empobrecer o conteúdo.
-
-As mensagens podem ser mais curtas, mas o conjunto da explicação deve permanecer suficientemente desenvolvido.
-
-### Ligação ou videoconferência
-
-Em ligação ou videoconferência:
-
-- desenvolva a explicação de modo mais contínuo;
-- utilize transições naturais entre investigação, diagnóstico, orientação e proposta;
-- permita falas mais extensas e articuladas;
-- indique pausas e momentos de checagem de entendimento;
-- evite fragmentar artificialmente a consulta como se fosse uma sequência de mensagens;
-- preserve uma linguagem oral, profissional e natural.
-
-O roteiro deve parecer uma consulta jurídica conduzida por um profissional experiente, e não uma sequência de mensagens lidas.
-
----
-
-## Modos de execução
-
-### Modo A — Consulta e fechamento
-
-Use quando o advogado ou especialista conduzirá uma conversa completa para:
-
-- compreender e organizar o caso;
-- demonstrar domínio;
-- explicar o problema e os caminhos possíveis;
-- alinhar riscos e expectativas;
-- mostrar o valor do serviço;
-- apresentar honorários;
-- tratar inseguranças;
+- aprofundar a linha do tempo;
+- confirmar fatos;
+- verificar documentos;
+- identificar lacunas;
+- validar a viabilidade jurídica;
+- concluir que o caso pode ou não prosseguir;
+- apresentar o serviço;
 - conduzir à decisão de contratação.
 
-O Modo A deve ser profundo e substantivo. Não o otimize para brevidade.
+Isso não constitui nova qualificação comercial.
 
-### Modo B — Qualificação e agendamento
+Não utilize como etapas ou critérios:
 
-Use quando o atendente precisa:
+- MQL;
+- SQL;
+- temperatura do lead;
+- lead quente ou frio;
+- intenção preliminar de contratar;
+- caso de maior valor;
+- lead que “vale seguir”;
+- nova triagem disfarçada de consulta.
 
-- acolher o lead;
-- entender resumidamente o caso;
-- identificar sinais de viabilidade;
-- filtrar situações fora de escopo;
-- gerar confiança;
-- demonstrar o valor da consulta;
-- agendar a próxima conversa;
-- aumentar o compromisso com o comparecimento.
+Quando o playbook for criado para uso genérico dentro de um nicho, indique quais informações mínimas devem chegar da triagem, sem reconstruir o processo de triagem.
 
-O Modo B deve permanecer mais breve e seletivo. Ele não deve reproduzir uma consulta completa.
+A skill começa na preparação da consulta ou no recebimento do contexto qualificado.
 
-Se o usuário não informar o modo e os resultados forem incompatíveis, pergunte antes de gerar.
+A skill termina em uma destas situações:
 
-Se o usuário pedir os dois modos, entregue dois playbooks separados, sem misturar seus objetivos.
+- contratação e formalização imediata;
+- hesitação com próximo passo concreto;
+- recusa respeitosa;
+- conclusão responsável de que não há elementos para apresentação da proposta;
+- necessidade pontual de informação ou documento complementar.
+
+Não inclui:
+
+- captação;
+- nutrição;
+- triagem;
+- qualificação comercial;
+- convite para consulta;
+- agendamento;
+- confirmação de consulta;
+- prevenção de ausência;
+- recuperação de no-show;
+- sequência prolongada de follow-up;
+- acompanhamento jurídico depois do início da atuação;
+- pós-venda.
 
 ---
 
 ## Informações de entrada
 
-Use as informações fornecidas pelo usuário.
+Utilize tudo o que já estiver disponível.
 
-Pergunte somente o que estiver realmente ausente e for indispensável:
+### Contexto estratégico
 
-1. modo de execução;
-2. área ou nicho jurídico;
-3. canal do atendimento;
-4. objetivo da conversa;
-5. forma de cobrança ou honorários, quando relevante;
-6. características específicas do escritório;
-7. mapeamento de persona ou contexto equivalente.
+- nicho, serviço ou demanda jurídica;
+- recorte de público;
+- origem do lead, quando relevante;
+- mapeamento de persona;
+- nível de consciência;
+- objeções;
+- fatores de decisão;
+- linguagem;
+- subperfis e variações relevantes.
+
+### Contexto da etapa
+
+- informações que chegam da triagem;
+- fatos já confirmados;
+- documentos já recebidos ou analisados;
+- pontos ainda pendentes;
+- canal da consulta;
+- quem conduzirá;
+- objetivo final da conversa.
+
+### Contexto do escritório
+
+- posicionamento real;
+- funcionamento do serviço;
+- etapas reais da atuação;
+- participação esperada do cliente;
+- modelo de honorários;
+- despesas e condições;
+- fluxo de contratação;
+- ferramentas;
+- canais oficiais;
+- política de comunicação;
+- protocolo de segurança, quando houver;
+- procedimento autorizado para quem quiser pensar.
+
+Quando a saída for um playbook reutilizável e não houver um caso concreto, transforme os dados da triagem em uma **estrutura de passagem de contexto**, não em fatos inventados sobre um cliente.
+
+Pergunte somente quando a ausência impedir a arquitetura ou exigir assumir uma condição comercial, financeira ou operacional que não pode ser presumida.
 
 Não transforme a coleta de contexto em interrogatório.
 
 ---
 
-## Precisão proporcional à tarefa
+## Hierarquia e não invenção
 
-Esta skill produz um playbook de comunicação e operação, não um parecer jurídico.
+Respeite a hierarquia definida no Core Cognitivo.
 
-- Use conhecimento jurídico geral suficiente para orientar a conversa.
-- Não faça pesquisa extensa de legislação ou jurisprudência por padrão.
-- Não apresente percentuais de êxito, estatísticas, números ou prazos exatos não confirmados.
-- Não invente decisões judiciais, garantias ou resultados.
-- Não prometa êxito.
-- Quando uma informação técnica central depender da análise do caso, use linguagem condicional.
-- Quando necessário, inclua uma nota curta: `[VALIDAR COM O ADVOGADO]` ou `[VALIDAR JURIDICAMENTE]`.
-- Não sobrecarregue o playbook com ressalvas jurídicas.
-- Não transfira automaticamente para o nicho atual regras, documentos, prazos ou categorias pertencentes a outro nicho.
+Não invente:
+
+- gratuidade de consulta ou análise;
+- ausência de pagamento inicial;
+- modelo por êxito;
+- percentual;
+- preço;
+- parcelamento;
+- ausência de custas ou despesas;
+- prazo de retorno;
+- canal de acompanhamento;
+- disponibilidade do profissional;
+- política de atendimento;
+- protocolo de segurança;
+- fluxo de assinatura;
+- documento obrigatório;
+- requisito jurídico;
+- prazo legal;
+- estatística;
+- frequência de êxito;
+- taxa de reversão;
+- caso de sucesso;
+- superioridade do escritório;
+- promessa de resultado.
+
+Use placeholders para dados exatos ausentes, como:
+
+- `[ESCRITÓRIO]`;
+- `[OAB]`;
+- `[CANAL]`;
+- `[HONORÁRIOS]`;
+- `[PERCENTUAL]`;
+- `[DESPESAS]`;
+- `[FERRAMENTA]`;
+- `[DOCUMENTO]`;
+- `[DATA]`;
+- `[HORÁRIO]`;
+- `[LINK]`.
+
+Escreva toda a orientação ao redor do placeholder.
+
+Não use placeholders para substituir raciocínio, estratégia, explicação, perguntas ou condução.
 
 ---
 
-## Profundidade substantiva
+## Recorte e especificidade
 
-Profundidade significa oferecer material suficiente para que o profissional consiga conduzir e explicar os assuntos centrais sem precisar improvisar o conteúdo principal.
+Antes de desenvolver o playbook, defina:
 
-A profundidade deve estar principalmente:
+1. qual serviço ou demanda ele cobre;
+2. para qual público;
+3. de que ponto da jornada parte;
+4. em qual decisão termina;
+5. quais situações ficam fora do escopo;
+6. quais subperfis exigem bifurcação própria.
 
-- na investigação orientada;
-- na interpretação do que cada resposta pode indicar;
-- na explicação jurídica acessível;
-- na relação entre fatos, regra e documentos;
-- nas diferenças entre cenários;
-- nos caminhos possíveis;
-- nos limites e expectativas;
-- no funcionamento e no valor do serviço;
-- na resolução das inseguranças que impedem o próximo passo.
+Declare o recorte no início da saída.
 
-Não considere uma etapa cumprida apenas porque foi mencionada.
+Não diga que o playbook serve para todo o nicho quando ele tiver sido construído apenas para:
 
-Uma explicação central não pode ser encerrada em uma ou duas falas genéricas.
+- determinados serviços;
+- categorias específicas;
+- fatos geradores delimitados;
+- públicos específicos;
+- determinada origem de lead;
+- determinado canal;
+- determinada etapa da jornada.
 
-Quando um assunto exigir desenvolvimento, escreva vários blocos conectados, com linguagem falável e sem repetição.
+A arquitetura da skill é reutilizável entre nichos.
+
+A saída deve ser profundamente específica para o nicho e o recorte atuais.
+
+A personalização não está cumprida apenas porque a entrega menciona o nome do serviço.
+
+O playbook deve refletir concretamente:
+
+- situações vividas pelo público;
+- dúvidas reais;
+- linguagem;
+- critérios relevantes;
+- documentos;
+- riscos;
+- objeções;
+- fatores de decisão;
+- valor da consulta;
+- valor do serviço;
+- caminhos e limites próprios da demanda.
+
+Aplique o teste:
+
+> Este material poderia ser usado em outro nicho apenas trocando o nome do serviço e alguns termos?
+
+Se a resposta for sim, aprofunde.
+
+---
+
+## Reutilização, tronco comum e bifurcações
+
+O playbook deve funcionar com clientes diferentes dentro do recorte declarado.
+
+Não escolha como fio condutor:
+
+- nome;
+- idade;
+- profissão;
+- cidade;
+- composição familiar;
+- estado emocional;
+- rotina;
+- dificuldade financeira;
+- existência de cônjuge;
+- documento;
+- negativa;
+- história individual.
+
+Características predominantes da persona orientam a estratégia, mas não viram fatos do tronco comum.
+
+Quando houver subperfis:
+
+1. construa o tronco comum;
+2. indique em qual ponto o cenário é identificado ou confirmado;
+3. crie bifurcações apenas quando mudarem a investigação, a explicação, os documentos, o caminho, a objeção ou o próximo passo;
+4. explique o critério para escolher cada ramo;
+5. retorne ao fluxo comum quando possível.
+
+Use referências específicas, como “gestante”, “segurada”, “empregado”, “aposentado”, “empresa” ou “familiar”, somente quando fizerem parte do recorte ou estiverem condicionadas.
+
+---
+
+## Profundidade obrigatória
+
+O profissional não pode precisar inventar a parte principal do atendimento.
+
+Não considere uma etapa concluída porque o texto apenas diz:
+
+- “explique o direito”;
+- “investigue os fatos”;
+- “mostre o valor”;
+- “trate a objeção”;
+- “apresente os honorários”;
+- “faça o fechamento”.
+
+Desenvolva efetivamente:
+
+- as perguntas;
+- o motivo das perguntas;
+- o que cada resposta pode alterar;
+- os documentos e sua finalidade;
+- a lógica jurídica em linguagem acessível;
+- a relação entre fatos, regra e consequência;
+- os cenários;
+- os caminhos;
+- os limites;
+- o trabalho do escritório;
+- a participação do cliente;
+- as respostas às objeções;
+- a condução até a decisão.
 
 Não confunda profundidade com:
 
-- criar uma biografia para o cliente;
-- encenar muitas reações;
-- aumentar artificialmente o número de falas;
-- repetir a mesma ideia;
-- inserir história jurídica desnecessária;
-- transformar o playbook em parecer.
+- repetição;
+- excesso de títulos;
+- história legislativa desnecessária;
+- encenação de cliente;
+- quantidade artificial de falas;
+- linguagem de parecer;
+- desenvolvimento de tópicos fora do recorte.
 
 ---
 
 ## Estrutura de cada etapa
 
-Para cada etapa do playbook operacional, inclua, quando pertinente:
+Para cada etapa, inclua somente os componentes que agregarem valor.
 
 ### Objetivo
 
-O que o profissional precisa alcançar.
+O que precisa ser alcançado naquele momento.
+
+### Contexto recebido
+
+Quais informações já chegaram da triagem ou da etapa anterior e não devem ser perguntadas novamente do zero.
 
 ### Orientação de condução
 
-Como abordar o momento e qual postura adotar.
+Como abordar o momento, qual postura adotar e como evitar ruptura de confiança.
 
 ### Perguntas sugeridas
 
-Perguntas prontas e adaptáveis.
+Perguntas prontas, conectadas e adequadas ao nicho.
 
 ### Por que perguntar
 
-A função de cada pergunta ou grupo de perguntas.
+A função jurídica, estratégica ou operacional da pergunta.
 
 ### O que observar
 
-Sinais, lacunas, contradições, documentos, objeções ou critérios.
+Sinais, lacunas, contradições, documentos, limites, objeções ou critérios.
 
 ### Explicação substantiva
 
-Conteúdo que o profissional pode utilizar para explicar o assunto.
+O conteúdo que o profissional precisa dominar e pode utilizar para explicar o assunto.
 
 ### Exemplos de fala
 
-Falas naturais, genéricas e adaptáveis.
+Falas naturais, específicas para o nicho e adaptáveis a clientes diferentes.
 
 ### Bifurcações
 
-Como mudar a condução conforme respostas ou situações.
+O que muda conforme resposta, documento, cenário ou posição da pessoa.
 
 ### Erros a evitar
 
-Condutas que geram confusão, perda de confiança ou fechamento prematuro.
+Condutas que geram confusão, repetição, promessa, pressão ou perda de confiança.
 
 ### Critério para avançar
 
-O que precisa estar esclarecido antes da etapa seguinte.
+O que precisa estar suficientemente esclarecido antes da próxima etapa.
 
-Não repita todos os subtítulos mecanicamente quando algum deles não for útil.
-
----
-
-## Estrutura do Modo A
-
-O playbook deve desenvolver, conforme o nicho:
-
-1. abertura e criação de segurança;
-2. relato inicial e organização da demanda;
-3. investigação dos fatos e da linha do tempo;
-4. identificação do subperfil ou cenário;
-5. critérios de qualificação e pontos que exigem confirmação;
-6. síntese do problema;
-7. explicação jurídica acessível e aprofundada;
-8. aplicação da explicação aos possíveis cenários;
-9. fatos e documentos que fortalecem ou enfraquecem o caminho;
-10. alternativas administrativas, extrajudiciais ou judiciais pertinentes;
-11. diferenças práticas, limites, riscos e expectativas;
-12. funcionamento do trabalho do escritório;
-13. etapas após a contratação;
-14. participação esperada do cliente;
-15. comunicação e acompanhamento;
-16. honorários e demais condições fornecidas;
-17. objeções relevantes;
-18. apresentação da proposta;
-19. decisão de contratação;
-20. contrato, procuração, documentos e próximos passos.
-
-Use apenas os pontos pertinentes ao nicho.
-
-Não transforme essa lista em checklist visível dentro do roteiro principal.
-
-O roteiro operacional principal deve concentrar a maior parte da entrega. Contexto, checklist e notas finais devem ser mais compactos.
+Não repita mecanicamente todos os subtítulos em todas as etapas.
 
 ---
 
-## Fechamento efetivo no Modo A
+## Estrutura obrigatória do playbook
 
-O Modo A não deve terminar apenas com:
+Adapte a profundidade e a ordem conforme o nicho, mas desenvolva os blocos pertinentes.
 
-- pedido de documentos para análise preliminar;
-- convite para outra consulta;
-- promessa de avaliar posteriormente;
-- agendamento de nova conversa;
-- proposta sem decisão.
+### 1. Preparação e passagem de contexto
 
-Depois de explicar o problema, o caminho, os limites, o serviço e os honorários, o profissional deve:
+- informações mínimas que devem chegar da triagem;
+- fatos já confirmados;
+- documentos disponíveis;
+- pontos pendentes;
+- riscos de fazer o cliente repetir tudo;
+- preparação do profissional;
+- campos que precisam ser adaptados pelo escritório.
 
-1. verificar se ainda existe insegurança relevante;
-2. responder às objeções necessárias;
-3. apresentar claramente a proposta do escritório;
-4. perguntar se o cliente deseja contratar;
-5. aguardar a decisão;
-6. quando houver aceite, iniciar o envio do contrato, procuração e documentos;
-7. quando houver hesitação, identificar o motivo e combinar um próximo passo concreto;
-8. quando não houver elementos suficientes para uma proposta responsável, encerrar a consulta com essa conclusão clara, sem simular fechamento artificial.
+A preparação não deve reconstruir a triagem.
 
-Não use “análise sem compromisso” como fechamento do Modo A. Essa linguagem pertence à etapa anterior à consulta.
+### 2. Abertura e continuidade
 
----
+- apresentação;
+- reconhecimento do contato anterior;
+- explicação breve de como a consulta funcionará;
+- alinhamento do objetivo;
+- segurança e permissão para avançar.
 
-## Estrutura do Modo B
+A abertura não deve prometer que haverá conclusão definitiva se ainda faltarem elementos.
 
-O playbook deve desenvolver:
+Quando houver medo de fraude ou desconfiança no mapeamento, utilize apenas meios verificáveis realmente fornecidos, como:
 
-1. acolhimento inicial;
-2. compreensão resumida da demanda;
-3. perguntas essenciais de qualificação;
-4. identificação preliminar do subperfil ou cenário;
-5. sinais de viabilidade e desqualificação;
-6. validação do problema sem prometer resultado;
-7. explicação breve do valor da consulta;
-8. apresentação do especialista ou escritório;
-9. convite para o agendamento;
-10. escolha de data e horário;
-11. confirmação do compromisso;
-12. orientação simples para reduzir ausência.
+- nome;
+- OAB;
+- canal oficial;
+- site;
+- perfil institucional;
+- endereço;
+- CNPJ;
+- contrato.
 
-Não entregue no Modo B a explicação completa reservada à consulta.
+Não apresente a própria ligação ou mensagem como prova suficiente de legitimidade.
 
----
+### 3. Relato, confirmação e organização dos fatos
 
-## Banco de objeções
+- retome o resumo já existente;
+- permita correções;
+- aprofunde somente o que falta;
+- organize a linha do tempo;
+- identifique fatos decisivos;
+- diferencie fato confirmado de hipótese.
 
-Para cada objeção relevante, entregue:
+Não obrigue a pessoa a repetir integralmente o que já informou.
 
-1. como ela costuma aparecer;
-2. o medo ou a dúvida real;
-3. pergunta para diagnosticar o motivo;
+### 4. Validação da viabilidade jurídica e pontos pendentes
+
+- indícios favoráveis;
+- requisitos confirmados;
+- requisitos pendentes;
+- impedimentos aparentes;
+- documentos necessários;
+- contradições;
+- necessidade de análise complementar;
+- possibilidade de prosseguir ou não.
+
+Este bloco não é qualificação comercial.
+
+Não use linguagem de “lead aprovado”, “lead bom”, “caso de maior valor” ou equivalentes.
+
+### 5. Síntese e prova de escuta
+
+- devolva a situação organizada;
+- confirme se a compreensão está correta;
+- destaque o ponto central;
+- separe relato, indício, confirmação e resultado.
+
+### 6. Explicação jurídica acessível
+
+Desenvolva:
+
+1. consequência prática;
+2. regra em linguagem simples;
+3. fatores que alteram a análise;
+4. relação com os fatos;
+5. documentos;
+6. caminhos;
+7. limites;
+8. próximo passo.
+
+Não transforme a consulta em aula ou parecer.
+
+### 7. Aplicação aos cenários do recorte
+
+Para cada bifurcação relevante:
+
+- diga o que muda;
+- quais perguntas adicionais importam;
+- quais documentos são relevantes;
+- quais riscos aparecem;
+- qual caminho pode ser considerado;
+- quando retornar ao tronco comum.
+
+### 8. Documentos e informações complementares
+
+Ligue cada documento ao que ele precisa demonstrar.
+
+Diferencie:
+
+- documento disponível;
+- documento ausente;
+- documento útil;
+- documento indispensável;
+- documento complementar;
+- documento cuja necessidade depende do cenário.
+
+Não presuma lista universal.
+
+### 9. Caminhos, limites e expectativas
+
+Quando pertinente, desenvolva:
+
+- alternativas administrativas, extrajudiciais ou judiciais;
+- ordem possível das etapas;
+- diferenças práticas;
+- vantagens e limites;
+- riscos;
+- participação da autoridade responsável;
+- incertezas que permanecem.
+
+Não apresente medidas jurídicas como livre escolha do cliente quando a escolha depender de análise técnica.
+
+### 10. Funcionamento e valor do serviço
+
+Explique concretamente:
+
+- o que o escritório fará;
+- como organizará o caso;
+- quais documentos analisará;
+- quais etapas conduzirá;
+- como reduzirá erros ou incertezas;
+- como ocorrerá a comunicação;
+- o que dependerá da pessoa;
+- quais decisões ainda existirão;
+- quais limites o serviço possui.
+
+Demonstre valor pelo trabalho descrito.
+
+Evite adjetivos vazios, como:
+
+- excelente;
+- completo;
+- diferenciado;
+- personalizado;
+- especialista, quando não houver base ou posicionamento fornecido.
+
+### 11. Participação real do cliente
+
+Explique as ações que realmente podem depender da pessoa, como:
+
+- documentos;
+- informações;
+- assinaturas;
+- acessos;
+- comparecimento;
+- perícia;
+- audiência;
+- entrevista;
+- resposta a exigência;
+- atualização de dados.
+
+Não prometa que “o cliente não precisará fazer nada” ou que “o escritório cuidará de tudo” se isso não for literalmente verdadeiro.
+
+### 12. Honorários e condições
+
+Apresente apenas o modelo informado.
+
+Desenvolva, quando aplicável:
+
+- forma de cobrança;
+- valor ou percentual;
+- base de cálculo;
+- momento do pagamento;
+- pagamento inicial;
+- despesas separadas;
+- parcelamento;
+- efeito da ausência de resultado;
+- registro no contrato.
+
+Não derive gratuidade da cobrança por êxito.
+
+Quando faltarem dados exatos, use placeholders e registre a pendência.
+
+### 13. Dúvidas e objeções
+
+Inclua apenas objeções pertinentes à consulta, ao serviço, aos honorários e à decisão.
+
+Para cada objeção relevante, desenvolva:
+
+1. como pode aparecer;
+2. dúvida ou medo subjacente;
+3. pergunta diagnóstica;
 4. resposta substantiva;
 5. exemplo de fala;
-6. sinal de que a objeção foi resolvida;
-7. próximo passo.
+6. sinal de que foi esclarecida;
+7. retomada do próximo passo.
 
-Não crie uma longa cena fictícia para cada objeção.
+Não trate como objeção:
 
-As objeções devem ser derivadas do mapeamento e da decisão solicitada naquela etapa.
+- pergunta legítima ainda não respondida;
+- dúvida decorrente de explicação superficial;
+- solicitação de tempo que o procedimento do escritório permite;
+- barreira criada por condição não informada.
 
-Não reutilize objeções de um nicho anterior apenas porque foram relevantes em outro teste.
+Não invente vantagem sobre outro profissional nem prometa maior chance de resultado.
+
+### 14. Proposta e decisão
+
+Antes de pedir a decisão:
+
+- sintetize;
+- confirme que não há dúvida central pendente;
+- apresente o serviço;
+- alinhe limites;
+- apresente honorários;
+- explique o próximo passo.
+
+Depois:
+
+- faça uma pergunta clara;
+- aguarde;
+- não preencha o silêncio;
+- não trate ausência de resposta como aceite.
+
+### 15. Aceite, hesitação, recusa e ausência de proposta
+
+#### Aceite
+
+Conduza, conforme o fluxo real, para:
+
+- dados;
+- contrato;
+- procuração;
+- assinatura;
+- pagamento, quando aplicável;
+- documentos;
+- confirmação do próximo passo.
+
+Não elogie a decisão como vitória comercial.
+
+Prefira confirmar e organizar a continuidade.
+
+#### Hesitação
+
+- identifique o motivo real;
+- responda apenas ao ponto existente;
+- utilize somente o passo autorizado pelo escritório;
+- combine um próximo passo concreto quando isso fizer parte do procedimento.
+
+Não crie sequência prolongada de follow-up.
+
+#### Recusa
+
+- confirme uma vez se existe dúvida não esclarecida;
+- respeite a decisão;
+- não use medo, culpa ou urgência;
+- encerre com clareza.
+
+#### Sem elementos para proposta responsável
+
+- diga claramente o que ainda impede a conclusão;
+- indique documento ou informação complementar, quando houver;
+- ou conclua que o caso não deve prosseguir;
+- não simule fechamento.
 
 ---
 
-## Regras de escrita e oralidade
+## Conclusão da análise e promessa de resultado
 
-- Os exemplos de fala devem soar naturais e profissionais.
-- Preserve autoridade sem juridiquês desnecessário.
-- Explique o Direito em linguagem acessível, sem infantilizar.
-- Não escreva monólogos desorganizados, repetitivos ou sem pausas.
-- Explicações extensas são permitidas quando o assunto exigir.
-- Divida explicações complexas em blocos faláveis.
-- Não transforme o roteiro em sequência mecânica de perguntas.
-- Use transições para ligar perguntas, explicações e etapas.
-- Não repita `CONDUTOR:` ou o nome do papel antes de cada parágrafo.
-- Use notas de condução apenas quando ajudarem a execução.
-- Não aumente artificialmente a encenação do cliente para produzir extensão.
-- Não seja telegráfico, genérico ou excessivamente objetivo nos assuntos centrais.
-- Evite repetição e prolixidade sem função.
+Quando os fatos e documentos permitirem conclusão profissional, o playbook pode orientar uma fala clara.
+
+Exemplos de estrutura:
+
+> Pelos documentos e pelas informações confirmadas, este requisito foi preenchido.
+
+> A análise mostra que o caso se enquadra nessa regra e existe um caminho para seguir.
+
+Depois, quando necessário, separe o limite:
+
+> O resultado final depende da autoridade responsável e não pode ser garantido.
+
+Não obrigue o profissional a falar de forma vaga quando a análise já estiver concluída.
+
+Evite expressões artificiais de parecer, como:
+
+- “juridicamente defensável”;
+- “plausibilidade jurídica”;
+- “tese sustentável”;
+- “possibilidade abstrata de enquadramento”.
+
+A conclusão da análise não autoriza prometer:
+
+- deferimento;
+- êxito;
+- pagamento;
+- valor;
+- prazo;
+- decisão favorável.
+
+---
+
+## Precisão jurídica proporcional
+
+Esta skill produz um playbook de comunicação e operação, não um parecer.
+
+- desenvolva conceitos consolidados relevantes;
+- traduza a consequência prática;
+- relacione regra, fatos e documentos;
+- não invente tese, jurisprudência, prazo ou requisito;
+- não use estatísticas ou frequência de êxito;
+- não transforme ressalva em linguagem vazia;
+- marque somente o ponto específico que exigir validação;
+- use `[VALIDAR JURIDICAMENTE]` quando necessário;
+- mantenha a dúvida técnica fora da fala categórica até que seja confirmada.
+
+Não faça pesquisa extensa de legislação ou jurisprudência por padrão, salvo quando o usuário pedir ou quando a própria tarefa exigir validação atualizada.
 
 ---
 
 ## Formato da entrega
 
-### 1. Contexto e premissas
+Entregue nesta ordem:
 
-Resumo breve do nicho, canal, objetivo, honorários e pontos que precisam ser adaptados.
+# 1. ESCOPO, PONTO DE PARTIDA E PREMISSAS
 
-### 2. Visão geral do fluxo
+Bloco breve contendo:
 
-Mapa resumido das etapas do atendimento.
+- nicho;
+- serviço;
+- recorte;
+- público;
+- ponto de partida;
+- ponto de encerramento;
+- canal;
+- condutor;
+- informações herdadas da triagem;
+- documentos já disponíveis, quando houver;
+- honorários e condições informados;
+- pendências que impedem uso imediato.
 
-### 3. Playbook operacional principal
+Não repita o Mapeamento de Persona.
 
-Desenvolva as etapas aplicáveis com orientação, perguntas, motivos, observações, explicações substantivas, exemplos de fala, bifurcações, erros e critérios de avanço.
+# 2. VISÃO GERAL DA CONSULTA E DO FECHAMENTO
 
-### 4. Banco de objeções
+Mapa resumido das etapas, sem triagem ou agendamento.
 
-Inclua apenas as objeções relevantes ao nicho e ao modo escolhido.
+# 3. PLAYBOOK OPERACIONAL PRINCIPAL
 
-### 5. Fechamento e próximos passos
+Desenvolva as etapas aplicáveis conforme a estrutura obrigatória.
 
-Condução até contratação no Modo A ou até agendamento no Modo B.
+Use os subtítulos internos apenas quando forem úteis.
 
-### 6. Pontos de adaptação
+# 4. BANCO DE OBJEÇÕES
 
-Honorários, documentos, diferenciais, responsáveis, agenda, ferramentas e políticas internas.
+Inclua somente as objeções relevantes para o recorte e a decisão de contratação.
 
-### 7. Checklist de aplicação
+# 5. FECHAMENTO E PRÓXIMOS PASSOS
+
+Aceite, hesitação, recusa e ausência de proposta responsável.
+
+# 6. PONTOS DE ADAPTAÇÃO
+
+Lista curta com condições jurídicas, comerciais ou operacionais que precisam ser preenchidas ou confirmadas.
+
+# 7. CHECKLIST INTERNO
 
 Lista curta para consulta durante o atendimento.
 
 ---
 
-## Revisão interna obrigatória
+## Critérios de aceite e revisão interna
 
-Antes de entregar, verifique:
+Antes de finalizar, verifique silenciosamente:
 
-- o produto é um playbook operacional reutilizável?
-- a persona orientou o texto sem virar personagem?
-- o playbook funciona com clientes diferentes?
-- existe tronco comum e bifurcações para as variações relevantes?
-- o conteúdo está específico para o nicho solicitado?
-- algum exemplo, prazo, documento ou raciocínio de outro nicho contaminou a saída?
-- as explicações centrais estão realmente desenvolvidas?
-- o profissional recebeu conteúdo pronto e não apenas temas?
-- os exemplos de fala são naturais e adaptáveis?
-- o Modo A chega a uma decisão de contratação?
-- o Modo B termina em agendamento sem antecipar a consulta?
-- há promessa, dado inventado ou urgência artificial?
-- apenas particularidades do escritório e fatos do cliente real precisam ser adaptados?
-- a saída permaneceu um playbook, sem tentar substituir o roteiro falado integral ou o fluxo específico de WhatsApp?
+### Produto e arquitetura
 
-Corrija silenciosamente antes de finalizar.
+- a saída é um playbook operacional?
+- o material ensina o profissional a conduzir?
+- o conteúdo pronto está desenvolvido?
+- a saída evitou virar roteiro falado integral?
+- a saída evitou virar fluxo de WhatsApp?
+- a skill partiu de lead já triado e qualificado?
+- alguma etapa refez qualificação comercial?
+- triagem ou agendamento entraram indevidamente?
+- o playbook termina na decisão e formalização imediata?
+
+### Recorte e reutilização
+
+- o recorte foi declarado?
+- o conteúdo cobre exatamente o recorte declarado?
+- o material funciona com clientes diferentes dentro desse recorte?
+- existe tronco comum?
+- as bifurcações cobrem variações reais?
+- alguma característica do subperfil dominante virou fato?
+- algum exemplo de outro nicho contaminou a entrega?
+- o material poderia ser usado em outro nicho apenas trocando nomes? Se sim, aprofunde.
+
+### Profundidade e utilidade
+
+- as explicações centrais estão efetivamente escritas?
+- ficou claro por que as perguntas importam?
+- as respostas possíveis foram ligadas a consequências?
+- os documentos foram ligados ao que precisam demonstrar?
+- os caminhos, riscos, limites e próximos passos foram desenvolvidos?
+- o valor do serviço foi demonstrado concretamente?
+- o profissional consegue utilizar o material sem improvisar a parte essencial?
+
+### Segurança e não invenção
+
+- foi presumida alguma gratuidade?
+- foi inventada alguma condição comercial ou operacional?
+- houve promessa de resultado?
+- houve estatística, frequência de êxito ou superioridade não comprovada?
+- foi criada urgência artificial?
+- fatos, indícios, confirmações e resultado foram separados?
+- a conclusão da análise está clara sem virar garantia?
+- a cautela jurídica foi traduzida em linguagem natural?
+- a participação do cliente foi descrita com realismo?
+- o protocolo de segurança foi omitido quando não fornecido?
+
+### Fechamento
+
+- as objeções pertencem à decisão atual?
+- a proposta aparece somente depois de compreensão suficiente?
+- os honorários foram apresentados conforme dados reais?
+- o aceite leva ao fluxo real de formalização?
+- a hesitação utiliza somente o procedimento autorizado?
+- a recusa é respeitada?
+- a ausência de viabilidade não foi mascarada por fechamento artificial?
+
+Corrija silenciosamente o que falhar.
+
+---
+
+## Critério de conclusão
+
+O playbook está pronto quando um profissional consegue:
+
+1. compreender o recorte e o ponto de partida;
+2. receber o contexto da triagem sem refazê-la;
+3. conduzir a consulta com profundidade;
+4. validar a viabilidade jurídica sem linguagem de qualificação comercial;
+5. explicar o Direito em linguagem acessível;
+6. aplicar a explicação aos principais cenários;
+7. apresentar concretamente o serviço;
+8. tratar objeções pertinentes;
+9. pedir uma decisão;
+10. conduzir aceite, hesitação, recusa ou ausência de proposta;
+11. reutilizar o material com clientes diferentes dentro do recorte;
+12. adaptar apenas fatos do cliente e particularidades reais do escritório.
