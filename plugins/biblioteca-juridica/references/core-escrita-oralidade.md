@@ -45,7 +45,7 @@ Oralidade não é sinônimo de brevidade.
 
 WhatsApp não é sinônimo de superficialidade.
 
-Reutilização não é sinônimo de manual.
+Reutilização não é sinônimo de superficialidade nem de texto genérico.
 
 Fluidez não é sinônimo de caso fictício.
 
@@ -315,15 +315,18 @@ Não invente como fio condutor:
 - motivo de negativa;
 - documentos existentes.
 
-Em roteiro reutilizável, use:
+Em material reutilizável, use referências compatíveis com o recorte declarado, como:
 
 - “cliente”;
 - “pessoa atendida”;
-- “segurada”;
-- “gestante”;
-- “mãe”;
 - “potencial cliente”;
+- “contratante”;
+- “segurada”, quando essa condição fizer parte do recorte;
+- “gestante”, quando esse fato estiver confirmado ou integrar o recorte;
+- “mãe”, quando esse fato estiver confirmado ou integrar o recorte;
 - placeholders como `[NOME]`, quando necessários.
+
+Não escolha uma referência específica apenas porque ela representa o subperfil mais frequente.
 
 Use detalhes específicos apenas em exemplos breves ou bifurcações condicionais.
 
@@ -432,7 +435,7 @@ Evite começar com número de artigo, nome de tribunal ou história legislativa,
 
 > Esse documento pode ajudar no seu caso.
 
-## Exemplo substantivo e reutilizável
+## ## Exemplo substantivo aplicado a um nicho
 
 > Esse documento é relevante porque pode confirmar um dos fatos centrais da análise.
 
@@ -514,9 +517,11 @@ Uma explicação pode ser longa no conjunto. Divida-a em vários blocos de fala.
 
 Não entregue uma sequência mecânica de perguntas.
 
-Agrupe perguntas por finalidade e explique por que importam.
+No playbook operacional, agrupe as perguntas por finalidade e explique por que importam.
 
-Indique que o profissional deve reagir ao que foi dito antes de avançar, mas não é necessário inventar respostas completas do cliente em um roteiro reutilizável.
+No roteiro falado e no fluxo de WhatsApp, utilize essa finalidade para organizar silenciosamente a progressão. Não exponha repetidamente blocos de “por que perguntar”, salvo quando o usuário pedir uma versão de treinamento ou auditoria.
+
+O profissional deve reagir ao que foi dito antes de avançar, mas não é necessário inventar respostas completas do cliente em um material reutilizável.
 
 Exemplo:
 
@@ -871,7 +876,8 @@ Antes de entregar um playbook, roteiro falado ou fluxo de WhatsApp reutilizável
 - a persona orientou o texto sem virar personagem?
 - as variações relevantes aparecem como bifurcações?
 - os exemplos de fala são adaptáveis?
-- o documento pode ser compartilhado com outro escritório do mesmo nicho?
+- outro profissional do mesmo escritório consegue utilizar o material?
+- depois de adaptar as particularidades institucionais e operacionais, outro profissional do mesmo nicho conseguiria aproveitar sua arquitetura?
 - o formato permanece adequado ao produto?
 - há alguma linguagem, documento, prazo ou lógica herdada de outro nicho?
 
@@ -906,7 +912,7 @@ Se não:
 O material está pronto quando:
 
 - o formato corresponde ao produto pedido;
-- o roteiro operacional é reutilizável;
+- quando o produto for reutilizável, ele funciona com clientes diferentes dentro do recorte declarado;
 - a persona orienta sem virar personagem;
 - o conteúdo e a linguagem revelam concretamente o nicho, o público, o recorte, a etapa e o objetivo;
 - a especificidade não depende apenas do nome do serviço ou da troca de placeholders;
@@ -916,7 +922,7 @@ O material está pronto quando:
 - as bifurcações cobrem as variações relevantes;
 - os exemplos de fala são naturais e adaptáveis;
 - objeções e fechamento têm condução concreta;
-- apenas particularidades do escritório e fatos do cliente real precisam ser adaptados.
+- apenas particularidades do escritório e fatos do cliente real precisam ser adaptados;
 - características prováveis da persona aparecem como adaptação ou bifurcação, não como fatos inventados;
 - conclusões da análise são claras sem prometer o resultado futuro;
 - a cautela jurídica não transformou a fala em linguagem de parecer.
