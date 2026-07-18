@@ -1,26 +1,29 @@
 ---
 name: roteiro-whatsapp
-description: Cria fluxos jurídicos reutilizáveis de WhatsApp com mensagens, áudios, bifurcações, follow-ups e chamadas para ação. Use quando o usuário quiser conduzir qualificação, agendamento, consulta, apresentação de proposta, fechamento, envio de documentos ou retomada de contato por WhatsApp.
+description: Cria fluxos jurídicos assíncronos de consulta, devolutiva e fechamento pelo WhatsApp, partindo de lead já triado, qualificado e com análise documental inicial realizada. Use para apresentar a conclusão da análise, esclarecer pontos, explicar caminhos, apresentar o serviço e os honorários, tratar objeções, conduzir à decisão, formalizar a contratação e recuperar silêncios ocorridos nessa etapa.
+argument-hint: [mapeamento de persona, recorte do serviço, resumo da triagem, documentos analisados, conclusão inicial e particularidades do escritório]
 ---
 
-# Roteiro Jurídico para WhatsApp
+# Roteiro de Consulta e Fechamento pelo WhatsApp
 
-Produza um fluxo conversacional jurídico reutilizável para WhatsApp, com mensagens prontas ou quase prontas para envio.
+## Objetivo
 
-O resultado deve acompanhar a progressão real de uma conversa assíncrona.
+Produzir um fluxo conversacional jurídico assíncrono, profundo e reutilizável para consulta, devolutiva e fechamento pelo WhatsApp.
 
-A saída principal deve ser composta por:
+A maior parte da entrega deve ser composta por mensagens e áudios prontos ou quase prontos para envio.
 
-- mensagens do profissional;
-- perguntas;
-- momentos de espera;
-- continuações conforme a resposta;
-- bifurcações;
-- áudios sugeridos, quando úteis;
-- retomadas de contexto;
-- chamadas para ação;
-- follow-ups;
-- próximos passos.
+O resultado deve acompanhar a progressão real da conversa:
+
+- mensagem;
+- espera;
+- resposta;
+- continuidade;
+- bifurcação;
+- explicação;
+- chamada para ação;
+- decisão;
+- formalização;
+- follow-up da própria consulta ou do fechamento.
 
 Não produza como saída principal:
 
@@ -29,154 +32,231 @@ Não produza como saída principal:
 - apostila;
 - checklist;
 - transcrição de ligação;
-- monólogo enviado de uma só vez;
+- texto corrido para envio único;
 - coleção de frases desconectadas;
-- conversa fictícia completa com respostas inventadas do cliente.
+- conversa fictícia completa;
+- respostas inventadas do cliente;
+- funil comercial completo;
+- triagem;
+- qualificação;
+- agendamento.
 
 ---
 
-## Referências obrigatórias
+## Contexto obrigatório
 
-Antes de escrever, leia:
+Antes de produzir a saída:
 
-- `../../references/core-cognitivo.md`
-- `../../references/core-escrita-oralidade.md`
-
-Use o mapeamento de persona fornecido pelo usuário ou disponível na conversa como fonte principal sobre:
-
-- perfil do público;
-- nível de consciência;
-- linguagem;
-- dores;
-- medos;
-- desejos;
-- objeções;
-- fatores de decisão;
-- critérios de qualificação;
-- subperfis;
-- resistências;
-- hábitos de comunicação;
-- nível de letramento;
-- contexto jurídico;
-- riscos;
-- documentos;
-- expectativas.
+1. leia `../../references/core-cognitivo.md`;
+2. leia `../../references/core-escrita-oralidade.md`;
+3. utilize o Mapeamento de Persona Jurídica fornecido pelo usuário ou disponível na conversa;
+4. utilize o resumo da triagem;
+5. utilize os fatos confirmados;
+6. utilize os documentos já analisados;
+7. utilize a conclusão inicial do advogado;
+8. utilize as particularidades reais do escritório;
+9. priorize fatos confirmados e instruções expressas sobre padrões prováveis.
 
 Não execute novamente a skill de mapeamento de persona.
 
 Não reproduza o mapeamento na saída.
 
-Converta-o em decisões de:
+Converta-o em decisões concretas de:
 
+- recorte;
+- linguagem;
 - tamanho das mensagens;
 - ritmo;
 - formalidade;
 - escolha entre texto e áudio;
-- ordem das perguntas;
-- profundidade da explicação;
+- ordem das explicações;
 - bifurcações;
-- tratamento de silêncio;
 - objeções;
-- chamadas para ação.
+- fatores de decisão;
+- tratamento do silêncio;
+- chamadas para ação;
+- fechamento.
+
+---
+
+## Ponto de partida e limite
+
+Esta skill parte da premissa de que o lead:
+
+- já passou pela triagem;
+- já foi classificado como qualificado;
+- já enviou os documentos iniciais;
+- já teve esses documentos analisados;
+- possui um resumo do caso disponível para o advogado;
+- possui uma conclusão inicial que permite a devolutiva.
+
+A skill começa:
+
+- na passagem de contexto ao advogado; ou
+- na primeira mensagem do advogado para iniciar a consulta assíncrona.
+
+A skill termina em uma destas situações:
+
+- contratação e formalização;
+- hesitação com próximo passo concreto;
+- recusa respeitosa;
+- conclusão responsável de que o caso não deve prosseguir;
+- necessidade pontual de documento ou informação complementar;
+- encerramento da consulta sem contratação, quando esse for o objetivo definido.
+
+Não inclui:
+
+- captação;
+- resposta a anúncio;
+- acolhimento inicial de SDR;
+- triagem;
+- qualificação;
+- desqualificação comercial;
+- convite para consulta;
+- agendamento;
+- confirmação de consulta;
+- prevenção de ausência;
+- recuperação de no-show;
+- reativação genérica;
+- acompanhamento jurídico posterior ao início da atuação;
+- pós-venda.
+
+A skill não deve refazer a etapa anterior sob outro nome.
+
+Não pergunte novamente:
+
+- informações já confirmadas;
+- documentos já analisados;
+- critérios já verificados;
+- interesse preliminar em resolver;
+- “temperatura”;
+- intenção de contratar antes da devolutiva.
 
 ---
 
 ## Natureza do produto
 
-Esta skill produz um fluxo conversacional de WhatsApp.
+Esta skill produz uma **consulta e um fechamento assíncronos pelo WhatsApp**.
 
-O conteúdo deve ser organizado conforme a pessoa avança na conversa.
-
-Não escreva todas as mensagens como se fossem enviadas em sequência sem aguardar resposta.
-
-Indique claramente:
+O fluxo deve indicar claramente:
 
 - o que enviar;
 - quando aguardar;
 - como continuar;
-- o que fazer conforme a resposta;
-- quando utilizar áudio;
+- quando usar texto;
+- quando usar áudio;
+- como reagir;
+- quando criar bifurcação;
+- qual é o próximo passo;
 - quando retomar;
 - quando encerrar.
 
-O fluxo deve ser utilizável por profissionais e equipes sem exigir a criação improvisada das mensagens principais.
+A maior parte da entrega deve ser formada por:
 
----
-
-## Neutralidade de nicho
-
-Esta skill deve funcionar para qualquer área ou nicho do Direito.
-
-Construa o fluxo exclusivamente a partir:
-
-1. do pedido atual;
-2. do nicho jurídico atual;
-3. do mapeamento de persona atual;
-4. das informações do escritório;
-5. dos fatos confirmados;
-6. do objetivo atual;
-7. do conhecimento pertinente à área solicitada.
-
-Não reutilize automaticamente de execuções anteriores:
-
-- público;
-- documentos;
-- prazos;
-- órgãos;
-- procedimentos;
-- perguntas;
+- mensagens prontas;
+- áudios integralmente escritos;
+- pausas;
+- confirmações;
+- perguntas complementares;
+- continuidades;
+- bifurcações;
 - objeções;
-- linguagem;
-- modelo de honorários;
-- forma de contratação;
-- forma de fechamento.
+- chamadas para ação;
+- formalização.
 
-Um nicho utilizado em teste anterior não deve contaminar a nova entrega.
+Use notas internas somente quando forem indispensáveis, por exemplo:
 
-Antes de finalizar, verifique se toda mensagem pertence ao nicho solicitado.
+- *Aguarde a resposta.*
+- *Use este trecho somente se o fato estiver confirmado.*
+- *Envie em áudio somente se o canal e a pessoa permitirem.*
+- *Não avance sem esclarecer este ponto.*
+- *Retome depois do prazo definido pelo escritório.*
+
+Não exiba repetidamente:
+
+- objetivo;
+- por que perguntar;
+- o que observar;
+- erro a evitar;
+- critério para avançar;
+- estratégia comercial;
+- comentário de bastidor.
+
+Essas decisões devem orientar silenciosamente a escrita.
 
 ---
 
-## Objetivo da conversa
+## Natureza assíncrona
 
-Identifique qual resultado o WhatsApp precisa alcançar.
+O fluxo padrão ocorre de forma assíncrona.
 
-Esta skill pode produzir fluxos para:
+Não presuma:
 
-- primeiro contato;
-- acolhimento;
-- triagem;
-- qualificação;
-- desqualificação respeitosa;
-- agendamento;
-- confirmação de consulta;
-- redução de ausência;
-- consulta por mensagens;
-- consulta por áudios;
-- devolutiva;
-- apresentação do serviço;
-- apresentação de honorários;
-- fechamento;
-- envio de contrato;
-- coleta de documentos;
-- acompanhamento;
-- follow-up;
-- recuperação de silêncio;
-- reativação de contato;
-- encerramento.
+- horário reservado;
+- presença simultânea;
+- resposta imediata;
+- consulta em tempo real;
+- ligação;
+- videochamada;
+- disponibilidade contínua do advogado.
 
-O objetivo define:
+Use mensagens que respeitem o canal, como:
 
-- profundidade;
-- quantidade de perguntas;
-- tamanho das mensagens;
-- tipo de explicação;
-- chamada para ação;
-- próximo passo.
+> Quando puder, me confirme se recebeu.
 
-Não transforme uma triagem em consulta completa.
+> Pode ouvir com calma e me responder por aqui.
 
-Não reduza uma consulta ou um fechamento a mensagens superficiais.
+> Assim que você me responder esse ponto, eu continuo.
+
+> Vou deixar a explicação organizada abaixo para você consultar com calma.
+
+Não use frases que façam parecer que existe uma reunião marcada quando a conversa é assíncrona.
+
+Só inclua ligação, videochamada ou conversa simultânea quando o usuário pedir expressamente essa bifurcação.
+
+Nesse caso, trate-a como alternativa específica, sem transformar o fluxo principal em agendamento.
+
+---
+
+## Responsável pela conversa
+
+A devolutiva, a explicação jurídica e a conclusão da análise devem ser conduzidas por advogado ou profissional juridicamente habilitado.
+
+O advogado pode:
+
+- retomar o contexto;
+- apresentar a conclusão inicial;
+- esclarecer fatos complementares;
+- explicar conceitos;
+- aplicar a regra aos elementos analisados;
+- alinhar caminhos;
+- expor limites;
+- apresentar o serviço;
+- explicar honorários;
+- tratar objeções;
+- conduzir à contratação.
+
+Não pode:
+
+- garantir resultado;
+- inventar conclusão;
+- ultrapassar os documentos e fatos;
+- tratar possibilidade como decisão já obtida;
+- atribuir ao órgão ou ao Judiciário um resultado futuro.
+
+A equipe de atendimento pode participar somente de continuidades operacionais expressamente informadas, como:
+
+- enviar link;
+- confirmar recebimento;
+- encaminhar contrato;
+- solicitar assinatura;
+- confirmar documento complementar;
+- informar canal;
+- registrar retorno combinado.
+
+Não crie novamente uma fase de SDR dentro desta skill.
+
+Não atribua conclusão jurídica a profissional não habilitado.
 
 ---
 
@@ -184,209 +264,287 @@ Não reduza uma consulta ou um fechamento a mensagens superficiais.
 
 Utilize tudo o que já estiver disponível.
 
-Pergunte somente quando a ausência impedir uma entrega responsável:
+### Contexto estratégico
 
-1. nicho ou demanda jurídica;
-2. objetivo do fluxo;
-3. quem enviará as mensagens;
-4. etapa atual do atendimento;
-5. próximo passo desejado;
-6. modelo de honorários, quando houver proposta;
-7. particularidades do escritório;
-8. mapeamento de persona ou contexto equivalente;
-9. uso permitido de texto, áudio, ligação, link ou documento.
+- nicho, serviço ou demanda jurídica;
+- recorte de público;
+- origem do lead, quando relevante;
+- mapeamento de persona;
+- nível de consciência;
+- dúvidas;
+- objeções;
+- fatores de decisão;
+- linguagem;
+- hábitos de comunicação;
+- subperfis e variações relevantes.
 
-Dados exatos ausentes podem permanecer como placeholders.
+### Contexto herdado
+
+- resumo da triagem;
+- classificação como lead qualificado;
+- fatos confirmados;
+- documentos analisados;
+- conclusão da análise inicial;
+- pontos ainda pendentes;
+- tentativas anteriores;
+- resposta administrativa ou judicial, quando houver;
+- objetivo da consulta.
+
+### Contexto do escritório
+
+- advogado responsável;
+- posicionamento real;
+- funcionamento do serviço;
+- etapas da atuação;
+- participação esperada do cliente;
+- modelo de honorários;
+- despesas e condições;
+- fluxo de contratação;
+- ferramentas;
+- links;
+- canais oficiais;
+- política de comunicação;
+- protocolo de segurança, quando houver;
+- procedimento autorizado para quem quiser pensar;
+- uso permitido de texto e áudio.
+
+Não invente a análise jurídica ausente.
+
+Se a conclusão inicial não estiver disponível e for indispensável para escrever a devolutiva, faça uma única pergunta ao usuário.
+
+Pergunte somente quando a ausência impedir a arquitetura ou exigir assumir condição comercial, financeira ou operacional que não pode ser presumida.
 
 Não transforme a coleta de contexto em interrogatório.
 
 ---
 
-## Condutor
+## Hierarquia e não invenção
 
-Considere a função de quem enviará as mensagens.
+Respeite a hierarquia do Core Cognitivo.
 
-### Advogado ou profissional juridicamente habilitado
+Não invente:
 
-Pode:
+- gratuidade de consulta ou análise;
+- ausência de pagamento inicial;
+- modelo por êxito;
+- percentual;
+- preço;
+- parcelamento;
+- ausência de despesas;
+- prazo de retorno;
+- frequência de follow-up;
+- canal de acompanhamento;
+- disponibilidade;
+- política de atendimento;
+- protocolo de segurança;
+- fluxo de assinatura;
+- documento obrigatório;
+- requisito jurídico;
+- prazo legal;
+- estatística;
+- frequência de êxito;
+- taxa de reversão;
+- caso de sucesso;
+- superioridade do escritório;
+- promessa de resultado.
 
-- investigar fatos;
-- organizar a demanda;
-- explicar conceitos;
-- apresentar possibilidades;
-- alinhar riscos;
-- fazer avaliação condicionada;
-- apresentar o serviço;
-- tratar objeções;
-- conduzir à contratação.
+Use placeholders para dados exatos ausentes, como:
 
-Não pode:
+- `[NOME]`;
+- `[ADVOGADO]`;
+- `[ESCRITÓRIO]`;
+- `[OAB]`;
+- `[ASSUNTO]`;
+- `[FATO CONFIRMADO]`;
+- `[CONCLUSÃO DA ANÁLISE]`;
+- `[DOCUMENTO COMPLEMENTAR]`;
+- `[LINK]`;
+- `[HONORÁRIOS]`;
+- `[PERCENTUAL]`;
+- `[DESPESAS]`;
+- `[DATA DE RETORNO]`;
+- `[PRAZO DEFINIDO PELO ESCRITÓRIO]`;
+- `[CANAL]`.
 
-- garantir resultado;
-- afirmar direito sem elementos suficientes;
-- inventar conclusão;
-- ultrapassar os fatos disponíveis.
+Escreva toda a mensagem ao redor do placeholder.
 
-### Profissional não advogado
+Não use placeholders para substituir:
 
-Pode:
-
-- acolher;
-- coletar informações;
-- confirmar dados;
-- identificar pertinência preliminar;
-- explicar a etapa do atendimento;
-- apresentar o profissional responsável;
-- agendar;
-- solicitar documentos autorizados;
-- acompanhar;
-- conduzir tarefas operacionais.
-
-Não deve:
-
-- emitir parecer;
-- concluir enquadramento jurídico;
-- interpretar definitivamente a lei;
-- afirmar que a pessoa possui direito;
-- recomendar medida jurídica como conclusão.
-
-Adapte as mensagens à função real do condutor.
+- raciocínio;
+- explicação;
+- devolutiva;
+- objeção;
+- fechamento;
+- continuidade.
 
 ---
 
-## Regra central do formato
+## Recorte e especificidade
 
-A maior parte da entrega deve ser formada por mensagens prontas.
+Antes de escrever, identifique:
 
-Use notas internas apenas para organizar a aplicação.
+1. qual serviço ou demanda o fluxo cobre;
+2. para qual público;
+3. de que ponto da jornada parte;
+4. em qual decisão termina;
+5. quais situações ficam fora do escopo;
+6. quais subperfis exigem bifurcação.
 
-Exemplo de estrutura:
+Declare o recorte no início da saída.
 
-### Mensagem 1 — Abertura
+Não diga que o fluxo serve para todo o nicho quando tiver sido construído apenas para:
 
-> Olá, [NOME]. Meu nome é [PROFISSIONAL], falo pelo [ESCRITÓRIO]. Recebi as informações iniciais sobre [ASSUNTO]. Posso fazer algumas perguntas para compreender melhor a situação?
+- determinados serviços;
+- categorias específicas;
+- fatos geradores delimitados;
+- públicos específicos;
+- determinada origem de lead;
+- determinada etapa;
+- determinado modelo de contratação.
 
-*Aguarde a resposta.*
+A arquitetura da skill é reutilizável entre nichos.
 
-### Se a pessoa aceitar
+A saída deve ser profundamente específica para o nicho e o recorte atuais.
 
-> Obrigado. Para começar, quero entender [PERGUNTA PRINCIPAL].
+A personalização não está cumprida apenas porque as mensagens mencionam o nome do serviço.
 
-### Se a pessoa perguntar sobre o motivo
+O fluxo deve refletir concretamente:
 
-> Essa informação ajuda a verificar [EXPLICAÇÃO OBJETIVA], sem antecipar uma conclusão antes da análise.
+- a situação vivida pelo público;
+- como ele descreve o problema;
+- quais fatos já foram analisados;
+- quais dúvidas surgem na devolutiva;
+- quais documentos importam;
+- quais riscos existem;
+- quais objeções aparecem nessa etapa;
+- quais fatores influenciam a decisão;
+- qual é o valor do trabalho;
+- quais caminhos e limites pertencem à demanda.
 
-Não use repetidamente blocos internos como:
+Aplique o teste:
 
-- objetivo;
-- por que perguntar;
-- o que observar;
-- erros a evitar;
-- critério para avançar.
+> Este fluxo poderia ser usado em outro nicho apenas trocando o nome do serviço e alguns termos?
 
-Essas decisões devem orientar silenciosamente a escrita.
+Se a resposta for sim, aprofunde.
+
+---
+
+## Persona sem virar fato individual
+
+O fluxo deve funcionar com pessoas diferentes dentro do recorte declarado.
+
+Não transforme em fato do tronco comum:
+
+- idade;
+- profissão;
+- cidade;
+- composição familiar;
+- estado emocional;
+- rotina;
+- dificuldade financeira;
+- cônjuge;
+- sogra;
+- filhos;
+- presença de bebê;
+- puerpério;
+- disponibilidade noturna;
+- dificuldade tecnológica;
+- preferência por áudio;
+- uso de emojis;
+- negativa anterior;
+- documento;
+- história individual.
+
+Características predominantes da persona podem orientar:
+
+- tamanho das mensagens;
+- vocabulário;
+- ritmo;
+- formalidade;
+- explicações;
+- objeções;
+- bifurcações;
+- escolha entre texto e áudio.
+
+Elas não autorizam afirmar que a pessoa vive determinada situação.
+
+Use características específicas somente:
+
+1. quando forem fatos confirmados;
+2. quando integrarem o recorte expresso;
+3. em bifurcações condicionais.
+
+Não invente respostas completas do cliente para simular naturalidade.
 
 ---
 
 ## Reutilização
 
-O fluxo deve funcionar com pessoas diferentes do mesmo nicho.
+O fluxo deve funcionar com pessoas diferentes dentro do recorte.
 
-Não invente como fio condutor:
+Utilize:
 
-- nome;
-- idade;
-- profissão;
-- cidade;
-- empresa;
-- composição familiar;
-- datas;
-- documentos;
-- histórico;
-- resposta administrativa;
-- decisão judicial;
-- impacto emocional;
-- condição financeira.
+- placeholders;
+- mensagens condicionais;
+- pausas;
+- ramos;
+- retomadas conectadas às respostas;
+- adaptações por subperfil.
 
-Utilize placeholders, como:
+Use formulações como:
 
-- `[NOME]`;
-- `[PROFISSIONAL]`;
-- `[ESCRITÓRIO]`;
-- `[OAB]`;
-- `[ASSUNTO]`;
-- `[FATO CONFIRMADO]`;
-- `[DATA]`;
-- `[DOCUMENTO]`;
-- `[LINK]`;
-- `[HORÁRIO]`;
-- `[HONORÁRIOS]`;
-- `[PERCENTUAL]`;
-- `[PRAZO REAL]`;
-- `[CANAL]`.
+- “Se a pessoa responder que...”
+- “Se esse fato estiver confirmado...”
+- “Quando os documentos mostrarem...”
+- “Se ainda faltar [DOCUMENTO]...”
+- “Se não houver retorno...”
 
-Use bifurcações condicionais:
-
-- `Se a pessoa responder que...`
-- `Se esse fato estiver confirmado...`
-- `Se ainda não houver documento...`
-- `Se a resposta for negativa...`
-- `Se não houver retorno...`
-
-Não invente respostas completas da pessoa para simular naturalidade.
+A reutilização deve aparecer na arquitetura da conversa, não em mensagens genéricas.
 
 ---
 
-## Progressão conversacional
+## Regra central do formato
 
-Cada mensagem deve cumprir uma função clara.
+Cada mensagem ou sequência curta deve cumprir uma função principal.
 
-A sequência deve respeitar, conforme o objetivo:
+Funções possíveis:
 
-1. retomada de contexto;
-2. permissão para continuar;
-3. pergunta;
-4. espera;
-5. reconhecimento da resposta;
-6. próxima pergunta ou explicação;
-7. síntese;
-8. orientação;
-9. proposta;
-10. chamada para ação;
-11. confirmação;
-12. acompanhamento.
+- apresentar;
+- retomar;
+- devolver análise;
+- perguntar;
+- reconhecer;
+- explicar;
+- confirmar;
+- solicitar documento complementar;
+- apresentar serviço;
+- explicar honorários;
+- tratar objeção;
+- pedir decisão;
+- encaminhar formalização;
+- retomar silêncio;
+- encerrar.
 
-Não envie várias perguntas relevantes no mesmo bloco apenas para encurtar o fluxo.
+Não empilhe numa única mensagem:
 
-Prefira uma variável principal por intervenção.
+- devolutiva;
+- explicação jurídica;
+- lista de documentos;
+- apresentação do serviço;
+- honorários;
+- pedido de contratação;
+- alerta;
+- follow-up.
 
-Quando for adequado agrupar perguntas simples, limite o grupo para que a pessoa consiga responder sem se perder.
+Distribua o conteúdo.
 
----
-
-## Continuidade entre mensagens
-
-Cada nova mensagem deve se conectar ao que veio antes.
-
-Utilize elementos como:
-
-- “Entendi.”
-- “Obrigado por esclarecer.”
-- “Esse ponto é importante porque...”
-- “Com essa informação, preciso confirmar mais uma coisa.”
-- “Pelo que você explicou até aqui...”
-- “Agora que esse ponto está claro...”
-- “Antes de avançarmos...”
-
-Evite respostas automáticas que poderiam ser enviadas para qualquer pessoa independentemente do que ela respondeu.
-
-Não repita o relato inteiro a cada mensagem.
+Não fragmente artificialmente uma frase em várias mensagens de uma linha.
 
 ---
 
 ## Tamanho e legibilidade
 
-As mensagens devem ser adequadas à leitura em tela pequena.
+As mensagens devem ser confortáveis em tela pequena.
 
 Como regra:
 
@@ -396,87 +554,86 @@ Como regra:
 - espaçamento visual;
 - poucas listas;
 - sem blocos excessivamente longos;
-- sem fragmentação artificial em muitas mensagens de uma linha.
-
-O tamanho depende da função.
+- sem sequência artificial de microfrases.
 
 ### Mensagens curtas
 
 Use para:
 
-- abertura;
+- apresentação;
 - confirmação;
 - pergunta;
+- reação;
 - chamada para ação;
-- agendamento;
-- follow-up;
 - envio de link;
-- confirmação de documento.
+- confirmação de recebimento;
+- follow-up.
 
 ### Mensagens médias
 
 Use para:
 
 - síntese;
+- devolutiva objetiva;
 - explicação de etapa;
-- orientação;
+- esclarecimento;
 - apresentação do serviço;
-- esclarecimento de dúvida.
+- honorários.
 
-### Áudio ou mensagem desenvolvida
+### Áudio ou explicação desenvolvida
 
-Use quando for necessário explicar:
+Use quando houver ganho real para:
 
+- devolutiva;
 - lógica jurídica;
 - diferença entre caminhos;
 - riscos;
 - funcionamento do serviço;
-- honorários;
 - objeção complexa;
-- devolutiva.
+- proposta.
 
-Não empobreça o conteúdo apenas para manter todas as mensagens curtas.
+Não empobreça a explicação para manter todas as mensagens curtas.
 
 ---
 
 ## Uso de áudio
 
-Sugira áudio quando ele trouxer ganho real de:
+Sugira áudio somente quando houver ganho real de:
 
 - clareza;
 - acolhimento;
-- autoridade;
 - naturalidade;
+- autoridade;
 - explicação;
 - redução de mal-entendido.
 
-Não sugira áudio automaticamente em todas as etapas.
+Não presuma que a pessoa prefere áudio.
 
-Quando sugerir, entregue o texto integral do áudio.
+Quando essa preferência não estiver informada, o fluxo pode:
 
-Use formato:
+- oferecer escolha; ou
+- entregar versão em texto.
 
-### Áudio sugerido — Explicação do cenário
+Exemplo:
 
-> [TEXTO COMPLETO DO ÁUDIO]
+> Eu posso te explicar essa parte por escrito ou em um áudio curto. Qual formato fica melhor para você?
 
-*Duração aproximada: [TEMPO REALISTA].*
+*Aguarde.*
 
-O áudio deve:
+Quando sugerir áudio:
 
-- ter começo, desenvolvimento e conclusão;
-- soar falado;
-- evitar listas extensas;
-- usar transições;
-- indicar claramente o próximo passo.
+- escreva o texto integral;
+- use começo, desenvolvimento e conclusão;
+- evite listas extensas;
+- use transições;
+- termine com próximo passo;
+- indique duração aproximada realista.
 
-Não escreva:
+Não escreva apenas:
 
 - “envie um áudio explicando”;
 - “fale sobre os riscos”;
 - “explique os honorários”.
-
-Escreva o conteúdo que deverá ser falado.
 
 ---
 
@@ -484,140 +641,258 @@ Escreva o conteúdo que deverá ser falado.
 
 Não use emojis por padrão.
 
-Utilize somente quando o mapeamento, a identidade do escritório ou o pedido permitirem.
+Use somente quando:
 
-Quando utilizar:
+- o usuário pedir;
+- a identidade do escritório permitir;
+- o mapeamento indicar compatibilidade;
+- o contexto não exigir maior formalidade.
+
+Quando usar:
 
 - limite a quantidade;
-- mantenha função comunicativa;
-- não use emojis para substituir clareza;
-- não infantilize a conversa;
-- não utilize excesso de entusiasmo;
+- preserve função comunicativa;
+- não infantilize;
+- não substitua clareza;
+- não use entusiasmo artificial;
 - não use símbolos inadequados ao contexto jurídico.
 
 WhatsApp não significa informalidade automática.
 
-A linguagem deve permanecer profissional, acessível e humana.
+Não imite:
+
+- gírias;
+- erros de escrita;
+- abreviações;
+- intimidade;
+- cenas da persona.
+
+O profissional deve falar de maneira compreensível sem fingir ser o público.
 
 ---
 
-## Profundidade
+## Continuidade entre mensagens
 
-A profundidade deve aparecer ao longo da conversa, e não em uma mensagem gigantesca.
+Cada nova mensagem deve se conectar ao que veio antes.
 
-Quando pertinente, desenvolva:
+Use reações naturais, como:
 
-- situação relatada;
-- linha do tempo;
-- fatos relevantes;
-- documentos;
-- tentativas anteriores;
-- respostas recebidas;
-- impacto prático;
-- regra jurídica pertinente;
-- possibilidades;
-- limites;
-- riscos;
-- trabalho do escritório;
-- honorários;
-- contratação;
-- próximos passos.
+- “Entendi.”
+- “Certo.”
+- “Esse ponto confirma o que eu precisava verificar.”
+- “Com essa informação, consigo te explicar a próxima parte.”
+- “Agora que isso ficou claro...”
+- “Sobre o documento que você enviou...”
+- “Voltando à conclusão...”
 
-Não substitua conteúdo por instruções internas como:
+Não use respostas automáticas que poderiam ser enviadas independentemente do que a pessoa disse.
 
-- “explique o direito”;
-- “apresente os riscos”;
-- “mostre o valor”;
-- “trate a objeção”;
-- “faça o fechamento”.
+Não repita o relato inteiro.
 
-Escreva as mensagens que realizam essas ações.
+Não reinicie a conversa após cada intervalo.
 
 ---
 
-## Régua de certeza
+## Conclusão da análise e resultado
 
-Separe:
+A análise inicial já foi realizada.
 
-1. **Relato:** o que a pessoa informou.
-2. **Indício:** o que o relato pode sugerir.
-3. **Confirmação:** o que depende de documento ou análise.
-4. **Resultado:** o que depende da atuação e da autoridade competente.
+O fluxo não deve falar como se o advogado ainda precisasse receber os documentos básicos para descobrir se existe um caminho.
 
-Não salte do relato para a conclusão.
+Quando a análise permitir, formule a conclusão de forma clara.
 
-Utilize formulações como:
+Exemplos:
 
-- “O que você relatou é relevante para a análise.”
-- “Esse ponto pode indicar uma possibilidade, mas ainda precisamos confirmar alguns elementos.”
-- “Para avaliar isso com segurança, preciso verificar [DOCUMENTO/FATO].”
-- “Se os documentos confirmarem essa sequência, será possível definir o caminho adequado.”
-- “Não é possível antecipar o resultado, mas é possível identificar o que precisa ser demonstrado.”
+> Analisei os documentos que você enviou. Pelas informações confirmadas, o seu caso se encaixa nessa regra e podemos seguir com o pedido.
 
-Quando um fato estiver confirmado, diga isso claramente.
+> Os documentos confirmam o ponto principal que precisava ser verificado.
 
-Não use cautela como desculpa para mensagens vagas.
+> Pela análise das datas e dos registros, esse requisito foi preenchido.
 
----
+Depois, quando necessário, apresente o limite:
 
-## Investigação por WhatsApp
+> O que eu não posso garantir é a decisão final, porque ela depende do órgão responsável.
 
-As perguntas devem ser:
+Não use:
 
-- claras;
-- específicas;
-- relacionadas ao objetivo;
-- fáceis de responder;
-- organizadas em sequência;
-- adaptadas ao nível de compreensão.
+- “juridicamente defensável”;
+- “plausibilidade jurídica”;
+- “tese sustentável”;
+- “possibilidade abstrata”;
+- “probabilidade de enquadramento”;
+- cautela genérica que apague a conclusão.
 
-Evite:
+A conclusão da análise não autoriza prometer:
 
-- questionários longos;
-- várias datas na mesma pergunta;
-- juridiquês;
-- perguntas genéricas demais;
-- repetir informações já fornecidas;
-- pedir documentos antes de explicar a necessidade;
-- perguntas íntimas sem função jurídica ou operacional.
-
-Quando uma resposta puder alterar o caminho, crie bifurcação.
+- deferimento;
+- êxito;
+- pagamento;
+- valor;
+- prazo;
+- decisão favorável.
 
 ---
 
-## Síntese e devolutiva
+## Devolutiva
 
-Antes de apresentar uma conclusão condicionada, proposta ou próximo passo, faça uma síntese.
+A devolutiva é o primeiro grande momento jurídico do fluxo.
+
+Ela deve:
+
+1. identificar o advogado;
+2. retomar o contexto;
+3. confirmar que os documentos foram analisados;
+4. apresentar a conclusão;
+5. explicar o ponto central;
+6. separar o que está confirmado do resultado futuro;
+7. indicar o próximo passo;
+8. abrir espaço para dúvida.
+
+Exemplo de estrutura:
+
+> Olá, [NOME]. Aqui é [ADVOGADO], do [ESCRITÓRIO].
+
+> Eu recebi o resumo do seu atendimento e analisei os documentos enviados sobre [ASSUNTO].
+
+> O ponto principal era verificar [PONTO CENTRAL]. Pela análise, [CONCLUSÃO].
+
+> Isso significa que [CONSEQUÊNCIA PRÁTICA].
+
+> O resultado final depende de [AUTORIDADE/ETAPA], então eu não consigo prometer a decisão. O que eu consigo te explicar com clareza é por que podemos seguir e como o trabalho será feito.
+
+> Até aqui ficou claro?
+
+*Aguarde.*
+
+Não transforme a devolutiva em aula.
+
+Não repita uma explicação genérica que poderia ser enviada antes da análise.
+
+---
+
+## Esclarecimentos complementares
+
+Depois da devolutiva, faça perguntas somente quando algum ponto complementar puder alterar:
+
+- o caminho;
+- a documentação;
+- a explicação;
+- a responsabilidade da pessoa;
+- a proposta;
+- o próximo passo.
+
+Não repita dados já confirmados na triagem ou nos documentos.
+
+Quando precisar perguntar:
+
+1. retome o ponto analisado;
+2. explique por que ainda importa;
+3. faça uma pergunta simples;
+4. aguarde;
+5. reconheça a resposta;
+6. continue.
 
 Exemplo:
 
-> Pelo que você me explicou até aqui, [FATO 1], depois [FATO 2], e hoje a situação está em [SITUAÇÃO ATUAL]. Ainda preciso confirmar [PONTO] por meio de [DOCUMENTO/INFORMAÇÃO]. Está correto?
+> Na análise ficou pendente apenas confirmar [PONTO], porque isso muda [CONSEQUÊNCIA].
 
-*Aguarde a confirmação.*
+> Você consegue me dizer [PERGUNTA]?
 
-Depois da confirmação, continue com a explicação correspondente.
+*Aguarde.*
 
-Não misture fatos confirmados com hipóteses.
+> Entendi. Com essa informação, [APLICAÇÃO].
+
+Não faça questionário.
+
+Não pergunte sobre intenção de contratar antes de explicar:
+
+- a conclusão;
+- o caminho;
+- o serviço;
+- as condições.
 
 ---
 
 ## Explicação jurídica pelo WhatsApp
 
-Quando houver autorização funcional para explicar o Direito:
+Quando explicar o Direito:
 
 1. contextualize;
-2. apresente a lógica;
-3. aplique ao relato;
-4. indique o que precisa ser confirmado;
-5. mostre possibilidades;
-6. explique limites;
+2. apresente a consequência prática;
+3. explique a lógica;
+4. aplique aos documentos e fatos;
+5. mostre os caminhos;
+6. alinhe limites;
 7. indique o próximo passo.
 
-Distribua a explicação em mensagens conectadas ou em áudio.
+Distribua em mensagens conectadas ou áudio.
 
-Não transforme o WhatsApp em aula jurídica.
+Não transforme o WhatsApp em aula.
 
 Não omita o raciocínio essencial.
+
+Não comece por:
+
+- número de artigo;
+- nome de tribunal;
+- história legislativa;
+- classificação técnica.
+
+Use esses elementos apenas quando forem essenciais.
+
+---
+
+## Documentos complementares
+
+A coleta documental inicial já ocorreu.
+
+Solicite novo documento somente quando a análise tiver identificado uma lacuna específica.
+
+Explique:
+
+- qual documento falta;
+- o que ele precisa demonstrar;
+- como enviar;
+- o que acontecerá depois.
+
+Exemplo:
+
+> Analisei o que você enviou e ficou pendente apenas [DOCUMENTO].
+
+> Ele é importante para confirmar [PONTO].
+
+> Você consegue me mandar uma foto legível por aqui, mostrando todas as páginas e sem cortar as bordas?
+
+*Aguarde.*
+
+Não reabra coleta genérica.
+
+Não peça novamente documento já recebido.
+
+Não apresente lista universal.
+
+Não prometa segurança tecnológica não informada.
+
+---
+
+## Caminhos, limites e expectativas
+
+Explique, quando pertinente:
+
+- o que pode ser buscado;
+- quais caminhos existem;
+- qual caminho a análise indica;
+- o que fortalece;
+- o que pode dificultar;
+- o que depende da autoridade responsável;
+- quais riscos permanecem;
+- qual prazo verdadeiro importa.
+
+Não invente urgência.
+
+Não use urgência como encerramento automático de follow-up.
+
+Não apresente medida jurídica como livre escolha quando depender de análise técnica.
 
 ---
 
@@ -626,48 +901,85 @@ Não omita o raciocínio essencial.
 Explique concretamente:
 
 - o que o escritório fará;
-- quais documentos analisará;
 - como organizará o caso;
-- quais etapas acompanhará;
+- quais documentos utilizará;
+- quais etapas conduzirá;
+- como reduzirá erros ou incertezas;
 - como ocorrerá a comunicação;
-- o que dependerá do cliente;
-- quais decisões ainda precisarão ser tomadas;
-- quais limites existem.
+- o que dependerá da pessoa;
+- quais decisões ainda existirão;
+- quais limites o serviço possui.
 
-Evite adjetivos vazios como:
+Demonstre valor pelo trabalho descrito.
+
+Evite adjetivos vazios, como:
 
 - excelente;
 - completo;
 - diferenciado;
 - personalizado;
-- especializado.
+- especializado, quando não houver base ou posicionamento informado.
 
-Demonstre valor pelo trabalho descrito.
+Não use:
+
+- “a gente cuida de tudo”;
+- “o resto é com a gente”;
+- “você não precisa fazer nada”;
+
+salvo quando isso for literalmente verdadeiro e tiver sido informado.
 
 ---
 
-## Honorários
+## Participação real do cliente
+
+Explique as ações que podem depender da pessoa, como:
+
+- documentos complementares;
+- informações;
+- assinaturas;
+- acessos;
+- comparecimento;
+- perícia;
+- audiência;
+- entrevista;
+- resposta a exigência;
+- atualização de dados.
+
+Facilidade não significa apagamento das responsabilidades reais.
+
+Use linguagem simples:
+
+> O escritório organiza e conduz o processo. Da sua parte, eu vou precisar de [AÇÕES REAIS].
+
+Não invente obrigações.
+
+---
+
+## Honorários e condições
 
 Apresente honorários somente quando:
 
-- o objetivo permitir;
-- o profissional estiver autorizado;
+- a consulta incluir contratação;
+- o advogado estiver autorizado;
 - o modelo tiver sido informado.
 
 Explique, quando aplicável:
 
 1. forma de cobrança;
-2. existência ou não de pagamento inicial;
-3. valor ou percentual;
-4. base de cálculo;
-5. momento do pagamento;
+2. valor ou percentual;
+3. base de cálculo;
+4. momento do pagamento;
+5. pagamento inicial;
 6. despesas separadas;
-7. consequência se não houver resultado;
-8. registro das condições no contrato.
+7. parcelamento;
+8. efeito da ausência de resultado;
+9. registro no contrato.
 
 Não invente:
 
 - gratuidade;
+- análise sem custo;
+- ausência de pagamento inicial;
 - isenção;
 - parcelamento;
 - modelo por êxito;
@@ -675,30 +987,39 @@ Não invente:
 - ausência de despesas;
 - política contratual.
 
-Use placeholders quando necessário.
+O fato de os honorários serem por êxito não significa que a consulta ou a análise inicial seja gratuita.
 
-Não reduza toda a explicação a uma frase de efeito.
+Use placeholders para dados exatos.
+
+Não reduza a explicação a frase de efeito.
 
 ---
 
 ## Chamada para ação
 
-Cada etapa deve terminar com um próximo passo compatível.
+Cada etapa deve terminar com um próximo passo simples e compatível.
 
-Exemplos:
+Nesta skill, os CTAs podem ser:
 
-- responder uma pergunta;
-- enviar um documento;
-- escolher um horário;
-- confirmar uma informação;
-- ler uma explicação;
-- ouvir um áudio;
-- participar de uma ligação;
-- autorizar o envio do contrato;
+- confirmar recebimento;
+- dizer se a explicação ficou clara;
+- responder ponto complementar;
+- ouvir áudio;
+- enviar documento complementar;
+- confirmar informação;
+- esclarecer dúvida;
+- autorizar envio do contrato;
 - assinar;
 - realizar pagamento;
-- aguardar uma análise;
-- confirmar recebimento.
+- confirmar formalização;
+- aguardar próxima etapa.
+
+Não use como CTA principal:
+
+- escolher horário;
+- confirmar consulta;
+- participar de triagem;
+- demonstrar intenção preliminar.
 
 A chamada para ação deve ser:
 
@@ -706,42 +1027,94 @@ A chamada para ação deve ser:
 - simples;
 - proporcional;
 - fácil de executar;
-- coerente com a conversa.
+- coerente com o momento.
 
 Evite:
 
-- “qualquer coisa me avise” como único encerramento;
 - múltiplos pedidos simultâneos;
-- pressão indevida;
+- “qualquer coisa me avise” como único encerramento;
+- pressão;
 - urgência artificial;
-- pedido de contratação antes da explicação necessária.
+- pedido de contratação antes da explicação suficiente.
 
 ---
 
-## Fechamento
+## Dúvidas e objeções
 
-Quando o objetivo for contratação, o fluxo deve chegar à decisão.
+Antes da decisão, abra espaço:
+
+> Antes de eu te explicar a formalização, tem algum ponto da análise, do trabalho ou das condições que você quer esclarecer?
+
+*Aguarde.*
+
+Quando surgir objeção:
+
+1. investigue;
+2. aguarde;
+3. responda ao motivo real;
+4. confirme;
+5. retome.
+
+Exemplo de estrutura:
+
+> Quando você fala isso, sua preocupação está mais em [PONTO A] ou em [PONTO B]?
+
+*Aguarde.*
+
+> Entendi. Nesse caso, o ponto importante é [RESPOSTA SUBSTANTIVA].
+
+> Isso esclarece a sua dúvida?
+
+*Aguarde.*
+
+> Certo. Então, sobre o próximo passo...
+
+Inclua somente objeções compatíveis com:
+
+- o nicho;
+- o recorte;
+- a consulta;
+- o serviço;
+- os honorários;
+- a decisão atual.
+
+Não invente:
+
+- maior chance de êxito;
+- frequência de reversão;
+- vantagem sobre outro profissional;
+- resultado provável;
+- condição comercial.
+
+---
+
+## Fechamento e decisão
+
+Quando o objetivo incluir contratação, o fluxo deve chegar à decisão.
 
 Antes da pergunta final:
 
-1. sintetize;
+1. sintetize a conclusão;
 2. explique o caminho;
 3. apresente o serviço;
 4. alinhe limites;
 5. apresente honorários;
-6. esclareça dúvidas.
+6. esclareça dúvidas;
+7. explique a formalização.
 
-Depois, use pergunta clara, como:
+Depois, use pergunta clara:
 
-> Diante do que conversamos, faz sentido seguir com o escritório?
+> Diante do que eu te expliquei, faz sentido seguir com o escritório?
 
 ou:
 
 > Posso encaminhar o contrato e a procuração para iniciarmos?
 
-*Aguarde a resposta.*
+*Aguarde.*
 
-Não trate ausência de resposta como aceite.
+Não trate silêncio como aceite.
+
+Não use pergunta precoce sobre intenção de contratar antes da devolutiva.
 
 ---
 
@@ -749,22 +1122,34 @@ Não trate ausência de resposta como aceite.
 
 ### Se houver aceite
 
-Conduza para:
+Conduza, conforme o fluxo real, para:
 
-- dados necessários;
+- dados;
 - contrato;
 - procuração;
 - assinatura;
 - pagamento, quando aplicável;
-- documentos;
+- documento complementar;
 - canal de comunicação;
-- início do trabalho.
+- confirmação do início.
 
-Escreva as mensagens completas dessa continuidade.
+Escreva as mensagens completas.
+
+Não use comemoração comercial excessiva.
+
+Evite:
+
+- “ótima decisão”;
+- “você fez a escolha certa”;
+- “melhor ainda”.
+
+Prefira:
+
+> Perfeito, [NOME]. Vou organizar agora os próximos passos e explicar cada documento antes da assinatura.
 
 ### Se houver hesitação
 
-Não envie imediatamente uma resposta genérica.
+Não responda a objeção presumida.
 
 Pergunte:
 
@@ -774,7 +1159,16 @@ Adapte as opções ao contexto.
 
 Responda somente ao motivo real.
 
-Depois, retome o próximo passo.
+Use apenas o procedimento autorizado pelo escritório.
+
+Quando houver retorno combinado, registre:
+
+- o ponto pendente;
+- quem fará o quê;
+- a data ou o prazo definido;
+- como a conversa será retomada.
+
+Não crie sequência prolongada de follow-up.
 
 ### Se houver recusa
 
@@ -785,33 +1179,65 @@ Persistindo a decisão:
 - respeite;
 - não pressione;
 - não use medo;
-- não utilize culpa;
+- não use culpa;
 - não invente prazo;
 - não desqualifique a decisão;
-- encerre de forma profissional.
+- encerre profissionalmente.
+
+### Se não houver elementos para proposta responsável
+
+Explique:
+
+- o que ainda impede a conclusão;
+- qual documento ou informação falta;
+- o que será feito depois;
+- ou por que o caso não deve prosseguir.
+
+Não simule fechamento.
 
 ---
 
-## Follow-up e recuperação de silêncio
+## Follow-up da consulta e do fechamento
 
-Inclua follow-up somente quando fizer parte do objetivo.
+Inclua follow-up somente para silêncios ocorridos depois do início da devolutiva.
+
+Situações permitidas:
+
+- silêncio após a devolutiva;
+- silêncio após esclarecimento;
+- silêncio após documento complementar solicitado;
+- silêncio após apresentação do serviço;
+- silêncio após honorários;
+- silêncio após proposta;
+- contrato não assinado;
+- retorno expressamente combinado.
+
+Não inclua:
+
+- triagem incompleta;
+- pergunta de qualificação sem resposta;
+- agendamento não confirmado;
+- confirmação de consulta;
+- ausência em consulta;
+- recuperação de no-show;
+- documento inicial não enviado;
+- reativação genérica.
 
 O follow-up deve:
 
-- retomar o contexto;
-- mostrar por que o contato está sendo feito;
+- retomar o ponto exato;
+- explicar por que está retomando;
 - reduzir esforço de resposta;
-- apresentar um próximo passo;
-- respeitar o silêncio;
-- evitar pressão.
+- apresentar próximo passo;
+- permitir saída respeitosa.
 
 Não escreva apenas:
 
-- “Oi, viu minha mensagem?”
-- “Alguma novidade?”
-- “Ainda tem interesse?”
-- “Estou aguardando.”
-- “Última chance.”
+- “viu minha mensagem?”;
+- “alguma novidade?”;
+- “ainda tem interesse?”;
+- “estou aguardando”;
+- “última chance”.
 
 Estrutura recomendada:
 
@@ -820,139 +1246,94 @@ Estrutura recomendada:
 3. pergunta simples;
 4. saída respeitosa.
 
-Exemplo genérico:
+Exemplo:
 
-> Olá, [NOME]. Retomo nosso contato sobre [ASSUNTO]. Ficou pendente confirmar [PONTO], porque essa informação define [CONSEQUÊNCIA PRÁTICA]. Você conseguiu verificar?
+> Olá, [NOME]. Retomo nossa conversa sobre a análise de [ASSUNTO].
 
-Quando houver uma sequência de follow-ups, varie a função:
+> Ficou pendente você me confirmar se [PONTO], porque isso define [PRÓXIMO PASSO].
 
-- primeiro: lembrete;
-- segundo: redução de esforço;
-- terceiro: esclarecimento ou alternativa;
-- último: encerramento respeitoso.
+> Conseguiu verificar?
 
-Não invente datas ou frequência quando não informadas.
+Não invente datas ou frequência.
 
 Use:
 
 - `[APÓS O PRAZO DEFINIDO PELO ESCRITÓRIO]`;
 - `[DATA DE RETORNO]`;
-- `[HORÁRIO COMBINADO]`.
+- `[PRAZO COMBINADO]`.
 
----
+O último follow-up deve permitir encerramento sem novo argumento de pressão.
 
-## Envio de documentos
-
-Ao solicitar documentos:
-
-- explique por que são necessários;
-- diga como enviar;
-- organize a solicitação;
-- não peça documentos não relacionados;
-- não declare suficiência antes da análise;
-- não prometa segurança tecnológica não informada;
-- respeite orientações reais de proteção de dados.
-
-Exemplo:
-
-> Para confirmar [PONTO], preciso verificar [DOCUMENTO]. Você pode enviar uma foto legível, mostrando todas as páginas e sem cortar as bordas.
-
-Quando houver vários documentos, agrupe-os de forma clara.
-
-Evite listas enormes em uma única mensagem.
-
----
-
-## Agendamento
-
-Quando o objetivo for agendar:
-
-- explique o valor da próxima etapa;
-- indique quem participará;
-- esclareça canal e duração somente se informados;
-- ofereça opções reais;
-- confirme data e horário;
-- informe preparação necessária;
-- reduza ausência;
-- permita reagendamento.
-
-Não invente:
-
-- agenda;
-- duração;
-- gratuidade;
-- plataforma;
-- disponibilidade;
-- política de cancelamento.
-
-Utilize placeholders.
-
----
-
-## Desqualificação
-
-Quando a situação estiver fora do escopo ou não houver elementos mínimos:
-
-- seja claro;
-- explique o limite possível;
-- não invente encaminhamento;
-- não declare inexistência de direito sem base;
-- não desvalorize o caso;
-- indique alternativa somente quando houver informação segura.
-
-A desqualificação deve encerrar com respeito e clareza.
+Não termine automaticamente com alerta de prazo.
 
 ---
 
 ## Arquitetura do fluxo
 
-Adapte ao objetivo.
+Adapte a profundidade ao nicho e ao objetivo.
 
-Não inclua etapas desnecessárias.
+Não transforme esta lista em manual visível dentro da saída.
 
-### 1. Contexto e abertura
+### 1. Primeira mensagem do advogado
 
-Retome a origem do contato e apresente o profissional.
+- identificação;
+- retomada do contexto;
+- confirmação de que recebeu e analisou os documentos;
+- indicação de que fará a devolutiva;
+- permissão para continuar.
 
-### 2. Permissão
+### 2. Formato da explicação
 
-Confirme disponibilidade ou autorização para continuar.
+Quando útil, confirme preferência entre texto e áudio.
 
-### 3. Investigação inicial
+Não presuma.
 
-Faça a pergunta que abre o diagnóstico.
+### 3. Devolutiva da análise
 
-### 4. Aprofundamento
+- conclusão;
+- ponto central;
+- consequência prática;
+- limite do resultado;
+- espaço para dúvida.
 
-Avance conforme as respostas.
+### 4. Esclarecimentos complementares
 
-### 5. Bifurcações
+Somente quando necessários.
 
-Separe os cenários que mudam a condução.
+### 5. Explicação dos caminhos e limites
 
-### 6. Síntese
+Distribuída em mensagens ou áudio.
 
-Confirme o que foi compreendido.
+### 6. Apresentação do trabalho
 
-### 7. Explicação ou orientação
+- o que o escritório fará;
+- o que dependerá da pessoa;
+- etapas;
+- limites.
 
-Entregue o conteúdo adequado à etapa.
+### 7. Honorários e condições
 
-### 8. Apresentação do próximo passo
+Somente dados reais.
 
-Explique o que deve acontecer.
+### 8. Dúvidas e objeções
 
-### 9. Proposta e honorários
+Investigue, responda, confirme e retome.
 
-Use somente quando aplicável.
+### 9. Decisão
 
-### 10. Decisão
+Pergunta clara e espera.
 
-Faça uma pergunta clara.
+### 10. Aceite, hesitação ou recusa
 
-### 11. Continuidade
+Continuidade completa.
 
-Conduza aceite, hesitação, recusa ou ausência de resposta.
+### 11. Contrato, procuração e início
+
+Mensagens conforme o fluxo real.
+
+### 12. Follow-ups
+
+Somente os compatíveis com a consulta e o fechamento.
 
 ---
 
@@ -960,20 +1341,34 @@ Conduza aceite, hesitação, recusa ou ausência de resposta.
 
 Entregue nesta ordem:
 
-# 1. PREMISSAS ADAPTÁVEIS
+# 1. PONTO DE PARTIDA E PREMISSAS
 
 Bloco curto contendo:
 
 - nicho;
+- serviço;
+- recorte;
+- público;
+- ponto de partida;
+- ponto de encerramento;
+- resumo herdado;
+- documentos analisados;
+- conclusão disponível;
+- pontos pendentes;
+- advogado responsável;
 - objetivo;
-- etapa;
-- condutor;
-- próximo passo;
-- modelo de honorários, quando aplicável;
+- modelo de honorários;
+- condições informadas;
 - placeholders;
 - pontos que exigem validação.
 
-# 2. FLUXO PRINCIPAL DE WHATSAPP
+Não produza mapa psicológico.
+
+Não repita o mapeamento.
+
+# 2. FLUXO PRINCIPAL DE CONSULTA PELO WHATSAPP
+
+Esta deve ser a maior parte da saída.
 
 Organize por momentos da conversa.
 
@@ -984,79 +1379,146 @@ Use:
 - indicação de espera;
 - continuação;
 - perguntas;
-- áudios integrais, quando úteis;
+- áudios integrais;
 - chamadas para ação.
 
 # 3. BIFURCAÇÕES ESSENCIAIS
 
-Inclua somente situações que mudem:
+Inclua somente os ramos que alterem substancialmente:
 
-- pergunta;
-- explicação;
+- devolutiva;
+- esclarecimento;
 - documento;
 - caminho;
 - risco;
+- serviço;
 - proposta;
 - próximo passo.
 
 Escreva as mensagens completas.
 
-# 4. OBJEÇÕES E CONTINUIDADES
+# 4. OBJEÇÕES
 
-Para cada objeção relevante, inclua:
+Para cada objeção relevante, escreva:
 
-- pergunta de diagnóstico;
+- pergunta de investigação;
+- espera;
 - resposta;
 - confirmação;
-- retomada do próximo passo.
+- retomada.
 
-# 5. FOLLOW-UPS
+# 5. ACEITE, HESITAÇÃO E RECUSA
 
-Inclua somente quando compatíveis com o objetivo.
+Escreva as continuidades completas.
 
-Diferencie:
+# 6. FOLLOW-UPS DA CONSULTA E DO FECHAMENTO
 
-- silêncio após pergunta;
-- silêncio após explicação;
-- silêncio após proposta;
-- ausência em consulta;
-- documento não enviado;
-- contrato não assinado;
-- retorno combinado.
+Inclua somente os compatíveis com esta etapa.
 
-# 6. PONTOS DE ADAPTAÇÃO
+# 7. PONTOS DE ADAPTAÇÃO
 
-Lista curta com dados que precisam ser preenchidos ou validados.
+Lista curta com dados exatos e condições reais que precisam ser preenchidos ou validados.
+
+Não inclua:
+
+- checklist operacional extenso;
+- agendamento;
+- no-show;
+- triagem;
+- qualificação.
 
 ---
 
 ## Revisão interna obrigatória
 
-Antes de entregar, verifique:
+Antes de entregar, verifique silenciosamente:
 
-- o conteúdo pertence integralmente ao nicho solicitado?
-- algum exemplo de outro nicho contaminou o fluxo?
-- a persona orientou a linguagem sem virar personagem?
+### Produto e arquitetura
+
+- a saída é um fluxo assíncrono de consulta e fechamento?
+- o lead foi tratado como já triado e qualificado?
+- os documentos iniciais foram tratados como já analisados?
+- o fluxo começou na passagem ao advogado ou na devolutiva?
+- alguma etapa refez triagem?
+- alguma etapa refez qualificação?
+- houve pergunta precoce sobre intenção de contratar?
+- houve convite ou agendamento indevido?
+- houve confirmação ou recuperação de no-show?
+- o fluxo permaneceu assíncrono?
+- apareceu horário reservado sem informação?
+- a maior parte da entrega é composta por mensagens utilizáveis?
+- o resultado parece WhatsApp, e não manual ou ligação transcrita?
+
+### Recorte e reutilização
+
+- o recorte foi declarado?
+- o conteúdo cobre exatamente esse recorte?
 - o fluxo funciona com pessoas diferentes?
-- a maior parte da entrega é formada por mensagens utilizáveis?
-- o resultado parece uma conversa de WhatsApp, e não um manual?
-- existe progressão real entre as mensagens?
-- há momentos claros de espera?
-- as respostas inventadas do cliente foram evitadas?
-- as perguntas são fáceis de responder?
-- as mensagens estão legíveis em tela pequena?
-- a profundidade está distribuída adequadamente?
-- os áudios foram escritos integralmente?
-- o nível jurídico corresponde ao condutor?
-- fatos, indícios, confirmações e resultados foram separados?
-- documentos foram ligados à finalidade correta?
-- o serviço foi explicado concretamente?
-- honorários foram apresentados sem invenções?
-- a chamada para ação está clara?
-- o fechamento corresponde ao objetivo?
-- os follow-ups têm função e contexto?
-- o silêncio foi respeitado?
-- existe promessa, pressão, estatística ou urgência inventada?
-- um profissional enviaria essas mensagens sem parecer robótico?
+- alguma característica da persona virou fato?
+- o subperfil dominante ocupou o tronco comum?
+- emojis, áudio ou intimidade foram presumidos?
+- as bifurcações cobrem variações reais?
+- algum exemplo de outro nicho contaminou a entrega?
+- o fluxo poderia ser usado em outro nicho apenas trocando nomes? Se sim, aprofunde.
 
-Corrija silenciosamente antes de finalizar.
+### Devolutiva e profundidade
+
+- a devolutiva apresenta conclusão clara?
+- a análise documental foi contraditoriamente tratada como não realizada?
+- a explicação pertence aos documentos e fatos analisados?
+- houve áudio genérico anterior à análise?
+- a profundidade foi distribuída?
+- existem momentos claros de espera?
+- os áudios foram escritos integralmente?
+- a linguagem ficou natural?
+- a cautela virou parecer?
+- foi usado “juridicamente defensável” ou equivalente?
+
+### Segurança e não invenção
+
+- foi presumida gratuidade?
+- foi inventada condição comercial ou operacional?
+- houve promessa de resultado?
+- houve estatística, frequência de êxito ou superioridade não comprovada?
+- foi criada urgência artificial?
+- a conclusão da análise foi separada do resultado?
+- os documentos pedidos são apenas complementares?
+- a participação do cliente foi descrita com realismo?
+- o protocolo de segurança foi omitido quando não fornecido?
+
+### Fechamento e follow-up
+
+- o serviço foi concretamente explicado?
+- honorários e condições correspondem aos dados reais?
+- a decisão foi pedida apenas depois da explicação suficiente?
+- o aceite leva ao fluxo real?
+- a hesitação é investigada?
+- a recusa é respeitada?
+- os follow-ups pertencem à consulta ou ao fechamento?
+- o último follow-up permite encerramento sem pressão?
+- a ausência de viabilidade não foi mascarada por fechamento artificial?
+
+Corrija silenciosamente o que falhar.
+
+---
+
+## Critério de conclusão
+
+O fluxo está pronto quando um profissional consegue:
+
+1. iniciar a conversa sem repetir triagem;
+2. apresentar a devolutiva da análise;
+3. explicar a conclusão com clareza;
+4. separar análise de resultado futuro;
+5. esclarecer apenas pontos complementares;
+6. distribuir a explicação pelo canal;
+7. utilizar texto e áudio de forma consciente;
+8. apresentar concretamente o serviço;
+9. explicar honorários reais;
+10. tratar objeções;
+11. pedir decisão;
+12. conduzir aceite, hesitação ou recusa;
+13. formalizar a contratação;
+14. retomar silêncios da própria consulta;
+15. reutilizar o fluxo com pessoas diferentes dentro do recorte;
+16. adaptar apenas fatos do cliente e particularidades reais do escritório.
