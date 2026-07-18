@@ -457,7 +457,11 @@ Não transforme a saída em formulário e não substitua blocos inteiros por `[P
 
 ## 6.1. Desenvolva automaticamente
 
-Quando houver base suficiente no mapeamento, nos materiais ou no conhecimento consolidado, desenvolva:
+Quando houver base suficiente no mapeamento, nos materiais ou no conhecimento consolidado, desenvolva o conteúdo.
+
+Essa autorização não inclui condições comerciais, financeiras ou compromissos operacionais abrangidos pela seção 6.4.
+
+Desenvolva:
 
 - estratégia;
 - perguntas;
@@ -477,6 +481,8 @@ Quando houver base suficiente no mapeamento, nos materiais ou no conhecimento co
 - CTAs.
 
 ## 6.2. Presuma de forma adaptável
+
+As premissas adaptáveis desta subseção não se aplicam às condições comerciais, financeiras ou operacionais tratadas na seção 6.4.
 
 Quando não houver particularidade do escritório, use uma prática plausível e registre-a brevemente como premissa adaptável.
 
@@ -794,7 +800,7 @@ Não faça uma bateria de perguntas antes de trabalhar.
 
 Pergunte apenas quando a ausência impedir a escolha da arquitetura ou gerar resultados incompatíveis.
 
-Dados operacionais não essenciais podem ser preenchidos por premissa adaptável.
+Dados operacionais não essenciais podem ser preenchidos por premissa adaptável, exceto quando envolverem condições comerciais, financeiras ou compromissos operacionais abrangidos pela seção 6.4.
 
 ---
 
