@@ -1,4 +1,4 @@
-# Biblioteca Jurídica Marketplace — versão 0.5.0
+# Biblioteca Jurídica Marketplace — versão 0.6.0
 
 Marketplace de plugins para criação de materiais jurídicos estratégicos, reutilizáveis e adaptados ao perfil do público.
 
