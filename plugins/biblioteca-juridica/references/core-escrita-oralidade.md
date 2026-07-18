@@ -257,6 +257,49 @@ A persona pode orientar:
 - canais;
 - cuidados de condução.
 
+## 4.1. Personalização contextual da linguagem
+
+A linguagem não deve ser adaptada apenas ao canal. Ela deve refletir o nicho, o público, o serviço, o objetivo, o recorte e a etapa da jornada.
+
+Não considere a linguagem personalizada apenas porque ela usa “você”, frases curtas, termos simples ou o nome do serviço.
+
+A personalização deve aparecer concretamente em:
+
+- como o público descreve o problema;
+- quais termos conhece e quais precisam ser traduzidos;
+- quais fatos chamam sua atenção;
+- quais dúvidas surgem naquela etapa;
+- quais medos influenciam a decisão;
+- quais objeções aparecem de forma recorrente;
+- qual grau de formalidade transmite confiança;
+- qual explicação demonstra valor sem antecipar a etapa seguinte;
+- qual chamada para ação parece natural naquele contexto.
+
+Use o banco de linguagem da persona como fonte de compreensão, não como repertório para imitação artificial.
+
+Não reproduza automaticamente:
+
+- gírias;
+- erros de escrita;
+- abreviações;
+- expressões íntimas;
+- dramatizações;
+- cenas de vida;
+- relações familiares;
+- hábitos atribuídos ao subperfil dominante.
+
+O profissional deve falar de maneira compreensível para a persona, sem fingir ser a persona.
+
+Quando uma característica aparecer apenas como padrão provável, use-a para criar bifurcação:
+
+> Se a pessoa mencionar que está com dificuldade de tempo...
+
+e não para afirmar:
+
+> Sei que você está sem tempo por causa de...
+
+A linguagem está suficientemente personalizada quando o público reconhece sua situação, compreende por que a comunicação é relevante e percebe que o profissional conhece aquele tipo de problema — sem que fatos individuais tenham sido inventados.
+
 Não transforme a persona fictícia do mapeamento em cliente do roteiro principal.
 
 Não invente como fio condutor:
@@ -412,6 +455,31 @@ A explicação é profunda, mas continua adaptável a nichos e clientes diferent
 > A carteira de trabalho, o CNIS e os documentos do desligamento servem para confirmar a linha do tempo. Com esses elementos, o profissional consegue sair de uma possibilidade genérica e fazer uma análise concreta.
 
 A explicação é profunda, mas continua adaptável a clientes diferentes.
+
+## 7.1. Segurança sem linguagem defensiva artificial
+
+Uma fala segura não precisa soar vaga, burocrática ou excessivamente cautelosa.
+
+Quando a análise já permitir uma conclusão, formule-a em linguagem natural:
+
+> Pelos documentos que eu analisei, você preenchia esse requisito.
+
+> A análise mostra que o seu caso se encaixa nessa regra.
+
+> Com esses elementos, podemos seguir com o pedido.
+
+Quando necessário, separe o limite em uma segunda fala:
+
+> O que eu não consigo garantir é a decisão final, porque ela não depende apenas do escritório.
+
+Evite levar para a conversa expressões próprias de parecer ou petição, como:
+
+- “juridicamente defensável”;
+- “tese sustentável”;
+- “plausibilidade do direito”;
+- “probabilidade de enquadramento”.
+
+A pessoa precisa compreender a conclusão da análise e o limite do resultado, não ouvir a linguagem interna usada pelo profissional para classificar o caso.
 
 ---
 
@@ -840,10 +908,15 @@ O material está pronto quando:
 - o formato corresponde ao produto pedido;
 - o roteiro operacional é reutilizável;
 - a persona orienta sem virar personagem;
-- o conteúdo é específico para o nicho;
+- o conteúdo e a linguagem revelam concretamente o nicho, o público, o recorte, a etapa e o objetivo;
+- a especificidade não depende apenas do nome do serviço ou da troca de placeholders;
+- o mesmo texto não poderia ser usado em outro nicho apenas com substituições superficiais;
 - o profissional entende o que fazer, por que fazer e como falar;
 - as explicações são profundas sem serem repetitivas;
 - as bifurcações cobrem as variações relevantes;
 - os exemplos de fala são naturais e adaptáveis;
 - objeções e fechamento têm condução concreta;
 - apenas particularidades do escritório e fatos do cliente real precisam ser adaptados.
+- características prováveis da persona aparecem como adaptação ou bifurcação, não como fatos inventados;
+- conclusões da análise são claras sem prometer o resultado futuro;
+- a cautela jurídica não transformou a fala em linguagem de parecer.
