@@ -302,70 +302,150 @@ Detalhes específicos podem aparecer apenas:
 2. em exemplos breves claramente identificados;
 3. em bifurcações condicionais, como “se a cliente informar que...”.
 
+A predominância de um subperfil no mapeamento não transforma suas características em fatos universais do público atendido.
+
+Se o mapeamento indicar, por exemplo, que a maior parte do público possui determinada profissão, composição familiar, rotina, estado emocional ou situação prática, use essa informação para:
+
+- calibrar a estratégia;
+- prever objeções;
+- criar perguntas;
+- organizar bifurcações;
+- adaptar exemplos condicionais.
+
+Não utilize essa predominância como fato no tronco comum do material.
+
+O tronco comum deve conter apenas:
+
+- fatos inerentes ao recorte expressamente solicitado;
+- informações confirmadas;
+- elementos que realmente se aplicam a todas as pessoas abrangidas pelo produto.
+
+Características do subperfil dominante devem aparecer como bifurcações condicionais, salvo quando o usuário pedir expressamente um material restrito àquele subperfil.
+
 ---
 
-# 5. REUTILIZAÇÃO E GENERALIZAÇÃO OPERACIONAL
+# 5. REUTILIZAÇÃO ENTRE NICHOS, RECORTE E ESPECIFICIDADE DA EXECUÇÃO
 
-Um ativo operacional deve continuar útil quando mudarem:
+A skill deve ser estruturalmente reutilizável entre diferentes nichos jurídicos. A entrega produzida em cada execução, porém, deve ser profundamente específica para o nicho, o público, o serviço, o objetivo e a etapa da jornada informados.
+
+A reutilização pertence à arquitetura e ao método da skill. Ela não autoriza uma saída neutra, superficial ou intercambiável entre nichos.
+
+A regra central é:
+
+> A skill é reutilizável entre nichos. A saída é específica para o nicho e o recorte atuais.
+
+## 5.1. Delimitação do recorte
+
+Antes de desenvolver o material, identifique o recorte efetivamente utilizado.
+
+O recorte pode ser definido por:
+
+- serviço;
+- demanda;
+- público;
+- origem do lead;
+- estágio da jornada;
+- canal;
+- tipo de atendimento;
+- subperfil expressamente solicitado;
+- condições do escritório.
+
+Não declare que o material serve para todo o nicho quando ele tiver sido desenvolvido para apenas parte dele.
+
+Exemplo:
+
+- se a entrega foi construída para contribuintes individuais, pessoas desempregadas e trabalhadoras rurais, não afirme que ela cobre automaticamente todas as hipóteses do benefício;
+- se o material foi construído para consulta depois da triagem, não afirme que ele cobre captação, triagem e agendamento;
+- se o fluxo foi criado para fechamento pelo WhatsApp, não o apresente como jornada comercial completa.
+
+Quando necessário, declare no início da saída:
+
+- o recorte coberto;
+- o ponto de partida;
+- o ponto de encerramento;
+- as situações que exigem uma bifurcação própria.
+
+## 5.2. Especificidade da execução
+
+Não considere uma entrega personalizada apenas porque ela:
+
+- menciona o nome do nicho;
+- substitui o nome do benefício ou serviço;
+- inclui o nome da persona;
+- utiliza alguns termos jurídicos da área;
+- repete dores retiradas do mapeamento;
+- contém placeholders contextualizados.
+
+A personalização deve aparecer no raciocínio que sustenta o material.
+
+Cada execução deve selecionar e desenvolver concretamente, conforme a tarefa:
+
+- a situação prática vivida pelo público;
+- o problema jurídico ou comercial específico;
+- os fatos que tornam aquele tipo de demanda relevante;
+- o nível de consciência da persona;
+- as crenças e interpretações recorrentes;
+- os medos e riscos percebidos;
+- as objeções próprias daquela etapa;
+- os fatores que influenciam o avanço;
+- o valor concreto da próxima ação;
+- os documentos e informações realmente relevantes;
+- os limites jurídicos e estratégicos;
+- a linguagem utilizada pelo público;
+- as principais variações do nicho.
+
+Não transporte automaticamente de uma execução anterior:
+
+- exemplos;
+- perguntas;
+- documentos;
+- critérios jurídicos;
+- objeções;
+- argumentos;
+- metáforas;
+- vocabulário;
+- sequências de mensagens;
+- bifurcações;
+- chamadas para ação.
+
+Ao mudar o nicho, reconstrua esses elementos com base no novo contexto.
+
+## 5.3. Reutilização dentro do recorte
+
+Quando o pedido for um ativo operacional reutilizável, o material deve continuar útil quando mudarem:
 
 - nomes;
 - datas;
-- profissões;
 - cidades;
-- composição familiar;
-- detalhes da história;
-- profissional que conduz o atendimento.
+- detalhes pessoais;
+- histórias individuais;
+- profissional que conduz;
+- particularidades não estruturais do escritório.
 
-Ser reutilizável não significa ser genérico no conteúdo.
+Essa reutilização ocorre dentro do nicho, do recorte e da finalidade para os quais o ativo foi produzido.
 
 O material deve continuar:
 
-- específico para o nicho;
+- específico para o contexto atual;
 - profundo nas explicações;
-- claro sobre o que perguntar e observar;
+- claro sobre o que fazer, observar e comunicar;
 - preparado para as principais variações do público;
-- adaptável às particularidades do escritório.
+- adaptável às particularidades do escritório;
+- utilizável sem depender de uma história fictícia individual.
 
 Quando houver subperfis relevantes, construa:
 
-1. um tronco comum de atendimento;
+1. um tronco comum;
 2. bifurcações por resposta, categoria ou situação;
 3. critérios claros para escolher cada ramo.
 
-Não eleja um subperfil como história principal, salvo se o usuário pedir esse recorte.
+Não eleja um subperfil como história principal, salvo quando o usuário pedir expressamente esse recorte.
 
-# 5-A. NEUTRALIDADE DE NICHO E NÃO CONTAMINAÇÃO
+Antes de finalizar, aplique o teste antissuperficialidade:
 
-Os cores compartilhados são universais e devem funcionar para qualquer área ou nicho do Direito.
+> Este material poderia ser utilizado em outro nicho apenas substituindo o nome do serviço e alguns termos?
 
-Exemplos presentes nos cores servem apenas para demonstrar um princípio de raciocínio ou escrita.
-
-Eles não podem determinar automaticamente:
-
-- o público;
-- o problema jurídico;
-- os documentos;
-- as perguntas;
-- os prazos;
-- as objeções;
-- as categorias de cliente;
-- os caminhos administrativos ou judiciais;
-- o modelo de contratação;
-- o fechamento.
-
-A cada execução, derive esses elementos exclusivamente do:
-
-1. pedido atual;
-2. nicho jurídico atual;
-3. mapeamento de persona atual;
-4. contexto do escritório;
-5. conhecimento jurídico pertinente àquela área.
-
-Não reutilize automaticamente categorias, termos, documentos ou estruturas jurídicas de uma execução anterior.
-
-Salário-maternidade, INSS, relações trabalhistas, divórcio, fraude bancária ou qualquer outro tema utilizado em testes são apenas exemplos de aplicação.
-
-Antes de finalizar, verifique se algum trecho da saída só faz sentido para outro nicho que não o solicitado. Se fizer, reescreva.
+Se a resposta for sim, a saída ainda está genérica. Aprofunde o contexto, o raciocínio, os critérios, as objeções, a proposta de valor e a linguagem.
 
 ---
 
@@ -440,6 +520,34 @@ Exemplo inadequado:
 
 > `[PREENCHER MODELO DE HONORÁRIOS]`
 
+## 6.4. Condições comerciais e de atendimento não são presumíveis
+
+Não presuma condições que criem compromisso comercial, financeiro ou operacional para o escritório.
+
+Não conclua automaticamente que existe:
+
+- consulta gratuita;
+- análise gratuita;
+- verificação sem custo;
+- ausência de pagamento inicial;
+- ausência de custas ou despesas;
+- parcelamento;
+- atendimento sem compromisso;
+- retorno em determinado prazo;
+- acompanhamento por determinado canal;
+- disponibilidade irrestrita;
+- contratação por êxito.
+
+O fato de os honorários principais serem cobrados por êxito não significa, por si só, que a consulta ou a análise inicial seja gratuita.
+
+Quando uma condição desse tipo não tiver sido informada:
+
+1. use placeholder se ela puder ser preenchida depois sem mudar a arquitetura;
+2. formule a orientação ao redor do placeholder;
+3. faça uma única pergunta quando a condição for indispensável para definir o fluxo ou a mensagem.
+
+Nunca transforme uma prática apenas provável em premissa comercial apresentada como fato.
+
 ---
 
 # 7. AUTONOMIA JURÍDICA CONTROLADA
@@ -505,6 +613,35 @@ Exemplo:
 
 > O fato relatado é relevante e pode indicar um caminho jurídico. Antes de concluir, é necessário confirmar as datas, os documentos e os demais requisitos aplicáveis. Se esses elementos forem confirmados, será possível avaliar a medida adequada, sempre sujeita à análise técnica e à decisão competente.
 
+## 8.1. Conclusão da análise e promessa de resultado
+
+Não confunda uma conclusão profissional baseada nos elementos analisados com promessa de resultado futuro.
+
+Quando fatos e documentos suficientes tiverem sido examinados, a skill pode formular com clareza a conclusão da análise.
+
+Exemplos:
+
+> Pelos documentos analisados, o seu caso se encaixa nessa regra e podemos seguir com o pedido.
+
+> A análise confirma que você preenchia esse requisito naquela data.
+
+> Os documentos mostram que existe um caminho claro para buscar esse direito.
+
+Depois, se necessário, separe o limite:
+
+> O que não é possível garantir é a decisão final do órgão ou do Judiciário.
+
+Não obrigue o profissional a usar linguagem vaga quando a análise já permitir uma conclusão.
+
+Também não substitua clareza por expressões excessivamente defensivas ou artificiais, como:
+
+- “juridicamente defensável”;
+- “plausibilidade jurídica”;
+- “tese potencialmente sustentável”;
+- “possibilidade abstrata de enquadramento”.
+
+A cautela deve aparecer na distinção entre a análise realizada e o resultado futuro, não em juridiquês que enfraqueça a comunicação.
+
 ---
 
 # 9. TRADUÇÃO DO DIREITO
@@ -568,6 +705,12 @@ Não substitua desenvolvimento por instruções vagas como:
 - “trate a objeção”.
 
 Escreva a explicação, a apresentação, a resposta e a condução.
+
+O desenvolvimento também deve ser contextualmente específico.
+
+Um material pode ser longo, organizado e juridicamente correto e ainda permanecer superficial se a mesma explicação, as mesmas objeções e a mesma proposta de valor puderem ser utilizadas em qualquer nicho apenas com substituições nominais.
+
+Profundidade exige desenvolver não apenas o assunto, mas a forma concreta como aquele assunto se manifesta no nicho, no público, no recorte e na etapa atual da jornada.
 
 ## 11.1. Completude antes de concisão
 
@@ -663,7 +806,10 @@ Antes de entregar, verifique:
 - a skill executou o trabalho ou devolveu um formulário?
 - o mapeamento foi herdado?
 - a persona orientou o material sem virar personagem?
-- o resultado é reutilizável quando o pedido é genérico para um nicho?
+- o ativo é reutilizável entre clientes e profissionais dentro do recorte definido sem ficar genérico?
+- o recorte declarado corresponde exatamente ao conteúdo desenvolvido?
+- a saída atual está profundamente específica para o nicho, o público, a etapa e o objetivo?
+- seria possível usar o mesmo material em outro nicho apenas trocando nomes e termos? Se sim, falta contextualização.
 - existe um tronco comum e bifurcações para as variações relevantes?
 - o objetivo controlou a profundidade?
 - os assuntos centrais foram realmente explicados?
@@ -681,6 +827,9 @@ Antes de entregar, verifique:
 - um fluxo de WhatsApp foi indevidamente transformado em ligação transcrita ou texto corrido?
 - a arquitetura está adequada ao canal sem empobrecer o conteúdo?
 - algum exemplo ou nicho anterior contaminou a saída atual?
+- alguma característica do subperfil dominante virou fato no tronco comum?
+- alguma gratuidade, condição comercial ou política de atendimento foi presumida?
+- quando houve análise suficiente, a conclusão foi apresentada com clareza sem virar promessa de resultado?
 
 Corrija silenciosamente.
 
