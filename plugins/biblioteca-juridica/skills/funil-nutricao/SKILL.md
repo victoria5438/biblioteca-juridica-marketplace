@@ -1,4 +1,3 @@
----
 name: funil-nutricao
 description: Cria funis jurídicos automatizáveis de nutrição para leads frios captados, mas ainda inativos e fora da pré-qualificação. Produz uma sequência progressiva, específica para o nicho e aplicável em escala, que educa, gera identificação, reduz resistência e busca a primeira mensagem do lead. A automação termina quando qualquer mensagem é recebida; a partir daí, o SDR assume.
 argument-hint: [mapeamento de persona, nicho ou direito, origem do lead, canal, tema de entrada, cadência, conteúdos e provas reais disponíveis e responsável pela pré-qualificação]
@@ -473,7 +472,23 @@ Não invente:
 - autorização não informada;
 - preferência de formato;
 - prazo artificial;
-- política de encerramento.
+- política de encerramento;
+- limite diário de contatos;
+- intervalo mínimo ou máximo entre contatos;
+- horário recomendado de envio;
+- dia da semana recomendado;
+- janela de reenvio;
+- prazo padrão de reativação;
+- regra de frequência não fornecida pelo usuário.
+
+A cadência é um dado operacional, não uma oportunidade para completar lacunas com boas práticas presumidas.
+
+Quando a frequência não tiver sido informada:
+
+- use apenas `[INTERVALO DEFINIDO PELO ESCRITÓRIO]`;
+- não acrescente “uma vez por dia”, “a cada 24 horas”, “em dias úteis” ou regra equivalente;
+- não apresente recomendação de frequência como se fosse requisito da skill;
+- não defina horário, janela, limite diário ou reativação automática.
 
 Métricas e padrões de desempenho só podem aparecer quando:
 
@@ -668,6 +683,41 @@ Não apresente essas generalizações como:
 - dado institucional.
 
 Use `[NOME]`, nunca o nome fictício da persona.
+
+### Não atribua ao lead informações que ele não forneceu
+
+A origem do contato não prova que o lead descreveu a própria situação.
+
+Ter vindo de anúncio, formulário, landing page, conteúdo ou campanha não autoriza escrever:
+
+- “como você me contou”;
+- “pelo que você descreveu”;
+- “na situação que você relatou”;
+- “como você informou no anúncio”;
+- “no seu caso”;
+- “pela sua situação”;
+- “eu sei por que você não respondeu”;
+- “você deve estar pensando”;
+- qualquer referência a fala, dúvida, fato, emoção, comportamento ou contexto individual não coletado.
+
+Essas formulações só podem aparecer quando:
+
+1. a informação foi realmente fornecida pelo lead;
+2. o dado está disponível de forma objetiva para a automação;
+3. existe variável ou regra explícita que sustenta a personalização.
+
+Quando isso não ocorrer, use linguagem neutra, como:
+
+- “sobre esse tema”;
+- “uma dúvida comum é...”;
+- “para quem vive esse tipo de situação...”;
+- “no assunto tratado no conteúdo que trouxe você até aqui...”.
+
+Antes de entregar, aplique o teste literal:
+
+> A mensagem atribui ao lead alguma fala, descrição, dúvida, comportamento, emoção ou informação que ele não forneceu?
+
+Se sim, reescreva.
 
 ---
 
@@ -892,6 +942,29 @@ Não use:
 - culpa;
 - urgência comercial.
 
+### Cadência invisível para o lead
+
+A cadência pertence à arquitetura interna da automação. Ela não deve ser anunciada ao lead.
+
+Mesmo quando os intervalos estiverem definidos, não escreva frases que antecipem, prometam ou revelem contatos futuros, como:
+
+- “nos próximos dias vou te explicar”;
+- “amanhã eu te conto”;
+- “nas próximas mensagens”;
+- “vou continuar te mostrando”;
+- “mais adiante você vai entender”;
+- “no próximo contato”;
+- “ainda vou te enviar”;
+- “esta é a primeira de várias mensagens”.
+
+Cada contato deve entregar valor e fazer sentido por si só, sem criar expectativa sobre novas tentativas de abordagem.
+
+A mensagem pode retomar algo que já foi efetivamente enviado, mas não deve depender de uma promessa anterior de continuidade.
+
+A única referência estrutural permitida é no Contato 7, para comunicar que **esta sequência está sendo encerrada naquele momento**, por exemplo:
+
+> Vou encerrar esta sequência por aqui.
+
 ---
 
 ## Aprofundamento gradual
@@ -921,14 +994,29 @@ O problema é:
 Cada contato deve ter:
 
 - uma função predominante;
+- um eixo central;
 - uma ideia jurídica principal;
 - um ganho cognitivo;
 - uma mudança emocional;
 - uma CTA.
 
-Um contato pode conter ideias auxiliares.
+O eixo central deve ser específico o suficiente para caber em uma frase.
 
-Elas devem sustentar o eixo principal, não competir com ele.
+Um contato pode conter ideias auxiliares, desde que elas apenas expliquem, exemplifiquem ou sustentem esse eixo. Elas não podem introduzir mecanismos jurídicos independentes que poderiam funcionar como contatos próprios.
+
+Não combine, no mesmo contato, por simples associação temática:
+
+- patrimônio, filhos e procedimento;
+- vários prazos diferentes;
+- várias proteções jurídicas autônomas;
+- regra material, regra processual e exceção cartorária;
+- diferentes riscos que não sejam necessários para compreender a ideia principal.
+
+Aplique o teste de densidade:
+
+> Se um parágrafo pudesse virar um contato útil e autônomo sem prejudicar o argumento atual, ele provavelmente pertence a outro eixo.
+
+No Contato 4, a prova de método deve mostrar **o que é verificado** e **por que a verificação importa**. Não use cada ponto de verificação como pretexto para ensinar uma nova regra jurídica, apresentar outro prazo ou abrir um novo tema.
 
 Antes de escrever cada mensagem, pergunte:
 
@@ -1258,19 +1346,28 @@ Qualquer mensagem recebida leva ao SDR.
 
 ## Urgência
 
-Use urgência somente quando houver fundamento jurídico real e utilidade para aquele tema.
+Use urgência somente quando houver fundamento jurídico real **e ligação direta com o tema de entrada, a promessa central da campanha ou o eixo principal escolhido para o funil**.
 
-A mensagem deve explicar:
+A mera existência de prazo, prescrição, risco ou perda possível dentro do nicho não justifica inserir urgência na sequência.
+
+No mapa estratégico:
+
+- não produza catálogo de urgências possíveis;
+- não liste prazos apenas porque existem no ramo jurídico;
+- registre somente a urgência efetivamente selecionada para sustentar o arco;
+- omita o bloco de urgência quando ela não for indispensável.
+
+Quando usada, a mensagem deve explicar:
 
 1. qual é o marco;
-2. por que importa;
+2. por que ele se conecta ao tema que originou a captação;
 3. o que pode ser afetado;
 4. o que precisa ser validado;
-5. por que vale iniciar a conversa.
+5. por que a informação é relevante para iniciar uma conversa.
 
 Não use urgência em todos os contatos.
 
-Não reúna vários prazos apenas para aumentar pressão.
+Não reúna vários prazos ou riscos para aumentar pressão ou demonstrar conhecimento.
 
 Não invente:
 
@@ -1282,7 +1379,7 @@ Não invente:
 - escassez;
 - contagem regressiva.
 
-Quando não houver urgência jurídica real, use:
+Quando a urgência não estiver diretamente ligada ao tema de entrada ou não for necessária ao arco, use:
 
 - relevância;
 - clareza;
@@ -1526,6 +1623,8 @@ Generalizações de marketing são permitidas.
 
 Métricas não fornecidas são proibidas.
 
+Se houver urgência, apresente apenas a urgência efetivamente ligada ao tema de entrada e usada no arco. Não entregue uma lista de prazos possíveis do nicho.
+
 # 3. LÓGICA DA AUTOMAÇÃO
 
 Apresente de forma simples:
@@ -1565,6 +1664,10 @@ Para cada contato:
 Não entregue várias aberturas por histórico de conversa.
 
 Não produza uma versão por comportamento individual.
+
+Não anuncie contatos futuros, não prometa continuidade e não revele a cadência ao lead. Cada mensagem deve funcionar de forma autônoma. Somente o Contato 7 pode mencionar a sequência para encerrá-la naquele momento.
+
+Não atribua ao lead falas, descrições, emoções, dúvidas ou informações que não tenham sido objetivamente fornecidas e disponibilizadas à automação.
 
 Produza um tronco comum por padrão. Use redação abrangente, placeholder ou bifurcação curta quando uma particularidade realmente importar. Não exija funis separados nem segmentação por campanha sem necessidade.
 
@@ -1619,7 +1722,7 @@ Lista curta contendo somente:
 - link;
 - conteúdo real;
 - prova real;
-- cadência;
+- cadência, sem completar lacunas com limite diário, horário, dia da semana ou intervalo presumido;
 - política de contato;
 - prazo jurídico validado;
 - condição real sobre custo ou gratuidade, quando usada;
@@ -1665,7 +1768,10 @@ Antes de entregar, verifique silenciosamente:
 
 - existe aprofundamento gradual?
 - cada contato tem função predominante?
+- cada contato possui um eixo central formulável em uma frase?
+- alguma ideia auxiliar introduziu um mecanismo jurídico independente?
 - um contato tentou explicar todo o tema?
+- o Contato 4 mostrou critérios de verificação sem ensinar uma nova regra em cada critério?
 - o Contato 4 concentrou várias leis ou prazos?
 - houve repetição?
 - as CTAs progridem?
@@ -1678,6 +1784,9 @@ Antes de entregar, verifique silenciosamente:
 - generalizações foram usadas como recurso de comunicação?
 - alguma generalização foi apresentada como métrica?
 - houve idade, renda, família ou emoção presumida?
+- a mensagem atribuiu ao lead fala, descrição, dúvida, comportamento ou informação que ele não forneceu?
+- a origem em anúncio ou formulário foi tratada incorretamente como relato individual?
+- o motivo do silêncio foi presumido?
 - o nome fictício da persona apareceu?
 
 ### Dados e prova
@@ -1685,12 +1794,16 @@ Antes de entregar, verifique silenciosamente:
 - houve métrica inventada?
 - houve melhor horário inventado?
 - houve melhor dia inventado?
+- houve limite diário ou intervalo presumido?
+- houve janela de reenvio ou reativação inventada?
 - houve taxa de resposta inventada?
 - houve conteúdo de maior desempenho inventado?
 - houve case inventado?
 - houve resultado inventado?
 - a prova foi selecionada, e não acumulada?
 - a prova tem relação com o tema de entrada?
+- a urgência está diretamente ligada ao tema de entrada ou à promessa central?
+- o mapa listou urgências que não serão usadas na sequência?
 
 ### Funções
 
@@ -1719,6 +1832,9 @@ Antes de entregar, verifique silenciosamente:
 - existe uma ideia principal?
 - a CTA é simples?
 - o conteúdo pode ser automatizado?
+- alguma mensagem anunciou ou prometeu contatos futuros?
+- alguma mensagem revelou a cadência ou a quantidade de tentativas?
+- cada contato funciona sem depender de expectativa de continuidade?
 - o Contato 7 encerra claramente esta sequência?
 
 Corrija silenciosamente o que falhar.
@@ -1757,4 +1873,9 @@ O funil está pronto quando:
 26. utiliza prova de método ligada ao eixo central do funil;
 27. mantém os Contatos 6 e 7 como funções fixas da arquitetura de sete contatos;
 28. encerra no Contato 7 apenas esta sequência de nutrição;
-29. exige adaptação apenas de fatos, links, condições, provas e conteúdos reais.
+29. exige adaptação apenas de fatos, links, condições, provas e conteúdos reais;
+30. desenvolve um único eixo central por contato;
+31. usa urgência apenas quando diretamente ligada ao tema de entrada ou à promessa central;
+32. não atribui ao lead informações, falas, emoções ou descrições não fornecidas;
+33. não anuncia, promete ou revela contatos futuros ao lead;
+34. não inventa frequência, limite diário, horário, intervalo ou regra de reativação.
