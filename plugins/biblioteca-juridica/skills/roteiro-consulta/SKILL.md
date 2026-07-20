@@ -328,6 +328,45 @@ Não use placeholders para substituir:
 - objeções;
 - fechamento.
 
+### Voz institucional e compromissos operacionais
+
+Toda fala sobre o escritório deve refletir uma prática expressamente informada.
+
+Não invente:
+
+- experiência específica no nicho;
+- especialização;
+- acompanhamento próximo;
+- frequência de atualizações;
+- resposta em cada etapa;
+- disponibilidade;
+- ausência de depósito ou taxa;
+- protocolo antifraude;
+- início imediato;
+- prevenção de negativa;
+- redução garantida de erro;
+- comunicação contínua;
+- execução integral de todas as tarefas.
+
+Frases como:
+
+- “eu aviso a cada passo”;
+- “você não ficará no escuro”;
+- “nós nunca pedimos...”;
+- “temos experiência nesse tipo de caso”;
+- “vamos evitar que isso aconteça novamente”;
+
+só podem ser usadas quando a informação correspondente tiver sido fornecida.
+
+Quando a prática não estiver confirmada, use:
+
+- placeholder;
+- formulação condicional;
+- ponto de adaptação;
+- ou descrição neutra do trabalho efetivamente informado.
+
+Não use “garantir” como recurso de persuasão. Explique o trabalho, as responsabilidades e os limites.
+
 ---
 
 ## Recorte e especificidade
@@ -378,6 +417,23 @@ Aplique o teste:
 > Este roteiro poderia ser usado em outro nicho apenas trocando o nome do serviço e alguns termos?
 
 Se a resposta for sim, aprofunde.
+
+### Correspondência entre recorte declarado e roteiro desenvolvido
+
+Cada elemento anunciado no recorte deve aparecer de maneira efetiva na conversa.
+
+Para cada serviço, público, categoria, fato gerador ou cenário declarado:
+
+1. escreva falas compatíveis;
+2. adapte a designação da pessoa e do evento;
+3. inclua bifurcação quando mudarem perguntas, documentos, explicação, caminho ou próximo passo;
+4. ou retire esse elemento do recorte.
+
+Uma observação entre parênteses não torna o roteiro aplicável a uma categoria distinta.
+
+Se o roteiro foi escrito integralmente para um único evento ou público, restrinja o escopo a ele.
+
+Não declare, por exemplo, que o roteiro cobre parto, adoção e guarda quando o tronco inteiro fala apenas em mãe, bebê, nascimento e parto, sem ramos reais para os demais eventos.
 
 ---
 
@@ -430,6 +486,36 @@ Exemplos:
 > Quando os documentos indicarem essa categoria...
 
 Não invente respostas completas do cliente para criar fluidez.
+
+### Controle obrigatório de factualidade da persona
+
+Antes de escrever, classifique silenciosamente cada característica em:
+
+1. fato confirmado;
+2. condição expressa do recorte;
+3. padrão provável da persona.
+
+Somente fatos confirmados e condições expressas podem aparecer como afirmações dirigidas à pessoa.
+
+Padrões prováveis podem orientar a conversa ou aparecer em ramos condicionais, mas não podem gerar frases como:
+
+- “eu sei que você está corrida com o bebê”;
+- “esse é o ponto que mais te preocupa”;
+- “seu marido está desconfiado”;
+- “você prefere áudio”;
+- “você teve dificuldade com o aplicativo”;
+- “você está sem condições financeiras”.
+
+Prefira:
+
+- “se a pessoa mencionar falta de tempo...”;
+- “se surgir preocupação financeira...”;
+- “se houver desconfiança...”;
+- “se ela disser que precisa conversar com alguém próximo...”.
+
+Aberturas sobre fraude, dificuldade, urgência ou resistência não devem ocupar obrigatoriamente o tronco comum apenas porque aparecem no mapeamento. Use-as quando forem pertinentes ao recorte, à origem do contato ou a um fato confirmado.
+
+Use `[NOME]`, nunca um nome fictício.
 
 ---
 
@@ -1237,7 +1323,12 @@ Antes de entregar, verifique silenciosamente:
 - o conteúdo cobre exatamente esse recorte?
 - o roteiro funciona com pessoas diferentes?
 - alguma característica da persona virou fato?
+- cada afirmação dirigida à pessoa vem de fato confirmado, condição do recorte ou bifurcação explícita?
+- alguma dificuldade emocional, financeira, familiar, tecnológica ou de rotina foi presumida?
+- algum nome fictício substituiu `[NOME]`?
 - o subperfil dominante ocupou indevidamente o tronco comum?
+- todo serviço, público, categoria e fato gerador anunciado no recorte foi desenvolvido em falas ou bifurcações reais?
+- algum item foi mantido no escopo apesar de aparecer apenas em observação marginal?
 - as bifurcações cobrem variações reais?
 - algum exemplo de outro nicho contaminou a entrega?
 - o roteiro poderia ser usado em outro nicho apenas trocando nomes? Se sim, aprofunde.
@@ -1257,6 +1348,8 @@ Antes de entregar, verifique silenciosamente:
 
 - foi presumida gratuidade?
 - foi inventada condição comercial ou operacional?
+- foi inventada experiência, especialização, política de comunicação ou compromisso institucional?
+- alguma fala promete atualização, acompanhamento, resposta, prevenção de erro ou início imediato sem informação expressa?
 - houve promessa de resultado?
 - houve estatística, frequência de êxito ou superioridade não comprovada?
 - foi criada urgência artificial?
