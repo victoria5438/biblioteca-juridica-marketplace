@@ -247,6 +247,36 @@ Escreva toda a orientação ao redor do placeholder.
 
 Não use placeholders para substituir raciocínio, estratégia, explicação, perguntas ou condução.
 
+### Voz institucional e compromissos operacionais
+
+Toda afirmação sobre o escritório deve vir de informação expressamente fornecida.
+
+Não transforme em características institucionais presumidas:
+
+- experiência específica no nicho;
+- especialização;
+- acompanhamento próximo;
+- atualização em cada etapa;
+- resposta imediata;
+- ausência de depósito ou taxa;
+- política antifraude;
+- forma de contato;
+- execução de todas as tarefas;
+- redução ou prevenção de erros;
+- prazo de início;
+- prazo de protocolo;
+- disponibilidade da equipe.
+
+Frases em primeira pessoa, como “nós acompanhamos”, “eu aviso”, “a gente nunca pede”, “o escritório garante” ou “você não ficará sem resposta”, só podem aparecer quando a prática correspondente estiver confirmada.
+
+Quando faltar informação:
+
+- use placeholder;
+- apresente a etapa como ponto de adaptação;
+- ou descreva apenas o trabalho efetivamente informado.
+
+Não use “garantir” para valorizar o serviço. Demonstre valor descrevendo ações, responsabilidades, limites e entregas reais.
+
 ---
 
 ## Recorte e especificidade
@@ -298,6 +328,23 @@ Aplique o teste:
 
 Se a resposta for sim, aprofunde.
 
+### Correspondência entre recorte declarado e conteúdo desenvolvido
+
+Tudo o que for anunciado no recorte deve aparecer de forma substantiva no playbook.
+
+Para cada serviço, público, fato gerador, categoria ou cenário declarado:
+
+1. desenvolva o tronco comum aplicável;
+2. crie bifurcação quando a investigação, a explicação, os documentos, o caminho ou o fechamento mudarem;
+3. adapte a linguagem quando a própria designação da pessoa ou do evento mudar;
+4. ou retire esse item do recorte declarado.
+
+Uma menção entre parênteses não é desenvolvimento suficiente.
+
+Não declare, por exemplo, que o playbook cobre eventos, categorias ou públicos diferentes quando toda a orientação e todos os exemplos foram escritos para apenas um deles.
+
+O escopo final deve ser o menor conjunto integralmente desenvolvido, e não o maior conjunto teoricamente relacionado.
+
 ---
 
 ## Reutilização, tronco comum e bifurcações
@@ -330,6 +377,48 @@ Quando houver subperfis:
 5. retorne ao fluxo comum quando possível.
 
 Use referências específicas, como “gestante”, “segurada”, “empregado”, “aposentado”, “empresa” ou “familiar”, somente quando fizerem parte do recorte ou estiverem condicionadas.
+
+### Controle obrigatório de factualidade da persona
+
+Antes de redigir, classifique silenciosamente cada característica utilizada em uma destas categorias:
+
+1. **fato confirmado do caso ou do recorte**;
+2. **condição expressamente declarada pelo usuário**;
+3. **padrão provável extraído do mapeamento de persona**.
+
+Somente as categorias 1 e 2 podem aparecer como afirmações no tronco comum.
+
+A categoria 3 pode orientar:
+
+- linguagem;
+- ritmo;
+- profundidade;
+- ordem;
+- exemplos condicionais;
+- bifurcações;
+- objeções possíveis.
+
+Ela não pode virar fato sobre a pessoa atendida.
+
+Não escreva:
+
+- “a persona chega cansada”;
+- “ela está com o bebê no colo”;
+- “ela trava com PDF”;
+- “o marido ou a sogra influenciam”;
+- “ela está sem dinheiro”;
+- “ela prefere áudio”;
+- nome fictício no lugar de `[NOME]`.
+
+Escreva, quando pertinente:
+
+- “se a pessoa demonstrar cansaço...”;
+- “se houver uma criança presente e isso afetar a conversa...”;
+- “se a pessoa relatar dificuldade com o formato do documento...”;
+- “se mencionar influência de alguém próximo...”;
+- “se apresentar preocupação financeira...”.
+
+Revise também títulos, objetivos, observações, erros a evitar, exemplos e checklists. A regra não vale apenas para as falas.
 
 ---
 
@@ -825,6 +914,11 @@ Antes de finalizar, verifique silenciosamente:
 - existe tronco comum?
 - as bifurcações cobrem variações reais?
 - alguma característica do subperfil dominante virou fato?
+- cada afirmação individual vem de fato confirmado, condição do recorte ou bifurcação explícita?
+- algum nome fictício substituiu `[NOME]`?
+- alguma dinâmica familiar, emocional, financeira, tecnológica ou de rotina foi presumida?
+- todo item declarado no recorte foi realmente desenvolvido?
+- algum item foi anunciado no escopo e apareceu apenas entre parênteses ou de forma residual?
 - algum exemplo de outro nicho contaminou a entrega?
 - o material poderia ser usado em outro nicho apenas trocando nomes? Se sim, aprofunde.
 
@@ -842,6 +936,8 @@ Antes de finalizar, verifique silenciosamente:
 
 - foi presumida alguma gratuidade?
 - foi inventada alguma condição comercial ou operacional?
+- foi inventada alguma característica, experiência, política ou compromisso institucional?
+- alguma frase em primeira pessoa promete acompanhamento, resposta, protocolo, segurança ou prevenção de erro sem informação expressa?
 - houve promessa de resultado?
 - houve estatística, frequência de êxito ou superioridade não comprovada?
 - foi criada urgência artificial?
