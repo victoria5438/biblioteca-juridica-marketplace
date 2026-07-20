@@ -200,6 +200,42 @@ Não presuma:
 - videochamada;
 - disponibilidade contínua do advogado.
 
+### Regra absoluta sobre silêncio
+
+Silêncio não fornece informação.
+
+A ausência de resposta nunca significa:
+
+- autorização para continuar;
+- preferência por áudio;
+- preferência por texto;
+- disponibilidade para ler;
+- concordância;
+- compreensão;
+- aceite;
+- recusa;
+- autorização para enviar contrato;
+- autorização para solicitar novos documentos.
+
+Quando uma mensagem fizer uma pergunta ou oferecer escolha:
+
+1. aguarde a resposta;
+2. continue apenas com base no que a pessoa efetivamente disser;
+3. ou use o follow-up correspondente depois do prazo definido pelo escritório.
+
+Não escreva instruções como:
+
+- “se não responder, envie o áudio”;
+- “se ficar em silêncio, continue”;
+- “a resposta curta confirma que está livre”;
+- “na ausência de escolha, presuma o formato”.
+
+Uma resposta como “pode” autoriza apenas a continuação geral. Ela não confirma disponibilidade imediata, preferência de formato ou concordância com etapas posteriores.
+
+O texto pode ser usado como formato padrão apenas quando essa regra tiver sido expressamente definida pelo escritório.
+
+Não envie áudio por falta de resposta.
+
 Use mensagens que respeitem o canal, como:
 
 > Quando puder, me confirme se recebeu.
@@ -377,6 +413,39 @@ Não use placeholders para substituir:
 - fechamento;
 - continuidade.
 
+### Voz institucional e compromissos operacionais
+
+Toda afirmação sobre o escritório deve vir de informação expressamente fornecida.
+
+Não presuma:
+
+- experiência específica;
+- especialização;
+- acompanhamento próximo;
+- atualização frequente;
+- resposta em cada etapa;
+- disponibilidade;
+- ausência de depósito ou taxa;
+- protocolo antifraude;
+- início imediato;
+- prazo de andamento;
+- prevenção de erro ou negativa;
+- execução integral de todas as tarefas.
+
+Mensagens como:
+
+- “você não ficará no escuro”;
+- “eu te aviso a cada passo”;
+- “a gente nunca pede...”;
+- “temos experiência nesse tipo de caso”;
+- “assim que chegar, eu já dou andamento”;
+
+só podem aparecer quando a prática correspondente estiver confirmada.
+
+Quando faltar informação, use placeholder, ponto de adaptação ou formulação condicional.
+
+Não use “garantir” como recurso de convencimento. Descreva o trabalho real, a responsabilidade do escritório e o que depende da pessoa.
+
 ---
 
 ## Recorte e especificidade
@@ -427,6 +496,21 @@ Aplique o teste:
 
 Se a resposta for sim, aprofunde.
 
+### Correspondência entre recorte declarado e fluxo desenvolvido
+
+Todo elemento anunciado no recorte deve aparecer efetivamente nas mensagens.
+
+Para cada serviço, público, categoria, fato gerador ou cenário declarado:
+
+1. adapte a linguagem;
+2. escreva as mensagens aplicáveis;
+3. crie bifurcação quando mudarem devolutiva, documentos, explicação, caminho, objeção ou formalização;
+4. ou retire esse elemento do recorte.
+
+Uma menção breve ou um placeholder isolado não torna o fluxo aplicável a uma categoria distinta.
+
+Se o fluxo fala integralmente em mãe, bebê, nascimento e parto, não declare adoção ou guarda no escopo sem desenvolver os ramos correspondentes.
+
 ---
 
 ## Persona sem virar fato individual
@@ -475,6 +559,29 @@ Use características específicas somente:
 3. em bifurcações condicionais.
 
 Não invente respostas completas do cliente para simular naturalidade.
+
+### Controle obrigatório de factualidade da persona
+
+Antes de redigir, classifique silenciosamente cada característica em:
+
+1. fato confirmado;
+2. condição expressa do recorte;
+3. padrão provável da persona.
+
+Somente as categorias 1 e 2 podem aparecer como afirmações no tronco comum.
+
+Padrões prováveis podem orientar tamanho, ritmo, linguagem e bifurcações, mas não autorizam mensagens como:
+
+- “com o bebê aí”;
+- “sei que você está corrida”;
+- “sei que está apertada de dinheiro”;
+- “seu marido está desconfiado”;
+- “você prefere áudio”;
+- “você travou no aplicativo”.
+
+Use essas situações apenas em ramos condicionais depois de a pessoa mencioná-las ou quando integrarem expressamente o recorte.
+
+Use `[NOME]`, nunca um nome fictício.
 
 ---
 
@@ -611,8 +718,10 @@ Não presuma que a pessoa prefere áudio.
 
 Quando essa preferência não estiver informada, o fluxo pode:
 
-- oferecer escolha; ou
-- entregar versão em texto.
+- oferecer escolha e aguardar; ou
+- entregar versão em texto somente se o escritório tiver definido texto como padrão.
+
+A falta de resposta não autoriza áudio nem escolha automática de formato.
 
 Exemplo:
 
@@ -870,6 +979,24 @@ Não reabra coleta genérica.
 Não peça novamente documento já recebido.
 
 Não apresente lista universal.
+
+Não crie, por subperfil, blocos como:
+
+- “documento complementar típico”;
+- “documentos que normalmente faltam”;
+- “lista complementar recomendada”.
+
+No fluxo reutilizável, só escreva pedido de documento quando a entrada já indicar:
+
+- qual lacuna foi identificada;
+- qual documento específico pode preenchê-la;
+- por que ele é necessário.
+
+Quando nenhuma lacuna específica tiver sido informada:
+
+- não escreva solicitação documental;
+- registre `[DOCUMENTO ESPECÍFICO IDENTIFICADO COMO PENDENTE NA ANÁLISE]` apenas nos pontos de adaptação;
+- ou faça uma única pergunta ao usuário se o documento for indispensável para construir o fluxo.
 
 Não prometa segurança tecnológica não informada.
 
@@ -1284,9 +1411,11 @@ Não transforme esta lista em manual visível dentro da saída.
 
 ### 2. Formato da explicação
 
-Quando útil, confirme preferência entre texto e áudio.
+Quando útil, ofereça texto ou áudio e aguarde a escolha.
 
-Não presuma.
+Não presuma preferência.
+
+Não escolha áudio nem continue a explicação por ausência de resposta.
 
 ### 3. Devolutiva da análise
 
@@ -1455,8 +1584,13 @@ Antes de entregar, verifique silenciosamente:
 - o conteúdo cobre exatamente esse recorte?
 - o fluxo funciona com pessoas diferentes?
 - alguma característica da persona virou fato?
+- cada afirmação individual vem de fato confirmado, condição do recorte ou bifurcação explícita?
+- presença de bebê, rotina, dificuldade financeira, familiar ou tecnológica foi presumida?
+- algum nome fictício substituiu `[NOME]`?
 - o subperfil dominante ocupou o tronco comum?
 - emojis, áudio ou intimidade foram presumidos?
+- todo item declarado no recorte foi desenvolvido em mensagens ou bifurcações reais?
+- algum fato gerador ou público apareceu apenas de forma residual?
 - as bifurcações cobrem variações reais?
 - algum exemplo de outro nicho contaminou a entrega?
 - o fluxo poderia ser usado em outro nicho apenas trocando nomes? Se sim, aprofunde.
@@ -1467,6 +1601,8 @@ Antes de entregar, verifique silenciosamente:
 - a análise documental foi contraditoriamente tratada como não realizada?
 - a explicação pertence aos documentos e fatos analisados?
 - houve áudio genérico anterior à análise?
+- o silêncio foi usado como autorização, escolha de formato, disponibilidade, compreensão ou aceite?
+- alguma instrução mandou enviar áudio ou continuar por ausência de resposta?
 - a profundidade foi distribuída?
 - existem momentos claros de espera?
 - os áudios foram escritos integralmente?
@@ -1478,11 +1614,15 @@ Antes de entregar, verifique silenciosamente:
 
 - foi presumida gratuidade?
 - foi inventada condição comercial ou operacional?
+- foi inventada experiência, especialização, política de comunicação ou compromisso institucional?
+- alguma mensagem promete acompanhamento, atualização, resposta, início ou prevenção de erro sem informação expressa?
 - houve promessa de resultado?
 - houve estatística, frequência de êxito ou superioridade não comprovada?
 - foi criada urgência artificial?
 - a conclusão da análise foi separada do resultado?
 - os documentos pedidos são apenas complementares?
+- cada documento solicitado corresponde a uma lacuna específica já identificada?
+- foram evitados “documentos típicos”, listas complementares genéricas e repetição da coleta inicial?
 - a participação do cliente foi descrita com realismo?
 - o protocolo de segurança foi omitido quando não fornecido?
 
