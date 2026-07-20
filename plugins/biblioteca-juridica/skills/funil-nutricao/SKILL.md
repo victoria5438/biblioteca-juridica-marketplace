@@ -1,38 +1,45 @@
 ---
 name: funil-nutricao
-description: Cria funis jurídicos reutilizáveis de nutrição para WhatsApp, e-mail ou outro canal, transformando o mapeamento de persona em uma sequência progressiva de educação, confiança, redução de objeções e recondução ao próximo passo real. Use para leads pré-consulta que ainda não concluíram a triagem, interromperam o contato, não avançaram para agendamento ou precisam recuperar consciência e segurança antes da próxima etapa.
-argument-hint: [mapeamento de persona, gatilho de entrada, estágio de consciência, canal, ação final esperada, cadência autorizada, provas reais e particularidades do escritório]
+description: Cria funis jurídicos reutilizáveis de nutrição para leads frios ainda não qualificados, que não iniciaram o atendimento ou interromperam a interação antes da qualificação pelo SDR. Produz uma sequência progressiva de educação, identificação, confiança e ativação, encerrada assim que o lead responde e entra no processo de qualificação.
+argument-hint: [mapeamento de persona, nicho ou direito, origem do lead, cenário de entrada, canal, cadência desejada, conteúdos e provas reais disponíveis e responsável pela qualificação]
 ---
 
-# Funil de Nutrição Jurídica
+# Funil de Nutrição Jurídica para Leads Frios
 
 ## Objetivo
 
-Produzir um funil de nutrição jurídico reutilizável, progressivo e específico para o nicho atual.
+Produzir um funil de nutrição jurídico reutilizável, específico para o nicho e destinado exclusivamente a **leads frios ainda não qualificados**.
 
-O funil deve conduzir o lead de um estado inicial real para uma ação final concreta, por meio de:
+O funil deve conduzir o lead de um estado como:
 
-- educação jurídica acessível;
-- identificação;
-- esclarecimento;
-- redução de objeções;
-- construção de confiança;
-- explicação de valor;
-- convite proporcional ao estágio;
-- encerramento respeitoso.
+- não iniciou a conversa;
+- abriu o canal, mas não respondeu;
+- respondeu superficialmente e parou antes da qualificação;
+- ainda não compreendeu por que o tema pode ser relevante;
+- ainda não confia o suficiente para conversar com a equipe;
 
-A sequência deve formar um arco.
+para uma ação observável:
 
-Não produza mensagens independentes que repetem diariamente:
+- responder à mensagem;
+- demonstrar interesse em entender;
+- iniciar a conversa;
+- retomar a interação interrompida;
+- aceitar entrar na qualificação conduzida pelo SDR.
 
-- a mesma promessa;
-- o mesmo mito;
-- a mesma urgência;
-- a mesma pergunta;
-- a mesma oferta;
-- o mesmo pedido de retorno.
+A função da sequência é:
 
-Cada contato deve preparar o próximo.
+- aumentar consciência;
+- gerar identificação;
+- explicar o tema em linguagem acessível;
+- corrigir crenças iniciais;
+- reduzir desconfiança;
+- demonstrar relevância;
+- facilitar a primeira resposta;
+- reconduzir o lead ao SDR.
+
+A função da sequência **não é qualificar o lead**.
+
+Assim que o lead responder de forma que permita o início ou a retomada da conversa, a automação deve parar e o SDR deve assumir.
 
 ---
 
@@ -43,10 +50,10 @@ Antes de produzir a saída:
 1. leia `../../references/core-cognitivo.md`;
 2. leia `../../references/core-escrita-oralidade.md`;
 3. utilize o Mapeamento de Persona Jurídica fornecido pelo usuário ou disponível na conversa;
-4. utilize o gatilho de entrada real;
-5. utilize a etapa atual da jornada;
-6. utilize as particularidades reais do escritório;
-7. utilize apenas provas, condições e procedimentos efetivamente informados.
+4. utilize o nicho, o direito ou o problema jurídico atual;
+5. utilize a origem real do lead, quando informada;
+6. identifique se o lead nunca interagiu ou se interrompeu antes da qualificação;
+7. utilize somente conteúdos, provas e procedimentos efetivamente informados ou juridicamente sustentáveis.
 
 Não execute novamente a skill de mapeamento de persona.
 
@@ -54,97 +61,158 @@ Não reproduza o mapeamento inteiro na saída.
 
 Converta-o em decisões concretas de:
 
-- ponto de partida;
+- ponto de entrada;
+- estágio de consciência;
+- arco da sequência;
+- temas;
 - ordem dos conteúdos;
-- quantidade de contatos;
 - linguagem;
 - ritmo;
 - exemplos;
 - mitos;
-- objeções;
+- objeções iniciais;
 - formato;
 - prova;
-- CTA;
+- CTAs;
 - bifurcações;
-- forma de encerramento.
+- encerramento;
+- passagem para o SDR.
 
 ---
 
 ## Natureza do produto
 
-Esta skill produz um **funil de nutrição pré-consulta**.
+Esta skill produz um **funil de nutrição pré-qualificação**.
 
-O produto principal é uma sequência planejada de contatos, com mensagens prontas ou quase prontas para envio.
+O produto principal é uma sequência planejada de contatos para leads frios, com mensagens prontas ou quase prontas para envio.
 
 Pode conter:
 
 - mensagens de WhatsApp;
 - e-mails;
-- áudios integralmente escritos;
-- roteiros curtos de vídeo;
 - textos de acompanhamento de conteúdo;
-- perguntas de baixa fricção;
-- bifurcações;
+- áudios integralmente escritos, quando autorizados e úteis;
+- roteiros curtos de vídeo;
+- conteúdos educativos curtos;
+- perguntas de ativação de baixa fricção;
+- bifurcações mínimas;
 - critérios de pausa;
-- critérios de saída;
-- handoff para a próxima skill.
+- critérios de encerramento;
+- handoff para o SDR.
 
 Não produza como saída principal:
 
 - campanha de anúncios;
+- criativos de tráfego;
 - calendário editorial;
 - biblioteca de posts;
-- triagem completa;
+- formulário de triagem;
 - questionário de qualificação;
+- roteiro completo de SDR;
+- classificação de lead;
+- análise documental;
 - consulta jurídica;
 - parecer;
-- roteiro de fechamento;
-- agendamento completo;
+- agendamento;
 - confirmação de consulta;
-- prevenção de no-show;
 - recuperação de no-show;
-- acompanhamento pós-contratação;
-- sequência pós-consulta para decisão;
-- reativação fria indiscriminada.
+- apresentação de proposta;
+- fechamento;
+- contratação;
+- sequência pós-triagem;
+- resgate de lead qualificado;
+- follow-up de decisão;
+- acompanhamento pós-contratação.
 
-O funil educa e reconduz.
+O funil aquece e ativa.
 
-Ele não deve executar integralmente a etapa seguinte.
+O SDR qualifica.
 
 ---
 
 ## Ponto de partida e limite
 
-A skill pode começar quando o lead, ainda antes da consulta:
+### A skill pode começar quando
 
-- entrou por anúncio, conteúdo, indicação ou outro canal autorizado;
-- iniciou contato, mas não concluiu a triagem;
-- respondeu parcialmente e interrompeu a conversa;
-- concluiu uma etapa inicial, mas não avançou para o próximo passo;
-- foi considerado pertinente para continuar, mas ainda precisa de educação e confiança;
-- é um contato antigo que pode ser retomado dentro da política real do escritório;
-- está consciente do problema, mas ainda não confia na solução;
-- conhece a solução, mas mantém uma objeção que impede o avanço.
+O lead ainda não foi qualificado e:
 
-A skill termina quando o lead:
+- deixou seus dados após anúncio, formulário, landing page, conteúdo ou campanha;
+- clicou para conversar, mas não enviou mensagem;
+- recebeu uma primeira abordagem e não respondeu;
+- iniciou uma conversa, mas parou antes de fornecer informações suficientes para a qualificação;
+- respondeu apenas uma saudação ou manifestação genérica;
+- demonstrou curiosidade, mas ainda não entrou na conversa com o SDR;
+- integra uma base pré-qualificação cuja nutrição esteja autorizada pelo escritório.
 
-- responde à pergunta necessária para retomar a triagem;
-- autoriza a continuidade do atendimento;
-- aceita receber o próximo passo;
-- demonstra prontidão para agendar;
-- é encaminhado para a skill de agendamento;
-- pede para não continuar;
-- informa que não pretende avançar;
-- permanece em silêncio até o encerramento previsto;
-- exige uma etapa diferente da nutrição.
+### A skill termina quando
 
-Não use esta skill quando:
+O lead:
 
-- a consulta já está agendada — use `/confirmacao-consulta`;
-- a pessoa faltou à consulta — use `/recuperacao-no-show`;
-- a consulta ou devolutiva já ocorreu — use o roteiro correspondente ou `/follow-up-decisao`, quando existir;
-- a contratação já ocorreu;
-- o objetivo real é consultar, fechar ou formalizar.
+- responde positivamente;
+- faz uma pergunta;
+- relata resumidamente sua situação;
+- pede para entender melhor;
+- aceita continuar;
+- retoma a conversa;
+- entra no atendimento ativo do SDR;
+- pede para não receber novas mensagens;
+- informa que o tema não se aplica;
+- recusa continuar;
+- permanece em silêncio até o encerramento previsto.
+
+### A skill não se aplica quando
+
+O lead:
+
+- já concluiu a triagem;
+- já foi qualificado;
+- já foi desqualificado com fundamento suficiente;
+- está aguardando agendamento;
+- não avançou depois da qualificação;
+- já possui consulta marcada;
+- faltou à consulta;
+- já recebeu devolutiva;
+- está avaliando proposta;
+- já contratou.
+
+Esses cenários pertencem a outras skills.
+
+Não amplie o escopo sob o argumento de “recuperação” ou “follow-up”.
+
+Nesta skill, toda retomada ocorre **antes da qualificação**.
+
+---
+
+## Fronteira com a qualificação do SDR
+
+A nutrição pode fazer perguntas simples destinadas a gerar resposta, como:
+
+- “Esse tema tem relação com o que aconteceu com você?”
+- “Você quer que a equipe explique quais informações precisam ser verificadas?”
+- “Sua dúvida está mais ligada a [CENÁRIO A] ou [CENÁRIO B]?”
+- “Quer continuar por aqui?”
+
+Essas perguntas são **CTAs de ativação**, não uma triagem.
+
+A nutrição não deve:
+
+- coletar todos os requisitos;
+- pedir uma sequência de datas;
+- solicitar documentos;
+- verificar elegibilidade;
+- classificar o lead;
+- concluir se o caso é qualificado;
+- dizer que o lead tem ou não tem direito;
+- conduzir a pessoa até o agendamento;
+- substituir a conversa do SDR.
+
+Quando o lead responder:
+
+1. interrompa a sequência automática;
+2. reconheça a resposta;
+3. encaminhe o contexto ao SDR;
+4. deixe a qualificação começar ou continuar no ponto adequado;
+5. não envie os contatos seguintes como se nada tivesse acontecido.
 
 ---
 
@@ -154,62 +222,105 @@ Utilize tudo o que já estiver disponível.
 
 ### Contexto estratégico
 
-- nicho ou demanda jurídica;
-- recorte de público;
 - mapeamento de persona;
-- estágio de consciência;
+- nicho ou demanda jurídica;
+- direito, proteção ou problema central;
+- público e subperfis;
+- estágio de consciência predominante;
 - crença principal;
-- objeção central;
-- ganho relevante;
-- perdas possíveis;
+- mitos;
+- dor consciente;
+- impacto prático;
+- desejo;
+- objeções iniciais;
 - linguagem;
 - formalidade;
-- canal;
-- subperfis;
-- fatores de decisão;
-- motivos de abandono;
+- formato preferencial;
+- canais;
 - conteúdos indispensáveis;
-- prova social compatível;
-- urgência real.
+- arco emocional recomendado;
+- urgência jurídica real;
+- sinais de confiança relevantes.
 
-### Contexto da jornada
+### Contexto de aquisição
 
-- origem do contato;
-- gatilho de entrada;
-- última interação;
-- pergunta ou etapa que ficou pendente;
-- o que a pessoa já recebeu;
-- o que já respondeu;
-- o que ainda não foi explicado;
-- próxima ação esperada;
-- etapa para a qual será encaminhada;
-- condição para interromper a sequência.
+- origem do lead;
+- campanha, anúncio, conteúdo ou formulário de entrada;
+- promessa ou tema que motivou o clique;
+- mensagem já recebida;
+- informação que o lead já viu;
+- canal autorizado;
+- cenário de entrada;
+- tempo de inatividade, quando relevante;
+- cadência desejada, quando houver;
+- limite de contatos;
+- conteúdo existente que pode ser enviado.
+
+### Cenário de entrada
+
+Escolha um cenário principal:
+
+#### Cenário A — nunca iniciou a conversa
+
+O lead demonstrou interesse por clique, cadastro ou outra ação, mas ainda não conversou com o SDR.
+
+#### Cenário B — recebeu abordagem e não respondeu
+
+Existe contato autorizado, mas nenhuma resposta substantiva.
+
+#### Cenário C — iniciou e parou antes da qualificação
+
+O lead respondeu superficialmente, mas a qualificação ainda não começou ou não reuniu dados suficientes.
+
+Não trate os três cenários como se fossem iguais.
 
 ### Contexto do escritório
 
-- canal autorizado;
-- cadência autorizada;
-- política de encerramento;
-- responsável pelo retorno;
-- próximo passo real;
-- link;
-- conteúdo já existente;
-- provas reais;
-- identidade institucional;
+- nome institucional;
+- canal;
+- responsável pela qualificação;
+- forma real de passagem para o SDR;
+- política de contatos;
+- cadência;
+- links;
+- conteúdos existentes;
+- provas reais autorizadas;
+- identidade de comunicação;
+- uso permitido de áudio ou vídeo.
+
+Não solicite como entrada:
+
+- honorários;
 - condições comerciais;
-- política de contato;
-- procedimento para respostas;
-- uso permitido de áudio, vídeo, e-mail ou WhatsApp.
+- modelo de contratação;
+- forma de pagamento;
+- agenda;
+- horários de consulta;
+- contrato;
+- documentos para contratação.
+
+Essas informações não pertencem ao objetivo desta skill.
+
+---
+
+## Perguntas ao usuário
+
+Não transforme a preparação em formulário.
 
 Pergunte somente quando a ausência impedir:
 
-- identificar o ponto de partida;
-- definir a ação final;
-- escolher o canal;
-- saber o que acontece quando o lead responde;
-- utilizar uma condição comercial ou operacional não presumível.
+- identificar o nicho;
+- distinguir lead nunca ativado de lead que interrompeu antes da qualificação;
+- reconhecer o canal;
+- saber qual ação encerra o funil;
+- saber quem assume depois da resposta;
+- utilizar uma prova ou conteúdo que dependa de autorização.
 
-Não transforme a preparação em formulário.
+Quando o mapeamento e o pedido já forem suficientes, execute diretamente.
+
+A ausência de cadência não deve impedir o trabalho.
+
+Nesse caso, use contatos numerados e placeholders de intervalo.
 
 ---
 
@@ -232,37 +343,36 @@ Não invente:
 - especialização;
 - gratuidade;
 - análise sem custo;
-- modelo por êxito;
-- percentual;
+- honorários;
+- pagamento por êxito;
 - parcelamento;
-- prazo de atendimento;
 - disponibilidade;
-- política de encerramento;
-- frequência de contato;
 - agenda;
-- urgência;
+- prazo de atendimento;
+- política de contato;
+- encerramento automático;
+- motivo do silêncio;
 - documento já recebido;
 - conclusão individual;
 - autorização para contato;
 - preferência por áudio;
 - preferência por horário;
-- compromisso institucional.
+- compromisso de retorno;
+- urgência comercial;
+- prazo artificial.
 
-Use placeholders apenas para dados exatos ou condições que dependam do escritório, como:
+Use placeholders somente para dados exatos, como:
 
 - `[NOME]`;
 - `[ESCRITÓRIO]`;
-- `[PROFISSIONAL]`;
-- `[OAB]`;
+- `[SDR OU RESPONSÁVEL]`;
 - `[CANAL]`;
-- `[LINK]`;
-- `[CONTEÚDO REAL]`;
-- `[PROVA REAL]`;
-- `[PRAZO REAL]`;
+- `[TEMA DE ENTRADA]`;
+- `[LINK DO CONTEÚDO REAL]`;
+- `[PROVA REAL AUTORIZADA]`;
+- `[PRAZO JURÍDICO VALIDADO]`;
 - `[INTERVALO DEFINIDO PELO ESCRITÓRIO]`;
-- `[AÇÃO FINAL]`;
-- `[PRÓXIMO PASSO REAL]`;
-- `[CONDIÇÃO COMERCIAL INFORMADA]`.
+- `[POLÍTICA DE ENCERRAMENTO]`.
 
 Mesmo com placeholder, escreva a mensagem completa ao redor dele.
 
@@ -272,37 +382,48 @@ Mesmo com placeholder, escreva a mensagem completa ao redor dele.
 
 Antes de escrever, identifique:
 
-1. qual nicho e serviço estão em foco;
-2. qual público o funil cobre;
-3. qual gatilho colocou o lead na sequência;
-4. o que já aconteceu antes;
-5. qual estágio de consciência existe;
-6. qual crença precisa mudar;
-7. qual objeção impede avanço;
-8. qual ação final é esperada;
-9. o que fica fora do funil;
-10. quais subperfis exigem bifurcação.
+1. qual nicho está em foco;
+2. qual problema ou direito motivou a aquisição;
+3. qual público o funil cobre;
+4. por qual canal o lead entrou;
+5. o que ele já viu;
+6. se nunca respondeu ou se interrompeu antes da qualificação;
+7. qual estágio de consciência predomina;
+8. qual crença impede a primeira conversa;
+9. qual informação precisa ser compreendida;
+10. qual ação simples levará ao SDR;
+11. quais subperfis exigem bifurcação;
+12. o que está expressamente fora da sequência.
 
 A skill é reutilizável entre nichos.
 
-A saída deve ser específica para o nicho, o público, o estágio, o canal e o gatilho atuais.
+A saída deve ser específica para:
+
+- nicho;
+- público;
+- mecanismo jurídico;
+- situação cotidiana;
+- estágio;
+- origem;
+- cenário de entrada;
+- canal;
+- objetivo pré-qualificação.
 
 Aplique o teste:
 
-> Este funil poderia ser usado em outro nicho apenas trocando o nome do direito ou do órgão?
+> Este funil poderia ser usado em outro nicho apenas trocando o nome do direito?
 
 Se a resposta for sim, aprofunde:
 
-- mecanismo jurídico;
-- situação concreta;
+- situação que desperta identificação;
+- lógica jurídica;
+- critério geral;
 - consequência prática;
-- documentos;
-- mitos;
-- objeções;
-- risco;
+- mito;
+- objeção;
 - prova;
-- linguagem;
-- próximo passo.
+- vocabulário;
+- CTA.
 
 ---
 
@@ -316,10 +437,10 @@ Ele pode orientar:
 - formalidade;
 - tamanho;
 - ritmo;
-- escolha de assunto;
+- escolha de temas;
 - exemplos;
 - objeções;
-- CTA;
+- CTAs;
 - canal;
 - formato;
 - bifurcações.
@@ -327,502 +448,432 @@ Ele pode orientar:
 Ele não autoriza afirmar que cada lead:
 
 - tem determinada idade;
-- vive em determinada cidade;
+- mora em determinada cidade;
 - possui cônjuge ou filhos;
 - está sem renda;
-- está com vergonha;
+- sente vergonha;
 - prefere áudio;
-- responde à noite;
+- responde em determinado horário;
 - tem dificuldade tecnológica;
 - recebeu negativa;
-- possui determinado documento;
+- possui documentos;
 - vive uma cena específica.
 
 Use fatos individuais somente quando vierem:
 
-1. do gatilho confirmado;
-2. da conversa anterior;
+1. da origem confirmada;
+2. da interação real;
 3. de dado fornecido;
 4. de resposta da própria pessoa.
 
 Padrões da persona devem aparecer como:
 
 - generalizações responsáveis;
-- perguntas;
 - hipóteses;
+- perguntas;
 - bifurcações.
 
-Exemplo adequado:
-
-> Muita gente pensa que parar de contribuir encerra toda proteção imediatamente. Nem sempre é assim.
-
-Exemplo inadequado:
-
-> Como você parou de contribuir e está sem renda, deve estar preocupada.
-
 Use `[NOME]`, nunca o nome fictício da persona.
+
+### Exemplo adequado
+
+> Muita gente pensa que parar de contribuir encerra toda proteção imediatamente. Nem sempre é assim, porque algumas datas ainda precisam ser verificadas.
+
+### Exemplo inadequado
+
+> Como você está desempregada e acabou de ter um bebê, provavelmente está preocupada com as contas.
 
 ---
 
 ## Estado inicial e estado final
 
-O funil deve declarar claramente:
-
 ### Estado inicial
 
-Combine:
+Declare:
 
-- gatilho de entrada;
+- origem;
+- cenário de entrada;
 - estágio de consciência;
-- informação já recebida;
-- motivo de interrupção conhecido;
-- dúvida principal;
-- confiança atual;
+- tema já visto;
+- interação existente;
+- principal barreira provável;
 - ação ainda não realizada.
 
 Não invente o motivo do silêncio.
 
-Se o motivo não foi informado, trate-o como desconhecido.
+Quando ele não for informado, registre:
+
+> Motivo da ausência de resposta: não informado.
 
 ### Estado final
 
-Defina uma ação observável, como:
+Defina uma ação observável e limitada à pré-qualificação, como:
 
-- responder uma pergunta;
-- retomar triagem;
-- confirmar interesse em continuar;
-- solicitar análise inicial;
-- autorizar contato da equipe;
-- receber o próximo passo;
-- iniciar agendamento;
-- acessar um conteúdo;
-- escolher entre continuar ou encerrar.
+- responder “quero entender”;
+- iniciar a conversa;
+- retomar a conversa;
+- escolher um tema inicial;
+- confirmar que deseja falar com a equipe;
+- enviar uma primeira descrição curta;
+- autorizar a continuidade pelo canal;
+- entrar na qualificação com o SDR.
 
-Evite estados abstratos como:
+Não use como estado final:
 
-- “ficar aquecido”;
-- “estar pronto”;
-- “confiar mais”.
-
-Esses estados podem fazer parte do arco, mas a saída final precisa ser executável.
+- concluir triagem;
+- ser qualificado;
+- enviar todos os documentos;
+- agendar;
+- comparecer à consulta;
+- receber proposta;
+- contratar.
 
 ---
 
-## Estágios de consciência
+## Estágios de consciência aplicáveis
 
-Utilize os estágios como ferramenta interna.
+Use os estágios como ferramenta interna.
 
 ### Pouco consciente
 
-A pessoa ainda não relaciona a situação a uma questão jurídica.
+A pessoa ainda não percebe que a situação pode ter dimensão jurídica.
 
 Priorize:
 
-- identificação;
+- reconhecimento da situação;
 - consequência prática;
 - descoberta;
-- explicação básica;
+- linguagem cotidiana;
 - pergunta simples.
-
-Não comece por contratação.
 
 ### Consciente do problema
 
-A pessoa reconhece a dificuldade, mas não sabe que existe caminho jurídico.
+A pessoa sabe que algo está errado, mas não sabe que pode existir uma proteção ou caminho jurídico.
 
 Priorize:
 
-- mecanismo;
-- critério;
-- mito;
-- diferença entre problema cotidiano e possibilidade jurídica;
-- próximo passo de baixa fricção.
+- explicação básica;
+- diferença entre problema cotidiano e questão jurídica;
+- critério geral;
+- mito inicial;
+- convite para entender.
 
 ### Consciente da solução
 
-A pessoa sabe que pode existir solução, mas não sabe como funciona ou em quem confiar.
+A pessoa sabe que pode existir uma saída jurídica, mas ainda não entende como verificar ou em quem confiar.
 
 Priorize:
 
-- método;
-- documentos;
+- método de análise;
+- pontos que normalmente precisam ser verificados;
 - limites;
-- prova real;
-- papel do profissional;
-- redução de risco percebido.
+- prova real ou informativa;
+- papel da equipe;
+- redução de desconfiança.
 
-### Consideração
+### Consideração inicial
 
-A pessoa compara alternativas ou adia.
+A pessoa compara informações ou adia a primeira conversa, mas ainda não foi qualificada.
 
 Priorize:
 
-- objeção central;
-- clareza de processo;
-- condições reais;
-- diferença entre analisar e prometer;
-- custo verdadeiro da inércia, quando houver;
-- convite claro.
+- objeção pré-qualificação;
+- clareza sobre o que acontecerá ao responder;
+- baixo esforço necessário;
+- ausência de promessa;
+- convite direto ao SDR.
 
-### Pronta para o próximo passo
+Não apresente:
 
-Reduza a nutrição.
+- proposta;
+- honorários;
+- contratação;
+- agendamento;
+- comparação comercial.
 
-Não continue educando quem já pediu para avançar.
+### Pronta para conversar
 
-Pare a sequência e faça o handoff.
+Pare de nutrir.
+
+Faça o handoff imediato para o SDR.
 
 ---
 
-## Gatilhos de entrada
+## Tratamento dos cenários de entrada
 
-Adapte a abertura ao evento real.
-
-### Entrou por anúncio ou conteúdo e não iniciou triagem
-
-Não finja conversa anterior detalhada.
-
-Retome:
-
-- o tema que motivou o clique;
-- a dúvida central;
-- uma pergunta simples;
-- a forma de continuar.
-
-### Iniciou triagem e parou
-
-Não volte ao começo.
-
-Retome:
-
-- a última pergunta;
-- por que ela importa;
-- como responder;
-- o que acontecerá depois.
-
-### Concluiu triagem, mas não avançou
-
-Não refaça perguntas.
-
-Priorize:
-
-- clareza sobre a próxima etapa;
-- valor da conversa;
-- redução de insegurança;
-- convite para iniciar agendamento.
-
-Não agende dentro desta skill.
-
-### Conversou e interrompeu antes da consulta
-
-Retome o ponto específico.
+### Cenário A — nunca iniciou a conversa
 
 Não use:
 
-- “ainda tem interesse?”;
+- “vamos continuar”;
+- “retomando nossa conversa”;
+- “você parou de responder”;
+- “vi que não concluiu”.
+
+A abertura deve:
+
+- conectar-se ao tema de entrada;
+- explicar a relevância;
+- oferecer uma primeira interação simples;
+- permitir resposta sem exposição excessiva.
+
+### Cenário B — recebeu abordagem e não respondeu
+
+Não cobre retorno.
+
+Não use:
+
 - “viu minha mensagem?”;
-- “alguma novidade?”.
+- “aguardo sua resposta”;
+- “ainda tem interesse?”;
+- “por que não respondeu?”.
 
-Leve nova informação útil ou reduza o esforço da resposta.
+A nova mensagem deve acrescentar:
 
-### Lead antigo pré-consulta
+- informação;
+- contexto;
+- clareza;
+- uma resposta mais fácil.
 
-Use somente quando a política real permitir.
+### Cenário C — iniciou e parou antes da qualificação
 
-Reconheça o intervalo.
+Retome somente o que estiver confirmado.
 
-Não finja continuidade imediata.
+Não refaça a conversa inteira.
 
-Explique por que o tema está sendo retomado.
+Não finja saber o motivo da interrupção.
 
-Não invente mudança legislativa, prazo ou novidade.
+Pode dizer:
 
----
+> Você chegou a falar com a equipe sobre [TEMA CONFIRMADO], mas a conversa não avançou até a etapa em que conseguimos entender a situação.
 
-## Cadência e quantidade de contatos
+Depois:
 
-A arquitetura não precisa ter sete dias.
+- entregue uma informação útil;
+- simplifique a retomada;
+- convide o lead a continuar;
+- deixe a qualificação para o SDR.
 
-A quantidade de contatos deve depender de:
-
-- estágio;
-- gatilho;
-- distância para a ação;
-- complexidade;
-- canal;
-- material já enviado;
-- política do escritório.
-
-Em geral:
-
-- pouco consciente: mais educação;
-- consciente do problema: educação e mecanismo;
-- consciente da solução: prova, método e objeção;
-- consideração: sequência mais curta;
-- pronto para agir: handoff imediato.
-
-Quando o usuário fornecer duração, datas ou intervalos, respeite-os.
-
-Quando não fornecer:
-
-- organize por `Contato 1`, `Contato 2`, `Contato 3`;
-- use `[INTERVALO DEFINIDO PELO ESCRITÓRIO]`;
-- não invente dia, horário ou frequência;
-- não apresente uma cadência como política real.
-
-Pode sugerir uma cadência somente quando o usuário pedir recomendação.
-
-Nesse caso, marque-a como proposta adaptável, não como compromisso já adotado.
+Não retome uma pergunta técnica extensa dentro da nutrição.
 
 ---
 
-## Arquitetura modular do funil
+## Arquitetura-base da sequência
 
-Selecione apenas os módulos necessários.
+Quando o usuário não definir quantidade, produza uma arquitetura-base de **7 contatos**.
 
-Não use todos mecanicamente.
+Os sete contatos preservam o arco da referência original, mas não precisam ser enviados em sete dias consecutivos.
 
-### 1. Continuidade e relevância
+Use:
 
-Função:
+- `Contato 1` a `Contato 7`;
+- `[INTERVALO DEFINIDO PELO ESCRITÓRIO]` quando a cadência não tiver sido informada.
 
-- retomar o gatilho;
-- mostrar por que a mensagem é pertinente;
-- conectar o tema à situação;
-- obter uma resposta simples.
+Adapte ou reduza a quantidade somente quando:
 
-O lead deve pensar:
+- o usuário pedir;
+- o canal exigir;
+- o lead estiver mais consciente;
+- já existir conteúdo recebido;
+- uma sequência menor for claramente mais adequada.
 
-> Isso pode ter relação com o que aconteceu comigo.
+Nunca prolongue a nutrição depois que o lead responder.
 
-### 2. Identificação e impacto prático
-
-Função:
-
-- traduzir o problema para a vida real;
-- reduzir isolamento;
-- demonstrar compreensão;
-- mostrar o que está em jogo.
-
-Não dramatize.
-
-Não atribua uma cena individual sem confirmação.
-
-### 3. Mecanismo jurídico acessível
+### Contato 1 — descoberta e relevância
 
 Função:
 
-- explicar como a proteção funciona;
-- apresentar o critério principal;
-- traduzir o termo jurídico;
-- mostrar o que precisa ser verificado.
+- conectar o tema à situação cotidiana;
+- mostrar que existe algo a compreender;
+- gerar a primeira resposta.
 
-Não entregue parecer individual.
-
-### 4. Quebra de mito
+### Contato 2 — identificação e impacto
 
 Função:
 
-- corrigir a crença que impede avanço;
-- explicar por que ela é incompleta;
-- mostrar a diferença entre regra geral e caso concreto;
-- convidar a pessoa a verificar seu cenário.
+- mostrar por que o tema importa;
+- traduzir a dor ou consequência;
+- reduzir sensação de isolamento;
+- ampliar consciência.
 
-### 5. Confiança e prova
-
-Função:
-
-- demonstrar que existe método;
-- reduzir desconfiança;
-- apresentar prova real, quando disponível;
-- mostrar como o caso é analisado.
-
-### 6. Objeção central
+### Contato 3 — conscientização e mecanismo
 
 Função:
 
-- trabalhar uma resistência principal;
-- usar a linguagem real do público;
-- responder o medo verdadeiro;
-- não transformar a mensagem em confronto.
+- explicar uma regra ou mecanismo central;
+- corrigir interpretação simplista;
+- mostrar o que precisa ser verificado;
+- preservar o limite entre informação e análise individual.
 
-### 7. Clareza do próximo passo
-
-Função:
-
-- dizer o que acontecerá;
-- explicar quem responde;
-- mostrar o esforço necessário;
-- reduzir incerteza operacional.
-
-Não invente procedimento do escritório.
-
-### 8. Convite proporcional
+### Contato 4 — confiança e prova
 
 Função:
 
-- sintetizar;
-- pedir a ação final;
-- tornar a resposta simples;
-- não pressionar.
+- demonstrar que o tema possui critérios verificáveis;
+- usar prova real, institucional ou de método;
+- reduzir medo de golpe, promessa ou improviso.
 
-### 9. Encerramento respeitoso
+Se não houver case real autorizado, não crie narrativa de cliente.
+
+### Contato 5 — quebra de objeção inicial
 
 Função:
 
-- concluir a sequência;
-- explicar o que acontecerá;
-- permitir retorno;
-- respeitar silêncio e recusa.
+- trabalhar a principal barreira antes da conversa;
+- explicar por que a objeção pode ser incompleta;
+- convidar a pessoa a falar com o SDR.
 
-Use a política real do escritório.
+### Contato 6 — reengajamento final
+
+Função:
+
+- sintetizar a utilidade;
+- reduzir o esforço da resposta;
+- oferecer uma escolha simples;
+- avisar que a sequência está chegando ao fim, somente se isso corresponder à política real.
+
+Não crie “última chance”, vaga, escassez ou prazo fictício.
+
+### Contato 7 — encerramento respeitoso
+
+Função:
+
+- encerrar sem cobrança;
+- permitir retorno futuro;
+- respeitar silêncio;
+- registrar o fim dos contatos conforme a política real.
+
+Não use culpa, ameaça, perda inventada ou argumento comercial final.
 
 ---
 
-## Progressão e arco
+## Arco cognitivo e emocional
 
 Cada contato deve mudar alguma coisa.
 
-A progressão pode ser:
+### Arco cognitivo possível
 
-1. “isso existe”;
-2. “isso pode ter relação comigo”;
-3. “entendi o critério”;
-4. “minha crença não era completa”;
-5. “há uma forma séria de verificar”;
-6. “minha principal dúvida tem resposta”;
-7. “sei qual é o próximo passo”;
-8. “posso decidir sem pressão”.
+1. “Esse tema existe.”
+2. “Isso pode ter relação com situações como a minha.”
+3. “Existe um critério que eu não conhecia.”
+4. “Há uma forma séria de verificar.”
+5. “Minha objeção inicial não encerra o assunto.”
+6. “Responder é simples e não significa contratar.”
+7. “Posso escolher conversar ou encerrar.”
 
-Não repita o mesmo conteúdo com palavras diferentes.
+### Arco emocional possível
 
-Não use sete mensagens de:
+1. distância;
+2. identificação;
+3. curiosidade;
+4. segurança;
+5. redução de resistência;
+6. autonomia;
+7. respeito.
 
-- apresentação do direito;
-- prova;
-- prazo;
-- CTA.
+Não repita o mesmo argumento com palavras diferentes.
 
-Distribua funções diferentes.
+Distribua funções distintas.
 
 ---
 
-## Construção de cada contato
+## Conteúdo de cada contato
 
 Cada contato deve conter, quando pertinente:
 
-1. ponte com o contexto;
+1. ponte com a origem ou o contato anterior;
 2. uma ideia principal;
 3. desenvolvimento suficiente;
 4. consequência prática;
-5. CTA coerente;
-6. indicação interna de espera ou handoff.
+5. CTA de ativação;
+6. instrução interna de parada se houver resposta.
 
-A mensagem pode ser breve.
+A mensagem pode ser curta.
 
 Ela não pode ser vazia.
 
 Evite:
 
-- “você pode ter direito” sem explicar por quê;
+- “você pode ter direito” sem explicar o motivo;
 - “busque seus direitos”;
 - “não deixe para depois”;
 - “fale com especialista”;
 - “estamos aqui para ajudar”;
+- “seu caso parece bom”;
 - frases de efeito sem conteúdo.
 
 ---
 
-## Formato das mensagens
+## CTAs de ativação
 
-### WhatsApp
+A CTA deve pedir apenas o necessário para iniciar ou retomar a conversa.
 
-Use:
+### Boas CTAs
 
-- parágrafos curtos;
-- uma ideia principal por bloco;
-- CTA simples;
-- linguagem profissional;
-- leitura confortável em tela pequena.
+- “Esse tema tem relação com o que aconteceu com você?”
+- “Quer que a equipe explique o que precisa ser verificado?”
+- “Você prefere entender primeiro [PONTO A] ou [PONTO B]?”
+- “Se quiser continuar, responda ‘quero entender’.”
+- “Quer retomar a conversa por aqui?”
+- “Posso pedir para o SDR continuar com você?”
 
-Não transforme cada contato em miniartigo.
+### CTAs inadequadas
 
-Não fragmente artificialmente em muitas mensagens de uma linha.
+- “Envie todos os seus documentos.”
+- “Qual foi a data exata de cada contribuição?”
+- “Escolha um horário.”
+- “Confirme sua consulta.”
+- “Você aceita a proposta?”
+- “Posso enviar o contrato?”
+- “Quanto pode investir?”
+- “Quer contratar?”
 
-### E-mail
+Não use várias CTAs no mesmo contato.
 
-Pode desenvolver um pouco mais:
+Não use a mesma CTA em todos os contatos.
 
-- assunto;
-- abertura;
-- conteúdo;
-- CTA;
-- assinatura.
-
-Não copie a mesma mensagem de WhatsApp em formato de e-mail.
-
-### Áudio
-
-Use somente quando:
-
-- o canal permitir;
-- houver ganho real;
-- a política do escritório permitir;
-- a preferência estiver informada ou o áudio for oferecido e escolhido.
-
-Escreva o áudio integral.
-
-Não escreva apenas “envie um áudio explicando”.
-
-### Vídeo
-
-Quando recomendar um vídeo novo:
-
-- escreva o roteiro completo ou um briefing suficientemente desenvolvido;
-- indique a função dentro do arco;
-- não invente resultado, caso ou depoimento.
-
-Quando utilizar conteúdo já existente:
-
-- use `[LINK DO CONTEÚDO REAL]`;
-- escreva a mensagem que apresenta o conteúdo;
-- explique por que vale assistir;
-- inclua CTA posterior.
+Toda resposta substantiva interrompe o funil e aciona o SDR.
 
 ---
 
-## Conteúdo jurídico
+## Conteúdo jurídico na nutrição
 
-A nutrição pode explicar:
+A sequência pode explicar:
 
-- direito em tese;
+- existência de uma proteção;
 - requisito geral;
 - mecanismo;
 - diferença entre cenários;
-- documento relevante;
+- mito;
 - prazo real;
+- importância de uma data;
 - motivo comum de dúvida;
-- possibilidade de análise.
+- necessidade de verificar fatos;
+- papel da qualificação inicial.
 
-Ela não deve:
+A sequência não deve:
 
-- concluir individualmente sem análise;
-- transformar relato em direito confirmado;
-- prometer aprovação;
+- analisar o caso individual;
+- concluir elegibilidade;
+- prometer resultado;
+- desqualificar;
+- pedir prova documental completa;
 - antecipar consulta;
-- resolver toda a estratégia jurídica.
+- detalhar estratégia processual;
+- conduzir o diagnóstico integral.
 
-Use formulações claras, como:
+Use formulações como:
 
 - “A lei prevê essa proteção quando...”
-- “O ponto que costuma definir a análise é...”
-- “Para saber se isso vale no seu caso, é preciso verificar...”
-- “Uma negativa pode ter motivos diferentes, por isso o fundamento precisa ser lido.”
-- “Se as datas e documentos confirmarem esse cenário, pode existir um caminho.”
+- “O ponto que costuma precisar de verificação é...”
+- “Isso não depende apenas de [CRENÇA COMUM].”
+- “Datas e documentos podem mudar o enquadramento.”
+- “A equipe precisa entender alguns fatos antes de dizer se existe pertinência.”
+- “Responder à mensagem inicia essa verificação; não significa que o direito já esteja confirmado.”
 
 Evite cautela vazia.
 
-Explique a regra e o motivo da análise.
+Explique a regra sem transformar o conteúdo em parecer.
 
 ---
 
@@ -834,204 +885,200 @@ Sempre realize duas traduções.
 
 Explique o conceito em linguagem cotidiana.
 
-Exemplo:
-
 > Período de graça é o tempo em que a pessoa pode continuar protegida pelo INSS mesmo depois de parar de contribuir.
 
 ### Tradução de valor
 
-Explique o que isso muda na vida prática.
+Explique o que isso pode mudar na situação prática.
 
-Exemplo:
+> Na prática, isso pode fazer diferença para quem não estava trabalhando na data do nascimento, mas ainda permanecia protegida.
 
-> Na prática, isso pode significar que a proteção ainda existia na data do nascimento, mesmo sem emprego naquele momento.
-
-Não prometa o ganho.
-
-Mostre o que pode ser buscado, evitado, regularizado ou esclarecido.
+Não afirme que o cenário se aplica ao lead sem confirmação.
 
 ---
 
-## Prova social, autoridade e prova de método
+## Prova e confiança
 
-### Quando houver prova real
+### Case real autorizado
 
-Use somente o que foi fornecido e autorizado.
-
-Pode incluir:
-
-- depoimento;
-- caso anonimizado;
-- decisão judicial validada;
-- dado institucional;
-- documento público;
-- conteúdo técnico do escritório.
+Use somente quando tiver sido fornecido e autorizado.
 
 Apresente:
 
-- contexto;
+- contexto suficiente;
 - obstáculo;
-- ponto relevante;
+- ponto jurídico relevante;
 - resultado factual;
 - limite de comparação.
 
-Não diga que o mesmo resultado ocorrerá com outros leads.
+Não use a narrativa para prometer repetição do resultado.
 
-### Quando não houver prova real
+### Prova institucional ou pública
 
-Use prova de método.
+Pode utilizar, quando tecnicamente validado:
 
-Explique:
+- regra legal;
+- decisão real;
+- orientação pública;
+- documento oficial;
+- dado institucional;
+- mudança normativa relevante.
 
-- quais fatos são analisados;
-- quais documentos mudam o enquadramento;
-- como se compara a linha do tempo;
-- como se identifica o motivo de uma negativa;
-- como se escolhe o próximo passo;
-- por que uma informação é decisiva.
+Marque `[VALIDAR JURIDICAMENTE]` quando necessário.
+
+### Prova de método
+
+Quando não houver case real:
+
+- mostre quais fatos costumam ser verificados;
+- explique por que uma data importa;
+- mostre como cenários diferentes recebem análises diferentes;
+- explique que o SDR reúne informações antes da avaliação jurídica;
+- demonstre seriedade pelo processo, não por autoelogio.
 
 Não invente:
 
 - cliente;
 - história;
 - tribunal;
-- quantidade de casos;
-- resultado;
-- percentual;
-- testemunho.
+- volume de casos;
+- taxa de sucesso;
+- especialização;
+- resultado.
 
 ---
 
-## Objeções
+## Objeções iniciais
 
-Trabalhe apenas objeções compatíveis com:
+Trabalhe apenas objeções que impedem a primeira conversa.
 
-- estágio;
-- gatilho;
-- mensagem anterior;
-- mapeamento;
-- próxima ação.
+Exemplos:
 
-Não crie uma biblioteca completa dentro do funil.
+- “acho que isso não é para mim”;
+- “já me disseram que não tenho direito”;
+- “não quero cair em golpe”;
+- “não entendo esse assunto”;
+- “não tenho todos os documentos”;
+- “não quero perder tempo”;
+- “parece muito complicado”;
+- “vou ver isso depois”.
 
-Escolha uma objeção dominante ou distribua objeções distintas quando o arco exigir.
+Não trabalhe nesta skill:
 
-Possíveis temas:
+- preço;
+- honorários;
+- percentual;
+- parcelamento;
+- contrato;
+- comparação de proposta;
+- decisão de contratação;
+- objeções posteriores à consulta.
 
-- “não acho que isso seja para mim”;
-- “já foi negado”;
-- “não confio”;
-- “não tenho documento”;
-- “vai demorar”;
-- “não quero gastar”;
-- “não tenho tempo”;
-- “vou deixar para depois”.
-
-Use condições comerciais somente se tiverem sido informadas.
-
-Não presuma:
-
-- análise gratuita;
-- pagamento por êxito;
-- ausência de entrada;
-- ausência de despesas.
+Se uma objeção comercial surgir durante a nutrição, interrompa a automação e encaminhe para atendimento humano, sem improvisar fechamento.
 
 ---
 
 ## Urgência e perda
 
-Use urgência somente quando houver fundamento real.
+Use urgência somente quando houver fundamento jurídico real.
 
 Pode decorrer de:
 
 - prescrição;
 - decadência;
-- prazo para recurso;
-- prazo contratual;
+- prazo recursal;
+- prazo administrativo;
 - leilão;
 - audiência;
-- risco operacional verdadeiro;
-- perda progressiva comprovada.
+- risco concreto de perda.
 
 A mensagem deve explicar:
 
 1. qual é o marco;
-2. como funciona;
+2. por que ele importa;
 3. o que pode ser perdido;
-4. o que depende de validação;
-5. qual ação é adequada.
+4. o que ainda precisa ser validado;
+5. por que vale iniciar a conversa.
 
 Não use urgência em todos os contatos.
 
-Não use o prazo como argumento final depois de uma recusa.
+Não invente:
 
-Quando não houver urgência real, use:
+- prazo para responder à equipe;
+- encerramento “amanhã”;
+- disponibilidade limitada;
+- última vaga;
+- condição temporária;
+- escassez.
 
-- clareza;
+Quando não houver urgência jurídica real, use:
+
 - relevância;
+- clareza;
+- identificação;
 - confiança;
-- benefício;
-- simplicidade do próximo passo.
+- simplicidade da resposta.
 
 ---
 
-## Honorários e condições comerciais
+## Formato por canal
 
-Inclua honorários somente quando:
+### WhatsApp
 
-- forem relevantes para a objeção ou etapa;
-- tiverem sido informados;
-- a comunicação estiver autorizada.
+Use:
 
-Explique, conforme os dados reais:
+- parágrafos curtos;
+- uma ideia principal por bloco;
+- leitura confortável em tela pequena;
+- CTA simples;
+- linguagem profissional;
+- poucos emojis e apenas quando funcionais.
 
-- forma de cobrança;
-- percentual ou valor;
-- base;
-- momento;
-- pagamento inicial;
-- despesas;
-- consequência sem êxito.
+Não transforme cada contato em miniartigo.
 
-Não invente uma vantagem financeira.
+Não fragmente artificialmente em muitas mensagens de uma linha.
 
-Não use “sem risco” quando existir qualquer custo, obrigação ou incerteza.
+### E-mail
 
----
+Inclua:
 
-## CTAs progressivas
+- assunto;
+- abertura;
+- conteúdo;
+- CTA;
+- assinatura ou identificação.
 
-As CTAs devem evoluir.
+Adapte o desenvolvimento.
 
-### Baixa fricção
+Não copie mecanicamente a versão de WhatsApp.
 
-- responder “sim” ou “não”;
-- dizer se a situação parece familiar;
-- confirmar um fato simples;
-- pedir a explicação seguinte;
-- escolher receber texto ou áudio.
+### Áudio
 
-### Média fricção
+Use somente quando:
 
-- retomar de onde parou;
-- responder a pergunta pendente;
-- autorizar continuidade;
-- enviar informação inicial;
-- pedir que a equipe explique o próximo passo.
+- o canal permitir;
+- houver ganho real;
+- a política do escritório permitir;
+- a pessoa tiver escolhido o formato ou houver autorização expressa.
 
-### Handoff
+Escreva o áudio integral.
 
-- iniciar triagem;
-- retomar triagem;
-- receber contato da equipe;
-- iniciar agendamento;
-- escolher continuar ou encerrar.
+Não escreva apenas “envie um áudio explicando”.
 
-Não use CTA de contratação quando o objetivo final é apenas retomar triagem ou agendar.
+### Vídeo ou conteúdo externo
 
-Não use a mesma CTA em todos os contatos.
+Quando recomendar conteúdo novo:
 
-Não use várias CTAs no mesmo bloco.
+- escreva o roteiro completo ou briefing desenvolvido;
+- indique a função dentro do arco;
+- mantenha o limite pré-qualificação.
+
+Quando utilizar conteúdo existente:
+
+- use `[LINK DO CONTEÚDO REAL]`;
+- escreva a mensagem de apresentação;
+- explique por que vale acessar;
+- inclua CTA posterior de ativação.
 
 ---
 
@@ -1041,117 +1088,146 @@ Silêncio não significa:
 
 - consentimento;
 - interesse;
-- preferência;
 - objeção;
 - recusa;
 - disponibilidade;
+- preferência de canal;
 - autorização para áudio;
+- autorização para qualificação;
 - autorização para agendamento.
 
 A sequência pode continuar apenas de acordo com:
 
-- cadência autorizada;
+- canal autorizado;
+- cadência real;
 - política de contato;
-- canal permitido;
 - limite de contatos.
 
 Quando o lead responder:
 
-1. interrompa o disparo automático;
+1. pare a automação;
 2. reconheça a resposta;
-3. continue de forma coerente;
-4. faça o handoff quando a ação final ocorrer.
+3. não envie o contato seguinte;
+4. passe o histórico ao SDR;
+5. permita que o SDR faça a qualificação.
 
-Não continue enviando conteúdos programados para quem já respondeu e avançou.
+Quando o lead pedir para não receber mensagens:
 
-Quando a pessoa disser que não deseja continuar:
-
-- interrompa;
-- respeite;
-- encerre;
-- não envie último argumento de convencimento.
+- interrompa imediatamente;
+- confirme o encerramento de forma breve;
+- não envie último argumento;
+- respeite a política aplicável.
 
 ---
 
-## Bifurcações e handoff
+## Bifurcações essenciais
 
-Inclua somente ramos que mudem a sequência.
+Inclua somente ramos que mudem o comportamento da sequência.
 
-### Se demonstrar interesse
+### Se responder com interesse
 
-- responda à dúvida;
-- reduza o esforço;
-- conduza à ação final;
-- pare o restante do funil quando houver avanço.
+> Entendi, [NOME]. Vou encaminhar sua resposta para [SDR OU RESPONSÁVEL], que vai continuar por aqui e entender os pontos necessários com você.
 
-### Se fizer pergunta jurídica individual
+*Pare o funil e faça o handoff.*
 
-- responda apenas até o limite educativo;
-- não entregue consulta improvisada;
-- encaminhe para análise ou etapa adequada.
+### Se fizer pergunta geral
 
-### Se trouxer objeção
+Responda de modo educativo e breve.
 
-- trate a objeção real;
-- não envie o próximo conteúdo como se nada tivesse acontecido;
-- retome o arco depois da resposta, se ainda fizer sentido.
+Depois:
+
+> Para verificar como isso se relaciona à sua situação, [SDR OU RESPONSÁVEL] precisa entender alguns fatos com você. Vou pedir que continue por aqui.
+
+*Pare o funil.*
+
+### Se relatar a situação
+
+Não faça análise dentro da automação.
+
+> Obrigado por explicar. Esse contexto já ajuda a equipe a começar do ponto certo. Vou encaminhar sua mensagem para [SDR OU RESPONSÁVEL] continuar com você.
+
+*Pare o funil.*
+
+### Se disser “não sei”
+
+Reduza a fricção.
+
+> Tudo bem. Você não precisa saber enquadrar a situação agora. A equipe começa com algumas perguntas simples para entender se o tema tem relação com o que aconteceu. Quer continuar?
+
+Se responder, pare e faça o handoff.
+
+### Se disser que não tem documentos
+
+Não encerre automaticamente.
+
+> Não ter todos os documentos agora não significa, por si só, que não vale conversar. Primeiro a equipe entende o que aconteceu; depois explica o que realmente precisaria ser localizado.
+
+> Quer iniciar essa conversa?
+
+Se responder, pare e faça o handoff.
+
+### Se disser que não se aplica
+
+Agradeça e encerre.
+
+Não tente converter por insistência.
+
+### Se recusar ou pedir opt-out
+
+Encerre imediatamente.
+
+### Se fizer pergunta comercial
+
+Não apresente condições.
+
+> Essa parte depende das informações e do procedimento real do escritório. Vou encaminhar sua pergunta para a equipe responder corretamente.
+
+*Pare o funil.*
 
 ### Se pedir agendamento
 
-- pare a nutrição;
-- faça o handoff para `/agendamento-consulta`.
+Não agende dentro da nutrição.
 
-### Se já estiver agendado
+> Vou encaminhar sua mensagem para a equipe. Antes do agendamento, o SDR precisa entender os pontos iniciais e orientar a próxima etapa.
 
-- pare;
-- use `/confirmacao-consulta`.
-
-### Se informar ausência em consulta
-
-- use `/recuperacao-no-show`.
-
-### Se a consulta já ocorreu
-
-- não use este funil;
-- use o roteiro correspondente ou `/follow-up-decisao`, quando disponível.
-
-### Se recusar
-
-- encerre;
-- não continue a sequência.
+*Pare o funil.*
 
 ---
 
-## Reutilização
+## Handoff para o SDR
 
-O funil deve funcionar com leads diferentes dentro do recorte.
+O handoff deve ocorrer na primeira resposta que demonstre abertura para conversar.
 
-Use:
+Transmita ao SDR:
 
-- `[NOME]`;
-- fatos do gatilho;
-- placeholders;
-- condições;
-- bifurcações;
-- subperfis;
-- mensagens adaptáveis.
+- nome ou identificador;
+- origem do lead;
+- campanha ou conteúdo de entrada;
+- cenário de entrada;
+- mensagens já recebidas;
+- conteúdos enviados;
+- resposta atual;
+- dúvida apresentada;
+- objeção mencionada;
+- estágio de consciência aparente;
+- consentimentos ou recusas expressos;
+- ponto exato em que a automação parou.
 
-Não construa um personagem principal.
+Não transmita como fato:
 
-Não presuma que todas as pessoas:
+- emoção presumida;
+- renda presumida;
+- composição familiar presumida;
+- motivo presumido do silêncio;
+- elegibilidade;
+- conclusão jurídica;
+- classificação inventada.
 
-- entraram pelo mesmo anúncio;
-- possuem a mesma história;
-- têm a mesma objeção;
-- estão no mesmo estágio;
-- responderão da mesma forma.
+O SDR não deve repetir automaticamente:
 
-Quando houver subperfis relevantes:
-
-1. escreva um tronco comum;
-2. crie bifurcações apenas onde o conteúdo realmente muda;
-3. explique o critério de escolha;
-4. não misture mensagens incompatíveis.
+- conteúdos que o lead já recebeu;
+- perguntas já respondidas;
+- explicações que motivaram a resposta.
 
 ---
 
@@ -1159,53 +1235,56 @@ Quando houver subperfis relevantes:
 
 Entregue nesta ordem:
 
-# 1. PONTO DE PARTIDA, OBJETIVO E LIMITES
+# 1. ESCOPO E PONTO DE PARTIDA
 
 Bloco curto contendo:
 
 - nicho;
-- serviço;
-- recorte;
+- direito ou problema;
+- público;
 - canal;
-- gatilho de entrada;
-- última interação;
+- origem;
+- cenário de entrada;
 - estágio de consciência;
 - estado inicial;
-- ação final esperada;
-- próximo passo real;
+- barreira principal;
+- estado final;
 - responsável pelo handoff;
 - quantidade de contatos;
-- cadência informada ou placeholders;
-- provas disponíveis;
-- condições comerciais utilizáveis;
+- cadência informada ou placeholder;
+- conteúdos e provas disponíveis;
 - itens fora do escopo.
 
-# 2. MAPA ESTRATÉGICO DO FUNIL
+Não inclua condições comerciais.
+
+# 2. MAPA ESTRATÉGICO
 
 Apresente:
 
 - crença principal;
-- dúvida central;
-- objeção dominante;
-- ganho principal;
-- urgência real;
-- prova;
-- motivo de abandono conhecido ou “não informado”;
+- dúvida inicial;
+- objeção pré-qualificação dominante;
+- impacto prático;
+- ganho informativo;
+- urgência jurídica real, se houver;
+- prova disponível;
+- conteúdos indispensáveis;
 - arco cognitivo;
 - arco emocional;
 - progressão das CTAs;
-- critério de saída.
+- critério de interrupção;
+- critério de encerramento.
 
 # 3. ARQUITETURA DA SEQUÊNCIA
 
 Use tabela:
 
-| Contato | Momento | Função | Mudança esperada | Conteúdo principal | CTA | Próximo ramo |
+| Contato | Momento | Função | Mudança esperada | Conteúdo principal | CTA de ativação | Ação se responder |
 |---|---|---|---|---|---|---|
 
 Se houver datas ou intervalos fornecidos, inclua-os.
 
-Não invente.
+Se não houver, use `[INTERVALO DEFINIDO PELO ESCRITÓRIO]`.
 
 # 4. MENSAGENS PRONTAS
 
@@ -1219,49 +1298,52 @@ Para cada contato:
 
 > [mensagem]
 
-*Aguarde / handoff / continue conforme a resposta.*
+*Se houver resposta, pare a sequência e faça o handoff para o SDR.*
 
-Quando houver áudio ou vídeo, escreva o conteúdo integral ou o briefing completo.
+Quando houver áudio, vídeo ou conteúdo, desenvolva integralmente o material necessário.
 
 Não entregue duas versões de cada mensagem sem necessidade.
 
-# 5. BIFURCAÇÕES ESSENCIAIS
+# 5. BIFURCAÇÕES DE RESPOSTA
 
 Inclua somente:
 
 - interesse;
-- dúvida;
-- objeção;
-- resposta à pergunta pendente;
+- dúvida geral;
+- relato inicial;
+- “não sei”;
+- falta de documentos;
+- objeção inicial;
+- pergunta comercial;
 - pedido de agendamento;
 - recusa;
-- opt-out;
-- mudança de estágio.
+- opt-out.
 
-Escreva as mensagens necessárias.
-
-# 6. HANDOFF PARA A PRÓXIMA ETAPA
+# 6. HANDOFF PARA O SDR
 
 Explique:
 
 - qual resposta encerra a nutrição;
-- para qual skill ou equipe o lead vai;
-- quais informações precisam acompanhar;
-- o que não deve ser repetido.
+- quem assume;
+- quais informações acompanham;
+- o que não deve ser repetido;
+- o que não pode ser concluído antes da qualificação.
 
 # 7. PONTOS DE ADAPTAÇÃO
 
 Lista curta contendo apenas:
 
-- dados exatos;
-- links;
-- provas;
-- política;
-- cadência;
+- nome institucional;
 - responsável;
-- condição comercial;
+- canal;
+- origem;
+- link;
 - conteúdo real;
-- validações jurídicas específicas.
+- prova real;
+- cadência;
+- política de contato;
+- prazo jurídico validado;
+- validações técnicas específicas.
 
 ---
 
@@ -1271,66 +1353,83 @@ Antes de entregar, verifique silenciosamente:
 
 ### Produto e jornada
 
-- a saída é realmente um funil de nutrição?
-- o ponto de entrada está claro?
-- a ação final é observável?
-- o funil termina antes de executar integralmente a próxima etapa?
-- houve triagem completa?
-- houve consulta?
-- houve fechamento?
-- houve agendamento completo?
-- houve confirmação ou no-show?
-- o lead já estava em etapa incompatível com nutrição?
+- a saída é um funil para lead frio?
+- o lead ainda não foi qualificado?
+- a origem está clara?
+- o cenário de entrada está claro?
+- o objetivo é obter resposta e iniciar ou retomar a qualificação?
+- a skill executou triagem?
+- coletou requisitos em sequência?
+- classificou o lead?
+- pediu documentos?
+- agendou?
+- apresentou proposta?
+- abordou honorários?
+- tratou lead pós-triagem?
+- tentou recuperar lead já qualificado?
+- invadiu uma skill futura?
 
 ### Arco e progressão
 
 - os contatos formam uma sequência?
 - cada contato tem função diferente?
 - o conteúdo avança?
-- alguma mensagem repete a anterior?
+- existe repetição?
 - as CTAs evoluem?
-- o funil está longo demais para o estágio?
-- a pessoa pronta para avançar foi mantida desnecessariamente na sequência?
+- a arquitetura-base foi adaptada quando necessário?
+- a sequência para na primeira resposta?
+- o último contato encerra respeitosamente?
+
+### Cenário de entrada
+
+- a mensagem para quem nunca conversou finge continuidade?
+- a mensagem para quem não respondeu cobra retorno?
+- a mensagem para quem parou inventa o motivo?
+- informações anteriores foram respeitadas?
+- o lead é convidado a conversar sem exposição excessiva?
 
 ### Persona e factualidade
 
 - a persona orientou sem virar lead individual?
 - idade, família, renda, rotina, documento, negativa ou emoção foram presumidos?
 - o motivo do silêncio foi inventado?
-- algum nome fictício substituiu `[NOME]`?
+- o nome fictício da persona apareceu?
 - o subperfil dominante contaminou todo o tronco?
-- os ramos estão condicionados?
+- as bifurcações estão condicionadas?
 
 ### Conteúdo e especificidade
 
-- o funil pertence integralmente ao nicho?
+- o funil pertence ao nicho?
 - poderia ser usado em outro nicho apenas trocando nomes?
-- o mecanismo jurídico foi explicado?
-- o ganho foi traduzido?
-- a mensagem contém conteúdo ou apenas frase de efeito?
-- o profissional recebeu mensagens prontas?
-- o ativo recomendado foi escrito ou apenas indicado?
+- o mecanismo foi explicado?
+- a consequência prática foi traduzida?
+- o material contém mensagens prontas?
+- os conteúdos recomendados foram escritos?
+- o lead recebeu informação suficiente para entender por que vale responder?
 
 ### Segurança
 
 - houve promessa?
-- houve direito individual afirmado sem análise?
-- houve prova, case ou estatística inventada?
+- houve direito individual afirmado?
+- houve desqualificação automática?
+- houve case, estatística ou jurisprudência inventada?
 - houve urgência artificial?
-- houve condição comercial presumida?
-- houve política institucional inventada?
-- houve preferência de canal ou formato presumida?
-- algum prazo jurídico controvertido foi apresentado sem validação?
+- houve prazo comercial inventado?
+- houve condição comercial?
+- houve procedimento institucional inventado?
+- houve preferência de formato presumida?
+- algum ponto controvertido exige `[VALIDAR JURIDICAMENTE]`?
 
 ### Canal e comportamento
 
 - as mensagens são adequadas ao canal?
 - o silêncio foi tratado como informação?
-- o funil continuaria depois de resposta ou avanço?
+- a automação continuaria depois de resposta?
 - a recusa foi respeitada?
-- o opt-out encerra a sequência?
-- os contatos seguem cadência real ou placeholder?
-- o último contato encerra sem culpa, ameaça ou pressão?
+- o opt-out encerra imediatamente?
+- os intervalos seguem informação real ou placeholder?
+- o último contato evita culpa, ameaça e pressão?
+- o handoff oferece contexto suficiente ao SDR?
 
 Corrija silenciosamente o que falhar.
 
@@ -1340,16 +1439,19 @@ Corrija silenciosamente o que falhar.
 
 O funil está pronto quando:
 
-1. parte do gatilho real;
-2. reconhece o estágio atual;
-3. constrói um arco progressivo;
-4. educa sem antecipar consulta;
-5. reduz objeção sem manipular;
-6. demonstra confiança com prova real ou método;
-7. traduz Direito e valor;
-8. usa CTAs proporcionais;
-9. respeita silêncio e recusa;
-10. interrompe a sequência quando o lead avança;
-11. faz handoff sem repetir etapas;
-12. permanece reutilizável dentro do recorte;
-13. exige adaptação apenas de fatos, links, políticas e condições reais.
+1. parte de lead frio ainda não qualificado;
+2. distingue ausência de interação de interrupção pré-qualificação;
+3. transforma o mapeamento em conteúdo específico;
+4. constrói um arco progressivo;
+5. educa sem executar triagem;
+6. gera identificação sem transformar a persona em indivíduo;
+7. explica Direito e consequência prática;
+8. usa prova real, pública ou de método sem invenção;
+9. trabalha apenas objeções anteriores à qualificação;
+10. não aborda honorários ou condições comerciais;
+11. usa CTAs de ativação proporcionais;
+12. para na primeira resposta substantiva;
+13. entrega o lead ao SDR com contexto;
+14. respeita silêncio, recusa e opt-out;
+15. permanece reutilizável dentro do recorte;
+16. exige adaptação apenas de fatos, links, políticas e conteúdos reais.
