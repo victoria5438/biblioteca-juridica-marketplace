@@ -1,3 +1,4 @@
+---
 name: funil-nutricao
 description: Cria funis jurídicos automatizáveis de nutrição para leads frios captados, mas ainda inativos e fora da pré-qualificação. Produz uma sequência progressiva, específica para o nicho e aplicável em escala, que educa, gera identificação, reduz resistência e busca a primeira mensagem do lead. A automação termina quando qualquer mensagem é recebida; a partir daí, o SDR assume.
 argument-hint: [mapeamento de persona, nicho ou direito, origem do lead, canal, tema de entrada, cadência, conteúdos e provas reais disponíveis e responsável pela pré-qualificação]
