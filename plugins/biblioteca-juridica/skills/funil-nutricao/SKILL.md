@@ -1,6 +1,6 @@
 ---
 name: funil-nutricao
-description: Cria funis jurídicos automatizáveis de nutrição para leads frios captados, mas ainda inativos e fora da pré-qualificação. Produz uma sequência progressiva, específica para o nicho e aplicável em escala, que educa, gera identificação, reduz resistência e busca a primeira resposta. A automação termina quando o lead responde; a partir daí, o SDR assume.
+description: Cria funis jurídicos automatizáveis de nutrição para leads frios captados, mas ainda inativos e fora da pré-qualificação. Produz uma sequência progressiva, específica para o nicho e aplicável em escala, que educa, gera identificação, reduz resistência e busca a primeira mensagem do lead. A automação termina quando qualquer mensagem é recebida; a partir daí, o SDR assume.
 argument-hint: [mapeamento de persona, nicho ou direito, origem do lead, canal, tema de entrada, cadência, conteúdos e provas reais disponíveis e responsável pela pré-qualificação]
 ---
 
@@ -13,7 +13,7 @@ Produzir um funil jurídico de nutrição destinado exclusivamente a **leads fri
 O funil deve conduzir o lead de um estado como:
 
 - deixou seus dados depois de um anúncio, conteúdo, formulário ou landing page;
-- clicou para conversar, mas não iniciou uma interação substantiva;
+- clicou para conversar, mas não enviou mensagem;
 - recebeu uma primeira abordagem automática ou institucional, mas permaneceu inativo;
 - ainda não compreendeu por que o tema pode ser relevante;
 - ainda não percebeu valor suficiente em responder;
@@ -37,12 +37,12 @@ A função da sequência é:
 - corrigir crenças iniciais;
 - reduzir resistência;
 - criar confiança;
-- facilitar a primeira resposta;
+- facilitar a primeira mensagem do lead;
 - entregar o lead ao SDR.
 
 A função da sequência **não é pré-qualificar, qualificar, analisar, agendar ou vender**.
 
-Assim que houver qualquer resposta substantiva, a automação deve parar.
+Assim que houver qualquer mensagem recebida do lead, a automação deve parar.
 
 A partir desse momento, o SDR assume.
 
@@ -109,7 +109,7 @@ A sequência deve ser:
 - independente de interpretação manual da conversa anterior;
 - baseada em condições objetivas;
 - fácil de implementar com tags, eventos e estados simples;
-- interrompida na primeira resposta.
+- interrompida na primeira mensagem recebida.
 
 Pode conter:
 
@@ -170,20 +170,40 @@ A saída deve funcionar sem depender de:
 
 Por padrão, presuma um único cenário de entrada:
 
-> O lead foi captado, permanece frio, ainda não iniciou uma conversa substantiva e ainda não entrou na pré-qualificação.
+> O lead foi captado, permanece frio, ainda não enviou mensagem e ainda não entrou na pré-qualificação.
 
 Não crie automaticamente versões distintas para:
 
-- quem nunca escreveu;
-- quem enviou apenas uma saudação;
 - quem visualizou;
-- quem recebeu abordagem anterior;
+- quem recebeu uma abordagem anterior sem responder;
 - quem clicou e não enviou;
-- quem respondeu algo isolado.
+- quem veio de criativos diferentes, mas compartilha a mesma dor central;
+- subperfis juridicamente próximos que percorrem o mesmo arco de consciência e chegam à mesma ação final.
 
-Essas diferenças só devem gerar versões próprias quando o usuário solicitar e quando existirem tags objetivas capazes de acionar cada versão.
+Favoreça um **tronco comum** quando os subperfis compartilham:
 
-Caso contrário, produza um tronco único, automatizável e seguro para toda a base fria do segmento.
+- problema central;
+- dor ou consequência prática;
+- crença que trava a primeira mensagem;
+- estágio de consciência;
+- objeção anterior à conversa;
+- ação final esperada.
+
+A existência de particularidades jurídicas não obriga, por si só:
+
+- criar funis separados;
+- criar campanhas separadas;
+- exigir segmentação por origem;
+- duplicar toda a sequência.
+
+Quando uma diferença tornar uma frase falsa, incompleta ou confusa para parte do público, resolva com a alternativa menos complexa:
+
+1. redação abrangente no tronco comum;
+2. placeholder contextual;
+3. bifurcação curta dentro do contato relevante;
+4. variação segmentada, somente quando realmente necessária ou solicitada.
+
+Não multiplique jornadas quando uma adaptação pontual preservar a verdade e a clareza.
 
 ---
 
@@ -195,7 +215,7 @@ A skill pode começar quando:
 - o tema de origem é conhecido;
 - o canal de contato está definido;
 - o lead ainda está frio;
-- não existe interação substantiva;
+- não existe mensagem recebida do lead;
 - não houve demonstração suficiente de interesse;
 - não houve pré-qualificação;
 - não houve análise;
@@ -208,7 +228,6 @@ A skill pode tratar como lead inativo:
 - quem deixou os dados e não iniciou;
 - quem clicou e não enviou;
 - quem recebeu a abertura da equipe e não respondeu;
-- quem enviou apenas uma saudação, emoji ou manifestação sem conteúdo suficiente para iniciar a pré-qualificação.
 
 Não utilize fatos individuais desses eventos para personalizar a sequência, salvo quando houver regra objetiva e autorização expressa do usuário.
 
@@ -218,26 +237,22 @@ Não utilize fatos individuais desses eventos para personalizar a sequência, sa
 
 A automação termina quando:
 
-- o lead responde;
-- o lead faz uma pergunta;
-- o lead escolhe uma opção;
-- o lead demonstra interesse;
-- o lead manifesta dúvida;
-- o lead relata qualquer parte da situação;
-- o lead recusa;
-- o lead informa que o tema não se aplica;
-- o lead pede que os contatos sejam interrompidos;
-- a sequência chega ao encerramento sem resposta.
+- qualquer mensagem do lead é recebida, inclusive saudação, emoji ou palavra isolada; ou
+- o Contato 7 é enviado sem que nenhuma mensagem tenha sido recebida.
 
-A automação não continua tentando nutrir um lead que respondeu.
+Recusa, informação de que o tema não se aplica e pedido de interrupção também são mensagens recebidas: pausam imediatamente a nutrição e acionam a regra de encerramento correspondente.
 
-Não interprete a resposta dentro desta skill.
+A automação não continua tentando nutrir um lead que enviou qualquer mensagem.
 
-Não crie uma árvore extensa para decidir o que fazer com cada tipo de resposta.
+Uma saudação, emoji, palavra isolada ou resposta curta já altera o estado operacional do contato e deve pausar o fluxo.
+
+Não interprete a mensagem dentro desta skill.
+
+Não crie uma árvore extensa para decidir o que fazer com cada tipo de mensagem.
 
 A regra operacional é simples:
 
-> Respondeu: pare a automação e entregue ao atendimento humano.
+> Chegou mensagem do lead: pare a automação e entregue ao atendimento humano.
 
 Pedidos de interrupção, recusa ou informação de que o tema não se aplica devem encerrar o contato conforme a política real do escritório.
 
@@ -305,15 +320,15 @@ A nutrição não deve:
 - indicar estratégia;
 - estimar prazo do caso;
 - conduzir ao agendamento;
-- apresentar condições comerciais;
+- apresentar honorários, proposta, oferta ou condição de contratação;
 - substituir o SDR.
 
-Quando houver resposta:
+Quando houver qualquer mensagem recebida:
 
 1. interrompa os próximos contatos;
-2. registre o contato que gerou a resposta;
+2. registre o contato após o qual a mensagem foi recebida;
 3. encaminhe o lead ao SDR;
-4. encaminhe a resposta literal;
+4. encaminhe a mensagem literal;
 5. preserve a origem e os conteúdos já enviados;
 6. permita que o SDR inicie a pré-qualificação.
 
@@ -481,7 +496,16 @@ Use placeholders para dados exatos:
 - `[PROVA REAL AUTORIZADA]`;
 - `[PRAZO JURÍDICO VALIDADO]`;
 - `[INTERVALO DEFINIDO PELO ESCRITÓRIO]`;
-- `[POLÍTICA DE ENCERRAMENTO]`.
+- `[POLÍTICA DE ENCERRAMENTO]`;
+- `[CONDIÇÃO REAL SOBRE CUSTO OU GRATUIDADE]`;
+- `[CONDIÇÃO OPERACIONAL VALIDADA]`.
+
+Condições operacionais como custo, gratuidade, comunicação a terceiros, prazo de retorno ou efeito da primeira conversa podem aparecer quando:
+
+1. foram informadas pelo usuário; ou
+2. estão representadas por placeholder explícito para preenchimento antes da implementação.
+
+Não trate o placeholder como confirmação do fato.
 
 Mesmo com placeholder, escreva a mensagem completa ao redor dele.
 
@@ -530,8 +554,9 @@ Antes de escrever, identifique:
 8. qual mecanismo jurídico pode ser explicado;
 9. qual prova real ou de método pode gerar confiança;
 10. qual ação simples levará ao SDR;
-11. quais subperfis exigem segmentação objetiva;
-12. o que está fora da sequência.
+11. quais subperfis podem compartilhar o mesmo tronco;
+12. quais diferenças exigem apenas redação abrangente, placeholder ou bifurcação pontual;
+13. o que está fora da sequência.
 
 A skill é reutilizável entre nichos.
 
@@ -565,6 +590,32 @@ Se a resposta for sim, aprofunde:
 A especificidade deve estar no conteúdo.
 
 A automatização deve estar na estrutura.
+
+### Tronco comum e bifurcações pontuais
+
+A saída pode reunir, no mesmo funil, subperfis ou situações próximas quando existe unidade estratégica suficiente.
+
+Não exija um funil separado apenas porque:
+
+- existem nomes jurídicos diferentes;
+- há requisitos parcialmente distintos;
+- um subperfil possui uma particularidade;
+- seria possível segmentar pela campanha.
+
+Prefira linguagem comum que permaneça verdadeira para o conjunto.
+
+Quando a particularidade for indispensável, use uma bifurcação pequena dentro do contato, por exemplo:
+
+> Se o vínculo for `[CENÁRIO A]`, observe `[PONTO A]`. Se for `[CENÁRIO B]`, observe `[PONTO B]`.
+
+A bifurcação deve:
+
+- ocupar apenas o contato em que a diferença importa;
+- preservar o mesmo arco;
+- preservar a mesma CTA;
+- não criar duas jornadas completas;
+- não depender de interpretação manual;
+- poder ser executada por placeholder, escolha simples ou regra objetiva, quando necessário.
 
 ---
 
@@ -636,7 +687,7 @@ Declare:
 
 Use como padrão:
 
-> Lead captado, sem interação substantiva e ainda fora da pré-qualificação.
+> Lead captado, sem mensagem recebida e ainda fora da pré-qualificação.
 
 Não tente explicar por que o lead permaneceu em silêncio.
 
@@ -739,15 +790,18 @@ Use:
 - `Contato 1` a `Contato 7`;
 - `[INTERVALO DEFINIDO PELO ESCRITÓRIO]` quando a cadência não tiver sido informada.
 
-Adapte ou reduza a quantidade somente quando:
+Use sete contatos por padrão.
 
-- o usuário pedir;
-- o canal exigir;
-- o estágio de consciência justificar;
-- o conteúdo de entrada já tiver cumprido parte do arco;
-- uma sequência menor for mais adequada.
+Não reduza, amplie ou reorganize a quantidade por iniciativa própria em razão do nicho, subperfil ou conteúdo de entrada.
 
-Nunca prolongue a sequência depois de resposta.
+Altere a quantidade somente quando o usuário pedir expressamente.
+
+Na arquitetura de sete contatos, preserve sempre:
+
+- Contato 6 como ativação de baixa fricção;
+- Contato 7 como encerramento respeitoso desta sequência.
+
+Nunca prolongue a sequência depois de qualquer mensagem recebida.
 
 ### Contato 1 — descoberta e abertura
 
@@ -785,7 +839,15 @@ Função:
 - explicar o papel da equipe;
 - reduzir desconfiança.
 
-Escolha **um eixo central de prova**.
+Escolha **um eixo central de prova**, ligado ao tema principal do funil.
+
+A prova de método deve selecionar de dois a quatro pontos de verificação que sejam úteis para aquele eixo.
+
+Quando o funil reunir subperfis próximos:
+
+- prefira os pontos comuns;
+- use uma bifurcação curta apenas se um critério específico for indispensável;
+- não apresente um método estreito como se fosse universal para todo o público.
 
 Não transforme o contato em inventário de leis, prazos e riscos.
 
@@ -800,7 +862,7 @@ Função:
 
 ### Contato 6 — ativação de baixa fricção
 
-Função:
+Função fixa na arquitetura de sete contatos:
 
 - resumir o ganho;
 - reduzir o esforço;
@@ -809,12 +871,16 @@ Função:
 
 ### Contato 7 — encerramento respeitoso
 
-Função:
+Função fixa na arquitetura de sete contatos:
 
-- encerrar conforme política real;
+- encerrar esta sequência de nutrição;
 - retirar pressão;
-- permitir retorno;
+- permitir retorno futuro;
 - respeitar silêncio.
+
+O Contato 7 é sempre o último contato desta sequência.
+
+Não transforme essa mensagem em promessa de que o escritório nunca mais fará qualquer contato por outro fundamento legítimo. Encerre somente o funil atual.
 
 Não use:
 
@@ -960,7 +1026,7 @@ Não use várias CTAs no mesmo contato.
 
 Não use a mesma CTA em todos os contatos.
 
-Toda resposta interrompe a automação.
+Toda mensagem recebida interrompe a automação.
 
 ---
 
@@ -992,16 +1058,34 @@ A sequência não deve:
 - conduzir diagnóstico;
 - listar normas sem função comunicacional.
 
+Regras jurídicas gerais, estáveis e tecnicamente validadas podem ser apresentadas com clareza e segurança.
+
+Não enfraqueça automaticamente toda explicação com:
+
+- “talvez”;
+- “pode ser”;
+- “em alguns casos”;
+- “depende”;
+- ressalvas genéricas repetidas.
+
 Use formulações como:
 
 - “A lei prevê essa proteção quando...”
-- “O ponto que costuma precisar de verificação é...”
+- “O critério geral é...”
+- “Esse mecanismo funciona assim...”
+- “O ponto central é...”
 - “Isso não depende apenas de [CRENÇA COMUM].”
-- “Alguns fatos podem mudar o enquadramento.”
-- “A equipe precisa compreender a situação antes de qualquer conclusão.”
-- “Responder inicia uma conversa; não confirma um direito.”
+- “A equipe precisa compreender a situação antes de aplicar essa regra ao caso.”
+- “Responder inicia uma conversa; não confirma um direito individual.”
 
-Evite cautela vazia.
+Inclua ressalva quando ela for material para não tornar a regra falsa ou enganosa.
+
+A diferença central é:
+
+- pode afirmar a regra geral;
+- não pode concluir que ela se aplica ao lead.
+
+Evite tanto a cautela vazia quanto a certeza individual indevida.
 
 Explique o mecanismo com utilidade prática.
 
@@ -1021,7 +1105,7 @@ Marque `[VALIDAR JURIDICAMENTE]` quando a mensagem contiver:
 - entendimento jurisprudencial;
 - súmula;
 - tese;
-- afirmação patrimonial sensível;
+- afirmação jurídica controversa ou cuja exceção seja material para a mensagem;
 - regra processual;
 - variação territorial;
 - procedimento cartorário;
@@ -1040,7 +1124,9 @@ Não transforme a skill em ferramenta de pesquisa jurídica.
 
 Quando o usuário fornecer a base validada, use-a.
 
-Quando não fornecer, redija o conteúdo de modo seguro ou use placeholder.
+Quando a base jurídica geral for estável e validada, escreva-a de forma direta.
+
+Quando faltar validação para um ponto sensível, recente, controverso ou local, use `[VALIDAR JURIDICAMENTE]`, reformule o ponto ou utilize placeholder.
 
 ---
 
@@ -1097,15 +1183,32 @@ Use `[VALIDAR JURIDICAMENTE]` quando necessário.
 
 Quando não houver case real:
 
-- mostre qual ponto costuma ser verificado;
-- explique por que um fato importa;
-- mostre que cenários diferentes exigem análises diferentes;
+- escolha o eixo central do funil;
+- selecione de dois a quatro pontos que normalmente precisam ser verificados nesse eixo;
+- explique por que esses pontos importam;
+- mostre que a aplicação da regra exige fatos concretos;
 - explique a função da pré-qualificação;
 - demonstre seriedade pelo processo.
 
+O método deve acompanhar o tema principal.
+
+Exemplos abstratos de eixo:
+
+- vínculo e enquadramento;
+- cronologia e marcos relevantes;
+- documentos e registros;
+- composição econômica;
+- fatos geradores;
+- consenso e divergência;
+- requisitos e impedimentos.
+
+Em um funil amplo, escolha pontos comuns ao público.
+
+Em um funil com subperfis próximos, use uma bifurcação pontual somente quando um critério diferente for indispensável.
+
 Escolha poucos elementos.
 
-Não apresente uma lista enciclopédica.
+Não apresente uma lista enciclopédica nem um método estreito como universal.
 
 Não invente:
 
@@ -1149,7 +1252,7 @@ Não trabalhe:
 
 Não crie bifurcações para essas objeções posteriores.
 
-Qualquer resposta leva ao SDR.
+Qualquer mensagem recebida leva ao SDR.
 
 ---
 
@@ -1263,7 +1366,7 @@ A saída deve utilizar poucos estados.
 Condição:
 
 - contato captado;
-- nenhuma resposta substantiva;
+- nenhuma mensagem recebida;
 - nenhuma pré-qualificação iniciada;
 - sequência ativa.
 
@@ -1275,9 +1378,7 @@ Ação:
 
 Condição:
 
-- não houve resposta;
-- não houve recusa;
-- não houve pedido de interrupção;
+- nenhuma mensagem recebida depois do contato;
 - ainda existem contatos previstos.
 
 Ação:
@@ -1285,20 +1386,20 @@ Ação:
 - aguardar o intervalo;
 - enviar o contato seguinte.
 
-### Estado 3 — resposta
+### Estado 3 — mensagem recebida
 
 Condição:
 
-- qualquer resposta substantiva.
+- qualquer mensagem recebida do lead, inclusive saudação, emoji ou palavra isolada.
 
 Ação:
 
-- interromper a automação;
-- registrar a resposta;
-- enviar ao SDR;
-- não enviar contatos seguintes.
+- pausar a automação imediatamente;
+- registrar a mensagem literal;
+- enviar ao SDR ou à fila humana responsável;
+- bloquear os contatos seguintes desta sequência.
 
-Não classifique a resposta dentro do funil.
+Não classifique a mensagem dentro do funil.
 
 Não crie ramos para:
 
@@ -1310,30 +1411,28 @@ Não crie ramos para:
 - nível de interesse;
 - objeção comercial.
 
-O SDR trata esses assuntos depois do handoff.
+O atendimento humano trata esses assuntos depois do handoff.
 
-### Estado 4 — encerramento
+Quando a mensagem for recusa, informação de que o tema não se aplica ou pedido de interrupção, registre-a e aplique a regra de encerramento correspondente, sem continuar a nutrição.
+
+### Estado 4 — fim da sequência sem mensagem
 
 Condição:
 
-- recusa expressa;
-- informação de que o tema não se aplica;
-- pedido para interromper contatos;
-- fim da sequência sem resposta.
+- Contato 7 enviado;
+- nenhuma mensagem recebida.
 
 Ação:
 
-- encerrar conforme a política real;
-- impedir contatos incompatíveis;
-- não enviar argumento final de conversão.
-
-Pedidos de interrupção devem ser respeitados imediatamente.
+- encerrar esta sequência;
+- não prolongar, reciclar ou reiniciar automaticamente;
+- preservar a possibilidade de retorno espontâneo do lead.
 
 ---
 
 ## Handoff para o SDR
 
-O handoff ocorre na primeira resposta.
+O handoff ocorre na primeira mensagem recebida.
 
 Transmita:
 
@@ -1343,11 +1442,11 @@ Transmita:
 - canal;
 - contatos enviados;
 - datas ou momentos dos contatos;
-- contato que gerou a resposta;
-- resposta literal;
+- contato após o qual a mensagem foi recebida;
+- mensagem literal;
 - conteúdo acessado, quando houver confirmação;
 - consentimentos ou recusas expressos;
-- momento em que a automação foi interrompida.
+- momento em que a automação foi pausada.
 
 Não transmita como fato:
 
@@ -1366,7 +1465,7 @@ O SDR deve iniciar a pré-qualificação sem repetir desnecessariamente:
 
 - conteúdos já enviados;
 - perguntas que o lead já respondeu;
-- explicações que motivaram a resposta.
+- explicações que antecederam a mensagem do lead.
 
 ---
 
@@ -1397,11 +1496,13 @@ Bloco curto contendo:
 
 Use como cenário padrão:
 
-> Lead captado, frio, sem interação substantiva e ainda fora da pré-qualificação.
+> Lead captado, frio, sem mensagem recebida e ainda fora da pré-qualificação.
 
-Não inclua condições comerciais.
+Não inclua honorários, proposta, oferta ou condição de contratação. Condições operacionais da primeira conversa só podem aparecer quando fornecidas ou representadas por placeholder explícito.
 
 Não crie cenários individuais de conversa.
+
+Indique se o funil utiliza tronco comum e, quando houver, quais bifurcações pontuais preservam a mesma jornada.
 
 # 2. MAPA ESTRATÉGICO
 
@@ -1431,10 +1532,10 @@ Apresente de forma simples:
 
 | Estado | Condição objetiva | Ação |
 |---|---|---|
-| Lead frio | Sem resposta substantiva | Manter sequência |
-| Silêncio | Sem resposta após contato | Enviar próximo contato conforme cadência |
-| Resposta | Qualquer resposta substantiva | Parar automação e entregar ao SDR |
-| Encerramento | Recusa, interrupção ou fim da sequência | Encerrar conforme política |
+| Lead frio | Sem mensagem recebida | Manter sequência |
+| Silêncio | Nenhuma mensagem após contato | Enviar próximo contato conforme cadência |
+| Mensagem recebida | Qualquer mensagem do lead | Parar automação e entregar ao SDR |
+| Fim da sequência | Contato 7 sem mensagem | Encerrar esta sequência |
 
 Não acrescente uma árvore extensa.
 
@@ -1459,35 +1560,35 @@ Para cada contato:
 
 > [mensagem]
 
-*Regra de automação: se houver qualquer resposta, interromper a sequência e enviar ao SDR.*
+*Regra de automação: se houver qualquer mensagem recebida, pausar a sequência e enviar ao SDR.*
 
 Não entregue várias aberturas por histórico de conversa.
 
 Não produza uma versão por comportamento individual.
 
-Somente produza variações quando houver segmentação objetiva solicitada.
+Produza um tronco comum por padrão. Use redação abrangente, placeholder ou bifurcação curta quando uma particularidade realmente importar. Não exija funis separados nem segmentação por campanha sem necessidade.
 
 # 6. REGRAS DE INTERRUPÇÃO
 
 Inclua somente:
 
-### Se não houver resposta
+### Se não houver mensagem
 
 - manter a cadência;
 - enviar o contato seguinte;
 - respeitar o limite da sequência.
 
-### Se houver qualquer resposta
+### Se houver qualquer mensagem
 
-- interromper;
-- registrar;
-- enviar ao SDR;
+- pausar imediatamente;
+- registrar a mensagem literal;
+- enviar ao SDR ou à fila humana responsável;
 - não enviar mensagens seguintes.
 
-### Se houver recusa, tema não aplicável ou pedido de interrupção
+### Se a mensagem for recusa, tema não aplicável ou pedido de interrupção
 
-- encerrar;
-- respeitar a política;
+- manter a nutrição pausada;
+- aplicar a regra de encerramento correspondente;
 - não insistir.
 
 Não crie respostas para agendamento, preço, documentos ou situações posteriores.
@@ -1521,6 +1622,9 @@ Lista curta contendo somente:
 - cadência;
 - política de contato;
 - prazo jurídico validado;
+- condição real sobre custo ou gratuidade, quando usada;
+- condição operacional validada;
+- bifurcação pontual entre subperfis, quando indispensável;
 - validações técnicas.
 
 ---
@@ -1541,6 +1645,9 @@ Antes de entregar, verifique silenciosamente:
 - houve classificação?
 - houve coleta de documentos?
 - houve uma árvore de respostas que pertence ao SDR?
+- subperfis próximos foram separados sem necessidade?
+- o tronco comum permanece verdadeiro para todo o público?
+- uma particularidade poderia ter sido resolvida com redação abrangente, placeholder ou bifurcação curta?
 
 ### Automação
 
@@ -1549,9 +1656,9 @@ Antes de entregar, verifique silenciosamente:
 - as condições são objetivas?
 - as mensagens podem ser enviadas em escala?
 - há dependência de contexto individual?
-- a primeira resposta interrompe o fluxo?
-- o silêncio é o único evento que mantém a sequência?
-- o handoff pausa definitivamente os próximos contatos?
+- qualquer mensagem recebida interrompe o fluxo?
+- a ausência de mensagem é o único evento que mantém a sequência?
+- o handoff bloqueia os próximos contatos desta sequência?
 - recusas e pedidos de interrupção são respeitados?
 
 ### Arco e profundidade
@@ -1590,7 +1697,7 @@ Antes de entregar, verifique silenciosamente:
 - SDR e advogado foram confundidos?
 - OAB foi atribuída a pessoa não confirmada?
 - a assinatura corresponde ao responsável real?
-- o papel do SDR começa somente depois da resposta?
+- o papel do SDR começa somente depois da primeira mensagem recebida?
 
 ### Jurídico
 
@@ -1599,7 +1706,9 @@ Antes de entregar, verifique silenciosamente:
 - houve desqualificação automática?
 - houve prazo ou exceção sem validação?
 - houve regra recente sem marcação?
-- houve afirmação patrimonial sensível sem validação?
+- houve ponto sensível, controverso ou local sem validação?
+- uma regra geral validada foi enfraquecida por cautela vazia?
+- uma regra geral foi transformada em conclusão individual?
 - o conteúdo jurídico é proporcional à etapa?
 - alguma mensagem virou parecer?
 
@@ -1610,7 +1719,7 @@ Antes de entregar, verifique silenciosamente:
 - existe uma ideia principal?
 - a CTA é simples?
 - o conteúdo pode ser automatizado?
-- o encerramento depende de política real?
+- o Contato 7 encerra claramente esta sequência?
 
 Corrija silenciosamente o que falhar.
 
@@ -1621,7 +1730,7 @@ Corrija silenciosamente o que falhar.
 O funil está pronto quando:
 
 1. parte de lead captado, frio e inativo;
-2. presume ausência de conversa substantiva;
+2. presume ausência de mensagem recebida;
 3. permanece anterior à pré-qualificação;
 4. é específico para o nicho;
 5. funciona em automação;
@@ -1637,8 +1746,15 @@ O funil está pronto quando:
 15. usa conteúdo jurídico proporcional e validável;
 16. trabalha somente objeções anteriores à primeira conversa;
 17. busca uma resposta simples;
-18. para na primeira resposta;
+18. para na primeira mensagem recebida;
 19. entrega o lead ao SDR com contexto;
 20. respeita silêncio, recusa e pedidos de interrupção;
 21. não invade etapas posteriores da jornada;
-22. exige adaptação apenas de fatos, links, políticas, provas e conteúdos reais.
+22. favorece tronco comum entre subperfis próximos;
+23. usa bifurcações somente onde uma diferença realmente importa;
+24. permite condições operacionais por dado real ou placeholder explícito;
+25. apresenta regras jurídicas gerais validadas com clareza, sem concluir o caso individual;
+26. utiliza prova de método ligada ao eixo central do funil;
+27. mantém os Contatos 6 e 7 como funções fixas da arquitetura de sete contatos;
+28. encerra no Contato 7 apenas esta sequência de nutrição;
+29. exige adaptação apenas de fatos, links, condições, provas e conteúdos reais.
