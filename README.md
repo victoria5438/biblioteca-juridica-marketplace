@@ -1,4 +1,4 @@
-# Biblioteca Jurídica Marketplace — versão 0.6.0
+# Biblioteca Jurídica Marketplace — versão 0.7.0
 
 Marketplace de plugins para criação de materiais jurídicos estratégicos, reutilizáveis e adaptados ao perfil do público.
 
@@ -262,8 +262,38 @@ Cada `SKILL.md` continua responsável por definir:
 - os limites;
 - os critérios de revisão do próprio produto.
 
+### Funil de nutrição
+
+Cria uma sequência jurídica progressiva de nutrição para leads que ainda estão na etapa pré-consulta.
+
+O funil pode partir de:
+
+- contato iniciado por anúncio, conteúdo ou indicação;
+- triagem iniciada e interrompida;
+- lead que não avançou para a próxima etapa;
+- contato pré-consulta que ainda precisa de educação, confiança ou redução de objeções.
+
+Pode incluir:
+
+- mapa estratégico;
+- estágios de consciência;
+- sequência de contatos;
+- mensagens prontas;
+- conteúdos educativos;
+- prova real ou prova de método;
+- objeções;
+- CTAs progressivas;
+- critérios de pausa e encerramento;
+- handoff para triagem ou agendamento.
+
+Não realiza consulta jurídica, fechamento, agendamento completo, confirmação de consulta ou recuperação de no-show.
+
+```text
+/biblioteca-juridica:funil-nutricao
+```
+
 ## Versão atual
 
 ```text
-0.6.0
+0.7.0
 ```
