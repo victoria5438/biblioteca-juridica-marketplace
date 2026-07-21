@@ -1,6 +1,6 @@
 {
   "name": "biblioteca-juridica-marketplace",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "owner": {
     "name": "Victória Lins"
   },
@@ -10,7 +10,7 @@
       "name": "biblioteca-juridica",
       "source": "./plugins/biblioteca-juridica",
       "description": "Skills para mapeamento de persona e comunicação jurídica estratégica.",
-      "version": "0.7.3"
+      "version": "0.7.4"
     }
   ]
 }
