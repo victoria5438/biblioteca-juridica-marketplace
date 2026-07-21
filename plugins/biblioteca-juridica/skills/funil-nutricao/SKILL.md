@@ -722,6 +722,76 @@ Se sim, reescreva.
 
 ---
 
+## Não presuma ausência de atos, documentos ou medidas anteriores
+
+O fato de o vínculo ainda não estar formalmente encerrado, de o lead permanecer frio ou de nenhuma mensagem ter sido recebida não prova que inexistam:
+
+- acordo verbal ou escrito;
+- escritura;
+- decisão judicial;
+- processo em andamento;
+- documento ou título já existente;
+- obrigação anteriormente definida;
+- medida jurídica já adotada;
+- orientação profissional anterior.
+
+Não escreva, sem dado objetivo que sustente a afirmação:
+
+- “não existe nada escrito”;
+- “vocês ainda não definiram nada”;
+- “não há a que recorrer”;
+- “nenhum procedimento foi iniciado”;
+- “não existe decisão”;
+- “não há documento”;
+- “tudo depende apenas da boa vontade do outro”.
+
+Diferencie sempre:
+
+- ausência de informação disponível para a automação;
+- ausência real do fato;
+- ausência de título anterior;
+- ausência de medida jurídica possível.
+
+Uma não autoriza concluir a outra.
+
+Quando o dado não tiver sido fornecido, use formulações neutras, como:
+
+- “quando ainda não existe uma definição formal”;
+- “se não houver acordo ou decisão anterior”;
+- “a existência de documento, acordo ou processo precisa ser verificada”;
+- “sem conhecer o que já foi formalizado, não é possível concluir como a situação está regulada”.
+
+---
+
+## Não simule diálogo ou interação inexistente
+
+Enquanto nenhuma mensagem tiver sido recebida, a automação enviou conteúdo, mas não manteve uma conversa com o lead.
+
+Não use expressões que simulem troca, concordância ou participação do lead, como:
+
+- “como conversamos”;
+- “resumindo o que foi conversado”;
+- “como combinamos”;
+- “pelo que você perguntou”;
+- “como você disse”;
+- “retomando nossa conversa”;
+- “o que você e eu vimos até aqui”.
+
+Pode fazer referência objetiva ao conteúdo já enviado, como:
+
+- “resumindo o que foi explicado”;
+- “sobre os pontos apresentados até aqui”;
+- “retomando o tema”;
+- “nas informações enviadas anteriormente”.
+
+Antes de entregar, aplique o teste literal:
+
+> A mensagem faz parecer que houve diálogo, resposta, concordância ou troca quando o lead permaneceu em silêncio?
+
+Se sim, reescreva.
+
+---
+
 ## Estado inicial e estado final
 
 ### Estado inicial
@@ -1208,6 +1278,28 @@ A marcação pode aparecer:
 - nos pontos de adaptação.
 
 Não precisa aparecer necessariamente no texto final enviado ao lead, desde que a saída deixe claro que a validação deve ocorrer antes da implementação.
+
+### Coerência entre mensagens e notas de validação
+
+Notas internas, ressalvas e marcações de validação não corrigem uma afirmação categórica falsa, excessiva ou contraditória na mensagem pronta.
+
+Quando uma nota reconhecer que existe:
+
+- controvérsia relevante;
+- exceção material;
+- dependência de fato não conhecido;
+- variação local;
+- limitação do alcance da regra;
+
+a redação enviada ao lead deve ser compatível com essa limitação ou o ponto deve ser removido até a validação.
+
+Antes de entregar, compare cada mensagem com suas próprias notas e pergunte:
+
+> Alguma ressalva registrada nas notas reduz, limita ou contradiz o que a mensagem afirma de forma categórica?
+
+Se sim, ajuste a mensagem para a versão mais precisa e sustentada.
+
+A marcação `[VALIDAR JURIDICAMENTE]` não autoriza manter, para envio em escala, uma frase potencialmente enganosa.
 
 Não transforme a skill em ferramenta de pesquisa jurídica.
 
@@ -1787,6 +1879,8 @@ Antes de entregar, verifique silenciosamente:
 - houve idade, renda, família ou emoção presumida?
 - a mensagem atribuiu ao lead fala, descrição, dúvida, comportamento ou informação que ele não forneceu?
 - a origem em anúncio ou formulário foi tratada incorretamente como relato individual?
+- alguma mensagem simulou conversa, troca, concordância ou participação do lead sem resposta recebida?
+- o texto chamou de “conversado” algo que apenas foi enviado ou explicado?
 - o motivo do silêncio foi presumido?
 - o nome fictício da persona apareceu?
 
@@ -1801,6 +1895,8 @@ Antes de entregar, verifique silenciosamente:
 - houve conteúdo de maior desempenho inventado?
 - houve case inventado?
 - houve resultado inventado?
+- a ausência de informação foi tratada como prova de que não existe acordo, documento, decisão, processo, obrigação ou medida anterior?
+- foi afirmado que “não há a que recorrer” apenas porque não foi informado um título anterior?
 - a prova foi selecionada, e não acumulada?
 - a prova tem relação com o tema de entrada?
 - a urgência está diretamente ligada ao tema de entrada ou à promessa central?
@@ -1821,6 +1917,9 @@ Antes de entregar, verifique silenciosamente:
 - houve prazo ou exceção sem validação?
 - houve regra recente sem marcação?
 - houve ponto sensível, controverso ou local sem validação?
+- alguma nota jurídica, ressalva ou marcação de validação contradiz ou limita uma afirmação categórica da mensagem pronta?
+- uma ressalva material ficou apenas na nota interna, deixando a mensagem enganosa ou excessiva?
+- a redação presumiu inexistência de acordo, documento, decisão, processo, obrigação ou medida anterior sem dado objetivo?
 - uma regra geral validada foi enfraquecida por cautela vazia?
 - uma regra geral foi transformada em conclusão individual?
 - o conteúdo jurídico é proporcional à etapa?
@@ -1836,6 +1935,8 @@ Antes de entregar, verifique silenciosamente:
 - alguma mensagem anunciou ou prometeu contatos futuros?
 - alguma mensagem revelou a cadência ou a quantidade de tentativas?
 - cada contato funciona sem depender de expectativa de continuidade?
+- alguma mensagem simulou diálogo ou interação bilateral apesar de o lead não ter respondido?
+- referências a contatos anteriores descrevem apenas conteúdo efetivamente enviado, sem inventar conversa?
 - o Contato 7 encerra claramente esta sequência?
 
 Corrija silenciosamente o que falhar.
@@ -1879,4 +1980,7 @@ O funil está pronto quando:
 31. usa urgência apenas quando diretamente ligada ao tema de entrada ou à promessa central;
 32. não atribui ao lead informações, falas, emoções ou descrições não fornecidas;
 33. não anuncia, promete ou revela contatos futuros ao lead;
-34. não inventa frequência, limite diário, horário, intervalo ou regra de reativação.
+34. não inventa frequência, limite diário, horário, intervalo ou regra de reativação;
+35. mantém coerência entre mensagens prontas, notas jurídicas e marcações de validação;
+36. não presume a inexistência de acordo, documento, decisão, processo, obrigação ou medida anterior;
+37. não simula diálogo, troca ou participação do lead quando nenhuma mensagem foi recebida.
