@@ -1,299 +1,250 @@
-# Biblioteca Jurídica Marketplace — versão 0.7.0
+# Biblioteca Jurídica Marketplace
 
-Marketplace de plugins para criação de materiais jurídicos estratégicos, reutilizáveis e adaptados ao perfil do público.
+**Versão atual: 0.8.0**
 
-## Estrutura do repositório
+Marketplace privado de plugins e skills jurídicas para o Claude Cowork.
 
-Este repositório contém:
+A Biblioteca Jurídica reúne estruturas reutilizáveis para pesquisa de persona, atendimento, fechamento, nutrição, agendamento e recuperação de leads em escritórios de advocacia.
+
+As skills possuem arquitetura replicável entre diferentes nichos jurídicos. O raciocínio e a estrutura permanecem estáveis; o conteúdo gerado é adaptado ao nicho, à persona, ao serviço e às condições reais do escritório.
+
+---
+
+## Conteúdo do repositório
+
+O repositório contém:
 
 - o catálogo do marketplace em `.claude-plugin/marketplace.json`;
-- o plugin `Biblioteca Jurídica`;
+- o manifesto do plugin Biblioteca Jurídica;
 - referências cognitivas e de escrita compartilhadas;
-- skills especializadas para mapeamento de persona, playbooks operacionais e roteiros de consulta e fechamento.
+- skills estratégicas e operacionais para diferentes etapas da jornada do lead.
 
-## Princípio de funcionamento
-
-As skills são reutilizáveis entre diferentes nichos jurídicos, mas cada saída deve ser construída especificamente para:
-
-- o nicho atual;
-- o público atendido;
-- o serviço;
-- o recorte;
-- o canal;
-- a etapa da jornada.
-
-> A skill é reutilizável entre nichos. A saída é específica para o nicho e o recorte atuais.
+---
 
 ## Skills disponíveis
 
-### Mapear persona
+### 1. `mapear-persona`
 
-Cria um mapeamento aprofundado da persona jurídica, incluindo:
+Cria o Mapeamento de Persona Jurídica que serve como documento-fonte para as demais skills.
 
-- dores;
-- medos;
-- desejos;
-- linguagem;
-- objeções;
-- nível de consciência;
-- fatores de decisão;
-- subperfis;
-- variações relevantes do público.
+Inclui, entre outros elementos:
 
-```text
-/biblioteca-juridica:mapear-persona
-```
+- perfil da persona;
+- dores, desejos, medos e objeções;
+- linguagem e nível de consciência;
+- critérios de qualificação;
+- perguntas de pré-qualificação;
+- critérios de MQL, SQL e desqualificação;
+- sinais de urgência e anti-persona.
 
-### Playbook de atendimento e fechamento
+### 2. `playbook-atendimento-fechamento`
 
-Cria um manual operacional interno, profundo e reutilizável para consulta, atendimento e fechamento jurídico.
+Cria um playbook operacional interno para consulta, atendimento, objeções, decisão, fechamento e contratação.
 
-Parte de um lead já triado e qualificado e desenvolve:
+### 3. `roteiro-consulta`
 
-- preparação e passagem de contexto;
-- validação da viabilidade jurídica;
-- perguntas e motivos;
-- critérios de observação;
-- explicações substantivas;
-- documentos e sua finalidade;
-- bifurcações;
-- caminhos e limites;
-- apresentação do serviço;
-- participação real do cliente;
-- honorários;
-- objeções;
-- decisão;
-- formalização.
+Cria um roteiro falado para consulta jurídica e fechamento por ligação, videoconferência ou reunião presencial.
 
-Não realiza:
-
-- captação;
-- nutrição;
-- triagem;
-- qualificação comercial;
-- convite para consulta;
-- agendamento;
-- confirmação;
-- recuperação de no-show;
-- acompanhamento posterior à contratação.
-
-```text
-/biblioteca-juridica:playbook-atendimento-fechamento
-```
-
-### Roteiro de consulta
-
-Cria um roteiro falado, fluido, profundo e reutilizável para consulta jurídica e fechamento por:
-
-- ligação;
-- videoconferência;
-- reunião presencial.
-
-Parte de um lead já triado e qualificado e prioriza:
-
-- retomada do contexto anterior;
-- falas prontas;
-- perguntas conectadas;
-- organização dos fatos;
-- validação da viabilidade jurídica;
-- explicações em camadas;
-- aplicação ao cenário;
-- pausas;
-- checagens de entendimento;
-- bifurcações;
-- apresentação do serviço;
-- honorários;
-- objeções;
-- decisão;
-- formalização.
-
-O produto principal é uma conversa falada. Não deve assumir formato de playbook, manual ou fluxo de WhatsApp.
-
-```text
-/biblioteca-juridica:roteiro-consulta
-```
-
-### Roteiro de WhatsApp
+### 4. `roteiro-whatsapp`
 
 Cria um fluxo assíncrono de consulta, devolutiva e fechamento pelo WhatsApp.
 
-Parte de um lead que:
+### 5. `funil-nutricao`
 
-- já passou pela triagem;
-- já foi classificado como qualificado;
-- já enviou os documentos iniciais;
-- já teve esses documentos analisados;
-- possui uma conclusão inicial do advogado.
+Cria um funil automatizável para leads frios captados, mas ainda sem interação real e fora da pré-qualificação.
 
-O fluxo pode incluir:
+O fluxo termina quando o lead envia a primeira mensagem e passa para o atendimento humano ou SDR.
 
-- primeira mensagem do advogado;
-- devolutiva da análise;
-- explicações por texto ou áudio;
-- esclarecimentos complementares;
-- documentos complementares;
-- apresentação do serviço;
-- honorários;
-- objeções;
-- decisão;
-- contrato;
-- procuração;
-- assinatura;
-- follow-ups da própria consulta ou do fechamento.
+### 6. `agendamento.skill.md`
 
-Não realiza:
+Transforma um lead previamente qualificado em um atendimento efetivamente agendado.
 
-- captação;
-- resposta a anúncio;
-- acolhimento inicial de SDR;
-- triagem;
-- qualificação;
-- agendamento;
-- confirmação de consulta;
-- prevenção de ausência;
-- recuperação de no-show;
-- reativação genérica.
+A skill:
 
-```text
-/biblioteca-juridica:roteiro-whatsapp
-```
+- usa os critérios de qualificação do Mapeamento de Persona;
+- cria uma devolutiva contextualizada;
+- demonstra por que o aprofundamento profissional é relevante;
+- faz o convite somente depois da contextualização;
+- conduz o lead até a definição do formato, da data e do horário.
 
-## Diferença entre as skills
+### 7. `confirmacao-agendamento.skill.md`
 
-### Playbook de atendimento e fechamento
+Confirma e prepara um atendimento que já foi agendado.
 
-É um material operacional interno.
+A skill:
 
-Explica:
+- reduz dúvidas e barreiras de comparecimento;
+- reforça brevemente o valor do encontro;
+- organiza informações práticas;
+- conduz confirmação, remarcação ou cancelamento conforme as regras reais do escritório.
 
-- o que fazer;
-- por que fazer;
-- o que perguntar;
-- o que observar;
-- como interpretar respostas;
-- quais bifurcações existem;
-- como avançar;
-- quais erros evitar.
+### 8. `recuperacao-no-show`
 
-### Roteiro de consulta
+Retoma o contato com um lead qualificado que tinha atendimento agendado, mas não compareceu.
 
-É uma conversa oral pronta para ser conduzida.
+A skill:
 
-Prioriza:
+- aborda a ausência sem culpa ou constrangimento;
+- identifica a barreira;
+- reforça brevemente o valor do atendimento;
+- conduz à remarcação ou ao encerramento;
+- respeita as políticas reais de falta, crédito, pagamento e remarcação.
 
-- falas;
-- perguntas;
-- explicações;
-- pausas;
-- transições;
-- bifurcações;
-- objeções;
-- decisão.
+---
 
-### Roteiro de WhatsApp
-
-É uma conversa assíncrona distribuída em mensagens e áudios.
-
-Prioriza:
-
-- uma função principal por mensagem;
-- momentos de espera;
-- continuidade conforme a resposta;
-- devolutiva;
-- chamadas para ação;
-- retomadas contextualizadas;
-- formalização.
-
-## Arquitetura compartilhada
-
-As skills utilizam:
-
-- `plugins/biblioteca-juridica/references/core-cognitivo.md`;
-- `plugins/biblioteca-juridica/references/core-escrita-oralidade.md`.
-
-### Core Cognitivo
-
-Define regras compartilhadas de:
-
-- hierarquia das fontes;
-- herança do mapeamento de persona;
-- escolha do produto;
-- delimitação de recorte;
-- reutilização;
-- especificidade da execução;
-- presunções controladas;
-- não invenção;
-- autonomia jurídica;
-- régua de certeza;
-- profundidade;
-- segurança;
-- revisão interna.
-
-### Core de Escrita, Oralidade e Cadência
-
-Define regras compartilhadas de:
-
-- adequação ao produto;
-- adequação ao canal;
-- escrita de playbooks;
-- oralidade de roteiros;
-- cadência do WhatsApp;
-- linguagem profissional;
-- personalização contextual;
-- explicação jurídica;
-- objeções;
-- fechamento;
-- tamanho dos blocos;
-- naturalidade;
-- testes de suficiência e reutilização.
-
-## Responsabilidade de cada skill
-
-Cada `SKILL.md` continua responsável por definir:
-
-- a missão;
-- o ponto de partida;
-- o ponto de encerramento;
-- as entradas;
-- o recorte;
-- a arquitetura;
-- as etapas;
-- o formato de saída;
-- os limites;
-- os critérios de revisão do próprio produto.
-
-### Funil de nutrição
-
-Cria uma sequência jurídica progressiva de nutrição para leads que ainda estão na etapa pré-consulta.
-
-O funil pode partir de:
-
-- contato iniciado por anúncio, conteúdo ou indicação;
-- triagem iniciada e interrompida;
-- lead que não avançou para a próxima etapa;
-- contato pré-consulta que ainda precisa de educação, confiança ou redução de objeções.
-
-Pode incluir:
-
-- mapa estratégico;
-- estágios de consciência;
-- sequência de contatos;
-- mensagens prontas;
-- conteúdos educativos;
-- prova real ou prova de método;
-- objeções;
-- CTAs progressivas;
-- critérios de pausa e encerramento;
-- handoff para triagem ou agendamento.
-
-Não realiza consulta jurídica, fechamento, agendamento completo, confirmação de consulta ou recuperação de no-show.
+## Jornada coberta pelas skills
 
 ```text
-/biblioteca-juridica:funil-nutricao
+Mapeamento de persona
+        ↓
+Captação e nutrição de lead frio
+        ↓
+Pré-qualificação
+        ↓
+Agendamento
+        ↓
+Confirmação do agendamento
+        ↓
+Consulta ou atendimento pelo WhatsApp
+        ↓
+Decisão e contratação
 ```
 
-## Versão atual
+Quando houver ausência:
 
 ```text
-0.7.0
+Atendimento agendado
+        ↓
+No-show confirmado
+        ↓
+Recuperação e possível remarcação
+        ↓
+Nova confirmação do agendamento
 ```
+
+---
+
+## Princípios do projeto
+
+### Arquitetura replicável
+
+As skills devem funcionar em diferentes nichos jurídicos sem depender de um único exemplo ou área do Direito.
+
+### Saída específica para o nicho
+
+A estrutura é reutilizável, mas a saída deve refletir:
+
+- a persona;
+- os critérios jurídicos;
+- o serviço oferecido;
+- as objeções reais;
+- o canal;
+- as condições operacionais do escritório.
+
+### Separação entre etapas
+
+Cada skill deve executar uma função clara e terminar no ponto correto da jornada.
+
+Exemplos:
+
+- nutrição não faz pré-qualificação;
+- agendamento não realiza consulta;
+- confirmação não recupera no-show antes da ausência;
+- recuperação de no-show não substitui o fluxo completo de agendamento.
+
+### Prudência jurídica
+
+As skills podem apresentar regras gerais e possibilidades jurídicas, mas não devem:
+
+- prometer resultado;
+- garantir direito;
+- inventar fatos;
+- produzir diagnóstico definitivo sem análise suficiente;
+- criar urgência artificial.
+
+### Dados operacionais reais
+
+Datas, horários, valores, links, profissionais, duração e políticas devem ser reais ou apresentados como placeholders claros.
+
+---
+
+## Referências compartilhadas
+
+O plugin utiliza referências comuns para manter consistência entre as skills:
+
+- `references/core-cognitivo.md` — princípios de raciocínio, herança de contexto e uso responsável de presunções;
+- `references/core-escrita-oralidade.md` — clareza, naturalidade, ritmo, autoridade e escrita conversacional.
+
+---
+
+## Estrutura geral
+
+```text
+biblioteca-juridica-marketplace/
+├── .claude-plugin/
+│   └── marketplace.json
+├── plugins/
+│   └── biblioteca-juridica/
+│       ├── .claude-plugin/
+│       │   └── plugin.json
+│       ├── references/
+│       │   ├── core-cognitivo.md
+│       │   ├── core-escrita-oralidade.md
+│       │   └── mapeamento-persona-v2.md
+│       └── skills/
+│           ├── mapear-persona/
+│           ├── playbook-atendimento-fechamento/
+│           ├── roteiro-consulta/
+│           ├── roteiro-whatsapp/
+│           ├── funil-nutricao/
+│           ├── agendamento.skill.md
+│           ├── confirmacao-agendamento.skill.md
+│           └── recuperacao-no-show/
+└── README.md
+```
+
+A estrutura acima representa a organização lógica do projeto. Mantenha os caminhos efetivamente usados pelo plugin ao adicionar ou renomear arquivos.
+
+---
+
+## Versão 0.8.0
+
+Esta versão adiciona a sequência operacional posterior à pré-qualificação:
+
+- agendamento com devolutiva e criação ética de necessidade;
+- confirmação e preparação do atendimento;
+- recuperação de no-show.
+
+Também adota os nomes:
+
+- `agendamento.skill.md`;
+- `confirmacao-agendamento.skill.md`.
+
+O nome `recuperacao-no-show` foi mantido.
+
+A skill de follow-up não integra esta versão. Sua função e seus limites serão reformulados antes da inclusão no plugin.
+
+---
+
+## Regra de teste
+
+Avalie cada skill separadamente em três dimensões:
+
+1. **Arquitetura:** executou a tarefa correta e respeitou a fronteira da etapa?
+2. **Conteúdo:** trouxe profundidade, coerência jurídica e especificidade para o nicho?
+3. **Escrita:** parece comunicação humana, clara e profissional?
+
+Não altere a arquitetura para corrigir apenas uma preferência de frase.
+
+---
+
+## Regra de congelamento
+
+Reabra uma skill somente diante de:
+
+1. falha estrutural;
+2. erro jurídico relevante;
+3. falha recorrente em diferentes nichos.
+
+Preferências isoladas de estilo não exigem nova versão.
+
