@@ -82,8 +82,8 @@ Consulte, nesta ordem:
 
 Use também, quando disponíveis:
 
-- `references/core-cognitivo.md`;
-- `references/core-escrita-oralidade.md`.
+- `${CLAUDE_PLUGIN_ROOT}/references/core-cognitivo.md`;
+- `${CLAUDE_PLUGIN_ROOT}/references/core-escrita-oralidade.md`.
 
 O Mapeamento de Persona é uma base estratégica. Ele não é uma ficha individual do lead.
 
