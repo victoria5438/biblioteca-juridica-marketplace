@@ -8,12 +8,21 @@ argument-hint: [nicho jurídico e contexto opcional]
 
 Produzir o documento-fonte de Mapeamento de Persona Jurídica da Biblioteca Jurídica.
 
-# Antes de executar
+## Referências obrigatórias
 
-1. Leia `../../references/core-cognitivo.md`.
-2. Leia integralmente `../../references/mapeamento-persona-v2.md`.
-3. Use o material de mapeamento como especificação principal da tarefa.
-4. Não carregue o Core de Escrita e Oralidade nesta skill, pois a saída é um documento estratégico, não uma simulação de conversa.
+Antes de produzir a saída, leia integralmente:
+
+1. `${CLAUDE_PLUGIN_ROOT}/references/core-cognitivo.md`
+2. `${CLAUDE_PLUGIN_ROOT}/references/mapeamento-persona-v2.md`
+
+Use também, quando aplicável:
+
+3. `${CLAUDE_PLUGIN_ROOT}/references/core-escrita-oralidade.md`
+
+Esses arquivos integram o plugin e devem orientar a execução desta skill.
+
+Caso algum arquivo obrigatório não esteja acessível, informe claramente qual
+referência não foi localizada. Não reconstrua silenciosamente o conteúdo ausente.
 
 # Validação jurídica obrigatória
 
