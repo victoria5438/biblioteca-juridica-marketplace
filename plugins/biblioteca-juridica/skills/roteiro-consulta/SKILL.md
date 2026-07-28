@@ -36,8 +36,8 @@ Não produza como saída principal:
 
 Antes de produzir a saída:
 
-1. leia `../../references/core-cognitivo.md`;
-2. leia `../../references/core-escrita-oralidade.md`;
+1. leia `${CLAUDE_PLUGIN_ROOT}/references/core-cognitivo.md`;
+2. leia `${CLAUDE_PLUGIN_ROOT}/references/core-escrita-oralidade.md`.
 3. utilize o Mapeamento de Persona Jurídica fornecido pelo usuário ou disponível na conversa;
 4. utilize o resumo da triagem, os fatos confirmados e os documentos já disponíveis;
 5. utilize as particularidades reais do escritório;
