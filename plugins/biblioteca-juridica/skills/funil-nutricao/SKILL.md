@@ -77,8 +77,11 @@ Converta-o em decisões concretas de:
 - ritmo;
 - profundidade;
 - exemplos;
+- headlines;
+- distribuição das dores ao longo da sequência;
 - mitos;
 - objeções;
+- seleção da maior objeção ainda não resolvida;
 - prova;
 - CTAs;
 - formato;
@@ -348,9 +351,13 @@ Utilize tudo o que já estiver disponível.
 - crença principal;
 - mitos;
 - dor consciente;
+- dores cotidianas;
 - impacto prático;
+- consequência emocional;
 - desejo;
+- medos e resistências;
 - objeções iniciais;
+- intensidade relativa das objeções;
 - linguagem;
 - formalidade;
 - formato;
@@ -544,9 +551,11 @@ Não escreva:
 
 salvo se o contexto confirmar que o SDR é também o advogado identificado.
 
-Quando a mensagem for assinada institucionalmente, prefira:
+Quando a mensagem for assinada institucionalmente, a identificação pode aparecer **depois da headline**, quando for útil para clareza ou confiança:
 
 > Aqui é [RESPONSÁVEL PELO CONTATO], da equipe do [ESCRITÓRIO].
+
+Nos Contatos 1 a 6, não coloque saudação, nome do responsável, nome do escritório ou apresentação institucional antes da headline.
 
 Quando houver necessidade real de identificação jurídica:
 
@@ -567,12 +576,18 @@ Antes de escrever, identifique:
 5. qual estágio de consciência predomina;
 6. qual crença impede a primeira resposta;
 7. qual consequência prática desperta relevância;
-8. qual mecanismo jurídico pode ser explicado;
-9. qual prova real ou de método pode gerar confiança;
-10. qual ação simples levará ao SDR;
-11. quais subperfis podem compartilhar o mesmo tronco;
-12. quais diferenças exigem apenas redação abrangente, placeholder ou bifurcação pontual;
-13. o que está fora da sequência.
+8. qual consequência emocional decorre dessa situação;
+9. quais dores, desejos, medos e resistências devem ser distribuídos ao longo da sequência;
+10. quais headlines podem abrir os Contatos 1 a 6 sem prometer resultado;
+11. quais são as três principais objeções anteriores à conversa;
+12. quais objeções serão enfrentadas nos Contatos 1 a 4;
+13. qual objeção ainda não resolvida deve ocupar o Contato 5;
+14. qual mecanismo jurídico pode ser explicado;
+15. qual prova real ou de método pode gerar confiança;
+16. qual ação simples levará ao SDR;
+17. quais subperfis podem compartilhar o mesmo tronco;
+18. quais diferenças exigem apenas redação abrangente, placeholder ou bifurcação pontual;
+19. o que está fora da sequência.
 
 A skill é reutilizável entre nichos.
 
@@ -854,28 +869,104 @@ Na arquitetura de sete contatos, preserve sempre:
 
 Nunca prolongue a sequência depois de qualquer mensagem recebida.
 
+### Headlines obrigatórias nos Contatos 1 a 6
+
+Os Contatos 1 a 6 devem começar com uma **headline curta, específica e chamativa**, colocada na primeira linha da mensagem.
+
+A headline deve:
+
+- refletir uma dor, desejo, medo, crença, frustração ou consequência relevante da persona;
+- estar diretamente ligada à função daquele contato;
+- introduzir o eixo central sem explicar todo o conteúdo;
+- despertar reconhecimento ou curiosidade sem sensacionalismo;
+- permanecer verdadeira para o tronco comum;
+- funcionar mesmo quando o lead lê apenas a primeira linha;
+- evitar promessa de direito, resultado, elegibilidade ou recuperação garantida;
+- usar linguagem condicional quando o lead ainda não foi pré-qualificado;
+- variar a construção entre os contatos, sem repetir a mesma fórmula.
+
+Nos Contatos 1 a 6, não comece por:
+
+- “Olá, aqui é...”;
+- “Meu nome é...”;
+- “Somos do escritório...”;
+- apresentação institucional;
+- identificação do responsável;
+- explicação sobre a sequência.
+
+A identificação de `[RESPONSÁVEL PELO CONTATO]` ou `[ESCRITÓRIO]` pode aparecer depois da headline, quando necessária.
+
+Exemplo de formulação segura para lead ainda não pré-qualificado:
+
+> **Você pode estar deixando de receber um benefício mensal.**
+
+Evite formulação categórica que pressuponha o direito individual:
+
+> **Você está perdendo um benefício todos os meses.**
+
+O Contato 7 não precisa de headline promocional ou persuasiva. Preserve sua função de encerramento respeitoso.
+
 ### Contato 1 — descoberta e abertura
 
 Função:
 
+- abrir com uma headline ligada à crença, perda, medo, desejo ou consequência central;
 - conectar-se ao tema de entrada;
 - mostrar relevância;
 - reduzir a primeira resistência;
 - gerar uma resposta simples.
 
-### Contato 2 — identificação e impacto
+Estrutura recomendada:
+
+1. headline forte e verdadeira para o público ainda não pré-qualificado;
+2. introdução breve do tema;
+3. correção inicial de uma crença ou apresentação de uma possibilidade;
+4. CTA simples de identificação ou curiosidade.
+
+Não inicie com apresentação institucional genérica.
+
+Não transforme a headline em conclusão sobre o caso individual.
+
+### Contato 2 — identificação emocional e impacto concreto
 
 Função:
 
+- fazer o lead reconhecer sua própria experiência;
 - mostrar como o problema aparece na prática;
-- traduzir a dor;
-- gerar reconhecimento;
-- ampliar consciência.
+- traduzir uma dor cotidiana;
+- revelar o impacto concreto de manter a situação;
+- conectar esse impacto a uma consequência emocional coerente;
+- ampliar consciência sem antecipar o mecanismo jurídico.
+
+O contato deve conter, nesta ordem lógica:
+
+1. **headline ligada à dor cotidiana ou à consequência central**;
+2. **espelho da experiência da persona**, descrevendo uma situação reconhecível extraída do Mapeamento de Persona;
+3. **impacto prático**, como perda financeira, limitação, risco, tempo ou continuidade do problema;
+4. **consequência emocional**, decorrente naturalmente da situação descrita;
+5. **CTA simples**, convidando o lead a entender melhor.
+
+Não nomeie uma emoção apenas para tornar o texto emotivo.
+
+Mostre a situação que naturalmente produz a emoção.
+
+Não presuma que o lead individual sente medo, vergonha, arrependimento, frustração ou qualquer outra emoção. Use generalizações responsáveis, como:
+
+- “muita gente sente...”;
+- “é comum ficar com a sensação de...”;
+- “para quem vive essa situação, pode pesar...”.
+
+Não transforme o Contato 2 em explicação jurídica.
+
+O Contato 2 faz o lead perceber a relevância prática e emocional.
+
+O Contato 3 explica o mecanismo jurídico central.
 
 ### Contato 3 — mecanismo jurídico central
 
 Função:
 
+- abrir com uma headline ligada ao mito, à dúvida ou à regra central;
 - explicar uma regra ou mecanismo;
 - corrigir um mito;
 - mostrar que o tema possui critérios;
@@ -885,6 +976,7 @@ Função:
 
 Função:
 
+- abrir com uma headline que desperte confiança ou curiosidade sobre a verificação;
 - mostrar método;
 - apresentar uma prova real, institucional ou pública;
 - explicar o papel da equipe;
@@ -902,19 +994,57 @@ Quando o funil reunir subperfis próximos:
 
 Não transforme o contato em inventário de leis, prazos e riscos.
 
-### Contato 5 — objeção anterior à conversa
+### Contato 5 — maior objeção ainda não resolvida
 
 Função:
 
-- trabalhar a principal barreira para responder;
+- trabalhar a objeção mais forte da persona que ainda impede a primeira resposta;
+- evitar repetir objeções já enfrentadas nos Contatos 1 a 4;
+- reduzir resistência sem pressão;
 - preservar autonomia;
-- esclarecer que conversar não significa contratar ou iniciar procedimento;
+- esclarecer o que a primeira conversa significa, quando essa informação for real;
 - convidar à primeira interação.
+
+Antes de escrever o Contato 5:
+
+1. identifique pelo menos as três principais objeções anteriores à conversa presentes no Mapeamento de Persona;
+2. verifique quais delas já foram trabalhadas, direta ou indiretamente, nos Contatos 1 a 4;
+3. escolha a objeção mais intensa, relevante e ainda não resolvida;
+4. justifique internamente por que ela foi escolhida;
+5. confirme que ela pertence à etapa anterior à pré-qualificação.
+
+Não escolha automaticamente:
+
+- medo de golpe;
+- medo de advogado;
+- medo de gastar;
+- “vou pensar”;
+- “não quero me comprometer”.
+
+Use uma dessas objeções somente quando ela realmente estiver sustentada pelo Mapeamento de Persona e for a maior barreira ainda não resolvida.
+
+O Contato 5 deve conter:
+
+1. headline que expresse a tensão central da objeção;
+2. reconhecimento responsável da preocupação;
+3. redução de incerteza ou correção da crença;
+4. preservação explícita da autonomia;
+5. CTA simples para iniciar a conversa.
+
+No Mapa Estratégico, informe:
+
+- **três principais objeções identificadas**;
+- **objeções já trabalhadas nos Contatos 1 a 4**;
+- **objeção escolhida para o Contato 5**;
+- **por que ela foi escolhida**.
+
+Não trabalhe objeção de preço, proposta, honorários, contrato ou decisão de contratação.
 
 ### Contato 6 — ativação de baixa fricção
 
 Função fixa na arquitetura de sete contatos:
 
+- abrir com uma headline orientada ao desejo, à escolha ou à recuperação de autonomia;
 - resumir o ganho;
 - reduzir o esforço;
 - oferecer uma escolha simples;
@@ -1032,22 +1162,44 @@ Cada contato deve mudar alguma coisa.
 ### Arco cognitivo possível
 
 1. “Esse tema pode ter relação com uma situação como a minha.”
-2. “Existe uma consequência prática que eu não tinha percebido.”
+2. “Essa situação produz uma consequência prática e emocional que eu reconheço.”
 3. “Há uma regra ou mecanismo que explica isso.”
 4. “Existe uma forma séria de verificar.”
-5. “Minha objeção não impede que eu entenda.”
+5. “A maior objeção que ainda me trava pode ser compreendida.”
 6. “Responder é simples.”
 7. “Posso escolher conversar agora ou depois.”
 
 ### Arco emocional possível
 
-1. distância;
-2. identificação;
-3. curiosidade;
+1. atenção diante de uma crença, perda, medo ou desejo central;
+2. identificação com a dor cotidiana e seu impacto emocional;
+3. curiosidade e início de esperança responsável;
 4. confiança;
-5. redução de resistência;
+5. redução da resistência dominante;
 6. autonomia;
 7. respeito.
+
+### Distribuição emocional ao longo da sequência
+
+As dores da persona não devem aparecer somente no Contato 2.
+
+Distribua os eixos emocionais de forma progressiva:
+
+| Contato | Eixo emocional predominante |
+|---|---|
+| 1 | crença de aprisionamento, medo, perda ou desejo central |
+| 2 | dor cotidiana e consequência emocional |
+| 3 | confusão jurídica transformada em curiosidade ou esperança responsável |
+| 4 | insegurança transformada em confiança pelo método ou pela prova |
+| 5 | maior objeção ainda não resolvida |
+| 6 | desejo principal, escolha simples e recuperação de autonomia |
+| 7 | respeito e porta aberta |
+
+Cada contato deve trabalhar apenas o eixo emocional necessário à sua função.
+
+Não dramatize.
+
+Não acumule todas as dores, medos, desejos e objeções em uma única mensagem.
 
 Não repita o mesmo argumento com palavras diferentes.
 
@@ -1059,12 +1211,21 @@ Não use todos os medos, mitos e prazos no mesmo contato.
 
 Cada contato deve conter, quando pertinente:
 
-1. ligação com o tema de entrada;
-2. uma ideia principal;
-3. desenvolvimento suficiente;
-4. consequência prática;
-5. CTA de ativação;
-6. instrução interna de parada.
+1. headline específica nos Contatos 1 a 6;
+2. ligação com o tema de entrada;
+3. uma ideia principal;
+4. desenvolvimento suficiente;
+5. consequência prática ou emocional coerente com a função;
+6. CTA de ativação;
+7. instrução interna de parada.
+
+A headline deve ser a primeira linha dos Contatos 1 a 6.
+
+Não coloque saudação, nome do responsável, nome do escritório ou apresentação institucional antes dela.
+
+A headline não substitui o desenvolvimento da mensagem.
+
+Ela abre o eixo que será sustentado pelo restante do contato.
 
 Evite mensagens vazias, como:
 
@@ -1315,6 +1476,24 @@ Não invente:
 ## Objeções iniciais
 
 Trabalhe somente objeções que impedem a primeira resposta.
+
+Não escolha a objeção por hábito ou por fórmula genérica.
+
+Antes de definir o Contato 5:
+
+1. extraia do Mapeamento de Persona pelo menos três objeções relevantes;
+2. ordene-as por intensidade e capacidade de bloquear a primeira conversa;
+3. verifique quais já foram enfrentadas nos Contatos 1 a 4;
+4. selecione a maior objeção ainda não resolvida;
+5. registre a justificativa da escolha no Mapa Estratégico.
+
+A objeção escolhida deve ser específica para a persona e para o nicho.
+
+Ela pode combinar camadas relacionadas quando isso representar com fidelidade a resistência real, por exemplo:
+
+> “Será que vale a pena enfrentar uma empresa grande, gastar mais dinheiro e continuar sem solução?”
+
+Não invente uma objeção composta apenas para tornar a mensagem mais dramática.
 
 Exemplos:
 
@@ -1608,8 +1787,12 @@ Apresente:
 
 - crença principal;
 - dúvida inicial;
-- objeção pré-qualificação dominante;
+- três principais objeções anteriores à conversa;
+- objeções já trabalhadas nos Contatos 1 a 4;
+- objeção escolhida para o Contato 5;
+- justificativa da escolha;
 - impacto prático;
+- impacto emocional coerente com a persona;
 - ganho informativo;
 - urgência jurídica real, se houver;
 - prova;
@@ -1643,8 +1826,8 @@ Não acrescente uma árvore extensa.
 
 Use tabela:
 
-| Contato | Momento | Função | Mudança esperada | Conteúdo principal | CTA | Ação se responder |
-|---|---|---|---|---|---|---|
+| Contato | Momento | Função | Mudança esperada | Headline ou eixo de abertura | Conteúdo principal | CTA | Ação se responder |
+|---|---|---|---|---|---|---|---|
 
 Quando não houver cadência, use `[INTERVALO DEFINIDO PELO ESCRITÓRIO]`.
 
@@ -1661,6 +1844,22 @@ Para cada contato:
 > [mensagem]
 
 *Regra de automação: se houver qualquer mensagem recebida, pausar a sequência e enviar ao SDR.*
+
+Nos Contatos 1 a 6, a primeira linha da mensagem pronta deve ser uma headline em destaque.
+
+Não coloque antes dela:
+
+- saudação;
+- nome do responsável;
+- nome do escritório;
+- apresentação institucional;
+- explicação do fluxo.
+
+A identificação institucional pode aparecer depois da headline, quando necessária.
+
+A headline deve refletir o eixo daquele contato e permanecer verdadeira para um lead ainda não pré-qualificado.
+
+O Contato 7 permanece orientado ao encerramento respeitoso e não precisa seguir a mesma lógica de headline.
 
 Não entregue várias aberturas por histórico de conversa.
 
@@ -1765,6 +1964,18 @@ Antes de entregar, verifique silenciosamente:
 - o handoff bloqueia os próximos contatos desta sequência?
 - recusas e pedidos de interrupção são respeitados?
 
+### Headlines
+
+- os Contatos 1 a 6 começam com headline?
+- a headline está na primeira linha?
+- existe saudação ou apresentação institucional antes da headline?
+- a headline está ligada ao eixo específico daquele contato?
+- a headline foi extraída das dores, desejos, medos, crenças ou consequências da persona?
+- a headline permanece verdadeira para lead ainda não pré-qualificado?
+- houve promessa, conclusão individual, sensacionalismo ou clickbait?
+- as headlines variam de construção e não repetem a mesma fórmula?
+- o Contato 7 foi preservado como encerramento respeitoso?
+
 ### Arco e profundidade
 
 - existe aprofundamento gradual?
@@ -1776,6 +1987,14 @@ Antes de entregar, verifique silenciosamente:
 - o Contato 4 concentrou várias leis ou prazos?
 - houve repetição?
 - as CTAs progridem?
+- o Contato 2 contém headline, espelho da experiência, impacto prático, consequência emocional e CTA?
+- o Contato 2 evitou antecipar o mecanismo jurídico do Contato 3?
+- a consequência emocional decorre da situação, sem dramatização?
+- as dores e desejos foram distribuídos ao longo da sequência?
+- o Contato 5 identificou pelo menos três objeções?
+- as objeções já trabalhadas nos Contatos 1 a 4 foram consideradas?
+- a objeção do Contato 5 é a maior ainda não resolvida?
+- a escolha da objeção foi justificada no Mapa Estratégico?
 - o tamanho de cada mensagem é justificado pela função?
 - mensagens longas continuam claras e úteis?
 
@@ -1879,6 +2098,15 @@ O funil está pronto quando:
 31. usa urgência apenas quando diretamente ligada ao tema de entrada ou à promessa central;
 32. não atribui ao lead informações, falas, emoções ou descrições não fornecidas;
 33. não anuncia, promete ou revela contatos futuros ao lead;
-34. não inventa frequência, limite diário, horário, intervalo ou regra de reativação.
+34. não inventa frequência, limite diário, horário, intervalo ou regra de reativação;
+35. inicia os Contatos 1 a 6 com headlines específicas e coerentes com a persona;
+36. não coloca apresentação institucional antes das headlines;
+37. preserva linguagem condicional quando o lead ainda não foi pré-qualificado;
+38. estrutura o Contato 2 com identificação emocional e impacto concreto;
+39. distribui dores, desejos, medos e resistências ao longo do arco;
+40. escolhe para o Contato 5 a maior objeção ainda não resolvida;
+41. justifica a objeção escolhida com base no Mapeamento de Persona;
+42. preserva o Contato 7 como encerramento respeitoso.
+
 
 
