@@ -1,12 +1,12 @@
 # Biblioteca Jurídica Marketplace
 
-**Versão atual: 0.8.0**
+**Versão atual: 8.2.0**
 
-Marketplace privado de plugins e skills jurídicas para o Claude Cowork.
+Marketplace de plugins e skills jurídicas para o Claude.
 
-A Biblioteca Jurídica reúne estruturas reutilizáveis para pesquisa de persona, atendimento, fechamento, nutrição, agendamento e recuperação de leads em escritórios de advocacia.
+A Biblioteca Jurídica reúne estruturas reutilizáveis para mapeamento de persona, nutrição, pré-qualificação, agendamento, atendimento, fechamento, confirmação de atendimento e recuperação de no-show em escritórios de advocacia.
 
-As skills possuem arquitetura replicável entre diferentes nichos jurídicos. O raciocínio e a estrutura permanecem estáveis; o conteúdo gerado é adaptado ao nicho, à persona, ao serviço e às condições reais do escritório.
+As skills possuem arquitetura replicável entre diferentes nichos jurídicos. O raciocínio e a estrutura permanecem estáveis; o conteúdo gerado é adaptado ao nicho, à persona, ao serviço, ao canal e às condições reais do escritório.
 
 ---
 
@@ -16,7 +16,8 @@ O repositório contém:
 
 - o catálogo do marketplace em `.claude-plugin/marketplace.json`;
 - o manifesto do plugin Biblioteca Jurídica;
-- referências cognitivas e de escrita compartilhadas;
+- referências cognitivas e de escrita;
+- o documento-base do Mapeamento de Persona;
 - skills estratégicas e operacionais para diferentes etapas da jornada do lead.
 
 ---
@@ -35,39 +36,65 @@ Inclui, entre outros elementos:
 - critérios de qualificação;
 - perguntas de pré-qualificação;
 - critérios de MQL, SQL e desqualificação;
-- sinais de urgência e anti-persona.
+- sinais de urgência;
+- anti-persona;
+- jornada e fatores de decisão.
 
-### 2. `playbook-atendimento-fechamento`
+### 2. `funil-nutricao`
 
-Cria um playbook operacional interno para consulta, atendimento, objeções, decisão, fechamento e contratação.
+Cria um funil automatizável para leads frios captados, ainda sem interação real e fora da pré-qualificação.
 
-### 3. `roteiro-consulta`
+O funil:
 
-Cria um roteiro falado para consulta jurídica e fechamento por ligação, videoconferência ou reunião presencial.
+- aumenta consciência;
+- gera identificação;
+- trabalha dores, crenças e objeções anteriores à conversa;
+- utiliza headlines nos Contatos 1 a 6;
+- busca uma primeira mensagem de baixa fricção;
+- encerra a automação diante de qualquer mensagem recebida;
+- entrega o lead ao SDR para início da `/pre-qualificacao`.
 
-### 4. `roteiro-whatsapp`
+A skill não qualifica, não agenda, não vende e não continua nutrindo o lead depois da primeira mensagem.
 
-Cria um fluxo assíncrono de consulta, devolutiva e fechamento pelo WhatsApp.
+### 3. `pre-qualificacao`
 
-### 5. `funil-nutricao`
+Cria um roteiro humano de pré-qualificação jurídica para uso pela equipe do escritório.
 
-Cria um funil automatizável para leads frios captados, mas ainda sem interação real e fora da pré-qualificação.
+A saída é dividida em:
 
-O fluxo termina quando o lead envia a primeira mensagem e passa para o atendimento humano ou SDR.
+1. saudação inicial ou boas-vindas;
+2. perguntas de qualificação estratégica;
+3. agradecimento e direcionamento.
 
-### 6. `agendamento.skill.md`
+A skill utiliza o Mapeamento de Persona para transformar critérios de MQL, SQL, perguntas-chave, sinais de urgência, critérios de desqualificação, dores, receios e linguagem da persona em uma conversa clara, ética e específica para o nicho.
+
+A skill:
+
+- faz somente as perguntas necessárias para a decisão inicial;
+- contextualiza perguntas sensíveis;
+- permite respostas incompletas ou aproximadas;
+- identifica informações pendentes;
+- registra fatos sem produzir diagnóstico definitivo;
+- cria um resumo de repasse para o próximo profissional;
+- encaminha o lead apto a avançar para `/agendamento`.
+
+Não cria adaptações para chatbot, CRM ou automação. Não realiza consulta, agendamento, proposta, follow-up ou coleta documental extensa.
+
+### 4. `agendamento`
 
 Transforma um lead previamente qualificado em um atendimento efetivamente agendado.
 
 A skill:
 
-- usa os critérios de qualificação do Mapeamento de Persona;
+- recebe o handoff da `/pre-qualificacao`;
+- usa os critérios confirmados e as informações disponíveis;
 - cria uma devolutiva contextualizada;
 - demonstra por que o aprofundamento profissional é relevante;
 - faz o convite somente depois da contextualização;
-- conduz o lead até a definição do formato, da data e do horário.
+- conduz até a definição do formato, da data e do horário;
+- entrega o agendamento concluído para `/confirmacao-agendamento`.
 
-### 7. `confirmacao-agendamento.skill.md`
+### 5. `confirmacao-agendamento`
 
 Confirma e prepara um atendimento que já foi agendado.
 
@@ -76,9 +103,11 @@ A skill:
 - reduz dúvidas e barreiras de comparecimento;
 - reforça brevemente o valor do encontro;
 - organiza informações práticas;
-- conduz confirmação, remarcação ou cancelamento conforme as regras reais do escritório.
+- utiliza somente dados e políticas reais;
+- conduz confirmação, remarcação ou cancelamento;
+- encaminha para `/recuperacao-no-show` somente depois de uma ausência efetivamente confirmada.
 
-### 8. `recuperacao-no-show`
+### 6. `recuperacao-no-show`
 
 Retoma o contato com um lead qualificado que tinha atendimento agendado, mas não compareceu.
 
@@ -87,25 +116,49 @@ A skill:
 - aborda a ausência sem culpa ou constrangimento;
 - identifica a barreira;
 - reforça brevemente o valor do atendimento;
+- aplica as políticas reais de falta, pagamento, crédito e remarcação;
 - conduz à remarcação ou ao encerramento;
-- respeita as políticas reais de falta, crédito, pagamento e remarcação.
+- devolve o atendimento remarcado para `/confirmacao-agendamento`.
+
+### 7. `playbook-atendimento-fechamento`
+
+Cria um playbook operacional interno para consulta, atendimento, objeções, decisão, fechamento e contratação.
+
+Parte de lead já triado e qualificado.
+
+### 8. `roteiro-consulta`
+
+Cria um roteiro falado para consulta jurídica e fechamento por ligação, videoconferência ou reunião presencial.
+
+### 9. `roteiro-whatsapp`
+
+Cria um fluxo assíncrono de consulta, devolutiva e fechamento pelo WhatsApp.
 
 ---
 
 ## Jornada coberta pelas skills
 
 ```text
-Mapeamento de persona
+/mapear-persona
         ↓
-Captação e nutrição de lead frio
+Captação de lead frio
         ↓
-Pré-qualificação
+/funil-nutricao
         ↓
-Agendamento
+Primeira mensagem recebida
         ↓
-Confirmação do agendamento
+/pre-qualificacao
         ↓
-Consulta ou atendimento pelo WhatsApp
+Lead apto a avançar
+        ↓
+/agendamento
+        ↓
+/confirmacao-agendamento
+        ↓
+Consulta ou atendimento
+        ├── /roteiro-consulta
+        ├── /roteiro-whatsapp
+        └── /playbook-atendimento-fechamento
         ↓
 Decisão e contratação
 ```
@@ -117,10 +170,25 @@ Atendimento agendado
         ↓
 No-show confirmado
         ↓
-Recuperação e possível remarcação
+/recuperacao-no-show
         ↓
-Nova confirmação do agendamento
+Remarcação concluída
+        ↓
+/confirmacao-agendamento
 ```
+
+---
+
+## Fronteiras entre as etapas
+
+Cada skill deve executar uma função clara e terminar no ponto correto da jornada.
+
+- `/funil-nutricao` busca a primeira mensagem; não faz pré-qualificação.
+- `/pre-qualificacao` compreende os fatos iniciais e determina o próximo direcionamento; não agenda e não realiza consulta.
+- `/agendamento` parte de lead qualificado; não refaz toda a pré-qualificação.
+- `/confirmacao-agendamento` prepara um atendimento já marcado; não reabre toda a venda.
+- `/recuperacao-no-show` começa somente depois da ausência confirmada.
+- `/roteiro-consulta`, `/roteiro-whatsapp` e `/playbook-atendimento-fechamento` não substituem as etapas anteriores da jornada.
 
 ---
 
@@ -139,18 +207,14 @@ A estrutura é reutilizável, mas a saída deve refletir:
 - o serviço oferecido;
 - as objeções reais;
 - o canal;
+- a etapa da jornada;
 - as condições operacionais do escritório.
 
-### Separação entre etapas
+### Persona não é ficha individual
 
-Cada skill deve executar uma função clara e terminar no ponto correto da jornada.
+O Mapeamento de Persona orienta estratégia, linguagem, perguntas e bifurcações.
 
-Exemplos:
-
-- nutrição não faz pré-qualificação;
-- agendamento não realiza consulta;
-- confirmação não recupera no-show antes da ausência;
-- recuperação de no-show não substitui o fluxo completo de agendamento.
+Ele não autoriza inventar fatos, respostas, emoções ou características de um lead específico.
 
 ### Prudência jurídica
 
@@ -160,20 +224,60 @@ As skills podem apresentar regras gerais e possibilidades jurídicas, mas não d
 - garantir direito;
 - inventar fatos;
 - produzir diagnóstico definitivo sem análise suficiente;
-- criar urgência artificial.
+- criar urgência artificial;
+- classificar alguém sem critérios verificáveis.
 
 ### Dados operacionais reais
 
-Datas, horários, valores, links, profissionais, duração e políticas devem ser reais ou apresentados como placeholders claros.
+Datas, horários, valores, links, profissionais, duração, prova social e políticas devem ser reais ou apresentados como placeholders claros.
+
+### Handoff sem perda de contexto
+
+Cada etapa deve transmitir para a próxima:
+
+- fatos confirmados;
+- respostas relevantes;
+- critérios observados;
+- informações pendentes;
+- sinais de urgência;
+- objeções ou dúvidas expressas;
+- próximo passo recomendado.
+
+A etapa seguinte não deve obrigar o lead a repetir informações já registradas, salvo quando houver inconsistência ou necessidade real de confirmação.
 
 ---
 
-## Referências compartilhadas
+## Referências e compatibilidade entre ambientes
 
-O plugin utiliza referências comuns para manter consistência entre as skills:
+O plugin utiliza:
 
-- `references/core-cognitivo.md` — princípios de raciocínio, herança de contexto e uso responsável de presunções;
-- `references/core-escrita-oralidade.md` — clareza, naturalidade, ritmo, autoridade e escrita conversacional.
+- `core-cognitivo.md` — raciocínio, herança de contexto, recorte, segurança e não invenção;
+- `core-escrita-oralidade.md` — clareza, naturalidade, profundidade, ritmo e adequação ao produto e ao canal;
+- `mapeamento-persona-v2.md` — estrutura-base do Mapeamento de Persona Jurídica.
+
+A pasta `plugins/biblioteca-juridica/references/` pode ser mantida como fonte-mestra.
+
+Para compatibilidade com o Claude Web, cada skill deve conter dentro do próprio diretório a pasta `references/` com as referências que utiliza.
+
+Exemplo:
+
+```text
+skills/
+└── pre-qualificacao/
+    ├── SKILL.md
+    └── references/
+        ├── core-cognitivo.md
+        └── core-escrita-oralidade.md
+```
+
+Nos arquivos `SKILL.md`, os caminhos podem permanecer:
+
+```text
+${CLAUDE_PLUGIN_ROOT}/references/core-cognitivo.md
+${CLAUDE_PLUGIN_ROOT}/references/core-escrita-oralidade.md
+```
+
+Quando uma referência compartilhada for alterada, atualize também as cópias locais das skills que dependem dela.
 
 ---
 
@@ -193,36 +297,50 @@ biblioteca-juridica-marketplace/
 │       │   └── mapeamento-persona-v2.md
 │       └── skills/
 │           ├── mapear-persona/
-│           ├── playbook-atendimento-fechamento/
-│           ├── roteiro-consulta/
-│           ├── roteiro-whatsapp/
+│           │   ├── SKILL.md
+│           │   └── references/
 │           ├── funil-nutricao/
-│           ├── agendamento.skill.md
-│           ├── confirmacao-agendamento.skill.md
-│           └── recuperacao-no-show/
+│           │   ├── SKILL.md
+│           │   └── references/
+│           ├── pre-qualificacao/
+│           │   ├── SKILL.md
+│           │   └── references/
+│           ├── agendamento/
+│           │   ├── SKILL.md
+│           │   └── references/
+│           ├── confirmacao-agendamento/
+│           │   ├── SKILL.md
+│           │   └── references/
+│           ├── recuperacao-no-show/
+│           │   ├── SKILL.md
+│           │   └── references/
+│           ├── playbook-atendimento-fechamento/
+│           │   ├── SKILL.md
+│           │   └── references/
+│           ├── roteiro-consulta/
+│           │   ├── SKILL.md
+│           │   └── references/
+│           └── roteiro-whatsapp/
+│               ├── SKILL.md
+│               └── references/
 └── README.md
 ```
 
-A estrutura acima representa a organização lógica do projeto. Mantenha os caminhos efetivamente usados pelo plugin ao adicionar ou renomear arquivos.
+Cada diretório de skill deve possuir um arquivo chamado exatamente `SKILL.md`.
 
 ---
 
-## Versão 0.8.0
+## Versão 8.1.0
 
-Esta versão adiciona a sequência operacional posterior à pré-qualificação:
+Esta versão:
 
-- agendamento com devolutiva e criação ética de necessidade;
-- confirmação e preparação do atendimento;
-- recuperação de no-show.
-
-Também adota os nomes:
-
-- `agendamento.skill.md`;
-- `confirmacao-agendamento.skill.md`.
-
-O nome `recuperacao-no-show` foi mantido.
-
-A skill de follow-up não integra esta versão. Sua função e seus limites serão reformulados antes da inclusão no plugin.
+- adiciona a skill `/pre-qualificacao`;
+- estabelece a passagem explícita de `/funil-nutricao` para `/pre-qualificacao`;
+- estabelece a passagem de leads aptos da `/pre-qualificacao` para `/agendamento`;
+- documenta a pré-qualificação como etapa humana, sem adaptações para automação;
+- corrige no README os nomes e diretórios de `/agendamento` e `/confirmacao-agendamento`;
+- documenta o empacotamento local das referências para compatibilidade com o Claude Web;
+- mantém a skill de follow-up fora desta versão, aguardando reformulação.
 
 ---
 
@@ -233,6 +351,14 @@ Avalie cada skill separadamente em três dimensões:
 1. **Arquitetura:** executou a tarefa correta e respeitou a fronteira da etapa?
 2. **Conteúdo:** trouxe profundidade, coerência jurídica e especificidade para o nicho?
 3. **Escrita:** parece comunicação humana, clara e profissional?
+
+Para testar a jornada:
+
+1. execute `/funil-nutricao` e verifique se a sequência termina na primeira mensagem;
+2. execute `/pre-qualificacao` e verifique se cria boas-vindas, perguntas estratégicas e direcionamento;
+3. confirme se o resumo final registra fatos e pendências;
+4. confirme se apenas leads aptos são encaminhados para `/agendamento`;
+5. confirme se `/agendamento` não refaz toda a pré-qualificação.
 
 Não altere a arquitetura para corrigir apenas uma preferência de frase.
 
