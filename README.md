@@ -1,6 +1,6 @@
 # Biblioteca Jurídica Marketplace
 
-**Versão atual: 8.2.0**
+**Versão atual: 8.0**
 
 Marketplace de plugins e skills jurídicas para o Claude.
 
