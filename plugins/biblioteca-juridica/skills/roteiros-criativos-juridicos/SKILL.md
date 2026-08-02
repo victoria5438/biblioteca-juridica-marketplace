@@ -165,6 +165,50 @@ Use, quando fornecidos:
 - prova de autoridade real;
 - oferta ou próxima etapa real.
 
+## Fidelidade obrigatória aos inputs
+
+Antes de iniciar o diagnóstico, consolide internamente os inputs expressos do usuário.
+
+Respeite literalmente, quando fornecidos:
+
+- quantidade de roteiros;
+- duração ou faixa de duração;
+- formato;
+- canal;
+- público ou recorte;
+- objetivo da campanha;
+- etapa do funil;
+- tom;
+- CTA;
+- restrições;
+- informações jurídicas validadas;
+- condições operacionais reais.
+
+Não transforme um dado fornecido em `[PREMISSA]`.
+
+Não substitua silenciosamente:
+
+- o tom informado por outro tom “recomendado”;
+- o CTA fornecido por placeholder;
+- a quantidade pedida por quantidade diferente;
+- a duração solicitada por outra faixa;
+- o formato escolhido por formato alternativo;
+- o recorte definido por público mais amplo;
+- a próxima etapa real por uma etapa presumida.
+
+Use `[PREMISSA]` somente para dados ausentes.
+
+Se um input expresso conflitar com:
+
+- segurança jurídica;
+- normas éticas da publicidade da advocacia;
+- restrição técnica do formato;
+- outro input mais específico e posterior;
+
+não o altere silenciosamente. Registre o conflito, explique o ajuste necessário e apresente a alternativa segura.
+
+Antes da entrega, faça uma conferência objetiva entre pedido e saída.
+
 ## Lacunas
 
 Não faça uma bateria de perguntas.
@@ -293,11 +337,33 @@ Não transforme idade, profissão predominante, rotina ou renda em requisitos un
 
 ### B. Aderência ao serviço
 
-Identifique as situações objetivas que tornam a análise pertinente.
+Aderência é o núcleo mínimo que torna o serviço pertinente.
+
+Use o seguinte teste:
+
+> Se este elemento estiver ausente, o serviço deixa de ser pertinente para aquela pessoa?
+
+Se a resposta for “sim”, pode ser aderência.
 
 Para serviços de reconhecimento de direito, use requisitos materiais preliminares.
 
-Para serviços consultivos, use decisões, riscos, alternativas e variáveis que tornam a análise individual útil.
+Para serviços consultivos, use a situação ou decisão central que justifica a análise profissional.
+
+Não classifique automaticamente como aderência:
+
+- proximidade temporal;
+- data de ingresso;
+- existência de documentos;
+- renda ou patrimônio;
+- categoria especial;
+- quantidade de vínculos;
+- ente específico;
+- objeção;
+- urgência;
+- interesse em contratar;
+- disposição para falar com o escritório.
+
+Esses elementos podem pertencer a subperfil, complexidade, prioridade, maturidade, prova ou viabilidade comercial.
 
 ### C. Complexidade e valor da análise
 
@@ -323,6 +389,39 @@ Identifique:
 - necessidade de educação prévia.
 
 Maturidade não substitui aderência.
+
+### E. Subperfis criativos
+
+Subperfil criativo é um recorte de comunicação dentro do público aderente.
+
+Pode ser formado por:
+
+- ente;
+- categoria;
+- data de ingresso;
+- histórico contributivo;
+- tipo de contrato;
+- estágio do problema;
+- decisão em aberto;
+- objeção;
+- nível de consciência;
+- fator de complexidade.
+
+Um subperfil pode gerar um excelente ângulo sem constituir critério de aderência.
+
+### Teste obrigatório de classificação
+
+Para cada elemento relevante, classifique internamente:
+
+- **aderência:** sem ele, o serviço deixa de ser pertinente;
+- **complexidade:** sem ele, o serviço continua pertinente, mas a análise tende a ser mais simples;
+- **subperfil:** muda para quem ou como o criativo fala;
+- **maturidade:** muda o nível de explicação, a objeção ou o CTA;
+- **prioridade/urgência:** muda a velocidade recomendada da ação;
+- **prova:** ajuda a confirmar a situação;
+- **potencial comercial:** influencia estratégia comercial, sem alterar a pertinência jurídica.
+
+Não apresente renda, documentação, proximidade temporal ou interesse comercial como aderência, salvo quando o próprio serviço possuir um requisito objetivo dessa natureza confirmado no Mapeamento.
 
 ---
 
@@ -359,6 +458,7 @@ Antes dos roteiros, produza uma matriz com:
 
 - ângulo principal;
 - situação objetiva;
+- classificação do marcador central: aderência, complexidade, subperfil, maturidade, prioridade ou prova;
 - subpersona;
 - nível de consciência;
 - dor ou decisão explorada;
@@ -376,6 +476,26 @@ Crie mais ângulos do que o número final de roteiros quando isso ajudar a selec
 Não escolha vários ângulos que apenas reformulem a mesma dúvida.
 
 ---
+
+## Regra de delimitação por ente, categoria ou regime
+
+Antes de selecionar um conceito, determine se a afirmação central é:
+
+- universal para todo o recorte;
+- aplicável apenas a determinado ente;
+- aplicável apenas a determinada categoria;
+- aplicável apenas a determinado regime;
+- dependente de data, opção, documento ou condição específica.
+
+Quando não for universal:
+
+1. delimite o subperfil na ficha estratégica;
+2. deixe a delimitação perceptível no gancho ou no início do desenvolvimento;
+3. não use uma ressalva genérica no final para corrigir uma premissa ampla demais;
+4. não apresente regra federal como regra geral de servidores estaduais ou municipais;
+5. não apresente nome de fundo, regime ou programa específico para público que pode não estar abrangido.
+
+Se a delimitação tornar o roteiro confuso ou excessivamente carregado, descarte o ângulo ou restrinja a campanha.
 
 ## Etapa 5 — Selecionar os conceitos
 
@@ -458,14 +578,37 @@ Para cada roteiro, entregue:
 
 ## Etapa 7 — Autorrevisão
 
+### Conferência dos inputs
+
+Antes de revisar o conteúdo, confirme:
+
+- a quantidade entregue é exatamente a solicitada?
+- a duração corresponde ao pedido?
+- o formato corresponde ao pedido?
+- o tom fornecido foi preservado?
+- o CTA fornecido foi utilizado, salvo conflito ético explicitado?
+- o canal e a próxima etapa estão corretos?
+- o público não foi ampliado ou reduzido silenciosamente?
+- todas as restrições expressas foram respeitadas?
+- algum dado fornecido foi marcado indevidamente como premissa?
+- alguma premissa foi criada apesar de o dado já estar disponível?
+
+Se houver divergência, corrija antes de continuar.
+
+### Revisão estratégica, jurídica e criativa
+
 Revise cada roteiro e responda internamente:
 
 - fala com uma situação concreta?
 - a pessoa consegue se reconhecer?
 - desperta uma dúvida relevante?
 - gera necessidade pelo serviço ou apenas explica uma regra?
-- diferencia aderência, complexidade e maturidade?
+- diferencia aderência, complexidade, subperfil, prioridade e maturidade?
+- algum subperfil ou fator de complexidade foi chamado de aderência?
+- renda, documentação, proximidade ou interesse comercial foram usados como qualificação sem base expressa?
 - transforma característica provável em fato universal?
+- a afirmação central é universal para o público realmente alcançado?
+- quando depende de ente, categoria ou regime, isso aparece cedo e com clareza?
 - contém promessa de resultado?
 - contém urgência artificial?
 - contém afirmação dependente do ente ou caso concreto?
@@ -589,6 +732,40 @@ Varie os mecanismos de abertura:
 
 ---
 
+# Revisão de publicidade jurídica
+
+A saída deve passar por revisão específica de publicidade da advocacia.
+
+Considere, no mínimo, o Estatuto da Advocacia, o Código de Ética e Disciplina, o Provimento CFOAB nº 205/2021 e normas posteriores aplicáveis.
+
+O conteúdo deve permanecer:
+
+- informativo;
+- sóbrio;
+- discreto;
+- verdadeiro;
+- verificável;
+- compatível com a dignidade profissional.
+
+Revise se o anúncio:
+
+- induz diretamente à contratação;
+- estimula litígio;
+- mercantiliza o serviço;
+- usa chamada típica de varejo;
+- utiliza expressão persuasiva, autoengrandecimento ou comparação;
+- menciona honorários, descontos, gratuidade ou forma de pagamento como atração;
+- divulga resultado concreto, cliente, decisão ou caso patrocinado como oferta;
+- explora medo, vulnerabilidade ou urgência sem base;
+- apresenta especialidade ou autoridade não comprovada;
+- usa CTA incompatível com o caráter informativo.
+
+Dados de contato e aplicativos de mensagem podem ser indicados em caráter informativo, mas o CTA não deve converter o conteúdo em indução direta à contratação.
+
+Quando a campanha for paga ou impulsionada, sinalize que a peça deve ser validada pelo advogado responsável à luz das regras éticas aplicáveis e das orientações da OAB competente.
+
+A skill não certifica conformidade ética definitiva.
+
 # Compliance e limites
 
 Não use:
@@ -607,7 +784,12 @@ Não use:
 - dramatização enganosa;
 - frase que trate possibilidade como certeza;
 - chamada que explore vulnerabilidade de forma abusiva;
-- linguagem de mercantilização incompatível com a advocacia.
+- linguagem de mercantilização incompatível com a advocacia;
+- indução direta à contratação;
+- estímulo ao litígio;
+- chamada varejista como “contrate agora”, “garanta sua vaga” ou equivalente;
+- referência a honorários, gratuidade, desconto ou forma de pagamento como atrativo;
+- resultado concreto ou caso patrocinado usado como oferta.
 
 O criativo pode comunicar:
 
@@ -631,15 +813,20 @@ A saída está completa quando:
 - utilizou o Mapeamento de Persona específico da execução, ou matéria-prima equivalente explicitamente suficiente;
 - não confundiu o arquivo estrutural `mapeamento-persona-v3.md` com o documento-fonte produzido;
 - não partiu diretamente para os roteiros;
+- conferiu quantidade, duração, formato, tom, CTA, canal, público e restrições contra os inputs expressos;
+- não marcou como premissa um dado já fornecido;
 - compreendeu o serviço e seu mecanismo de valor;
-- separou perfil, aderência, complexidade e maturidade;
+- separou perfil, aderência, complexidade, subperfil, prioridade e maturidade;
+- não tratou renda, documentos, proximidade temporal ou interesse comercial como aderência sem base expressa;
 - extraiu dores de situações objetivas;
 - criou matriz de ângulos;
 - selecionou conceitos distintos;
 - escreveu os roteiros completos;
 - conectou cada roteiro a uma subpersona e nível de consciência;
 - apresentou CTA real e ético;
+- delimitou cedo afirmações dependentes de ente, categoria, regime, data ou condição;
 - condicionou afirmações dependentes do caso;
+- passou pela revisão específica de publicidade jurídica;
 - evitou promessas;
 - trouxe orientação visual;
 - preservou oralidade;
