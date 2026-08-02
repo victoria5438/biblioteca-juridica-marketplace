@@ -1,372 +1,496 @@
 ---
 name: pre-qualificacao
-description: Cria um roteiro humano de pré-qualificação jurídica, dividido em boas-vindas, perguntas de qualificação estratégica e agradecimento com direcionamento. Usa o Mapeamento de Persona para transformar critérios de MQL, SQL, urgência e desqualificação em uma conversa clara, ética e adequada ao nicho.
-argument-hint: Informe o nicho jurídico e forneça o Mapeamento de Persona. Acrescente dados reais do escritório, como nome, áreas de atuação, prova social, responsável pelo atendimento e forma de continuidade.
+description: Cria um roteiro humano de pré-qualificação jurídica para identificar aderência preliminar, reunir informações essenciais, reconhecer urgência, registrar pendências e direcionar o lead à próxima etapa adequada. Usa o Mapeamento de Persona Jurídica para transformar requisitos de MQL, elementos de SQL, critérios de revisão, roteamento, maturidade e prontidão operacional em uma conversa clara, ética e específica para o nicho.
+argument-hint: Informe o nicho jurídico, forneça o Mapeamento de Persona e acrescente dados reais do escritório, do canal e da próxima etapa.
 ---
 
 # Pré-qualificação
 
-## Função desta skill
+## Objetivo
 
-Criar um roteiro humano de pré-qualificação para uso pela equipe do escritório.
+Criar um roteiro humano e reutilizável de pré-qualificação jurídica para uso pela equipe do escritório.
 
-O roteiro deve cumprir três funções, nesta ordem:
+O roteiro deve cumprir, nesta ordem:
 
-1. receber o lead e apresentar o escritório;
-2. fazer as perguntas mínimas necessárias para compreender a situação inicial;
-3. agradecer e direcionar o lead para a próxima etapa adequada.
+1. receber o lead e contextualizar a etapa;
+2. identificar a situação objetiva que motivou o contato;
+3. testar os requisitos preliminares de aderência ao serviço;
+4. aprofundar somente os fatos necessários à próxima etapa;
+5. reconhecer urgência, pendências, necessidade de revisão ou roteamento;
+6. registrar maturidade comercial e prontidão operacional separadamente;
+7. agradecer e direcionar o lead de forma adequada.
 
-A estrutura central é:
+Estrutura central:
 
 > boas-vindas  
-> → contextualização da conversa  
-> → perguntas de qualificação estratégica  
-> → agradecimento  
-> → direcionamento
+> → contextualização  
+> → perguntas principais  
+> → perguntas condicionais ou de esclarecimento  
+> → classificação interna  
+> → agradecimento e direcionamento  
+> → handoff
 
-Esta skill não deve criar automações, árvores de decisão técnicas, fluxos de chatbot, integrações com CRM, códigos, gatilhos ou instruções de sistema.
+A skill deve produzir um roteiro que uma pessoa do escritório consiga utilizar em conversa real.
 
-O resultado deve parecer um roteiro de atendimento que uma pessoa do escritório conseguiria utilizar em uma conversa real.
+Ela não cria automações, chatbot, árvore técnica de decisões, lógica de CRM, gatilhos, integrações, código ou instruções de sistema.
 
 ---
 
-## Referências obrigatórias
+# Referências obrigatórias
 
 Antes de produzir a saída:
 
 1. leia `${CLAUDE_PLUGIN_ROOT}/references/core-cognitivo.md`;
 2. leia `${CLAUDE_PLUGIN_ROOT}/references/core-escrita-oralidade.md`;
 3. utilize o Mapeamento de Persona Jurídica fornecido pelo usuário ou disponível na conversa;
-4. priorize informações reais sobre o escritório e o serviço;
+4. priorize informações reais do escritório, do serviço, do canal e da operação;
 5. não execute novamente a skill `/mapear-persona`.
 
-O Mapeamento de Persona deve ser usado especialmente para localizar:
+Use especialmente as seguintes partes do Mapeamento de Persona:
 
-- critérios de MQL;
-- critérios de SQL;
-- perguntas-chave de pré-qualificação;
-- respostas que indicam lead quente;
-- critérios de desqualificação;
-- sinais de urgência;
-- dores, desejos, receios e objeções;
-- vocabulário e nível de compreensão da persona.
+- situação qualificadora central;
+- natureza do serviço;
+- requisitos materiais ou condições objetivas de aderência;
+- critérios de MQL jurídico;
+- elementos de SQL jurídico;
+- fatores de complexidade;
+- fatores de prioridade e urgência;
+- condições operacionais e informações pendentes;
+- critérios de exclusão e roteamento;
+- perguntas principais, condicionais e de esclarecimento;
+- critérios de avanço;
+- linguagem, medos, objeções e nível de compreensão da persona;
+- dados obrigatórios para handoff.
 
-Não reproduza o Mapeamento de Persona inteiro na saída.
+Não reproduza o Mapeamento inteiro.
 
 Converta-o em decisões concretas de:
 
 - ordem das perguntas;
 - linguagem;
+- quantidade;
 - profundidade;
-- quantidade de perguntas;
-- critérios que merecem atenção;
-- tom da saudação;
-- forma de encerramento;
-- informações que devem ser repassadas ao próximo profissional.
+- bifurcações;
+- pontos de esclarecimento;
+- classificação interna;
+- direcionamento;
+- dados de repasse.
 
-Caso o Mapeamento de Persona não esteja disponível, solicite o documento ou, no mínimo:
+## Quando o Mapeamento não estiver disponível
 
-- critérios de qualificação;
-- critérios de desqualificação;
-- perguntas-chave;
-- sinais de urgência;
-- perfil da persona.
+Solicite o documento.
+
+Somente prossiga sem ele quando o usuário fornecer, no mínimo:
+
+- natureza do serviço;
+- situação qualificadora central;
+- requisitos de MQL;
+- elementos de SQL;
+- causas de não aderência ou roteamento;
+- urgências reais;
+- próxima etapa;
+- perfil de linguagem do público.
 
 Não invente esses critérios.
 
 ---
 
-## Escopo
+# Delimitação do produto
 
-Use esta skill quando:
+Esta skill produz um **roteiro humano de pré-qualificação**.
 
-- o lead iniciou contato com o escritório;
-- ainda não passou pela pré-qualificação;
-- o escritório precisa compreender os fatos iniciais;
-- existe um Mapeamento de Persona que define critérios estratégicos;
-- o objetivo é preparar o lead para o próximo atendimento.
+Use quando:
+
+- o lead iniciou contato;
+- ainda não passou por triagem inicial;
+- o escritório precisa compreender fatos básicos;
+- existe critério de aderência ao serviço;
+- o objetivo é decidir o próximo atendimento adequado.
 
 A skill pode criar:
 
-- modelos de saudação;
-- breve apresentação do escritório;
-- uso ético de prova social;
-- explicação da etapa de pré-qualificação;
-- perguntas estratégicas;
-- orientações para respostas incompletas;
-- agradecimento;
-- mensagens de direcionamento;
-- resumo de repasse para o próximo profissional;
-- exemplo completo de conversa fictícia;
+- saudação e contextualização;
+- perguntas principais;
+- perguntas condicionais;
+- perguntas de esclarecimento;
+- orientações breves para o atendente;
+- classificação interna;
+- mensagens de agradecimento e direcionamento;
+- modelo de handoff;
 - roteiro final limpo.
 
 A skill não deve:
 
 - realizar consulta jurídica;
-- dar parecer;
-- concluir definitivamente que existe ou não existe direito;
+- emitir parecer;
+- afirmar definitivamente que existe ou não direito;
 - prometer resultado;
+- calcular chance de êxito;
 - pedir documentação extensa;
 - montar estratégia jurídica;
 - negociar honorários do caso;
-- fazer agendamento;
+- agendar;
 - confirmar presença;
 - recuperar no-show;
 - criar follow-up;
-- produzir adaptação para automação;
-- apresentar código ou lógica de sistema.
+- criar sequência de nutrição;
+- adaptar o material para automação;
+- simular respostas completas do lead sem pedido expresso.
+
+## Simulação
+
+Crie conversa fictícia ou role-play somente quando o usuário pedir expressamente.
+
+A ausência de simulação não torna a saída incompleta.
+
+---
+
+# Objetivo, produto e canal
+
+Antes de escrever, determine:
+
+- **objetivo:** pré-qualificar e direcionar;
+- **produto:** roteiro humano reutilizável;
+- **canal:** WhatsApp, ligação, recepção, formulário assistido ou outro informado.
+
+Adapte a distribuição das perguntas ao canal.
+
+- No WhatsApp, escreva mensagens curtas e indique quando aguardar.
+- Em ligação ou recepção, use perguntas faláveis e transições naturais.
+- Não transforme WhatsApp em interrogatório enviado de uma vez.
+- Não transforme ligação em formulário lido mecanicamente.
+
+Se o canal não estiver informado, use WhatsApp como `[PREMISSA OPERACIONAL]` somente quando o contexto indicar atendimento por mensagem. Caso contrário, escreva um roteiro neutro e falável.
+
+---
+
+# Princípios de qualificação
+
+## 1. MQL jurídico
+
+Use o MQL para identificar se o relato apresenta os requisitos materiais ou as condições objetivas mínimas que tornam a situação pertinente ao serviço.
+
+A pré-qualificação pode identificar:
+
+- requisito relatado;
+- indício;
+- ausência aparente;
+- informação desconhecida;
+- contradição;
+- necessidade de confirmação.
+
+Não transforme relato em confirmação documental.
+
+## 2. SQL jurídico
+
+Use o SQL para aprofundar os fatos, datas, vínculos, documentos ou elementos técnicos necessários à análise profissional da próxima etapa.
+
+SQL jurídico não inclui:
+
+- disponibilidade de agenda;
+- comparecimento;
+- rapidez de resposta;
+- intenção imediata de contratar;
+- aceitação de proposta;
+- disposição atual para enviar documentos;
+- participação de cônjuge ou terceiro.
+
+Esses elementos pertencem à maturidade comercial ou à prontidão operacional.
+
+## 3. Maturidade comercial e prontidão operacional
+
+Registre separadamente:
+
+- reconhecimento da necessidade;
+- interesse em conhecer o próximo passo;
+- intenção de avançar;
+- disponibilidade;
+- preferência de canal;
+- capacidade atual de reunir documentos;
+- necessidade de consultar terceiro;
+- objeção ou impedimento operacional.
+
+Um lead pode ser juridicamente aderente e ainda não estar pronto para avançar.
+
+Um lead também pode querer contratar e não apresentar aderência suficiente.
+
+## 4. Informação ausente
+
+“Não sei”, “não lembro” ou “não tenho o documento agora” não equivalem automaticamente a não aderência.
+
+Classifique como:
+
+- informação pendente;
+- elemento a confirmar;
+- documento a obter;
+- necessidade de revisão profissional.
+
+## 5. Não aderência e roteamento
+
+Diferencie:
+
+- ausência aparente de requisito essencial;
+- situação pertencente a outro serviço;
+- caso fora do escopo do escritório;
+- caso que exige análise profissional;
+- impossibilidade operacional confirmada;
+- informação insuficiente.
+
+Nunca agrupe tudo como “desqualificado”.
 
 ---
 
 # Estrutura obrigatória da saída
 
-A resposta deve ser dividida nos três blocos principais abaixo.
+A entrega deve conter quatro blocos:
 
-# 1. Saudação inicial ou boas-vindas
+1. leitura estratégica;
+2. roteiro comentado;
+3. classificação e direcionamento;
+4. roteiro final limpo e handoff.
 
-Crie de duas a quatro opções de abertura.
+---
 
-As opções podem variar entre:
+# 1. Leitura estratégica
 
-- acolhedora;
-- institucional;
-- direta;
-- próxima e conversacional.
+Apresente uma síntese interna curta com:
 
-Depois, recomende uma delas e explique brevemente por que combina com a persona.
+- nicho e serviço;
+- natureza do serviço;
+- canal utilizado;
+- situação qualificadora central;
+- requisitos principais de MQL;
+- elementos de SQL necessários;
+- urgências reais;
+- principais causas de revisão ou roteamento;
+- temas sensíveis;
+- tom recomendado;
+- próxima etapa esperada;
+- informações operacionais ainda não confirmadas.
 
-A saudação deve, conforme as informações disponíveis:
+Não reproduza o Mapeamento.
+
+---
+
+# 2. Roteiro comentado
+
+## 2.1. Saudação e contextualização
+
+Crie uma única abertura recomendada.
+
+Somente apresente alternativas quando o usuário pedir opções.
+
+A abertura deve, conforme as informações disponíveis:
 
 1. cumprimentar;
 2. identificar o escritório;
-3. apresentar a área ou o nicho;
-4. mencionar uma prova de autoridade real, quando houver;
-5. explicar que serão feitas perguntas iniciais;
-6. preparar o lead para responder com tranquilidade.
+3. indicar a área ou o serviço;
+4. mencionar autoridade real, quando houver;
+5. explicar a finalidade das perguntas;
+6. preparar o lead para responder uma pergunta de cada vez.
 
-## Elementos permitidos
+Exemplo estrutural:
 
-Podem ser utilizados:
+> Olá, [NOME]. Seja bem-vindo(a) ao [NOME DO ESCRITÓRIO].  
+>   
+> Para entendermos sua situação e direcionarmos o atendimento corretamente, vou fazer algumas perguntas iniciais. Podemos começar?
 
-- nome do escritório;
-- área de atuação;
-- nicho;
-- perfil de atendimento;
-- experiência real;
-- número real de atendimentos;
-- reconhecimento real;
-- especialização real;
-- localização real;
-- característica verdadeira do método de atendimento.
+Adapte ao nicho e à persona.
 
-## Prova social
+### Prova de autoridade
 
-Use prova social somente quando ela tiver sido fornecida ou estiver confirmada.
+Use somente fatos fornecidos ou confirmados.
 
 Não invente:
 
 - número de clientes;
 - anos de atuação;
-- quantidade de casos vencidos;
-- índice de sucesso;
-- prêmios;
+- casos vencidos;
+- taxa de êxito;
 - títulos;
+- prêmios;
 - certificações;
 - presença nacional;
-- resultados;
-- depoimentos.
+- depoimentos;
+- resultados.
 
-Quando não houver prova social disponível:
+Quando não houver prova de autoridade, omita. Não use placeholder desnecessário na fala final.
 
-- use um placeholder claro; ou
-- omita esse trecho.
-
-Não transforme a abertura em anúncio publicitário.
-
-## Modelos estruturais
-
-### Modelo acolhedor
-
-> Olá, [NOME]. Seja bem-vindo(a) ao [NOME DO ESCRITÓRIO].  
->   
-> Nosso escritório atua com [ÁREA OU NICHO], ajudando pessoas que enfrentam situações relacionadas a [PROBLEMA CENTRAL].  
->   
-> Para entendermos melhor o que aconteceu e direcionarmos seu atendimento da forma correta, vou fazer algumas perguntas iniciais. Tudo bem?
-
-### Modelo institucional
-
-> Seja bem-vindo(a) ao [NOME DO ESCRITÓRIO].  
->   
-> Somos um escritório com atuação em [ÁREA OU NICHO]. [PROVA DE AUTORIDADE REAL.]  
->   
-> Antes de encaminhar seu atendimento ao profissional responsável, precisamos compreender alguns pontos da sua situação.
-
-### Modelo próximo e direto
-
-> Olá, [NOME]. Obrigado por entrar em contato com o [NOME DO ESCRITÓRIO].  
->   
-> Para que a equipe consiga entender sua situação e indicar o próximo passo mais adequado, vou fazer algumas perguntas rápidas.
-
-Os modelos são referências de estrutura. A skill deve escrever versões específicas para o nicho e para a persona.
+Não transforme a saudação em anúncio.
 
 ---
 
-# 2. Perguntas de qualificação estratégica
+## 2.2. Perguntas principais
 
-## Objetivo
+Selecione as perguntas mínimas necessárias para testar a situação qualificadora e os requisitos de MQL.
 
-Transformar os critérios do Mapeamento de Persona em uma conversa organizada, clara e humana.
-
-As perguntas devem permitir que o escritório identifique:
-
-- se a situação pertence ao nicho atendido;
-- se os critérios jurídicos iniciais estão presentes;
-- se faltam informações relevantes;
-- se existe urgência;
-- se há alguma circunstância que exige revisão profissional;
-- se o lead demonstra intenção real de avançar.
-
-A pré-qualificação não deve resolver o caso.
-
-Ela deve reunir informação suficiente para decidir qual é o próximo atendimento adequado.
-
----
-
-## Seleção das perguntas
-
-Não copie automaticamente todas as perguntas do Mapeamento de Persona.
-
-Faça o seguinte:
-
-1. identifique os critérios indispensáveis;
-2. elimine perguntas redundantes;
-3. agrupe temas semelhantes;
-4. coloque primeiro as perguntas mais fáceis;
-5. deixe temas sensíveis para depois do acolhimento;
-6. inclua perguntas condicionais somente quando forem necessárias;
-7. evite pedir detalhes que pertencem à consulta;
-8. preserve as perguntas que diferenciam MQL, SQL, urgência e desqualificação.
-
-Prefira um roteiro enxuto e suficiente a um interrogatório completo.
-
-Quando houver muitos critérios, separe em:
-
-- perguntas principais;
-- perguntas de aprofundamento;
-- perguntas condicionais.
-
----
-
-## Ordem recomendada
-
-Adapte esta ordem ao nicho.
-
-### A. Identificação da situação
-
-Comece entendendo o motivo do contato.
-
-Exemplos:
+Comece por uma pergunta simples de contexto quando ela for necessária:
 
 > O que aconteceu e fez você procurar o escritório?
 
-> Qual situação você gostaria que nossa equipe analisasse?
+Quando o nicho já delimitar claramente a situação, prefira uma pergunta específica.
 
-Quando o nicho permitir, ofereça opções simples.
+As perguntas principais devem:
 
-### B. Critérios jurídicos centrais
+- testar um critério por vez;
+- ser específicas para o nicho;
+- usar linguagem simples;
+- permitir resposta “não sei”;
+- evitar narrativa extensa;
+- não antecipar a consulta;
+- não pedir todos os documentos;
+- não introduzir preço ou contratação antes da aderência.
 
-Pergunte sobre os fatos que sustentam a viabilidade inicial.
-
-A formulação deve refletir o Mapeamento de Persona.
-
-Não use perguntas genéricas que poderiam servir para qualquer caso.
-
-### C. Tempo e sequência dos fatos
-
-Investigue datas e períodos somente quando forem juridicamente relevantes.
-
-Exemplos:
-
-> Quando isso aconteceu?
-
-> Há quanto tempo essa situação existe?
-
-> O problema começou antes ou depois de [MARCO RELEVANTE]?
-
-Não invente prazos.
-
-### D. Histórico relevante
-
-Quando necessário, pergunte se:
-
-- houve pedido anterior;
-- houve negativa;
-- existe processo em andamento;
-- houve acordo;
-- existe decisão;
-- o lead já foi atendido por outro profissional;
-- alguma medida já foi tomada.
-
-Não presuma ausência de processo, documento, acordo ou decisão.
-
-### E. Provas e documentos essenciais
-
-Pergunte apenas sobre a existência dos meios básicos de comprovação.
-
-Exemplo:
-
-> Você possui algum documento relacionado a essa situação?
-
-Caso necessário, cite exemplos simples.
-
-Não solicite o envio de todos os documentos nesta etapa, salvo instrução expressa do escritório.
-
-### F. Urgência real
-
-Inclua pergunta de urgência somente quando houver relação com o nicho.
-
-Exemplo:
-
-> Existe algum prazo, audiência, corte de benefício, risco imediato ou outra situação urgente acontecendo agora?
-
-Não transforme toda situação em urgência.
-
-### G. Interesse em avançar
-
-Depois de verificar os critérios iniciais, pergunte sobre a disposição para continuar.
-
-Exemplo:
-
-> Caso a equipe identifique um caminho possível, você tem interesse em conversar com o profissional responsável para entender os próximos passos?
-
-Não pressione.
+Organize na ordem mais natural, não necessariamente na ordem jurídica abstrata.
 
 ---
 
-## Forma das perguntas
+## 2.3. Perguntas condicionais
 
-As perguntas devem:
+Inclua somente quando uma resposta alterar:
 
-- ser curtas;
-- usar linguagem simples;
-- ser feitas uma de cada vez;
-- evitar juridiquês;
-- explicar termos inevitáveis;
-- permitir “não sei”;
-- permitir respostas aproximadas quando a precisão não for indispensável;
-- respeitar a vulnerabilidade da persona;
-- pedir esclarecimento sem constrangimento;
-- evitar juízo de valor;
-- evitar tom policial ou interrogatório.
+- aderência;
+- subperfil;
+- caminho jurídico;
+- urgência;
+- necessidade de documento;
+- revisão profissional;
+- roteamento.
 
-## Perguntas sensíveis
+Apresente a condição de uso.
 
-Quando houver temas como:
+Exemplo:
+
+> **Use somente se a pessoa informar que já houve negativa:**  
+> Você lembra quando recebeu a resposta e qual motivo foi informado?
+
+Não crie dezenas de ramos.
+
+---
+
+## 2.4. Perguntas de esclarecimento
+
+Para respostas ambíguas, proponha uma pergunta curta.
+
+Exemplos:
+
+> Só para eu entender: isso aconteceu antes ou depois de [MARCO]?
+
+> Quando você diz que não recebeu, está falando de [OPÇÃO A] ou de [OPÇÃO B]?
+
+> Você consegue estimar, mesmo que aproximadamente?
+
+Faça apenas o esclarecimento necessário.
+
+Se a pessoa não souber:
+
+- registre a pendência;
+- prossiga quando possível;
+- não force resposta;
+- não conclua ausência do requisito.
+
+---
+
+## 2.5. SQL e elementos de confirmação
+
+Depois de verificar a aderência preliminar, inclua apenas as perguntas de aprofundamento necessárias à próxima análise profissional.
+
+Podem envolver:
+
+- datas;
+- categoria;
+- vínculo;
+- histórico;
+- pedido ou negativa anterior;
+- processo em andamento;
+- documento existente;
+- valor ou impacto;
+- prazo;
+- local ou competência.
+
+Pergunte inicialmente sobre a **existência** do documento, não sobre o envio completo, salvo instrução expressa do escritório.
+
+Exemplo:
+
+> Você possui algum laudo, contrato, comunicado ou documento relacionado a essa situação?
+
+Explique a razão somente quando isso ajudar a pessoa a responder.
+
+---
+
+## 2.6. Urgência
+
+Inclua perguntas de urgência apenas quando houver prazo, risco ou marco real relacionado ao nicho.
+
+Exemplo estrutural:
+
+> Existe alguma audiência, bloqueio, corte, prazo, leilão, perícia ou outra situação com data próxima?
+
+Adapte ao caso.
+
+Não crie urgência com:
+
+- medo genérico;
+- “mudança de lei” sem fonte;
+- possibilidade remota;
+- pressão comercial;
+- tempo de resposta do lead.
+
+---
+
+## 2.7. Maturidade e prontidão
+
+Somente depois da aderência preliminar, e quando isso for útil à operação, pergunte sobre o próximo passo.
+
+Exemplo:
+
+> Caso a equipe identifique pertinência para continuar, você deseja receber a orientação sobre a próxima etapa?
+
+Se necessário, registre separadamente:
+
+- interesse;
+- disponibilidade;
+- impedimento;
+- preferência de canal;
+- necessidade de falar com terceiro;
+- capacidade atual de reunir documentos.
+
+Não classifique essas respostas como MQL ou SQL jurídico.
+
+---
+
+# Apresentação estratégica das perguntas
+
+Para cada pergunta, apresente internamente:
+
+| Pergunta sugerida | Tipo | Critério testado | Por que importa | Resposta favorável ou aderente | Resposta inconclusiva | Resposta que exige revisão, roteamento ou atenção | Informação para handoff |
+|---|---|---|---|---|---|---|---|
+
+Use em **Tipo** apenas as categorias aplicáveis:
+
+- MQL;
+- SQL;
+- urgência;
+- complexidade;
+- revisão profissional;
+- roteamento;
+- maturidade comercial;
+- prontidão operacional.
+
+Não use “lead quente”.
+
+Não apresente essa tabela no roteiro final limpo.
+
+---
+
+# Perguntas sensíveis
+
+Contextualize perguntas sobre:
 
 - renda;
 - saúde;
-- violência;
 - deficiência;
+- violência;
 - morte;
 - dependência;
 - separação;
@@ -375,402 +499,341 @@ Quando houver temas como:
 - dívida;
 - situação migratória;
 - acusação criminal;
-
-introduza a pergunta com contexto.
+- patrimônio;
+- composição familiar.
 
 Exemplo:
 
-> Vou precisar perguntar sobre a renda da família porque esse ponto pode ser relevante para a análise inicial do benefício. Aproximadamente, qual é a renda mensal das pessoas que moram com você?
+> Vou perguntar sobre a renda familiar porque esse ponto pode ser um requisito da análise inicial. Aproximadamente, qual é a renda mensal das pessoas que moram com você?
+
+A pergunta sensível só deve existir quando estiver ligada a um requisito, bifurcação ou decisão real.
 
 Não peça desculpas excessivamente.
 
-Explique apenas o necessário.
-
 ---
 
-## Para cada pergunta, apresente
+# Quantidade e profundidade
 
-Na parte estratégica da saída, informe:
-
-### Pergunta
-
-Texto sugerido para o atendimento.
-
-### Objetivo
-
-O que o escritório precisa compreender.
-
-### Critério relacionado
-
-Indique se está ligada a:
-
-- viabilidade inicial;
-- MQL;
-- SQL;
-- urgência;
-- desqualificação;
-- necessidade de revisão profissional.
-
-### Respostas que merecem atenção
-
-Aponte, de forma objetiva:
-
-- sinais favoráveis;
-- informações ausentes;
-- contradições;
-- respostas que exigem aprofundamento;
-- fatores que podem afastar o enquadramento;
-- situações urgentes.
-
-Não transforme essa análise em conclusão jurídica definitiva.
-
----
-
-## Respostas incompletas ou ambíguas
-
-Oriente a equipe a fazer uma única pergunta de esclarecimento quando a resposta não permitir compreender o critério.
-
-Exemplos:
-
-> Só para eu entender melhor: isso aconteceu antes ou depois de [FATO]?
-
-> Quando você diz que não recebeu, está se referindo a [OPÇÃO A] ou [OPÇÃO B]?
-
-> Você consegue estimar, mesmo que aproximadamente?
-
-Se o lead não souber, registre a dúvida e prossiga quando possível.
-
-Não force uma resposta.
-
----
-
-## Quantidade e profundidade
-
-A skill deve escolher a quantidade conforme o nicho.
+A quantidade deve ser determinada pelos critérios do nicho.
 
 Como regra:
 
-- faça apenas as perguntas necessárias para a decisão inicial;
-- mantenha o fluxo suficientemente curto;
-- não substitua a consulta;
-- não repita perguntas;
-- não peça narrativa completa;
-- não peça todos os documentos;
-- não antecipe defesa, estratégia ou tese jurídica.
-
-Quando houver critérios muito diferentes dentro do mesmo nicho, crie pequenos blocos condicionais.
-
-Não produza dezenas de bifurcações.
+- use apenas as perguntas necessárias;
+- elimine redundâncias;
+- agrupe somente o que puder ser respondido com clareza;
+- faça uma pergunta por envio ou turno;
+- não substitua consulta por triagem;
+- não solicite narrativa completa;
+- não peça documentação extensa;
+- não investigue objeção comercial antes de saber se há aderência;
+- não crie perguntas apenas para deixar o roteiro “completo”.
 
 ---
 
-# 3. Agradecimento e direcionamento
+# 3. Classificação e direcionamento
 
-Crie mensagens finais de acordo com o resultado da pré-qualificação.
+A classificação é interna. Não mostre os rótulos ao lead.
 
-Nunca use a palavra “desqualificado” com o lead.
+Use os seguintes status:
 
-Não faça diagnóstico definitivo.
+## A. Avança
 
-Não anuncie direito garantido.
+Use quando:
 
-Não prometa retorno em prazo que o escritório não informou.
+- há aderência preliminar;
+- os fatos principais foram suficientemente delimitados para a próxima etapa;
+- não apareceu causa objetiva de roteamento.
 
-Não diga que um especialista entrará em contato se essa não for a operação real.
+Mensagem estrutural:
 
-Use placeholders quando faltarem informações operacionais.
-
----
-
-## A. Quando existem elementos para avançar
-
-Estrutura:
-
-> agradecimento  
-> + reconhecimento de que as informações foram registradas  
-> + indicação de que o caso merece continuidade  
-> + próximo passo real  
-> + orientação para aguardar
-
-Exemplo:
-
-> Obrigado por responder às perguntas, [NOME].  
+> Obrigado por responder, [NOME].  
 >   
-> Pelas informações iniciais, existem elementos que justificam uma análise mais aprofundada da sua situação.  
+> Pelas informações iniciais, existem elementos que justificam a continuidade da análise.  
 >   
-> Agora, [PRÓXIMO PROFISSIONAL OU EQUIPE] dará continuidade ao atendimento para explicar o que foi identificado e como o escritório poderá ajudar.  
->   
-> Por favor, aguarde por aqui.
+> O próximo passo será [PRÓXIMA ETAPA REAL]. [ORIENTAÇÃO OPERACIONAL CONFIRMADA.]
 
-Quando o próximo passo for a skill `/agendamento`, deixe isso claro apenas no resumo interno, não no texto enviado ao lead.
+Não diga que o lead “tem direito”.
+
+## B. Avança com pendências
+
+Use quando:
+
+- há aderência provável;
+- falta confirmar dado, documento ou data;
+- a pendência não impede a continuidade.
+
+Mensagem estrutural:
+
+> Obrigado pelas informações. Existem elementos para continuar, mas alguns pontos ainda precisam ser confirmados na próxima etapa.  
+>   
+> Vou registrar essas pendências para que a equipe dê continuidade corretamente.
+
+## C. Revisão profissional
+
+Use quando:
+
+- existe ambiguidade relevante;
+- há contradição;
+- o enquadramento é controvertido;
+- a equipe de atendimento não deve decidir sozinha.
+
+Mensagem estrutural:
+
+> Obrigado pelas informações, [NOME]. Alguns pontos precisam ser avaliados com mais cuidado antes de qualquer direcionamento. Vou repassar o seu relato para a equipe responsável.
+
+Não prometa prazo de resposta não informado.
+
+## D. Prioridade ou urgência
+
+Use quando houver sinal objetivo de prazo ou risco.
+
+Mensagem estrutural:
+
+> Entendi. Como você relatou uma situação com [PRAZO OU RISCO], vou sinalizar essa informação para a equipe responsável.
+
+Não prometa atendimento imediato.
+
+A urgência pode coexistir com qualquer outro status.
+
+## E. Roteamento
+
+Use quando a necessidade pertence a outro serviço, área ou profissional.
+
+Mensagem estrutural:
+
+> Obrigado por explicar a situação. Pelo que foi relatado, o atendimento necessário parece estar relacionado a [OUTRO SERVIÇO OU ÁREA], e não ao serviço inicialmente selecionado.
+
+Indique outro caminho somente quando ele for real e confirmado.
+
+## F. Não aparenta aderência
+
+Use quando o relato não apresenta requisito essencial e não há informação pendente capaz de alterar isso.
+
+Mensagem estrutural:
+
+> Obrigado por responder às perguntas. Pelas informações iniciais, sua situação não parece corresponder ao tipo de atendimento realizado pelo escritório neste serviço.  
+>   
+> Essa é uma avaliação inicial e não representa uma conclusão definitiva sobre todos os seus direitos.
+
+## G. Informação insuficiente
+
+Use quando faltam fatos indispensáveis e não é possível classificar.
+
+Mensagem estrutural:
+
+> Obrigado pelas informações enviadas. Alguns pontos essenciais ainda não ficaram claros e precisam ser verificados antes do direcionamento.
+
+## H. Sem prontidão para avançar
+
+Use quando há aderência, mas a pessoa não deseja ou não consegue continuar agora.
+
+Mensagem estrutural:
+
+> Sem problema. Obrigado pelo contato. Caso decida retomar o atendimento, você poderá falar conosco novamente pelos canais do escritório.
+
+Não altere a classificação jurídica por causa disso.
 
 ---
 
-## B. Quando o caso precisa de revisão profissional
+# 4. Handoff e roteiro final
 
-> Obrigado pelas informações, [NOME].  
->   
-> Alguns pontos da sua situação precisam ser avaliados com mais cuidado antes de qualquer direcionamento. Vou repassar o que você informou para a equipe responsável.  
->   
-> Por favor, aguarde por aqui.
+## 4.1. Resumo para o próximo profissional
 
----
-
-## C. Quando houver urgência ou sensibilidade
-
-> Entendi. Como você relatou uma situação que pode exigir atenção mais rápida, vou encaminhar essas informações diretamente para a equipe responsável.
-
-Não prometa atendimento imediato sem confirmação operacional.
-
----
-
-## D. Quando a situação não aparenta aderência ao serviço
-
-> Obrigado por responder às perguntas.  
->   
-> Pelas informações iniciais, sua situação não parece se enquadrar no tipo de atendimento realizado pelo escritório neste momento.  
->   
-> Essa é apenas uma avaliação inicial e não representa uma conclusão definitiva sobre seus direitos.
-
-Acrescente orientação para outro canal somente quando ela for real.
-
----
-
-## E. Quando faltam informações essenciais
-
-> Obrigado pelas informações enviadas até aqui.  
->   
-> Ainda existem alguns pontos que não ficaram claros e que precisam ser verificados antes do direcionamento. Vou registrar o que você informou para análise da equipe.
-
----
-
-## F. Quando o lead não deseja continuar
-
-> Sem problema. Obrigado pelo contato. Caso decida retomar o atendimento, estaremos à disposição pelos canais do escritório.
-
-Não faça insistência.
-
----
-
-# Leitura estratégica inicial
-
-Antes dos três blocos principais, apresente uma síntese interna com:
-
-- nicho;
-- perfil da persona;
-- objetivo da pré-qualificação;
-- critérios centrais;
-- critérios de urgência;
-- critérios de desqualificação;
-- temas sensíveis;
-- tom recomendado;
-- próximo passo esperado.
-
-Essa síntese deve ser curta.
-
-Não reproduza todo o mapa.
-
----
-
-# Resumo para o próximo profissional
-
-Depois do roteiro, crie um modelo de repasse interno.
-
-Use esta estrutura:
+Crie um modelo de repasse com esta estrutura:
 
 ```text
 STATUS DA PRÉ-QUALIFICAÇÃO:
+[Avança / Avança com pendências / Revisão profissional / Roteamento / Não aparenta aderência / Informação insuficiente]
+
+PRIORIDADE OU URGÊNCIA:
+[Não identificada / Identificada — descrever fato e data]
 
 Nome:
-Nicho ou assunto:
+Nicho ou serviço:
 Motivo principal do contato:
-Critérios confirmados:
-Critérios não confirmados:
-Informações pendentes:
+
+Fatos relatados:
+Requisitos de MQL indicados pelo relato:
+Requisitos de MQL não identificados:
+Elementos de SQL já delimitados:
+Elementos que ainda precisam ser confirmados:
+Contradições ou dúvidas:
 Histórico relevante:
 Documentos mencionados:
-Sinal de urgência:
-Objeções, receios ou dúvidas:
-Interesse em avançar:
-Observação importante:
+Documentos já recebidos:
+Critério de roteamento, se houver:
+
+Maturidade comercial:
+Prontidão operacional:
+Objeções, receios ou impedimentos:
+
 Próximo passo recomendado:
+Observação importante:
 ```
 
-O resumo deve registrar fatos, não interpretações exageradas.
+Regras:
 
-Evite conclusões como:
-
-- “tem direito”;
-- “caso ganho”;
-- “alta chance”;
-- “fraude evidente”;
-- “empresa culpada”;
-- “benefício garantido”.
-
-Quando o lead estiver apto a avançar, indique internamente:
-
-```text
-Próximo passo recomendado: /agendamento
-```
+- diferencie relato de confirmação;
+- use “indicado pelo relato”, não “direito confirmado”;
+- não registre “alta chance”;
+- não declare culpa, fraude ou êxito;
+- não classifique falta de disponibilidade como falta de aderência;
+- indique `/agendamento` somente quando essa for a próxima skill real;
+- registre fatos, datas e falas relevantes sem exagero interpretativo.
 
 ---
 
-# Exemplo demonstrativo
+## 4.2. Roteiro final limpo
 
-Crie uma conversa fictícia completa, adaptada ao nicho.
+Ao final, entregue uma versão pronta para utilização.
 
-O exemplo deve conter:
-
-1. saudação;
-2. apresentação;
-3. explicação da etapa;
-4. perguntas em sequência;
-5. respostas fictícias;
-6. ao menos um esclarecimento natural;
-7. agradecimento;
-8. direcionamento.
-
-Identifique:
-
-> Cenário demonstrativo: conversa fictícia criada a partir dos critérios do Mapeamento de Persona.
-
-Não apresente a simulação como caso real.
-
-O exemplo não deve ser muito mais longo que o roteiro utilizável.
-
----
-
-# Roteiro final limpo
-
-Ao final, entregue uma versão pronta para copiar e utilizar.
-
-Ela deve conter apenas:
+Inclua apenas:
 
 1. saudação recomendada;
-2. perguntas na ordem;
-3. observações curtas para o atendente, somente quando indispensáveis;
-4. mensagens de agradecimento e direcionamento.
+2. contextualização;
+3. perguntas principais na ordem;
+4. perguntas condicionais com indicação breve de uso;
+5. notas indispensáveis de espera ou esclarecimento;
+6. mensagens de direcionamento por status.
 
-Não inclua nessa versão:
+Não inclua:
 
 - explicações teóricas;
-- objetivos estratégicos;
+- objetivos;
 - classificação MQL ou SQL;
-- análise técnica;
-- códigos;
+- tabela estratégica;
+- análise jurídica;
+- código;
 - instruções de automação;
-- tabelas complexas.
+- conversa fictícia não solicitada.
+
+No WhatsApp:
+
+- uma pergunta por mensagem;
+- indicação de `*Aguarde a resposta.*`;
+- não envie todos os ramos ao lead;
+- não apresente mensagens de encerramento antes de saber o status.
 
 ---
 
-## Regras de escrita
+# Regras de linguagem
 
 O roteiro deve:
 
 - soar humano;
-- ser adequado ao WhatsApp ou ao canal informado;
+- ser específico para o nicho;
+- preservar autoridade profissional;
+- usar linguagem simples;
+- fazer uma pergunta por vez;
 - usar parágrafos curtos;
-- fazer uma pergunta de cada vez;
-- evitar excesso de formalidade;
-- evitar excesso de intimidade;
-- respeitar a persona;
-- evitar mensagens longas;
-- manter ritmo conversacional;
-- usar linguagem compatível com o nível de compreensão do lead;
-- explicar o motivo de perguntas sensíveis;
-- demonstrar atenção sem teatralidade.
+- evitar intimidade forçada;
+- evitar frieza burocrática;
+- explicar perguntas sensíveis;
+- permitir “não sei”;
+- acolher sem dramatizar;
+- reagir ao que já foi informado;
+- não obrigar a pessoa a repetir dados.
 
 Evite:
 
 - “Seu caso foi aprovado.”
 - “Você está qualificado.”
+- “Você é um SQL.”
 - “Temos certeza de que você tem direito.”
 - “Parabéns, seu caso se enquadra.”
+- “Caso ganho.”
+- “Alta chance de êxito.”
 - “Última oportunidade.”
 - “Responda obrigatoriamente.”
-- “Envie todos os seus documentos agora.”
+- “Envie todos os documentos agora.”
 - “Nossa taxa de sucesso é de 100%.”
 - “Um especialista falará com você em breve”, quando isso não estiver confirmado.
 
 ---
 
-## Validação interna obrigatória
+# Validação interna obrigatória
 
 Antes de concluir, verifique:
 
-### Referências
+## Referências
 
 - O Mapeamento de Persona foi consultado?
-- Os critérios vêm do mapa ou de informações fornecidas?
-- As referências obrigatórias foram lidas?
+- A situação qualificadora veio do mapa?
+- Os requisitos de MQL e os elementos de SQL vieram do mapa?
 - Nenhum critério jurídico foi inventado?
+- O Core Cognitivo e o Core de Escrita foram aplicados?
 
-### Saudação
+## Arquitetura
 
-- O escritório foi apresentado de forma verdadeira?
-- A prova social é real ou está marcada como placeholder?
-- A abertura explica a finalidade das perguntas?
-- O tom combina com a persona?
-- A abertura não parece propaganda exagerada?
+- O produto é um roteiro humano de pré-qualificação?
+- O canal foi identificado?
+- A pré-qualificação não virou consulta?
+- O material não virou chatbot ou lógica de automação?
+- Não houve simulação sem pedido expresso?
 
-### Perguntas
+## Perguntas
 
 - As perguntas são específicas para o nicho?
-- Cada pergunta possui função clara?
-- Há apenas perguntas necessárias?
+- Cada pergunta testa um critério real?
+- MQL foi investigado antes da maturidade comercial?
+- SQL jurídico foi separado de prontidão operacional?
+- Informação ausente virou pendência, e não exclusão automática?
+- Existem apenas perguntas necessárias?
 - A ordem é natural?
-- A linguagem é simples?
 - Temas sensíveis foram contextualizados?
-- Não há repetição?
-- A consulta não foi antecipada?
-- A skill não solicitou documentação extensa?
+- Não há pedido documental excessivo?
+- Urgência foi baseada em fato real?
 
-### Direcionamento
+## Classificação
 
-- Existem encerramentos adequados aos resultados mais relevantes?
-- O texto evita “desqualificado”?
-- Não há conclusão definitiva sobre direitos?
+- Os status internos são coerentes?
+- Avanço com pendência foi diferenciado de revisão?
+- Roteamento foi diferenciado de não aderência?
+- Baixa prontidão não alterou a aderência jurídica?
+- Nenhuma conclusão definitiva foi apresentada ao lead?
+
+## Direcionamento
+
 - O próximo passo é real?
-- Não há prazo ou promessa inventada?
+- Não há promessa de prazo?
+- Não há promessa de contato não confirmado?
+- O texto evita a palavra “desqualificado”?
+- As mensagens são respeitosas?
 
-### Escopo
-
-- A saída é um roteiro humano?
-- Não há adaptação para automação?
-- Não há chatbot, CRM, código, gatilho ou máquina de estados?
-- Não houve agendamento?
-- Não houve consulta?
-- Não houve follow-up?
-
-### Entrega
+## Entrega
 
 - Há leitura estratégica?
-- Há modelos de saudação?
-- Há recomendação de abertura?
-- Há perguntas com objetivo e sinais de atenção?
-- Há mensagens de agradecimento e direcionamento?
-- Há resumo de repasse?
-- Há exemplo fictício?
+- Há roteiro comentado?
+- Há classificação e mensagens de direcionamento?
+- Há handoff?
 - Há roteiro final limpo?
+- Não há conteúdo duplicado sem função?
+
+Corrija silenciosamente.
 
 ---
 
-## Critérios de conclusão
+# Critérios de conclusão
 
-A saída está completa somente quando:
+A saída está completa quando:
 
 - utiliza o Mapeamento de Persona;
-- apresenta modelos de boas-vindas;
-- recomenda uma abertura;
-- transforma critérios estratégicos em perguntas humanas;
-- explica a função prática das perguntas;
-- trata respostas incompletas;
-- apresenta agradecimento e direcionamento;
-- diferencia avanço, revisão, urgência e não aderência;
-- cria resumo para o próximo profissional;
-- inclui exemplo fictício;
+- identifica corretamente a natureza do serviço;
+- transforma requisitos de MQL em perguntas humanas;
+- utiliza SQL somente para o aprofundamento necessário;
+- separa qualificação jurídica de maturidade e prontidão;
+- trata respostas incompletas como pendência quando adequado;
+- reconhece urgência sem criá-la;
+- diferencia avanço, pendência, revisão, roteamento e não aderência;
+- produz direcionamentos compatíveis com cada status;
+- cria handoff baseado em fatos e níveis de certeza;
 - entrega roteiro final limpo;
-- não contém modelos ou adaptações para automação.
+- não realiza consulta;
+- não cria automação;
+- não inclui simulação sem pedido expresso.
 
-A skill deve ajudar o escritório a receber bem, perguntar com propósito e encaminhar com clareza.
+A skill deve ajudar o escritório a receber bem, perguntar com propósito, classificar com segurança e encaminhar com clareza.
+
+
+
 
