@@ -75,6 +75,17 @@ Valide, conforme a natureza do serviço:
 - variações por data, categoria, regime, contrato, ente ou local;
 - pontos necessários para construir MQL e SQL jurídicos.
 
+Concentre o maior rigor nos elementos que alteram:
+
+- aderência ao serviço;
+- requisitos de MQL e SQL;
+- categorias incluídas ou excluídas;
+- causas de desqualificação ou roteamento;
+- prazos e fatos utilizados para criar urgência;
+- possibilidade jurídica central do serviço.
+
+Detalhes acessórios podem ser condicionados ou marcados para validação sem impedir a conclusão do mapeamento, desde que não alterem a qualificação ou a estratégia central.
+
 Não force categorias próprias de concessão de benefício quando o serviço for defensivo, consultivo, preventivo ou híbrido.
 
 ## 4. Qualificação juridicamente validada
@@ -106,6 +117,7 @@ Não confunda:
 - Não trate documento como requisito material quando ele for apenas meio de prova.
 - Não conclua direito, viabilidade ou chance de êxito com base apenas em descrição genérica.
 - Quando não houver confirmação suficiente ou existir controvérsia real, use `[VALIDAR JURIDICAMENTE]` apenas no ponto específico.
+- A marcação `[VALIDAR JURIDICAMENTE]` não autoriza afirmar como certo um número, prazo, requisito, categoria ou consequência não confirmados. Se o dado exato não estiver seguro, descreva a bifurcação sem fixar o parâmetro.
 - Quando a informação depender de política do escritório, use `[VALIDAR COM O ESCRITÓRIO]`.
 - Dentro da Seção 3, inclua o subtítulo **Fontes oficiais consultadas**, com as fontes utilizadas e a data da consulta.
 
@@ -140,9 +152,12 @@ Não confunda:
 - Construa primeiro a situação qualificadora central.
 - Defina MQL a partir da pertinência jurídica preliminar.
 - Em serviços de reconhecimento de direito, use os requisitos materiais mínimos como núcleo do MQL.
-- Defina SQL a partir da permanência da aderência, delimitação dos fatos, elementos de confirmação e contexto necessário para a próxima etapa real do escritório.
+- Defina SQL a partir da permanência da aderência, delimitação dos fatos, elementos de confirmação e contexto técnico necessário para a análise profissional da próxima etapa.
 - Trate documentação como elemento de confirmação ou avanço quando aplicável, não como sinônimo automático de SQL.
-- Separe aderência, complexidade, prioridade, urgência, maturidade, pendências e roteamento.
+- Não inclua no núcleo do SQL jurídico: disponibilidade, comparecimento, responsividade, intenção imediata de contratar, aceitação de proposta ou disposição para reunir documentos.
+- Classifique esses elementos separadamente como maturidade comercial, prontidão operacional, condição de agendamento, pendência ou informação para handoff.
+- Um lead pode ser SQL jurídico sem estar pronto para agendar ou contratar.
+- Separe aderência, complexidade, prioridade, urgência, maturidade, prontidão operacional, pendências e roteamento.
 - Não utilize “lead quente” como sinônimo de lead qualificado.
 - Não trate curiosidade, demora para responder ou resistência ao preço como desqualificação jurídica.
 
@@ -185,7 +200,7 @@ A entrega somente está concluída quando:
 - os requisitos materiais ou condições objetivas de aderência estão claros;
 - o MQL representa pertinência jurídica preliminar;
 - o SQL representa pertinência desenvolvida para a próxima etapa;
-- documentos, urgência, complexidade, maturidade e operação estão separados;
+- documentos, urgência, complexidade, maturidade comercial e prontidão operacional estão separados do SQL jurídico;
 - existem critérios de avanço, pendência, revisão, roteamento e não aderência;
 - linguagem, jornada, dores, objeções, fatores de decisão e fricções estão conectados à situação concreta;
 - a Seção 10 fornece matéria-prima para todas as skills derivadas sem criar as peças finais;
