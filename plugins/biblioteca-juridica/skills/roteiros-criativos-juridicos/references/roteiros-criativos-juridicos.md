@@ -149,11 +149,43 @@ Antes de criar um gancho, responda:
 
 Se essas respostas não estiverem claras, o roteiro será genérico.
 
+## 3.1. Fidelidade aos inputs
+
+Antes do diagnóstico, monte internamente uma ficha de execução:
+
+| Campo | Valor fornecido | Pode receber premissa? |
+|---|---|---|
+| Quantidade |  | somente se ausente |
+| Duração |  | somente se ausente |
+| Formato |  | somente se ausente |
+| Canal |  | somente se ausente |
+| Público/recorte |  | somente se ausente |
+| Objetivo |  | somente se ausente |
+| Etapa do funil |  | somente se ausente |
+| Tom |  | somente se ausente |
+| CTA |  | somente se ausente |
+| Restrições |  | não |
+| Informações validadas |  | não |
+
+Regra:
+
+> dado fornecido não é premissa.
+
+Não reinterprete um tom informado como se fosse sugestão da skill.
+
+Não substitua CTA real por placeholder quando ele já foi fornecido.
+
+Não aumente ou reduza a quantidade para “equilibrar” a campanha.
+
+Não altere duração ou formato para acomodar uma preferência metodológica.
+
+Se houver conflito ético, jurídico ou técnico, sinalize-o e proponha ajuste. Não corrija silenciosamente.
+
 ---
 
 # 4. ENTENDIMENTO DO SERVIÇO
 
-## 3.1. Natureza
+## 4.1. Natureza
 
 Classifique o serviço como:
 
@@ -207,7 +239,7 @@ Não misture consulta, concessão, defesa e execução numa peça curta sem nece
 
 ---
 
-## 3.2. Mecanismo de valor
+## 4.2. Mecanismo de valor
 
 O mecanismo de valor explica o que o profissional faz entre o problema e o resultado desejado.
 
@@ -249,7 +281,7 @@ Exemplo com mecanismo:
 
 ---
 
-## 3.3. Resultado comunicável
+## 4.3. Resultado comunicável
 
 Diferencie:
 
@@ -299,7 +331,7 @@ Pode ser comunicado sem prometer o resultado:
 
 # 5. LEITURA DA PERSONA PARA CRIATIVOS
 
-## 4.1. Perfil
+## 5.1. Perfil
 
 Perfil orienta forma, não define automaticamente a relevância jurídica.
 
@@ -332,30 +364,44 @@ Use essas informações como recorte somente quando:
 
 ---
 
-## 4.2. Aderência
+## 5.2. Aderência
 
 Aderência responde:
 
-> Que situação torna esse serviço pertinente?
+> Qual é o núcleo mínimo que torna este serviço pertinente?
+
+Teste de ausência:
+
+> Se este elemento não existir, o serviço deixa de ser pertinente?
 
 Exemplos abstratos:
 
-- sofreu o fato e permaneceu com determinada consequência;
-- recebeu uma negativa;
+- sofreu o fato central e permaneceu com consequência relevante;
+- recebeu uma negativa relacionada ao serviço;
 - está sendo cobrado ou executado;
-- possui decisão relevante em aberto;
-- tem mais de uma alternativa jurídica ou estratégica;
-- está diante de um prazo;
-- precisa comprovar determinado requisito;
-- possui vínculo, contrato ou situação abrangida pelo serviço.
+- possui decisão consultiva relevante em aberto;
+- está diante da relação, vínculo ou situação abrangida;
+- reúne requisitos materiais preliminares do direito analisado.
 
-O criativo de aquisição deve, em regra, conter algum marcador de aderência.
+Não classifique como aderência apenas porque o elemento gera um bom anúncio.
 
-Ele pode ser explícito no gancho ou surgir no desenvolvimento.
+Em regra, não são aderência por si sós:
+
+- estar perto de uma data;
+- possuir renda mais alta;
+- ter ou não ter determinado documento;
+- pertencer a subcategoria específica;
+- possuir múltiplos vínculos;
+- demonstrar interesse;
+- estar pronto para contratar;
+- ter urgência;
+- apresentar maior potencial econômico.
+
+O criativo de aquisição deve conter marcador suficiente para evitar atrair público incompatível, mas nem todo marcador do gancho precisa ser o núcleo de aderência.
 
 ---
 
-## 4.3. Complexidade
+## 5.3. Complexidade
 
 Complexidade responde:
 
@@ -382,7 +428,7 @@ Não transforme complexidade em requisito quando casos simples também são aten
 
 ---
 
-## 4.4. Maturidade
+## 5.4. Maturidade
 
 Maturidade responde:
 
@@ -400,11 +446,50 @@ Ela orienta o tipo de criativo:
 
 Não confunda maturidade com aderência.
 
+## 5.5. Subperfil, prioridade, prova e potencial comercial
+
+### Subperfil
+
+Muda o recorte da mensagem:
+
+- ente;
+- categoria;
+- data de ingresso;
+- histórico;
+- estágio;
+- objeção;
+- regime;
+- tipo de vínculo.
+
+### Prioridade
+
+Muda a velocidade recomendada, não a pertinência do serviço.
+
+### Prova
+
+Muda a capacidade de confirmar fatos. Falta de prova atual não equivale automaticamente a falta de aderência.
+
+### Potencial comercial
+
+Pode influenciar a estratégia de aquisição ou a oferta, mas não deve ser apresentado como qualificação jurídica.
+
+### Regra de classificação
+
+| Dimensão | Pergunta de controle |
+|---|---|
+| Aderência | Sem isso, o serviço deixa de ser pertinente? |
+| Complexidade | Sem isso, o caso continua pertinente, porém mais simples? |
+| Subperfil | Isso muda para quem ou como o anúncio fala? |
+| Maturidade | Isso muda o nível de consciência, a objeção ou o CTA? |
+| Prioridade | Isso muda a velocidade recomendada? |
+| Prova | Isso confirma um fato já relatado? |
+| Potencial comercial | Isso altera estratégia comercial sem alterar a pertinência jurídica? |
+
 ---
 
 # 6. EXTRAÇÃO DAS DORES EXPLORÁVEIS
 
-## 5.1. Unidade de criação
+## 6.1. Unidade de criação
 
 A unidade mínima de criação é:
 
@@ -421,7 +506,7 @@ Exemplo:
 
 ---
 
-## 5.2. Camadas da dor
+## 6.2. Camadas da dor
 
 Para cada situação, examine:
 
@@ -437,7 +522,7 @@ Não use uma dor emocional se não houver conexão com a situação objetiva.
 
 ---
 
-## 5.3. Pergunta de interrupção
+## 6.3. Pergunta de interrupção
 
 Uma boa pergunta de gancho:
 
@@ -463,10 +548,10 @@ Exemplo forte:
 
 Use esta estrutura:
 
-| ID | Ângulo principal | Situação objetiva | Subpersona | Nível de consciência | Dor ou decisão | Pergunta central | Insight | Mecanismo de valor | Promessa permitida | Cuidado jurídico | Risco de generalização | Formato | Função na campanha |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ID | Ângulo principal | Situação objetiva | Classificação do marcador | Subpersona | Nível de consciência | Dor ou decisão | Pergunta central | Insight | Mecanismo de valor | Promessa permitida | Cuidado jurídico | Risco de generalização | Formato | Função na campanha |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
-## 6.1. Tipos de ângulo
+## 7.1. Tipos de ângulo
 
 Varie entre:
 
@@ -510,7 +595,7 @@ Não use todos os tipos em toda campanha.
 
 ---
 
-## 6.2. Promessa comunicacional permitida
+## 7.2. Promessa comunicacional permitida
 
 A promessa comunicacional não é promessa de êxito.
 
@@ -544,7 +629,7 @@ Avalie cada ângulo em:
 
 Não é necessário atribuir nota numérica, salvo pedido.
 
-## 7.1. Portfólio equilibrado
+## 8.1. Portfólio equilibrado
 
 Uma campanha pode combinar:
 
@@ -561,7 +646,7 @@ Não force essa distribuição quando a campanha tiver outro desenho.
 
 # 9. ESTRUTURA DOS ROTEIROS
 
-## 8.1. Ficha estratégica
+## 9.1. Ficha estratégica
 
 Antes da fala, registre:
 
@@ -584,7 +669,7 @@ CTA:
 
 ---
 
-## 8.2. Gancho
+## 9.2. Gancho
 
 O gancho deve:
 
@@ -624,7 +709,7 @@ Não use consequência como certeza sobre o caso individual.
 
 ---
 
-## 8.3. Desenvolvimento
+## 9.3. Desenvolvimento
 
 O desenvolvimento deve:
 
@@ -644,7 +729,7 @@ Evite:
 
 ---
 
-## 8.4. Quebra de crença
+## 9.4. Quebra de crença
 
 A quebra de crença deve ser verdadeira e útil.
 
@@ -661,7 +746,7 @@ Não use frases absolutas quando houver exceções.
 
 ---
 
-## 8.5. Mecanismo de valor
+## 9.5. Mecanismo de valor
 
 Não encerre com:
 
@@ -675,7 +760,40 @@ Exemplo:
 
 ---
 
-## 8.6. CTA
+## 9.6. Delimitação jurídica do público
+
+Antes do CTA, revise a premissa jurídica central.
+
+Classifique-a como:
+
+- universal;
+- federal;
+- estadual ou municipal de ente identificado;
+- restrita a categoria;
+- restrita a regime;
+- dependente de data;
+- dependente de opção;
+- dependente de documento ou fato.
+
+Se não for universal, a delimitação deve aparecer:
+
+- na ficha estratégica;
+- no gancho ou no início do desenvolvimento;
+- na segmentação recomendada.
+
+Não use “em alguns casos” no final como única correção para uma abertura ampla demais.
+
+Não generalize:
+
+- RPPS para qualquer pessoa chamada de servidor;
+- regra federal para todos os entes;
+- integralidade ou paridade para todo ingresso antigo;
+- fundo específico para todo regime complementar;
+- consequência jurídica sem as condições centrais.
+
+Quando a ressalva necessária ocupar mais espaço que a ideia, restrinja o público ou escolha outro ângulo.
+
+## 9.7. CTA
 
 O CTA depende do estágio.
 
@@ -792,12 +910,46 @@ Verifique diversidade em:
 
 ---
 
-# 13. AUTORREVISÃO JURÍDICA
+# 13. AUTORREVISÃO DE FIDELIDADE
+
+Antes da revisão jurídica, compare a saída com a ficha de execução.
+
+Verifique:
+
+- quantidade exata;
+- duração solicitada;
+- formato solicitado;
+- canal correto;
+- público e recorte;
+- objetivo;
+- etapa do funil;
+- tom;
+- CTA;
+- restrições;
+- condições comerciais;
+- fatos fornecidos;
+- premissas realmente necessárias.
+
+Falhas típicas:
+
+- entregar seis quando foram pedidos cinco, ou o inverso;
+- transformar tom informado em premissa;
+- substituir CTA fornecido por placeholder;
+- ampliar o público;
+- trocar a duração;
+- criar prova ou condição não fornecida;
+- ignorar restrição expressa.
+
+Corrija antes de prosseguir.
+
+# 14. AUTORREVISÃO JURÍDICA
 
 Para cada roteiro, verifique:
 
 - a categoria está corretamente delimitada?
-- a regra depende do ente?
+- o público do gancho corresponde ao público para o qual a afirmação vale?
+- a regra depende do ente, regime, categoria, data ou opção?
+- a delimitação aparece cedo, e não apenas numa ressalva final?
 - a data ou prazo está validado?
 - a consequência é possível ou certa?
 - a peça distingue requisito de prova?
@@ -807,6 +959,8 @@ Para cada roteiro, verifique:
 - o roteiro omitiu exceção capaz de tornar a mensagem enganosa?
 - o CTA promete um resultado?
 - o criativo atrai uma anti-persona por simplificação excessiva?
+- algum fator de subperfil, complexidade, prioridade ou potencial comercial foi chamado de aderência?
+- renda, documentação ou proximidade foram transformadas em qualificação sem base expressa?
 
 Quando a afirmação puder ser corrigida com condição, condicione.
 
@@ -814,7 +968,7 @@ Quando a condição destruir a clareza ou exigir muitas ressalvas, escolha outro
 
 ---
 
-# 14. AUTORREVISÃO CRIATIVA
+# 15. AUTORREVISÃO CRIATIVA
 
 Verifique:
 
@@ -833,7 +987,7 @@ Verifique:
 
 ---
 
-# 15. QUADRO FINAL DE DIVERSIDADE
+# 16. QUADRO FINAL DE DIVERSIDADE
 
 Use esta estrutura:
 
@@ -849,7 +1003,7 @@ Ao final, informe:
 
 ---
 
-# 16. TESTE ANTIGENERICIDADE
+# 17. TESTE ANTIGENERICIDADE
 
 Pergunte:
 
@@ -868,7 +1022,7 @@ Não precisa conter artigo, número ou jargão para ser específico.
 
 ---
 
-# 17. TESTE DE DESEJO PELO SERVIÇO
+# 18. TESTE DE DESEJO PELO SERVIÇO
 
 Pergunte:
 
@@ -887,13 +1041,62 @@ Entregue um insight real e conecte-o ao mecanismo.
 
 ---
 
-# 18. CRITÉRIO DE CONCLUSÃO
+# 19. REVISÃO DE PUBLICIDADE JURÍDICA
+
+A peça deve ser revisada conforme as normas éticas de publicidade aplicáveis à advocacia, especialmente o Estatuto da Advocacia, o Código de Ética e Disciplina e o Provimento CFOAB nº 205/2021, sem prejuízo de normas posteriores e orientações da Seccional competente.
+
+## 19.1. Critério geral
+
+O conteúdo deve ser:
+
+- informativo;
+- sóbrio;
+- discreto;
+- verdadeiro;
+- verificável;
+- não mercantilista.
+
+## 19.2. Verificações obrigatórias
+
+Pergunte:
+
+- há indução direta à contratação?
+- há estímulo ao litígio?
+- a linguagem parece oferta varejista?
+- o CTA converte informação em pressão comercial?
+- há menção a preço, gratuidade, desconto ou pagamento como atrativo?
+- há promessa de ganho, êxito, prazo ou economia?
+- há resultado concreto, cliente, decisão ou caso patrocinado usado como oferta?
+- há autoengrandecimento, comparação ou especialidade não comprovada?
+- há medo ou vulnerabilidade explorados de forma abusiva?
+- a autoridade mencionada é real e comprovável?
+- a publicidade paga mantém caráter informativo?
+
+Dados de contato e aplicativos de mensagem podem aparecer de modo informativo, com sobriedade e discrição.
+
+A presença de WhatsApp não autoriza automaticamente uma chamada direta à contratação.
+
+## 19.3. Campanhas pagas
+
+Em anúncios pagos ou impulsionados:
+
+- evite oferta direta de serviços;
+- evite comando de compra ou contratação;
+- mantenha o foco em conteúdo informativo e esclarecimento;
+- sinalize a necessidade de validação pelo advogado responsável antes da veiculação.
+
+A skill auxilia a revisão, mas não certifica conformidade ética definitiva.
+
+# 20. CRITÉRIO DE CONCLUSÃO
 
 O processo está completo quando:
 
+- os inputs foram conferidos e preservados;
+- nenhum dado fornecido foi tratado como premissa;
 - o serviço foi compreendido;
 - o público foi segmentado por situação;
-- perfil, aderência, complexidade e maturidade foram separados;
+- perfil, aderência, complexidade, subperfil, prioridade e maturidade foram separados;
+- renda, documentos, proximidade e interesse comercial não foram tratados como aderência sem base expressa;
 - as dores vieram de fatos concretos;
 - a matriz de ângulos foi criada;
 - os conceitos foram selecionados;
@@ -901,8 +1104,10 @@ O processo está completo quando:
 - os roteiros são faláveis;
 - o visual foi orientado;
 - o CTA é real;
-- as afirmações jurídicas estão seguras ou condicionadas;
+- as afirmações jurídicas estão seguras, delimitadas cedo ou condicionadas;
+- a peça passou pela revisão de publicidade jurídica;
 - não há promessa;
 - os conceitos são diversos;
 - o quadro final permite enxergar a campanha como conjunto.
+
 
