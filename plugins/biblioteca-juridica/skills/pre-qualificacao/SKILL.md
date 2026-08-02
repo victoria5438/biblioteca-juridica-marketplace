@@ -297,6 +297,16 @@ Exemplo estrutural:
 
 Adapte ao nicho e à persona.
 
+### Tom, emojis e sinais visuais
+
+Não inclua emojis, símbolos afetivos ou marcas de informalidade na versão padrão sem que o tom da marca, o usuário ou o Mapeamento indiquem esse uso.
+
+Quando não houver informação:
+
+- prefira uma abertura neutra, humana e profissional;
+- não presuma que emojis combinam com o escritório;
+- não use emoji apenas para tornar a mensagem “mais acolhedora”.
+
 ### Prova de autoridade
 
 Use somente fatos fornecidos ou confirmados.
@@ -323,6 +333,20 @@ Não transforme a saudação em anúncio.
 ## 2.2. Perguntas principais
 
 Selecione as perguntas mínimas necessárias para testar a situação qualificadora e os requisitos de MQL.
+
+Não antecipe nomes de regimes, fundos, programas ou instituições que não sejam universais ao recorte.
+
+Quando o público abranger mais de um ente, regime ou categoria:
+
+- use primeiro uma formulação geral;
+- identifique o ente, vínculo ou subperfil;
+- somente depois utilize o nome específico aplicável.
+
+Exemplo:
+
+> É mais para entender quando e como se aposentar ou para organizar sua contribuição e eventual previdência complementar?
+
+Somente após confirmar que se trata de servidor federal, por exemplo, a pergunta pode mencionar Funpresp.
 
 Comece por uma pergunta simples de contexto quando ela for necessária:
 
@@ -358,6 +382,37 @@ Inclua somente quando uma resposta alterar:
 - roteamento.
 
 Apresente a condição de uso.
+
+### Pergunte fatos, não enquadramentos jurídicos
+
+Não peça que o lead classifique juridicamente a própria situação.
+
+Evite perguntas como:
+
+- “Sua atividade se enquadra em regra especial?”
+- “Você tem direito a aposentadoria especial?”
+- “Sua deficiência permite regra diferenciada?”
+- “Seu vínculo é de RPPS?”
+
+Prefira perguntar pelos fatos que permitem ao profissional realizar o enquadramento:
+
+- função ou cargo exercido;
+- atividades efetivamente desempenhadas;
+- exposição a agentes nocivos;
+- existência de laudo, avaliação ou reconhecimento formal;
+- tipo de vínculo;
+- órgão e ente;
+- datas relevantes.
+
+Exemplos:
+
+> Você atua ou atuou como professor da educação básica, policial, agente penitenciário ou socioeducativo?
+
+> Em algum período, seu trabalho envolveu exposição habitual a ruído, produtos químicos, agentes biológicos ou outra condição potencialmente nociva?
+
+> Existe algum reconhecimento formal de deficiência, como laudo, avaliação ou registro funcional?
+
+A interpretação jurídica pertence à equipe profissional, não ao lead.
 
 Exemplo:
 
@@ -767,6 +822,7 @@ Antes de concluir, verifique:
 
 - O produto é um roteiro humano de pré-qualificação?
 - O canal foi identificado?
+- Emojis e sinais de informalidade estão confirmados pelo tom da marca ou pelo usuário?
 - A pré-qualificação não virou consulta?
 - O material não virou chatbot ou lógica de automação?
 - Não houve simulação sem pedido expresso?
@@ -775,6 +831,8 @@ Antes de concluir, verifique:
 
 - As perguntas são específicas para o nicho?
 - Cada pergunta testa um critério real?
+- As perguntas solicitam fatos, e não enquadramentos jurídicos ao lead?
+- Nomes de regimes, fundos ou instituições específicas só aparecem depois da identificação do subperfil aplicável?
 - MQL foi investigado antes da maturidade comercial?
 - SQL jurídico foi separado de prontidão operacional?
 - Informação ausente virou pendência, e não exclusão automática?
@@ -819,7 +877,8 @@ A saída está completa quando:
 
 - utiliza o Mapeamento de Persona;
 - identifica corretamente a natureza do serviço;
-- transforma requisitos de MQL em perguntas humanas;
+- transforma requisitos de MQL em perguntas humanas baseadas em fatos, sem exigir enquadramento jurídico do lead;
+- utiliza termos específicos de regime, ente ou fundo somente quando aplicáveis ao subperfil identificado;
 - utiliza SQL somente para o aprofundamento necessário;
 - separa qualificação jurídica de maturidade e prontidão;
 - trata respostas incompletas como pendência quando adequado;
@@ -833,6 +892,7 @@ A saída está completa quando:
 - não inclui simulação sem pedido expresso.
 
 A skill deve ajudar o escritório a receber bem, perguntar com propósito, classificar com segurança e encaminhar com clareza.
+
 
 
 
