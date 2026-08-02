@@ -156,6 +156,15 @@ Regras:
 3. Não presuma consulta gratuita, análise sem custo, parcelamento, prazo de retorno ou outra condição comercial.
 4. Não use características prováveis da persona como fatos confirmados sobre um lead individual.
 5. Quando uma informação variar por região, categoria, contrato, ente, data ou documento, exponha a bifurcação.
+6. Concentre o maior rigor da validação jurídica nos pontos que alteram:
+   - aderência ao serviço;
+   - requisitos de MQL e SQL;
+   - categorias incluídas ou excluídas;
+   - causas de desqualificação ou roteamento;
+   - prazos e fatos utilizados para criar urgência;
+   - possibilidade jurídica central do serviço.
+7. Detalhes jurídicos acessórios podem ser apresentados de forma condicionada ou marcados para validação, sem impedir a conclusão do mapeamento, desde que não alterem a qualificação ou a estratégia central.
+8. A marcação `[VALIDAR JURIDICAMENTE]` não autoriza apresentar como fato um número, prazo, requisito, categoria ou consequência que a pesquisa não confirmou. Quando o parâmetro exato não estiver seguro, descreva a bifurcação sem fixar o dado incerto.
 
 ---
 
@@ -885,7 +894,7 @@ Liste:
 
 Defina o SQL como:
 
-> Lead que permanece aderente aos critérios de MQL e já possui fatos suficientemente delimitados, elementos de confirmação ou meios plausíveis de prova, contexto temporal e informações adequadas para avançar à próxima etapa do escritório.
+> Lead que permanece aderente aos critérios de MQL e já possui fatos suficientemente delimitados, elementos de confirmação ou meios plausíveis de prova, contexto temporal e informações técnicas adequadas para a análise profissional correspondente à próxima etapa do escritório.
 
 O SQL pode envolver:
 
@@ -901,10 +910,33 @@ O SQL pode envolver:
 - prazo;
 - local ou competência;
 - impacto concreto;
-- objetivo da pessoa;
-- disponibilidade para a próxima etapa.
+- objetivo jurídico ou consultivo da pessoa.
 
 A documentação médica, contratual, funcional, previdenciária, financeira ou processual pode ser elemento de SQL quando ajuda a confirmar requisitos ou permite análise técnica concreta.
+
+### SQL jurídico não é prontidão operacional
+
+Não integram o núcleo do SQL jurídico:
+
+- disponibilidade de agenda;
+- comparecimento;
+- velocidade de resposta;
+- intenção imediata de contratar;
+- aceitação de proposta;
+- disposição para reunir ou enviar documentos;
+- participação de cônjuge ou terceiro;
+- preferência de canal;
+- comportamento diante de follow-up.
+
+Esses elementos devem ser classificados separadamente como:
+
+- maturidade comercial;
+- prontidão operacional;
+- condição de agendamento;
+- pendência de atendimento;
+- informação para handoff.
+
+Um lead pode ser SQL jurídico e ainda não estar pronto para agendar ou contratar. Também pode estar comercialmente disposto e continuar sem aderência jurídica suficiente.
 
 ### Regras do SQL
 
@@ -912,9 +944,10 @@ A documentação médica, contratual, funcional, previdenciária, financeira ou 
 - Não trate ausência momentânea de documento como desqualificação automática.
 - Não transforme renda presumida em requisito.
 - Não use participação de cônjuge ou terceiro como requisito jurídico.
-- O SQL deve ser definido conforme a próxima etapa real do escritório.
+- Defina o nível de aprofundamento do SQL conforme a análise técnica exigida na próxima etapa, não conforme a disposição comercial do lead.
 - Se a próxima etapa for análise documental, o nível de prova exigido pode ser maior.
 - Se a próxima etapa for consulta diagnóstica, informações suficientemente delimitadas podem bastar.
+- Registre separadamente se o lead está ou não disponível, responsivo ou disposto a avançar.
 
 ## 9.5. Dimensões complementares
 
@@ -951,18 +984,23 @@ Elementos que mostram que a pessoa:
 
 Maturidade não substitui aderência jurídica.
 
-### E. Condições operacionais e informações pendentes
+### E. Condições operacionais, prontidão e informações pendentes
 
-Registre:
+Registre separadamente:
 
 - documentos disponíveis;
 - documentos a obter;
 - fatos desconhecidos;
 - necessidade de confirmação;
 - dependência de terceiro;
-- disponibilidade;
+- disponibilidade de agenda;
+- capacidade ou disposição atual para reunir documentos;
+- responsividade;
+- intenção de avançar;
 - limitações de atendimento;
 - dados para handoff.
+
+Esses elementos podem alterar o momento ou a forma do atendimento, mas não substituem os critérios de MQL ou SQL jurídico.
 
 ### F. Critérios de exclusão ou roteamento
 
@@ -1224,19 +1262,20 @@ Produza um resumo curto que contenha:
 5. **Prova não substitui requisito:** documento pode confirmar, mas não cria requisito ausente.
 6. **Falta de documento não é exclusão automática:** registre pendência e meios alternativos.
 7. **Maturidade não substitui aderência:** interesse, velocidade de resposta ou pergunta sobre preço não tornam o caso juridicamente viável.
-8. **Urgência somente real:** use prazos, marcos e consequências verificáveis.
-9. **Linguagem real sem caricatura:** registre a fala do público, mas não obrigue as skills a imitarem erros.
-10. **Bifurcações inline:** use um documento unificado com ramos somente onde houver diferença relevante.
-11. **Premissas sinalizadas:** não apresente hipóteses como fatos ou estatísticas.
-12. **Condições comerciais não presumíveis:** use `[VALIDAR COM O ESCRITÓRIO]`.
-13. **Compliance OAB:** sem promessa, sensacionalismo, comparação indevida, mercantilização ou captação irregular.
-14. **Profundidade sem repetição:** cubra todas as variações relevantes sem criar itens artificiais.
-15. **Fontes oficiais:** a base jurídica deve ser atualizada e verificável.
-16. **Autonomia controlada:** desenvolva o conteúdo, mas marque somente os pontos realmente dependentes de validação.
-17. **Compatibilidade entre skills:** use os rótulos e categorias padronizados.
-18. **Teste antissuperficialidade:** o documento não pode servir a outro nicho apenas com troca de nomes.
-19. **Teste de utilidade:** cada seção deve alimentar uma decisão concreta de uma skill posterior.
-20. **Formato:** markdown, com títulos, tabelas e listas claras, sem introduções genéricas.
+8. **SQL jurídico não é prontidão operacional:** disponibilidade, comparecimento, intenção de contratar e disposição para enviar documentos devem ser registradas separadamente.
+9. **Urgência somente real:** use prazos, marcos e consequências verificáveis.
+10. **Linguagem real sem caricatura:** registre a fala do público, mas não obrigue as skills a imitarem erros.
+11. **Bifurcações inline:** use um documento unificado com ramos somente onde houver diferença relevante.
+12. **Premissas sinalizadas:** não apresente hipóteses como fatos ou estatísticas.
+13. **Condições comerciais não presumíveis:** use `[VALIDAR COM O ESCRITÓRIO]`.
+14. **Compliance OAB:** sem promessa, sensacionalismo, comparação indevida, mercantilização ou captação irregular.
+15. **Profundidade sem repetição:** cubra todas as variações relevantes sem criar itens artificiais.
+16. **Fontes oficiais:** a base jurídica deve ser atualizada e verificável.
+17. **Autonomia controlada:** desenvolva o conteúdo, mas marque somente os pontos realmente dependentes de validação.
+18. **Compatibilidade entre skills:** use os rótulos e categorias padronizados.
+19. **Teste antissuperficialidade:** o documento não pode servir a outro nicho apenas com troca de nomes.
+20. **Teste de utilidade:** cada seção deve alimentar uma decisão concreta de uma skill posterior.
+21. **Formato:** markdown, com títulos, tabelas e listas claras, sem introduções genéricas.
 
 ---
 
@@ -1253,7 +1292,7 @@ O mapeamento está pronto quando:
 - dores, riscos, desejos e objeções estão conectados à situação concreta;
 - fatores de atenção, confiança, decisão e fricção estão separados;
 - os requisitos materiais de MQL estão objetivos;
-- SQL, documentação, urgência, maturidade e operação estão separados;
+- SQL jurídico, documentação, urgência, maturidade comercial e prontidão operacional estão separados;
 - existem critérios de avanço, revisão, roteamento e não aderência;
 - a síntese alimenta todas as skills derivadas;
 - não há peça final indevidamente produzida;
@@ -1269,4 +1308,5 @@ Comece perguntando qual é o nicho jurídico específico e oferecendo o bloco op
 Aguarde a resposta antes de gerar o mapeamento.
 
 ==== FIM DO PROMPT ====
+
 
