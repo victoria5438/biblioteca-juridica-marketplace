@@ -1091,7 +1091,7 @@ Exemplos de reescrita:
 
 A autorrevisão não pode ser apenas declaratória.
 
-Ela deve verificar a versão integral de cada roteiro, inclusive:
+Ela deve verificar:
 
 - ficha estratégica;
 - gancho;
@@ -1104,72 +1104,78 @@ Ela deve verificar a versão integral de cada roteiro, inclusive:
 - notas de gravação;
 - quadro final.
 
-## 16.1. Matrizes internas obrigatórias
+## 16.1. Varredura por famílias de risco
 
-### Matriz de critérios
+Procure problemas de:
 
-| Critério | Todas as evidências relevantes | Status | Ação |
-|---|---|---|---|
-| recorte preservado | todas as ocorrências de público, vínculo, regime, ente e categoria | aprovado/reprovado |  |
-| condição material na fala | todos os trechos ligados à conclusão sensível | aprovado/reprovado/não aplicável |  |
-| intensidade sustentada | todas as expressões de intensidade | aprovado/reprovado |  |
-| causalidade sustentada | todas as relações causais | aprovado/reprovado |  |
-| tratamento de terceiros | todas as menções ao terceiro | aprovado/reprovado/não aplicável |  |
-| coerência fala × tela | todos os textos visuais relevantes | aprovado/reprovado |  |
-| CTA | todas as chamadas de ação | aprovado/reprovado |  |
+- recorte e vínculo;
+- condição jurídica;
+- intensidade;
+- causalidade;
+- terceiros;
+- promessa e comercialidade;
+- coerência entre camadas.
 
-### Inventário de ocorrências
+A varredura considera equivalentes semânticos, não apenas palavras isoladas.
 
-| Nº | Roteiro | Componente | Trecho exato | Família | Avaliação | Correção |
-|---|---|---|---|---|---|---|
+A presença de um termo potencialmente sensível não gera problema automaticamente. O contexto decide.
 
-Conclusão sem inventário completo deve ser tratada como não comprovada.
+## 16.2. Regra de bloqueio
 
-Uma ocorrência favorável não compensa outra desfavorável.
+A entrega fica bloqueada enquanto houver:
 
-## 16.2. Varredura lexical e semântica
+- público mais amplo do que o recorte validado;
+- condição sensível apenas na ficha;
+- intensidade não sustentada;
+- causalidade não sustentada;
+- menção depreciativa ou universal a terceiro;
+- promessa ou comercialidade indevida;
+- contradição entre roteiro e revisão.
 
-Pesquise no texto integral:
+Não produza contagem total de ocorrências.
 
-- universalizações: todo, sempre, nunca;
-- rótulos de vínculo: concursado, servidor, efetivo;
-- inferências: costuma estar, normalmente tem, em geral é;
-- posse ou disponibilidade: parado, já é seu, falta somar;
-- perda: recebe menos, perde, trava, deixa de ganhar;
-- irreversibilidade: não dá para voltar atrás;
-- intensificação: decisão mais cara, grande prejuízo, tarde demais, péssimo;
-- comportamento depreciativo: no chute, achismo;
-- acusações a terceiros: o RH não faz, o órgão não informa;
-- superlativos comparativos: melhor, mais vantajoso, ideal;
-- promessa: direito certo, resultado garantido.
+Números de busca não são prova de conformidade e podem gerar falsa precisão.
 
-A varredura deve considerar equivalentes semânticos, não apenas correspondência literal.
+## 16.3. Registro interno de problemas
 
-## 16.3. Regra de exaustividade e contagem
+Registre somente formulações que exigem mudança:
 
-Para cada família, registre:
+| Roteiro | Componente | Trecho problemático exato | Família | Correção | Trecho final |
+|---|---|---|---|---|---|
 
-| Família | Localizadas | Analisadas | Corrigidas | Remanescentes |
-|---|---:|---:|---:|---:|
-| recorte/vínculo |  |  |  |  |
-| intensidade |  |  |  |  |
-| causalidade |  |  |  |  |
-| terceiros |  |  |  |  |
-| promessa/comercialidade |  |  |  |  |
-| condição jurídica |  |  |  |  |
+Não registre palavra segura apenas para preencher a tabela.
 
-Aprovação exige:
+Não invente trecho original, versão cogitada ou condição ausente.
 
-- `Localizadas = Analisadas`;
-- `Remanescentes = 0`.
+## 16.4. Teste de correspondência literal
 
-Se houver cinco ocorrências da palavra “servidor”, as cinco devem ser verificadas no contexto.
+Compare sempre a revisão com o texto final.
 
-Não basta citar a ocorrência precisa do desenvolvimento e ignorar um gancho mais amplo.
+### Revisão inválida
 
-Toda ocorrência de rótulos de público, vínculo, regime, ente ou categoria deve ser auditada.
+Roteiro:
 
-## 16.4. Teste de consistência entre camadas
+> “O ano em que entrou muda o cenário.”
+
+Quadro:
+
+> “Condicionado com ‘pode’.”
+
+A revisão é inválida porque atribui ao roteiro uma palavra que não existe.
+
+### Revisão válida
+
+Trecho original:
+
+> “O ano em que entrou muda o cenário.”
+
+Correção:
+
+> “O ano em que entrou pode levar a cenários diferentes.”
+
+O quadro cita o trecho final exatamente como entregue.
+
+## 16.5. Teste de consistência entre camadas
 
 Compare:
 
@@ -1186,46 +1192,41 @@ Pergunte:
 - a fala ampliou o público da ficha?
 - a ficha contém condição ausente na fala?
 - o texto na tela simplificou a condição?
-- o quadro final declara algo que o roteiro contradiz?
+- o quadro final descreve algo que o roteiro não contém?
 - a promessa ficou mais forte durante a escrita?
 - o CTA ficou mais comercial que o input?
 
-## 16.5. Ciclo de correção
+## 16.6. Ciclo de correção
 
 Quando houver falha:
 
-1. altere o roteiro;
-2. altere todos os componentes afetados;
-3. repita a varredura;
-4. atualize a evidência literal;
-5. só então produza a conclusão final.
-
-Não entregue roteiro problemático acompanhado de revisão que afirma que o problema foi corrigido.
+1. cite o trecho real;
+2. altere o roteiro;
+3. altere as camadas afetadas;
+4. releia a versão final;
+5. atualize o registro de correção;
+6. só então conclua.
 
 Não selecione apenas evidências favoráveis.
 
-Quando houver várias ocorrências da mesma família:
+Uma frase precisa no desenvolvimento não corrige um gancho amplo.
 
-- liste todas;
-- avalie todas;
-- corrija todas as problemáticas;
-- repita a contagem;
-- só aprove quando não restar ocorrência pendente.
-
-## 16.6. Quadro público de conformidade
+## 16.7. Quadro público de correções
 
 A saída final deve incluir:
 
-| Roteiro | Família | Localizadas | Analisadas | Trechos e avaliação | Correções | Remanescentes | Status |
-|---|---|---:|---:|---|---|---:|---|
+| Roteiro | Componente | Problema encontrado | Trecho original | Correção | Trecho final | Status |
+|---|---|---|---|---|---|---|
 
-O quadro precisa:
+O quadro deve:
 
-- citar todos os trechos relevantes da versão final;
-- identificar o componente de origem;
-- demonstrar que `Localizadas = Analisadas`;
-- demonstrar que `Remanescentes = 0`;
-- reprovar quando houver ocorrência omitida ou pendente.
+- listar somente problemas reais que exigiram alteração;
+- citar o trecho original efetivamente revisado;
+- citar o trecho final exatamente como entregue;
+- usar **Corrigido** quando houve alteração;
+- usar **Sem problema remanescente identificado na varredura final** quando nenhuma alteração foi necessária;
+- nunca apresentar como corrigido um problema que ainda apareça na saída;
+- nunca inventar contagens ou versões anteriores.
 
 # 17. QUADRO FINAL DE DIVERSIDADE
 
@@ -1350,10 +1351,10 @@ O processo está completo quando:
 - intensidade, causalidade e consequências estão sustentadas ou foram neutralizadas;
 - terceiros foram mencionados por diferença de função, sem acusação universal;
 - texto visual e fala preservam o mesmo alcance;
-- cada conclusão da revisão possui inventário completo de ocorrências;
-- a varredura lexical e semântica foi executada em todos os componentes;
-- ocorrências localizadas, analisadas, corrigidas e remanescentes foram contabilizadas;
-- nenhuma família foi aprovada com ocorrência omitida ou pendente;
+- a varredura por famílias de risco foi executada em todos os componentes;
+- problemas reais foram registrados com trecho original e trecho final;
+- nenhuma contagem, versão anterior, condição ou evidência foi inventada;
+- nenhum problema identificado permaneceu na versão final;
 - contradições entre ficha, fala, tela e quadro final foram corrigidas;
 - nenhuma condição sensível ficou apenas na ficha;
 - a peça passou pela revisão de publicidade jurídica;
