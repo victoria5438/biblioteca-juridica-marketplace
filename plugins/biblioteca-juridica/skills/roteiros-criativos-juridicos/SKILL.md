@@ -767,97 +767,39 @@ Revise cada roteiro e responda internamente:
 
 Corrija silenciosamente antes da entrega.
 
-## Auditoria final baseada em evidências
+## Segunda leitura final
 
-Depois da autorrevisão, releia a versão integral dos roteiros.
+Depois da autorrevisão, releia silenciosamente a versão completa.
 
-A auditoria deve percorrer:
+Confira apenas:
 
-- ficha estratégica;
-- gancho;
-- desenvolvimento;
-- quebra de crença;
-- mecanismo de valor;
-- CTA;
-- texto na tela;
-- orientação visual;
-- notas de gravação;
-- quadro final.
+1. o gancho preserva o mesmo recorte jurídico da ficha;
+2. condições sensíveis aparecem na fala, e não apenas na ficha;
+3. fala, texto na tela e orientação visual têm o mesmo alcance;
+4. não há intensidade, perda ou causalidade não sustentada;
+5. terceiros são diferenciados por função, sem acusação;
+6. o CTA permanece informativo e compatível com os inputs;
+7. o quadro final descreve exatamente os roteiros entregues.
 
-## Regra de bloqueio
+Quando encontrar uma falha:
 
-O objetivo da auditoria não é contar palavras nem provar que todas as ocorrências foram lidas por meio de números.
+- corrija diretamente o roteiro;
+- atualize as partes relacionadas;
+- releia a versão corrigida.
 
-O objetivo é impedir que qualquer problema identificado permaneça na entrega.
+Não apresente ao usuário:
 
-Procure problemas destas famílias:
+- relatório de auditoria;
+- contagem de ocorrências;
+- histórico de versões intermediárias;
+- trechos “antes e depois”;
+- justificativas de conformidade.
 
-- recorte e vínculo;
-- condição jurídica;
-- intensidade;
-- causalidade;
-- terceiros;
-- promessa e comercialidade;
-- coerência entre ficha, fala, tela e quadro final.
-
-Pergunte:
-
-1. alguma frase amplia o público definido na ficha?
-2. alguma condição sensível aparece apenas na ficha, mas não na fala?
-3. há intensidade, perda ou consequência não sustentada?
-4. há relação causal apresentada como certa sem base suficiente?
-5. há atribuição indevida a RH, órgão, colega ou outro terceiro?
-6. há promessa, pressão comercial ou CTA incompatível?
-7. o quadro final descreve exatamente o roteiro entregue?
-
-Se a resposta for “sim” em qualquer item, corrija antes de entregar.
-
-## Registro interno de correções
-
-Registre somente problemas reais que exigiram mudança:
-
-| Componente | Trecho problemático exato | Tipo de problema | Correção aplicada | Trecho final |
-|---|---|---|---|---|
-| gancho/desenvolvimento/ficha/tela/CTA/notas/quadro | citação literal da versão em revisão | recorte/condição/intensidade/causalidade/terceiros/promessa/coerência | alteração realizada | citação literal da versão final |
-
-Não crie:
-
-- contagens numéricas de ocorrências;
-- “versões originais cogitadas”;
-- trechos que nunca fizeram parte da versão revisada;
-- condições que não aparecem no roteiro;
-- justificativas abstratas para manter frase problemática.
-
-## Regra de correspondência literal
-
-Sempre compare a revisão com o texto efetivamente entregue.
-
-É proibido:
-
-- citar uma versão diferente da fala final;
-- afirmar que uma palavra aparece quando ela não aparece;
-- afirmar que uma condição foi trazida para a fala quando ficou apenas na ficha;
-- usar uma frase precisa do desenvolvimento para ignorar um gancho amplo;
-- declarar que uma expressão foi removida quando ela não integrava a versão revisada;
-- aprovar um roteiro enquanto houver problema identificado sem correção.
-
-Uma frase segura em uma parte não neutraliza uma frase problemática em outra.
-
-Quando houver dúvida razoável, reescreva de forma mais precisa em vez de tentar justificar a formulação no quadro final.
-
-## Ciclo obrigatório de correção
-
-Quando encontrar um problema:
-
-1. cite internamente o trecho real;
-2. corrija o roteiro;
-3. atualize ficha, fala, texto visual, notas e quadro final quando necessário;
-4. releia a versão corrigida;
-5. somente entregue quando o problema não estiver mais presente.
+A revisão é uma etapa interna de qualidade.
 
 O critério final é:
 
-> nenhum problema identificado na varredura pode permanecer na versão entregue.
+> nenhum problema evidente identificado na segunda leitura permanece na versão entregue.
 
 ---
 
@@ -887,8 +829,9 @@ Síntese curta com:
 Apresente:
 
 - mecanismo de valor do serviço;
-- situações de aderência;
+- núcleo de aderência;
 - fatores de complexidade;
+- subperfis;
 - níveis de maturidade;
 - dores e decisões exploráveis;
 - promessas permitidas;
@@ -908,42 +851,44 @@ Indique os conceitos escolhidos e a função de cada um na campanha.
 
 Entregue as fichas estratégicas e os roteiros.
 
-## 6. Quadro de diversidade e revisão
+## 6. Quadro de diversidade
 
-Apresente uma síntese final demonstrando:
+Demonstre:
 
 - subpersonas cobertas;
 - situações cobertas;
-- níveis de consciência cobertos;
+- níveis de consciência;
 - tipos de gancho;
-- objetivos;
+- mecanismos de valor;
 - repetições evitadas;
-- pontos jurídicos condicionados;
-- riscos corrigidos.
+- ângulos reservados.
 
-## 7. Quadro de correções da auditoria
+## 7. Pontos jurídicos ainda dependentes de validação
 
-Apresente uma tabela final apenas com problemas que realmente exigiram alteração:
+Liste somente o que realmente precisa ser confirmado antes da veiculação, como:
 
-| Roteiro | Componente | Problema encontrado | Trecho original | Correção aplicada | Trecho final | Status |
-|---|---|---|---|---|---|---|
+- regra de ente;
+- categoria;
+- data;
+- requisito;
+- prova de autoridade;
+- condição operacional;
+- CTA ou canal real.
 
-Regras:
+Não repita proibições genéricas já observadas.
 
-- copie o trecho original efetivamente revisado;
-- copie o trecho final exatamente como aparece no roteiro entregue;
-- não invente “versão original cogitada”;
-- não declare correção que não possa ser conferida no texto final;
-- use **Corrigido** quando houve alteração;
-- quando nenhum problema tiver exigido alteração em um roteiro, registre:
-  **Sem problema remanescente identificado na varredura final**;
-- não use contagens de ocorrências;
-- não use “Aprovado” como substituto de análise;
-- o quadro deve refletir os roteiros efetivamente entregues.
+## 8. Revisão de publicidade jurídica
 
-Não exponha raciocínio privado ou cadeia de pensamento. Apresente somente trechos verificáveis e conclusões úteis da revisão.
+Apresente uma conclusão breve sobre:
 
----
+- caráter informativo;
+- sobriedade;
+- ausência de promessa;
+- ausência de mercantilização;
+- compatibilidade do CTA;
+- necessidade de validação final pelo advogado responsável.
+
+Não exponha raciocínio privado, cadeia de pensamento ou histórico interno de correções.
 
 ---
 
@@ -1088,12 +1033,10 @@ A saída está completa quando:
 - evitou intensidade, causalidade e consequências não validadas;
 - diferenciou funções de terceiros sem atribuir falha ou omissão universal;
 - manteve texto visual, fala e ficha estratégica juridicamente coerentes;
-- executou varredura por famílias de risco em todos os componentes;
-- registrou somente problemas reais que exigiram correção;
-- citou exatamente o trecho revisado e o trecho final correspondente;
-- não inventou contagens, versões anteriores, condições ou evidências;
-- não deixou problema identificado sem correção;
-- corrigiu contradições antes de produzir o quadro final;
+- realizou uma segunda leitura silenciosa da versão integral;
+- corrigiu diretamente qualquer ampliação de recorte, condição ausente, exagero, causalidade indevida ou contradição;
+- não expôs relatório de auditoria, contagens ou versões intermediárias;
+- não deixou problema evidente identificado na revisão final;
 - não usou a ficha estratégica para compensar condição ausente na fala;
 - passou pela revisão específica de publicidade jurídica;
 - evitou promessas;
@@ -1102,5 +1045,6 @@ A saída está completa quando:
 - demonstrou diversidade;
 - revisou juridicamente e criativamente as peças;
 - entregou um processo de campanha, e não apenas textos isolados.
+
 
 
