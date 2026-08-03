@@ -769,154 +769,95 @@ Corrija silenciosamente antes da entrega.
 
 ## Auditoria final baseada em evidências
 
-Depois da autorrevisão, faça uma segunda passagem obrigatória sobre a versão integral dos roteiros.
+Depois da autorrevisão, releia a versão integral dos roteiros.
 
-Para cada roteiro, faça duas auditorias complementares.
+A auditoria deve percorrer:
 
-### A. Auditoria de critérios
+- ficha estratégica;
+- gancho;
+- desenvolvimento;
+- quebra de crença;
+- mecanismo de valor;
+- CTA;
+- texto na tela;
+- orientação visual;
+- notas de gravação;
+- quadro final.
 
-| Critério | Evidências completas | Status | Correção necessária |
-|---|---|---|---|
-| recorte jurídico preservado em todas as partes | todas as ocorrências que definem ou ampliam o público | aprovado/reprovado |  |
-| condição jurídica material presente na fala | todos os trechos relacionados à conclusão sensível | aprovado/reprovado/não aplicável |  |
-| intensidade sustentada | todas as expressões de intensidade encontradas | aprovado/reprovado |  |
-| causalidade sustentada | todas as relações de causa e consequência encontradas | aprovado/reprovado |  |
-| terceiros tratados por diferença de função | todas as menções ao terceiro | aprovado/reprovado/não aplicável |  |
-| texto visual coerente com a fala | todos os textos visuais juridicamente relevantes | aprovado/reprovado |  |
-| CTA compatível | todos os CTAs e chamadas auxiliares | aprovado/reprovado |  |
+## Regra de bloqueio
 
-### B. Inventário exaustivo de ocorrências
+O objetivo da auditoria não é contar palavras nem provar que todas as ocorrências foram lidas por meio de números.
 
-| Nº | Componente | Trecho exato | Família de risco | Avaliação | Correção |
-|---|---|---|---|---|---|
-| 1 | gancho/desenvolvimento/ficha/tela/CTA/notas/quadro | citação literal | recorte/intensidade/causalidade/terceiros/promessa/outro | seguro/problemático | versão final corrigida |
+O objetivo é impedir que qualquer problema identificado permaneça na entrega.
 
-O inventário deve conter **todas** as ocorrências localizadas, não apenas uma evidência representativa.
+Procure problemas destas famílias:
 
-### Regra de prova
+- recorte e vínculo;
+- condição jurídica;
+- intensidade;
+- causalidade;
+- terceiros;
+- promessa e comercialidade;
+- coerência entre ficha, fala, tela e quadro final.
 
-Não declare um critério como cumprido apenas por conclusão abstrata.
+Pergunte:
 
-Toda aprovação deve estar sustentada por:
+1. alguma frase amplia o público definido na ficha?
+2. alguma condição sensível aparece apenas na ficha, mas não na fala?
+3. há intensidade, perda ou consequência não sustentada?
+4. há relação causal apresentada como certa sem base suficiente?
+5. há atribuição indevida a RH, órgão, colega ou outro terceiro?
+6. há promessa, pressão comercial ou CTA incompatível?
+7. o quadro final descreve exatamente o roteiro entregue?
 
-- lista completa de trechos relevantes;
-- comparação literal entre todas as partes afetadas; e
-- resultado de busca expressa por formulações de risco.
+Se a resposta for “sim” em qualquer item, corrija antes de entregar.
 
-Uma evidência favorável não neutraliza uma ocorrência desfavorável.
+## Registro interno de correções
 
-É proibido escolher apenas o trecho que comprova a conclusão desejada e ignorar:
+Registre somente problemas reais que exigiram mudança:
 
-- o gancho;
-- outra frase do desenvolvimento;
-- o texto na tela;
-- a nota de gravação;
-- a ficha estratégica;
-- o quadro final.
+| Componente | Trecho problemático exato | Tipo de problema | Correção aplicada | Trecho final |
+|---|---|---|---|---|
+| gancho/desenvolvimento/ficha/tela/CTA/notas/quadro | citação literal da versão em revisão | recorte/condição/intensidade/causalidade/terceiros/promessa/coerência | alteração realizada | citação literal da versão final |
 
-Se a busca localizar 4 ocorrências, as 4 devem ser analisadas.
+Não crie:
 
-O status só pode ser **Aprovado** quando:
+- contagens numéricas de ocorrências;
+- “versões originais cogitadas”;
+- trechos que nunca fizeram parte da versão revisada;
+- condições que não aparecem no roteiro;
+- justificativas abstratas para manter frase problemática.
 
-- todas as ocorrências foram inventariadas;
-- cada ocorrência recebeu avaliação;
-- nenhuma ocorrência problemática permanece na versão final;
-- o número de ocorrências analisadas coincide com o total localizado.
+## Regra de correspondência literal
 
-Se não houver evidência suficiente ou houver ocorrência não analisada, marque como reprovado.
-
-### Busca obrigatória por formulações de risco
-
-Procure no texto integral, inclusive em ficha, fala, CTA, orientação visual, notas e quadro final, termos ou construções equivalentes a:
-
-- todo, sempre, nunca;
-- concursado, servidor, efetivo, cargo efetivo;
-- costuma estar, normalmente é, em geral tem;
-- tempo parado, dinheiro parado, tempo que já é seu;
-- receber menos, perder valor, travar valor;
-- não dá para voltar atrás;
-- decisão mais cara;
-- resolver no chute, achismo;
-- tarde demais, seria péssimo;
-- trabalhando mais do que precisava;
-- dinheiro na mesa;
-- o RH não faz, o órgão não informa;
-- melhor, mais vantajoso, ideal;
-- resultado garantido, direito certo.
-
-A presença do termo não reprova automaticamente. Ela obriga a verificar:
-
-1. o recorte está explícito?
-2. a intensidade foi validada?
-3. a causalidade foi demonstrada?
-4. a comparação está sustentada?
-5. existe formulação mais precisa?
-
-### Contagem obrigatória
-
-Para cada família de risco, registre:
-
-- total de ocorrências localizadas;
-- total analisado;
-- total corrigido;
-- total remanescente.
-
-Use o controle:
-
-| Família | Localizadas | Analisadas | Corrigidas | Remanescentes |
-|---|---:|---:|---:|---:|
-| recorte e vínculo |  |  |  |  |
-| intensidade |  |  |  |  |
-| causalidade |  |  |  |  |
-| terceiros |  |  |  |  |
-| promessa/comercialidade |  |  |  |  |
-| condições jurídicas |  |  |  |  |
-
-Nenhuma família pode ser aprovada se:
-
-- `Analisadas < Localizadas`; ou
-- `Remanescentes > 0`.
-
-### Varredura específica de recorte
-
-Toda ocorrência de termos como:
-
-- servidor;
-- concursado;
-- efetivo;
-- cargo efetivo;
-- RPPS;
-- regime próprio;
-- federal;
-- estadual;
-- municipal;
-- professor;
-- policial;
-- categoria especial;
-
-deve ser examinada no contexto.
-
-O recorte não está preservado apenas porque uma frase posterior é precisa. Um gancho amplo continua sendo uma ocorrência problemática, mesmo que o desenvolvimento delimite corretamente depois.
-
-### Ciclo obrigatório de correção
-
-Quando qualquer linha estiver reprovada:
-
-1. corrija o roteiro;
-2. atualize ficha, fala, texto visual e quadro final;
-3. repita a auditoria sobre a nova versão;
-4. somente entregue quando não houver contradição entre roteiro e revisão final.
+Sempre compare a revisão com o texto efetivamente entregue.
 
 É proibido:
 
-- manter frase problemática e declarar que ela foi removida;
-- afirmar que o recorte foi preservado quando qualquer parte usa público mais amplo;
-- usar uma frase precisa do desenvolvimento para ignorar um gancho impreciso;
-- afirmar ausência de intensidade quando qualquer ocorrência emocional ou causal não validada permanece;
-- analisar apenas uma das várias ocorrências da mesma família;
-- registrar “Aprovado” quando a contagem de ocorrências estiver incompleta;
-- usar a ficha estratégica para justificar condição que não aparece na fala;
-- emitir conclusão de conformidade sem inventário completo e evidência textual.
+- citar uma versão diferente da fala final;
+- afirmar que uma palavra aparece quando ela não aparece;
+- afirmar que uma condição foi trazida para a fala quando ficou apenas na ficha;
+- usar uma frase precisa do desenvolvimento para ignorar um gancho amplo;
+- declarar que uma expressão foi removida quando ela não integrava a versão revisada;
+- aprovar um roteiro enquanto houver problema identificado sem correção.
+
+Uma frase segura em uma parte não neutraliza uma frase problemática em outra.
+
+Quando houver dúvida razoável, reescreva de forma mais precisa em vez de tentar justificar a formulação no quadro final.
+
+## Ciclo obrigatório de correção
+
+Quando encontrar um problema:
+
+1. cite internamente o trecho real;
+2. corrija o roteiro;
+3. atualize ficha, fala, texto visual, notas e quadro final quando necessário;
+4. releia a versão corrigida;
+5. somente entregue quando o problema não estiver mais presente.
+
+O critério final é:
+
+> nenhum problema identificado na varredura pode permanecer na versão entregue.
 
 ---
 
@@ -980,27 +921,29 @@ Apresente uma síntese final demonstrando:
 - pontos jurídicos condicionados;
 - riscos corrigidos.
 
-## 7. Quadro de conformidade por evidência
+## 7. Quadro de correções da auditoria
 
-Apresente uma tabela final auditável:
+Apresente uma tabela final apenas com problemas que realmente exigiram alteração:
 
-| Roteiro | Família auditada | Ocorrências localizadas | Ocorrências analisadas | Trechos exatos e avaliação | Correções aplicadas | Remanescentes | Status |
-|---|---|---:|---:|---|---|---:|---|
+| Roteiro | Componente | Problema encontrado | Trecho original | Correção aplicada | Trecho final | Status |
+|---|---|---|---|---|---|---|
 
 Regras:
 
-- crie uma linha por roteiro e por família relevante;
-- informe a quantidade total localizada e analisada;
-- liste todos os trechos relevantes, não apenas um exemplo;
-- identifique o componente de cada trecho: ficha, gancho, desenvolvimento, tela, CTA, notas ou quadro;
-- não use descrições genéricas como “está condicionado”;
-- quando não houver condição específica, registre “não aplicável”;
-- quando uma formulação de risco tiver sido encontrada, mostre a versão corrigida;
-- `Ocorrências analisadas` deve ser igual a `Ocorrências localizadas`;
-- `Remanescentes` deve ser zero para receber “Aprovado”;
+- copie o trecho original efetivamente revisado;
+- copie o trecho final exatamente como aparece no roteiro entregue;
+- não invente “versão original cogitada”;
+- não declare correção que não possa ser conferida no texto final;
+- use **Corrigido** quando houve alteração;
+- quando nenhum problema tiver exigido alteração em um roteiro, registre:
+  **Sem problema remanescente identificado na varredura final**;
+- não use contagens de ocorrências;
+- não use “Aprovado” como substituto de análise;
 - o quadro deve refletir os roteiros efetivamente entregues.
 
-Não exponha raciocínio privado ou cadeia de pensamento. Apresente apenas evidências textuais e conclusões úteis da revisão.
+Não exponha raciocínio privado ou cadeia de pensamento. Apresente somente trechos verificáveis e conclusões úteis da revisão.
+
+---
 
 ---
 
@@ -1145,10 +1088,11 @@ A saída está completa quando:
 - evitou intensidade, causalidade e consequências não validadas;
 - diferenciou funções de terceiros sem atribuir falha ou omissão universal;
 - manteve texto visual, fala e ficha estratégica juridicamente coerentes;
-- comprovou as conclusões da revisão com todas as ocorrências relevantes, e não com amostra conveniente;
-- executou busca por formulações de risco em todos os componentes;
-- contabilizou ocorrências localizadas, analisadas, corrigidas e remanescentes;
-- não aprovou família com ocorrência não analisada ou remanescente;
+- executou varredura por famílias de risco em todos os componentes;
+- registrou somente problemas reais que exigiram correção;
+- citou exatamente o trecho revisado e o trecho final correspondente;
+- não inventou contagens, versões anteriores, condições ou evidências;
+- não deixou problema identificado sem correção;
 - corrigiu contradições antes de produzir o quadro final;
 - não usou a ficha estratégica para compensar condição ausente na fala;
 - passou pela revisão específica de publicidade jurídica;
@@ -1158,4 +1102,5 @@ A saída está completa quando:
 - demonstrou diversidade;
 - revisou juridicamente e criativamente as peças;
 - entregou um processo de campanha, e não apenas textos isolados.
+
 
