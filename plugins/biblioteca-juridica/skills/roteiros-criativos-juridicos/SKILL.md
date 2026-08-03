@@ -492,7 +492,30 @@ Faça o teste:
 
 > Estou classificando exatamente o marcador descrito nesta linha ou apenas repetindo o perfil geral do público?
 
-Quando mais de uma dimensão estiver presente, escolha a dimensão que exerce a função principal naquele ângulo e registre a secundária apenas se isso for necessário para a clareza.
+Quando mais de uma dimensão estiver presente, escolha a dimensão que exerce a função principal naquele ângulo e registre a secundária apenas quando ela também estiver descrita na própria situação objetiva.
+
+Não importe para a classificação:
+
+- a aderência geral do público;
+- o perfil-base da campanha;
+- uma condição presente apenas no Mapeamento;
+- uma característica que não aparece naquela linha.
+
+Exemplo obrigatório:
+
+| Situação objetiva | Classificação correta | Classificação incorreta |
+|---|---|---|
+| está perto de se aposentar e acredita que basta completar o tempo | prioridade + maturidade | aderência + prioridade |
+| aplica conteúdo do INSS ao próprio caso | maturidade ou subperfil comportamental | aderência |
+| trabalhou no setor privado antes do cargo atual | complexidade ou subperfil | aderência + complexidade |
+
+Aderência só pode aparecer como classificação daquela linha quando o próprio marcador descrito for o núcleo mínimo que torna o serviço pertinente.
+
+Faça uma última pergunta:
+
+> A palavra “aderência” descreve a situação desta linha ou apenas o fato de a campanha inteira já falar com público aderente?
+
+Se apenas repetir o público geral, remova-a.
 
 Crie mais ângulos do que o número final de roteiros quando isso ajudar a selecionar melhor.
 
@@ -748,17 +771,27 @@ Corrija silenciosamente antes da entrega.
 
 Depois da autorrevisão, faça uma segunda passagem obrigatória sobre a versão integral dos roteiros.
 
-Para cada roteiro, registre internamente:
+Para cada roteiro, faça duas auditorias complementares.
 
-| Critério | Trecho exato que comprova | Status | Correção necessária |
+### A. Auditoria de critérios
+
+| Critério | Evidências completas | Status | Correção necessária |
 |---|---|---|---|
-| recorte jurídico preservado | citação literal | aprovado/reprovado |  |
-| condição jurídica material presente na fala | citação literal | aprovado/reprovado/não aplicável |  |
-| ausência de intensidade não validada | trecho ou resultado da busca | aprovado/reprovado |  |
-| ausência de causalidade não demonstrada | trecho ou resultado da busca | aprovado/reprovado |  |
-| terceiros tratados por diferença de função | citação literal | aprovado/reprovado/não aplicável |  |
-| texto visual coerente com a fala | comparação literal | aprovado/reprovado |  |
-| CTA compatível com os inputs e com a publicidade jurídica | citação literal | aprovado/reprovado |  |
+| recorte jurídico preservado em todas as partes | todas as ocorrências que definem ou ampliam o público | aprovado/reprovado |  |
+| condição jurídica material presente na fala | todos os trechos relacionados à conclusão sensível | aprovado/reprovado/não aplicável |  |
+| intensidade sustentada | todas as expressões de intensidade encontradas | aprovado/reprovado |  |
+| causalidade sustentada | todas as relações de causa e consequência encontradas | aprovado/reprovado |  |
+| terceiros tratados por diferença de função | todas as menções ao terceiro | aprovado/reprovado/não aplicável |  |
+| texto visual coerente com a fala | todos os textos visuais juridicamente relevantes | aprovado/reprovado |  |
+| CTA compatível | todos os CTAs e chamadas auxiliares | aprovado/reprovado |  |
+
+### B. Inventário exaustivo de ocorrências
+
+| Nº | Componente | Trecho exato | Família de risco | Avaliação | Correção |
+|---|---|---|---|---|---|
+| 1 | gancho/desenvolvimento/ficha/tela/CTA/notas/quadro | citação literal | recorte/intensidade/causalidade/terceiros/promessa/outro | seguro/problemático | versão final corrigida |
+
+O inventário deve conter **todas** as ocorrências localizadas, não apenas uma evidência representativa.
 
 ### Regra de prova
 
@@ -766,11 +799,31 @@ Não declare um critério como cumprido apenas por conclusão abstrata.
 
 Toda aprovação deve estar sustentada por:
 
-- trecho literal do roteiro;
-- comparação literal entre fala e texto visual; ou
+- lista completa de trechos relevantes;
+- comparação literal entre todas as partes afetadas; e
 - resultado de busca expressa por formulações de risco.
 
-Se não houver evidência suficiente, marque como reprovado.
+Uma evidência favorável não neutraliza uma ocorrência desfavorável.
+
+É proibido escolher apenas o trecho que comprova a conclusão desejada e ignorar:
+
+- o gancho;
+- outra frase do desenvolvimento;
+- o texto na tela;
+- a nota de gravação;
+- a ficha estratégica;
+- o quadro final.
+
+Se a busca localizar 4 ocorrências, as 4 devem ser analisadas.
+
+O status só pode ser **Aprovado** quando:
+
+- todas as ocorrências foram inventariadas;
+- cada ocorrência recebeu avaliação;
+- nenhuma ocorrência problemática permanece na versão final;
+- o número de ocorrências analisadas coincide com o total localizado.
+
+Se não houver evidência suficiente ou houver ocorrência não analisada, marque como reprovado.
 
 ### Busca obrigatória por formulações de risco
 
@@ -799,6 +852,52 @@ A presença do termo não reprova automaticamente. Ela obriga a verificar:
 4. a comparação está sustentada?
 5. existe formulação mais precisa?
 
+### Contagem obrigatória
+
+Para cada família de risco, registre:
+
+- total de ocorrências localizadas;
+- total analisado;
+- total corrigido;
+- total remanescente.
+
+Use o controle:
+
+| Família | Localizadas | Analisadas | Corrigidas | Remanescentes |
+|---|---:|---:|---:|---:|
+| recorte e vínculo |  |  |  |  |
+| intensidade |  |  |  |  |
+| causalidade |  |  |  |  |
+| terceiros |  |  |  |  |
+| promessa/comercialidade |  |  |  |  |
+| condições jurídicas |  |  |  |  |
+
+Nenhuma família pode ser aprovada se:
+
+- `Analisadas < Localizadas`; ou
+- `Remanescentes > 0`.
+
+### Varredura específica de recorte
+
+Toda ocorrência de termos como:
+
+- servidor;
+- concursado;
+- efetivo;
+- cargo efetivo;
+- RPPS;
+- regime próprio;
+- federal;
+- estadual;
+- municipal;
+- professor;
+- policial;
+- categoria especial;
+
+deve ser examinada no contexto.
+
+O recorte não está preservado apenas porque uma frase posterior é precisa. Um gancho amplo continua sendo uma ocorrência problemática, mesmo que o desenvolvimento delimite corretamente depois.
+
 ### Ciclo obrigatório de correção
 
 Quando qualquer linha estiver reprovada:
@@ -811,10 +910,13 @@ Quando qualquer linha estiver reprovada:
 É proibido:
 
 - manter frase problemática e declarar que ela foi removida;
-- afirmar que o recorte foi preservado quando a fala usa público mais amplo;
-- afirmar ausência de intensidade quando há linguagem emocional ou causal não validada;
+- afirmar que o recorte foi preservado quando qualquer parte usa público mais amplo;
+- usar uma frase precisa do desenvolvimento para ignorar um gancho impreciso;
+- afirmar ausência de intensidade quando qualquer ocorrência emocional ou causal não validada permanece;
+- analisar apenas uma das várias ocorrências da mesma família;
+- registrar “Aprovado” quando a contagem de ocorrências estiver incompleta;
 - usar a ficha estratégica para justificar condição que não aparece na fala;
-- emitir conclusão de conformidade sem evidência textual.
+- emitir conclusão de conformidade sem inventário completo e evidência textual.
 
 ---
 
@@ -882,16 +984,20 @@ Apresente uma síntese final demonstrando:
 
 Apresente uma tabela final auditável:
 
-| Roteiro | Recorte jurídico — trecho exato | Condição material — trecho exato | Formulação de risco localizada | Correção realizada | Status final |
-|---|---|---|---|---|---|
+| Roteiro | Família auditada | Ocorrências localizadas | Ocorrências analisadas | Trechos exatos e avaliação | Correções aplicadas | Remanescentes | Status |
+|---|---|---:|---:|---|---|---:|---|
 
 Regras:
 
-- copie trechos reais da versão final;
+- crie uma linha por roteiro e por família relevante;
+- informe a quantidade total localizada e analisada;
+- liste todos os trechos relevantes, não apenas um exemplo;
+- identifique o componente de cada trecho: ficha, gancho, desenvolvimento, tela, CTA, notas ou quadro;
 - não use descrições genéricas como “está condicionado”;
 - quando não houver condição específica, registre “não aplicável”;
 - quando uma formulação de risco tiver sido encontrada, mostre a versão corrigida;
-- não declare “aprovado” se o trecho citado não comprovar a conclusão;
+- `Ocorrências analisadas` deve ser igual a `Ocorrências localizadas`;
+- `Remanescentes` deve ser zero para receber “Aprovado”;
 - o quadro deve refletir os roteiros efetivamente entregues.
 
 Não exponha raciocínio privado ou cadeia de pensamento. Apresente apenas evidências textuais e conclusões úteis da revisão.
@@ -1039,8 +1145,10 @@ A saída está completa quando:
 - evitou intensidade, causalidade e consequências não validadas;
 - diferenciou funções de terceiros sem atribuir falha ou omissão universal;
 - manteve texto visual, fala e ficha estratégica juridicamente coerentes;
-- comprovou as conclusões da revisão com trechos literais;
+- comprovou as conclusões da revisão com todas as ocorrências relevantes, e não com amostra conveniente;
 - executou busca por formulações de risco em todos os componentes;
+- contabilizou ocorrências localizadas, analisadas, corrigidas e remanescentes;
+- não aprovou família com ocorrência não analisada ou remanescente;
 - corrigiu contradições antes de produzir o quadro final;
 - não usou a ficha estratégica para compensar condição ausente na fala;
 - passou pela revisão específica de publicidade jurídica;
