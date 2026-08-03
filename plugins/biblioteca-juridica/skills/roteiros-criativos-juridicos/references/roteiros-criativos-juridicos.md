@@ -1,947 +1,1297 @@
+# REFERÊNCIA — ROTEIROS DE CRIATIVOS JURÍDICOS
+
+## Função
+
+Este arquivo define o método estratégico para transformar um Mapeamento de Persona Jurídica em conceitos e roteiros de vídeos para Meta Ads.
+
+Ele é uma referência local da skill `/roteiros-criativos-juridicos` e deve ficar em:
+
+```text
+skills/roteiros-criativos-juridicos/references/roteiros-criativos-juridicos.md
+```
+
+O executor deve acessá-lo pelo caminho:
+
+```text
+${CLAUDE_PLUGIN_ROOT}/references/roteiros-criativos-juridicos.md
+```
+
+Ele deve ser lido junto com:
+
+- `${CLAUDE_PLUGIN_ROOT}/references/core-cognitivo.md`;
+- `${CLAUDE_PLUGIN_ROOT}/references/core-escrita-oralidade.md`;
+- o Mapeamento de Persona Jurídica específico da execução;
+- o `SKILL.md` de `roteiros-criativos-juridicos`.
+
+O Mapeamento da execução é um documento-fonte dinâmico fornecido pelo usuário ou disponível na conversa. Ele não deve ser substituído pelo arquivo estrutural `mapeamento-persona-v3.md`.
+
+A referência não substitui o executor nem o Mapeamento. Ela detalha:
+
+- diagnóstico do serviço;
+- leitura da persona para mídia paga;
+- extração de situações e dores;
+- construção de ângulos;
+- seleção;
+- escrita;
+- diversidade;
+- autorrevisão.
+
 ---
-name: roteiros-criativos-juridicos
-description: Cria conceitos e roteiros estratégicos de vídeos para campanhas jurídicas de Meta Ads. Antes de escrever, diagnostica o serviço, segmenta situações objetivas da persona, extrai dores exploráveis, constrói ângulos distintos e revisa cada roteiro quanto a reconhecimento, relevância, precisão jurídica, ética e diversidade criativa.
-argument-hint: Forneça o Mapeamento de Persona Jurídica, o serviço, o objetivo da campanha, a quantidade de roteiros, a duração, o formato de gravação, o tom e o CTA do escritório.
----
 
-# Roteiros de Criativos Jurídicos
+# 1. DEPENDÊNCIA DO MAPEAMENTO DE PERSONA
 
-## Objetivo
+A skill é independente como comando, mas dependente do Mapeamento como base estratégica.
 
-Criar roteiros de vídeos para campanhas de Meta Ads direcionadas a serviços jurídicos.
+Fluxo:
 
-A skill não deve partir diretamente para os roteiros.
+> `/mapear-persona`  
+> → Mapeamento de Persona Jurídica específico  
+> → `/roteiros-criativos-juridicos`  
+> → diagnóstico de campanha, ângulos e roteiros
 
-Antes de escrever qualquer peça, deve:
+Não execute novamente `/mapear-persona` dentro desta skill.
 
-1. compreender o serviço;
-2. identificar as situações concretas que tornam a análise profissional relevante;
-3. separar aderência, complexidade e maturidade comercial;
-4. extrair dores e decisões exploráveis;
-5. construir ângulos distintos;
-6. selecionar os melhores conceitos para a campanha;
-7. somente então produzir e revisar os roteiros.
+Não use o arquivo estrutural `mapeamento-persona-v3.md` como se ele contivesse a persona da execução.
 
-Fluxo obrigatório:
+## 1.1. Quando o Mapeamento estiver disponível
 
-> diagnóstico do serviço  
-> → diagnóstico estratégico da persona  
-> → situações e dores exploráveis  
-> → matriz de ângulos  
-> → seleção estratégica  
-> → roteiros  
-> → autorrevisão
+Extraia dele apenas o que for necessário para a campanha:
 
----
-
-# Referências e insumos obrigatórios
-
-Antes de produzir a saída, leia integralmente:
-
-1. `${CLAUDE_PLUGIN_ROOT}/references/core-cognitivo.md`
-2. `${CLAUDE_PLUGIN_ROOT}/references/core-escrita-oralidade.md`
-3. `${CLAUDE_PLUGIN_ROOT}/references/roteiros-criativos-juridicos.md`
-
-Aplique cada referência nesta função:
-
-- `core-cognitivo.md`: hierarquia das fontes, herança de contexto, limites de presunção, distinção entre persona e caso individual, régua de certeza e segurança da saída;
-- `core-escrita-oralidade.md`: naturalidade, clareza, ritmo, autoridade profissional e adequação do roteiro à fala e ao formato;
-- `roteiros-criativos-juridicos.md`: diagnóstico do serviço, leitura da persona para mídia paga, extração de situações e dores, matriz de ângulos, seleção, estrutura dos roteiros, diversidade e autorrevisão.
-
-Utilize também o **Mapeamento de Persona Jurídica produzido para o serviço da execução**, fornecido pelo usuário ou disponível na conversa.
-
-O Mapeamento é um insumo dinâmico da execução. Ele não é uma referência estrutural fixa da pasta da skill.
-
-Não leia `mapeamento-persona-v3.md` para substituir o Mapeamento produzido. Esse arquivo orienta a criação do documento-fonte pela skill `/mapear-persona`; não contém os dados específicos do público e do serviço atual.
-
-No Mapeamento fornecido, priorize:
-
-- delimitação do recorte;
-- natureza do serviço;
-- situação jurídica ou prática central;
+- recorte;
+- serviço;
 - mecanismo de valor;
-- jornada e níveis de consciência;
-- banco de linguagem;
-- dores, riscos, desejos e transformação;
-- objeções e barreiras;
-- fatores de decisão, prova e fricção;
-- aderência, complexidade, maturidade, anti-persona e roteamento;
-- matriz da Seção 10 destinada a criativos.
+- situações objetivas;
+- subperfis;
+- aderência;
+- complexidade;
+- maturidade;
+- linguagem;
+- dores;
+- dúvidas;
+- decisões;
+- objeções;
+- consciência;
+- riscos;
+- limites;
+- insumos da Seção 10.
 
-Não execute novamente `/mapear-persona`.
+Não reproduza o documento inteiro.
 
-Não reproduza o Mapeamento inteiro na saída.
+## 1.2. Quando o Mapeamento estiver ausente
 
-## Quando uma referência não estiver acessível
+Solicite o documento.
 
-Se algum dos três arquivos obrigatórios não estiver disponível:
+Somente prossiga com matéria-prima equivalente quando ela permitir reconstruir com segurança as decisões estratégicas da campanha.
 
-1. informe qual arquivo não foi localizado;
-2. não reconstrua silenciosamente seu conteúdo;
-3. não produza a versão final dos roteiros sem a referência metodológica específica;
-4. prossiga apenas se o usuário fornecer expressamente o conteúdo equivalente ou solicitar uma entrega provisória com a limitação registrada.
-
-## Quando o Mapeamento não estiver disponível
-
-Solicite o Mapeamento de Persona Jurídica.
-
-Somente prossiga sem o documento quando o usuário fornecer matéria-prima equivalente suficiente para a execução, contendo, no mínimo:
+A matéria-prima mínima deve conter:
 
 - natureza e delimitação do serviço;
-- público e subperfis relevantes;
-- situações objetivas de aderência;
+- público e subperfis;
+- situações de aderência;
 - fatores de complexidade;
 - dores, dúvidas, decisões e objeções;
 - níveis de consciência;
-- mecanismo de valor do serviço;
-- limites jurídicos e éticos;
-- anti-persona ou critérios de exclusão relevantes;
-- objetivo da campanha;
-- CTA ou próxima etapa real.
-
-Não invente esses elementos.
-
-Uma descrição genérica do nicho, isoladamente, não substitui o Mapeamento.
-
-# Hierarquia e segurança das informações
-
-Use as fontes nesta ordem:
-
-1. instrução expressa do usuário;
-2. informações confirmadas do escritório e da campanha;
-3. informações jurídicas validadas fornecidas pelo usuário;
-4. Mapeamento de Persona;
-5. fontes oficiais consultadas na execução, quando necessário;
-6. referências gerais da Biblioteca;
-7. premissas estratégicas sinalizadas.
-
-## Regra de validação jurídica
-
-A skill não deve refazer automaticamente toda a pesquisa jurídica já realizada no Mapeamento.
-
-Use afirmações jurídicas nos roteiros somente quando:
-
-- estiverem confirmadas no Mapeamento;
-- tiverem sido fornecidas como validadas pelo usuário;
-- ou forem verificadas em fonte oficial durante a execução.
-
-Se uma afirmação relevante depender do ente, data, categoria, contrato, documento ou caso concreto:
-
-- condicione a formulação;
-- delimite o subperfil;
-- ou marque o ponto internamente como `[VALIDAR JURIDICAMENTE]`.
-
-Não leve a marcação para o roteiro final.
-
-Quando a incerteza impedir uma fala segura, não use a afirmação na peça até que seja validada.
-
-Concentre o maior rigor nos elementos que alteram:
-
-- quem pode se reconhecer no anúncio;
-- aderência ao serviço;
-- categorias incluídas ou excluídas;
-- prazo ou urgência;
-- consequência jurídica;
-- comparação de alternativas;
-- expectativa criada pelo criativo.
-
----
-
-# Inputs
-
-Use, quando fornecidos:
-
-- Mapeamento de Persona Jurídica;
-- descrição do serviço;
-- objetivo da campanha;
-- quantidade de roteiros;
-- duração desejada;
-- formato de gravação;
-- tom de comunicação;
-- CTA utilizado pelo escritório;
-- informações jurídicas já validadas;
-- restrições da campanha;
-- praça, ente, categoria ou subperfil;
-- prova de autoridade real;
-- oferta ou próxima etapa real.
-
-## Fidelidade obrigatória aos inputs
-
-Antes de iniciar o diagnóstico, consolide internamente os inputs expressos do usuário.
-
-Respeite literalmente, quando fornecidos:
-
-- quantidade de roteiros;
-- duração ou faixa de duração;
-- formato;
-- canal;
-- público ou recorte;
-- objetivo da campanha;
-- etapa do funil;
-- tom;
-- CTA;
-- restrições;
-- informações jurídicas validadas;
-- condições operacionais reais.
-
-Não transforme um dado fornecido em `[PREMISSA]`.
-
-Não substitua silenciosamente:
-
-- o tom informado por outro tom “recomendado”;
-- o CTA fornecido por placeholder;
-- a quantidade pedida por quantidade diferente;
-- a duração solicitada por outra faixa;
-- o formato escolhido por formato alternativo;
-- o recorte definido por público mais amplo;
-- a próxima etapa real por uma etapa presumida.
-
-Use `[PREMISSA]` somente para dados ausentes.
-
-Se um input expresso conflitar com:
-
-- segurança jurídica;
-- normas éticas da publicidade da advocacia;
-- restrição técnica do formato;
-- outro input mais específico e posterior;
-
-não o altere silenciosamente. Registre o conflito, explique o ajuste necessário e apresente a alternativa segura.
-
-Antes da entrega, faça uma conferência objetiva entre pedido e saída.
-
-## Lacunas
-
-Não faça uma bateria de perguntas.
-
-Pergunte apenas quando a ausência impedir a criação de peças coerentes ou produzir alternativas incompatíveis.
-
-O Mapeamento de Persona é a base estratégica preferencial e deve ser solicitado quando não estiver disponível.
-
-São dados críticos:
-
-- serviço;
-- público ou recorte;
-- objetivo da campanha;
-- CTA ou próxima etapa;
-- Mapeamento de Persona, ou a matéria-prima equivalente mínima definida na seção anterior.
-
-Quantidade, duração, formato e tom podem ser preenchidos por premissas adaptáveis quando o usuário não informar.
-
-Nesse caso, sinalize na leitura estratégica, por exemplo:
-
-- `[PREMISSA DE CAMPANHA: 5 roteiros]`
-- `[PREMISSA DE DURAÇÃO: 45 segundos]`
-- `[PREMISSA DE FORMATO: vídeo falado para câmera]`
-
-Não presuma:
-
-- gratuidade;
-- valor;
-- parcelamento;
-- prazo;
-- atendimento nacional;
-- resultado;
-- consulta;
-- análise sem custo;
-- condição comercial.
-
----
-
-# Escopo
-
-A skill pode criar:
-
-- diagnóstico estratégico do serviço;
-- diagnóstico estratégico da persona para mídia paga;
-- matriz de situações, dores e decisões;
-- matriz de ângulos;
-- priorização dos conceitos;
-- roteiros de vídeos;
-- ganchos;
-- desenvolvimento;
-- quebra de crença;
-- CTA;
-- orientação visual;
-- duração estimada;
-- notas de gravação;
-- autorrevisão;
-- quadro de diversidade da campanha.
-
-A skill não deve:
-
-- criar Mapeamento de Persona do zero;
-- substituir pesquisa jurídica necessária;
-- produzir segmentação técnica no Gerenciador de Anúncios;
-- definir orçamento, lance ou configuração de campanha;
-- prometer resultado jurídico;
-- prometer desempenho publicitário;
-- criar depoimento ou caso fictício como prova;
-- inventar dados do escritório;
-- usar medo ou urgência artificial;
-- tratar renda, documentação ou proximidade temporal como requisitos jurídicos quando não forem;
-- transformar todos os roteiros em explicações genéricas da mesma regra;
-- escrever uma biografia fictícia da persona;
-- adaptar o material para outro canal sem pedido.
-
----
-
-# Execução obrigatória
-
-## Etapa 1 — Entender o serviço
-
-Identifique:
-
-- serviço oferecido;
-- problema ou decisão que ele organiza;
-- natureza do serviço;
-- o que o profissional efetivamente faz;
-- entregável ou próxima etapa;
 - mecanismo de valor;
-- resultados que podem ser mencionados de forma condicionada;
-- afirmações que dependem de validação;
-- promessas, termos e simplificações que devem ser evitados.
+- limites jurídicos e éticos;
+- anti-persona;
+- objetivo e CTA.
+
+Não invente lacunas estruturais.
+
+---
+
+# 2. PRINCÍPIO CENTRAL
+
+Um criativo jurídico eficaz não nasce de uma dor genérica nem de uma regra solta.
+
+Ele nasce do encontro entre:
+
+1. uma situação concreta em que a pessoa se reconhece;
+2. uma dúvida ou decisão relevante;
+3. uma consequência compreensível;
+4. um insight que altera a percepção;
+5. um mecanismo de valor que explica por que a análise profissional é útil;
+6. um CTA compatível com a etapa da jornada.
+
+Estrutura mental:
+
+> situação reconhecível  
+> → dúvida  
+> → tensão  
+> → insight  
+> → relevância do serviço  
+> → convite
+
+O roteiro não deve depender apenas de:
+
+- medo;
+- curiosidade vazia;
+- promessa;
+- autoridade genérica;
+- “você pode ter direito” sem contexto;
+- “cada caso é um caso” sem explicação;
+- “procure um advogado” sem mecanismo de valor.
+
+---
+
+# 3. O DIAGNÓSTICO VEM ANTES DA COPY
+
+Antes de criar um gancho, responda:
+
+- qual é o serviço?
+- que decisão ou problema ele organiza?
+- o que o profissional efetivamente faz?
+- por que uma informação genérica não basta?
+- qual situação objetiva faz a pessoa precisar dessa análise?
+- que erro ou incerteza ela deseja evitar?
+- em que estágio ela está?
+- qual ação a campanha deseja gerar?
+
+Se essas respostas não estiverem claras, o roteiro será genérico.
+
+## 3.1. Fidelidade aos inputs
+
+Antes do diagnóstico, monte internamente uma ficha de execução:
+
+| Campo | Valor fornecido | Pode receber premissa? |
+|---|---|---|
+| Quantidade |  | somente se ausente |
+| Duração |  | somente se ausente |
+| Formato |  | somente se ausente |
+| Canal |  | somente se ausente |
+| Público/recorte |  | somente se ausente |
+| Objetivo |  | somente se ausente |
+| Etapa do funil |  | somente se ausente |
+| Tom |  | somente se ausente |
+| CTA |  | somente se ausente |
+| Restrições |  | não |
+| Informações validadas |  | não |
+
+Regra:
+
+> dado fornecido não é premissa.
+
+Não reinterprete um tom informado como se fosse sugestão da skill.
+
+Não substitua CTA real por placeholder quando ele já foi fornecido.
+
+Não aumente ou reduza a quantidade para “equilibrar” a campanha.
+
+Não altere duração ou formato para acomodar uma preferência metodológica.
+
+Se houver conflito ético, jurídico ou técnico, sinalize-o e proponha ajuste. Não corrija silenciosamente.
+
+---
+
+# 4. ENTENDIMENTO DO SERVIÇO
+
+## 4.1. Natureza
+
+Classifique o serviço como:
+
+- reconhecimento, concessão, revisão, reparação, cobrança ou indenização;
+- defesa;
+- consultoria, prevenção, planejamento ou estruturação;
+- híbrido.
+
+Essa classificação altera o criativo.
+
+### Reconhecimento ou concessão
+
+O anúncio pode explorar:
+
+- requisitos ignorados;
+- situação que parece comum, mas pode ter relevância jurídica;
+- diferença entre estar incapaz e ter redução;
+- direito não concedido automaticamente;
+- prazo ou perda real, quando confirmados.
+
+Não deve afirmar que o público tem o direito.
+
+### Defesa
+
+O anúncio pode explorar:
+
+- prazo;
+- risco concreto;
+- consequência de não agir;
+- necessidade de entender acusação, cobrança, bloqueio, processo ou medida.
+
+Não deve presumir culpa da outra parte nem resultado defensivo.
+
+### Consultoria e planejamento
+
+O anúncio pode explorar:
+
+- decisões irreversíveis;
+- alternativas que precisam ser comparadas;
+- informação genérica insuficiente;
+- custo do erro;
+- benefício da clareza e do planejamento.
+
+Não deve inventar um “direito à consultoria”.
+
+### Híbrido
+
+Delimite qual camada está sendo anunciada.
+
+Não misture consulta, concessão, defesa e execução numa peça curta sem necessidade.
+
+---
+
+## 4.2. Mecanismo de valor
+
+O mecanismo de valor explica o que o profissional faz entre o problema e o resultado desejado.
+
+Use verbos concretos:
+
+- analisar;
+- comparar;
+- confirmar;
+- calcular;
+- organizar;
+- reconstruir;
+- identificar;
+- enquadrar;
+- revisar;
+- documentar;
+- negociar;
+- defender;
+- requerer;
+- impugnar;
+- planejar.
+
+Evite verbos vazios:
+
+- ajudar;
+- resolver;
+- cuidar;
+- buscar seus direitos;
+- lutar por você;
+
+quando não vierem acompanhados do trabalho efetivo.
+
+Exemplo genérico insuficiente:
+
+> Um advogado pode ajudar você.
+
+Exemplo com mecanismo:
+
+> A análise compara seu histórico, as regras aplicáveis e os cenários possíveis antes de você escolher uma data.
+
+---
+
+## 4.3. Resultado comunicável
 
 Diferencie:
 
-- resultado do trabalho profissional;
-- possível resultado jurídico;
-- benefício percebido;
-- promessa proibida.
+### Entrega profissional
 
-Exemplo de resultado profissional permitido:
+Pode ser afirmada quando real:
 
-> comparar cenários, organizar documentos, identificar alternativas e orientar a decisão.
+- diagnóstico;
+- parecer;
+- simulação;
+- comparação;
+- revisão;
+- organização documental;
+- protocolo;
+- acompanhamento;
+- negociação;
+- defesa;
+- estratégia.
 
-Exemplo de promessa indevida:
+### Possível resultado jurídico
 
-> garantir a regra mais vantajosa ou assegurar determinado valor.
+Deve ser condicionado:
+
+- concessão;
+- revisão;
+- redução;
+- indenização;
+- reconhecimento;
+- anulação;
+- recuperação;
+- aposentadoria;
+- acordo.
+
+### Benefício percebido
+
+Pode ser comunicado sem prometer o resultado:
+
+- clareza;
+- segurança para decidir;
+- compreensão;
+- organização;
+- redução de incerteza;
+- prevenção de erro;
+- conhecimento dos caminhos.
 
 ---
 
-## Etapa 2 — Diagnosticar quem precisa do serviço
+# 5. LEITURA DA PERSONA PARA CRIATIVOS
 
-Separe quatro dimensões:
+## 5.1. Perfil
 
-### A. Perfil da persona
+Perfil orienta forma, não define automaticamente a relevância jurídica.
 
-Use apenas para calibrar:
+Pode orientar:
 
-- linguagem;
-- ritmo;
 - vocabulário;
-- formato;
-- nível de explicação;
-- contexto de identificação.
+- ambiente de gravação;
+- velocidade;
+- exemplos;
+- formalidade;
+- duração;
+- necessidade de tradução.
 
-Não transforme idade, profissão predominante, rotina ou renda em requisitos universais sem que o recorte determine isso.
+Não use automaticamente como filtro:
 
-### B. Aderência ao serviço
+- idade predominante;
+- profissão predominante;
+- renda;
+- escolaridade;
+- cidade;
+- estado civil;
+- rotina;
+- emoção provável.
 
-Aderência é o núcleo mínimo que torna o serviço pertinente.
+Use essas informações como recorte somente quando:
 
-Use o seguinte teste:
+- o usuário restringir a campanha;
+- forem inerentes ao serviço;
+- forem necessárias para a situação objetiva do criativo.
 
-> Se este elemento estiver ausente, o serviço deixa de ser pertinente para aquela pessoa?
+---
 
-Se a resposta for “sim”, pode ser aderência.
+## 5.2. Aderência
 
-Para serviços de reconhecimento de direito, use requisitos materiais preliminares.
+Aderência responde:
 
-Para serviços consultivos, use a situação ou decisão central que justifica a análise profissional.
+> Qual é o núcleo mínimo que torna este serviço pertinente?
 
-Não classifique automaticamente como aderência:
+Teste de ausência:
 
-- proximidade temporal;
-- data de ingresso;
-- existência de documentos;
-- renda ou patrimônio;
+> Se este elemento não existir, o serviço deixa de ser pertinente?
+
+Exemplos abstratos:
+
+- sofreu o fato central e permaneceu com consequência relevante;
+- recebeu uma negativa relacionada ao serviço;
+- está sendo cobrado ou executado;
+- possui decisão consultiva relevante em aberto;
+- está diante da relação, vínculo ou situação abrangida;
+- reúne requisitos materiais preliminares do direito analisado.
+
+Não classifique como aderência apenas porque o elemento gera um bom anúncio.
+
+Em regra, não são aderência por si sós:
+
+- estar perto de uma data;
+- possuir renda mais alta;
+- ter ou não ter determinado documento;
+- pertencer a subcategoria específica;
+- possuir múltiplos vínculos;
+- demonstrar interesse;
+- estar pronto para contratar;
+- ter urgência;
+- apresentar maior potencial econômico.
+
+O criativo de aquisição deve conter marcador suficiente para evitar atrair público incompatível, mas nem todo marcador do gancho precisa ser o núcleo de aderência.
+
+---
+
+## 5.3. Complexidade
+
+Complexidade responde:
+
+> O que torna a análise individual mais valiosa ou necessária?
+
+Pode envolver:
+
+- vários vínculos;
+- mais de uma regra;
+- documentos contraditórios;
+- histórico longo;
+- datas diferentes;
 - categoria especial;
-- quantidade de vínculos;
-- ente específico;
-- objeção;
-- urgência;
-- interesse em contratar;
-- disposição para falar com o escritório.
+- legislação local;
+- risco probatório;
+- valor elevado;
+- múltiplas partes;
+- fase processual;
+- decisão anterior;
+- interação entre regimes;
+- alternativas que não podem ser avaliadas por conteúdo genérico.
 
-Esses elementos podem pertencer a subperfil, complexidade, prioridade, maturidade, prova ou viabilidade comercial.
+Não transforme complexidade em requisito quando casos simples também são atendidos.
 
-### C. Complexidade e valor da análise
+---
 
-Identifique fatores que aumentam:
+## 5.4. Maturidade
 
-- número de cenários;
-- necessidade de comparação;
-- dificuldade probatória;
-- risco de erro;
-- dependência de documentos;
-- impacto econômico ou estratégico.
+Maturidade responde:
 
-Complexidade não substitui aderência.
+> Quanto a pessoa já reconhece o problema, a solução e a necessidade de agir?
 
-### D. Maturidade comercial
+Ela orienta o tipo de criativo:
 
-Identifique:
+| Nível | Função do criativo |
+|---|---|
+| Inconsciência | revelar uma situação que a pessoa ainda normaliza |
+| Consciência da situação | nomear a dúvida, risco ou consequência |
+| Consciência da solução | explicar por que existe um caminho profissional |
+| Consideração | demonstrar método, especificidade e segurança |
+| Decisão | reduzir fricção e tornar o próximo passo claro |
 
-- nível de consciência;
-- proximidade da decisão;
-- objeções;
-- disposição para conversar;
-- necessidade de educação prévia.
+Não confunda maturidade com aderência.
 
-Maturidade não substitui aderência.
+## 5.5. Subperfil, prioridade, prova e potencial comercial
 
-### E. Subperfis criativos
+### Subperfil
 
-Subperfil criativo é um recorte de comunicação dentro do público aderente.
-
-Pode ser formado por:
+Muda o recorte da mensagem:
 
 - ente;
 - categoria;
 - data de ingresso;
-- histórico contributivo;
-- tipo de contrato;
-- estágio do problema;
-- decisão em aberto;
+- histórico;
+- estágio;
 - objeção;
-- nível de consciência;
-- fator de complexidade.
+- regime;
+- tipo de vínculo.
 
-Um subperfil pode gerar um excelente ângulo sem constituir critério de aderência.
+### Prioridade
 
-### Teste obrigatório de classificação
+Muda a velocidade recomendada, não a pertinência do serviço.
 
-Para cada elemento relevante, classifique internamente:
+### Prova
 
-- **aderência:** sem ele, o serviço deixa de ser pertinente;
-- **complexidade:** sem ele, o serviço continua pertinente, mas a análise tende a ser mais simples;
-- **subperfil:** muda para quem ou como o criativo fala;
-- **maturidade:** muda o nível de explicação, a objeção ou o CTA;
-- **prioridade/urgência:** muda a velocidade recomendada da ação;
-- **prova:** ajuda a confirmar a situação;
-- **potencial comercial:** influencia estratégia comercial, sem alterar a pertinência jurídica.
+Muda a capacidade de confirmar fatos. Falta de prova atual não equivale automaticamente a falta de aderência.
 
-Não apresente renda, documentação, proximidade temporal ou interesse comercial como aderência, salvo quando o próprio serviço possuir um requisito objetivo dessa natureza confirmado no Mapeamento.
+### Potencial comercial
 
----
+Pode influenciar a estratégia de aquisição ou a oferta, mas não deve ser apresentado como qualificação jurídica.
 
-## Etapa 3 — Extrair dores exploráveis
+### Regra de classificação
 
-Para cada situação objetiva relevante, identifique:
-
-- dúvida consciente;
-- medo ou tensão por trás da dúvida;
-- possível prejuízo percebido;
-- desejo;
-- decisão que a pessoa não sabe tomar;
-- crença que precisa ser quebrada;
-- pergunta capaz de interromper a atenção;
-- informação que faz o serviço parecer necessário;
-- limite jurídico ou ético.
-
-Não use dor vaga quando houver situação concreta.
-
-Evite ângulos genéricos como:
-
-- “você conhece seus direitos?”;
-- “você sabe quando vai se aposentar?”;
-- “não deixe dinheiro na mesa”;
-- “procure um advogado”;
-
-salvo quando forem desenvolvidos com um recorte específico que lhes dê sentido real.
+| Dimensão | Pergunta de controle |
+|---|---|
+| Aderência | Sem isso, o serviço deixa de ser pertinente? |
+| Complexidade | Sem isso, o caso continua pertinente, porém mais simples? |
+| Subperfil | Isso muda para quem ou como o anúncio fala? |
+| Maturidade | Isso muda o nível de consciência, a objeção ou o CTA? |
+| Prioridade | Isso muda a velocidade recomendada? |
+| Prova | Isso confirma um fato já relatado? |
+| Potencial comercial | Isso altera estratégia comercial sem alterar a pertinência jurídica? |
 
 ---
 
-## Etapa 4 — Criar a matriz de ângulos
+# 6. EXTRAÇÃO DAS DORES EXPLORÁVEIS
 
-Antes dos roteiros, produza uma matriz com:
+## 6.1. Unidade de criação
 
-- ângulo principal;
-- situação objetiva;
-- classificação do marcador central: aderência, complexidade, subperfil, maturidade, prioridade ou prova;
-- subpersona;
-- nível de consciência;
-- dor ou decisão explorada;
-- pergunta central;
-- insight ou quebra de crença;
-- mecanismo de valor do serviço;
-- promessa comunicacional permitida;
-- afirmação que exige cuidado;
-- risco de generalização;
-- formato recomendado;
-- função do criativo na campanha.
+A unidade mínima de criação é:
 
-### Regra de classificação do marcador
+> uma situação objetiva + uma dúvida + uma tensão + uma decisão.
 
-A coluna **“classificação do marcador central”** deve classificar o elemento descrito na coluna **“situação objetiva”** daquela mesma linha.
+Exemplo:
 
-Não use essa coluna para repetir a aderência geral do público quando a situação objetiva descreve outro fenômeno.
+| Situação | Dúvida | Tensão | Decisão |
+|---|---|---|---|
+| Tempo em dois regimes | “Posso usar os dois?” | Perder uma alternativa ou averbar sem comparar | Averbar ou preservar |
+| Benefício cessado com sequela | “Acabou tudo?” | Continuar trabalhando sem conhecer o possível benefício | Pedir análise |
+| Contrato bancário crescente | “Por que a dívida não diminui?” | Continuar pagando sem entender cálculo | Revisar contrato |
+| Citação recebida | “O que acontece se eu ignorar?” | Perder prazo ou sofrer medida | Buscar defesa |
+
+---
+
+## 6.2. Camadas da dor
+
+Para cada situação, examine:
+
+1. **dor consciente** — o que a pessoa já fala;
+2. **dúvida** — o que ela quer entender;
+3. **medo** — o que teme acontecer;
+4. **perda percebida** — dinheiro, tempo, autonomia, patrimônio, oportunidade;
+5. **desejo** — clareza, proteção, recebimento, encerramento, decisão;
+6. **crença** — explicação simplificada ou equivocada;
+7. **decisão** — o que ainda não sabe fazer.
+
+Não use uma dor emocional se não houver conexão com a situação objetiva.
+
+---
+
+## 6.3. Pergunta de interrupção
+
+Uma boa pergunta de gancho:
+
+- é reconhecível;
+- contém uma variável real;
+- não exige conhecimento jurídico;
+- desperta uma lacuna;
+- conduz ao serviço;
+- pode ser respondida mentalmente;
+- não promete.
+
+Exemplo fraco:
+
+> Você sabe tudo sobre sua aposentadoria?
+
+Exemplo forte:
+
+> Você trabalhou no INSS antes de entrar no serviço público e ainda não decidiu se vai averbar esse tempo?
+
+---
+
+# 7. MATRIZ DE ÂNGULOS
+
+Use esta estrutura:
+
+| ID | Ângulo principal | Situação objetiva | Classificação do marcador | Subpersona | Nível de consciência | Dor ou decisão | Pergunta central | Insight | Mecanismo de valor | Promessa permitida | Cuidado jurídico | Risco de generalização | Formato | Função na campanha |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+
+## Regra de classificação da matriz
+
+Classifique o marcador específico descrito na coluna **“Situação objetiva”**.
+
+Não preencha a coluna com a aderência geral do público quando a linha descreve outra dimensão.
 
 Exemplos:
 
-| Situação objetiva | Classificação adequada |
+| Situação objetiva da linha | Classificação principal |
 |---|---|
-| ocupa cargo efetivo, está vinculado a RPPS e possui decisão previdenciária em aberto | aderência |
-| pesquisa aposentadoria e aplica conteúdo de INSS ao próprio caso | maturidade ou subperfil comportamental |
-| trabalhou na iniciativa privada antes do concurso | complexidade ou subperfil |
-| está prestes a tomar uma decisão | prioridade |
-| acredita que o RH já resolve toda a análise | maturidade |
-| possui documento capaz de confirmar o período alegado | prova |
+| titular de cargo efetivo vinculado a RPPS com decisão previdenciária em aberto | aderência |
+| pesquisa aposentadoria em conteúdo de INSS | maturidade ou subperfil comportamental |
+| trabalhou no setor privado antes do cargo atual | complexidade ou subperfil |
+| está prestes a protocolar o pedido | prioridade |
+| acredita que o RH substitui o planejamento | maturidade |
+| dispõe de certidão capaz de confirmar um período | prova |
 
-Faça o teste:
+Pergunta de controle:
 
-> Estou classificando exatamente o marcador descrito nesta linha ou apenas repetindo o perfil geral do público?
+> Se eu apagar o perfil geral da campanha, a classificação ainda descreve corretamente o marcador desta linha?
 
-Quando mais de uma dimensão estiver presente, escolha a dimensão que exerce a função principal naquele ângulo e registre a secundária apenas se isso for necessário para a clareza.
+Quando a resposta for “não”, a coluna provavelmente está apenas repetindo a aderência geral.
 
-Crie mais ângulos do que o número final de roteiros quando isso ajudar a selecionar melhor.
+## 7.1. Tipos de ângulo
 
-Não escolha vários ângulos que apenas reformulem a mesma dúvida.
+Varie entre:
 
----
+### Identificação
 
-## Regra de delimitação por ente, categoria ou regime
+A pessoa se reconhece numa situação.
 
-Antes de selecionar um conceito, determine se a afirmação central é:
+### Dúvida específica
 
-- universal para todo o recorte;
-- aplicável apenas a determinado ente;
-- aplicável apenas a determinada categoria;
-- aplicável apenas a determinado regime;
-- dependente de data, opção, documento ou condição específica.
+O criativo parte de uma pergunta real.
 
-Quando não for universal:
+### Erro ou crença
 
-1. delimite o subperfil na ficha estratégica;
-2. deixe a delimitação perceptível no gancho ou no início do desenvolvimento;
-3. não use uma ressalva genérica no final para corrigir uma premissa ampla demais;
-4. não apresente regra federal como regra geral de servidores estaduais ou municipais;
-5. não apresente nome de fundo, regime ou programa específico para público que pode não estar abrangido.
+Mostra por que uma ideia comum é incompleta.
 
-Se a delimitação tornar o roteiro confuso ou excessivamente carregado, descarte o ângulo ou restrinja a campanha.
+### Escolha ou comparação
 
-## Regra de precisão semântica e causal
+Apresenta duas alternativas que exigem análise.
 
-A redação deve ser tão precisa quanto o recorte jurídico validado.
+### Consequência
 
-### Não deduza regime ou enquadramento a partir de rótulos amplos
+Mostra o impacto possível de uma decisão.
 
-Não trate como equivalentes, sem confirmação:
+### Oportunidade ignorada
 
-- concursado;
-- servidor;
-- servidor público;
-- ocupante de cargo efetivo;
-- vinculado a RPPS;
-- segurado do RGPS;
-- integrante de categoria especial.
+Apresenta um caminho ou fator que a pessoa não considerava.
 
-Não use formulações como:
+### Processo ou método
 
-- “todo servidor concursado tem regime próprio”;
-- “quem é efetivo está no RPPS”;
-- “professor sempre tem regra reduzida”;
-- “servidor se aposenta por regra diferente do INSS”;
+Explica como a análise profissional organiza o caso.
 
-quando o recorte necessário for mais específico.
+### Objeção
 
-Prefira reproduzir o escopo confirmado no Mapeamento, por exemplo:
+Responde a uma resistência relevante.
 
-> servidor titular de cargo efetivo vinculado a RPPS;
+### Prova de especificidade
 
-ou outra formulação tecnicamente adequada ao serviço analisado.
+Demonstra domínio do ente, categoria ou situação, sem autopromoção exagerada.
 
-### Não aumente a intensidade da consequência
-
-Evite expressões como:
-
-- “muda bastante”;
-- “trava um valor menor”;
-- “vai receber menos pelo resto da vida”;
-- “está trabalhando mais do que precisava”;
-- “está deixando dinheiro na mesa”;
-- “perdeu a melhor regra”;
-
-quando a intensidade, o resultado ou a relação causal não tiverem sido validados.
-
-Prefira:
-
-- “pode alterar o cálculo”;
-- “pode modificar o cenário aplicável”;
-- “pode levar a uma decisão menos favorável”;
-- “pode deixar parte do histórico fora da análise”;
-- “merece comparação antes da decisão”.
-
-A possibilidade comunicável deve continuar sendo apresentada como possibilidade.
-
-### Diferencie funções sem atribuir falhas a terceiros
-
-Ao mencionar RH, sindicato, contador, banco, médico, órgão público ou outro profissional:
-
-- não presuma o que a instituição faz ou deixa de fazer em todos os casos;
-- não atribua omissão, erro ou incapacidade sem base;
-- não crie contraste depreciativo;
-- diferencie funções e escopos de atuação.
-
-Prefira:
-
-> o papel do setor costuma estar concentrado no procedimento administrativo e na conferência funcional; a comparação estratégica entre regras, datas e valores é uma análise diferente.
-
-Adapte a formulação ao contexto real, sem transformar o exemplo em afirmação universal.
-
-### Preserve a precisão também no texto visual
-
-Textos na tela, legendas e elementos gráficos não podem simplificar a regra além do que a fala permite.
-
-Se a fala diz “tempo efetivamente exercido em funções de magistério”, não reduza para “tempo em sala” se isso alterar o alcance jurídico.
-
-## Etapa 5 — Selecionar os conceitos
-
-Escolha os ângulos mais fortes conforme:
-
-- reconhecimento imediato;
-- aderência ao serviço;
-- relevância da dúvida;
-- clareza do mecanismo de valor;
-- possibilidade de explicação no tempo disponível;
-- segurança jurídica;
-- adequação ao nível de consciência;
-- diversidade em relação aos demais;
-- compatibilidade com o formato e CTA.
-
-Explique brevemente por que cada conceito foi selecionado.
-
-Quando um conceito for descartado por risco jurídico, genericidade ou repetição, registre isso de forma breve na análise interna.
+Não use todos os tipos em toda campanha.
 
 ---
 
-## Etapa 6 — Gerar os roteiros
+## 7.2. Promessa comunicacional permitida
 
-Para cada roteiro, entregue:
+A promessa comunicacional não é promessa de êxito.
 
-### Ficha estratégica
+É o benefício que o conteúdo e o serviço podem legitimamente oferecer.
 
-- título interno;
-- público específico;
-- situação objetiva;
-- nível de consciência;
-- objetivo;
-- ângulo;
-- dúvida central;
-- promessa comunicacional permitida;
-- afirmação jurídica sensível;
+Exemplos:
+
+- entender quais fatores alteram a análise;
+- comparar cenários antes de decidir;
+- identificar documentos necessários;
+- verificar se uma situação merece análise;
+- organizar uma linha do tempo;
+- compreender o próximo passo;
+- evitar decidir com base apenas em informação genérica.
+
+---
+
+# 8. SELEÇÃO DOS CONCEITOS
+
+Avalie cada ângulo em:
+
+- identificação;
+- aderência;
+- relevância;
+- clareza;
+- diferenciação;
+- segurança;
+- compatibilidade com o tempo;
+- força do mecanismo;
+- adequação ao CTA.
+
+Não é necessário atribuir nota numérica, salvo pedido.
+
+## 8.1. Portfólio equilibrado
+
+Uma campanha pode combinar:
+
+- 1 ou 2 criativos de identificação;
+- 1 criativo de dúvida;
+- 1 de quebra de crença;
+- 1 de método ou consideração.
+
+A composição depende do objetivo.
+
+Não force essa distribuição quando a campanha tiver outro desenho.
+
+---
+
+# 9. ESTRUTURA DOS ROTEIROS
+
+## 9.1. Ficha estratégica
+
+Antes da fala, registre:
+
+```text
+Título interno:
+Público específico:
+Situação:
+Nível de consciência:
+Objetivo:
+Ângulo:
+Dúvida central:
+Insight:
+Mecanismo de valor:
+Promessa permitida:
+Cuidado jurídico:
+Formato:
+Duração:
+CTA:
+```
+
+---
+
+## 9.2. Gancho
+
+O gancho deve:
+
+- abrir a situação;
+- criar reconhecimento;
+- apresentar dúvida, contraste ou consequência;
+- ser compreensível sem contexto anterior;
+- corresponder ao conteúdo seguinte.
+
+Modelos de construção:
+
+### Situação + pergunta
+
+> Você trabalhou na iniciativa privada antes de assumir um cargo público?
+
+### Escolha
+
+> Averbar todo o seu tempo no INSS pode parecer óbvio. Mas essa nem sempre é uma decisão automática.
+
+### Contraste
+
+> Cumprir os requisitos para se aposentar não significa que aquela seja a melhor data para fazer isso.
+
+### Erro
+
+> Comparar a sua aposentadoria com a de um colega pode levar você à regra errada.
+
+### Microcenário
+
+> Dois servidores do mesmo órgão podem se aposentar em datas próximas e receber valores diferentes.
+
+### Consequência condicionada
+
+> Uma data escolhida sem comparar as regras pode afetar o valor do benefício por muitos anos.
+
+Não use consequência como certeza sobre o caso individual.
+
+---
+
+## 9.3. Desenvolvimento
+
+O desenvolvimento deve:
+
+1. explicar a dúvida;
+2. mostrar as variáveis que alteram a resposta;
+3. quebrar a crença;
+4. ligar ao mecanismo de valor.
+
+Evite:
+
+- história legislativa;
+- enumeração de artigos;
+- sete requisitos falados em sequência;
+- várias teses num vídeo;
+- aula completa;
+- repetição do gancho.
+
+---
+
+## 9.4. Quebra de crença
+
+A quebra de crença deve ser verdadeira e útil.
+
+Exemplos abstratos:
+
+- voltar ao trabalho não elimina necessariamente toda proteção;
+- cumprir uma regra não significa que ela seja a melhor;
+- ausência de um documento hoje não significa ausência do direito;
+- regra federal não é automaticamente regra estadual;
+- uma negativa não encerra automaticamente todas as possibilidades;
+- ter interesse não confirma aderência.
+
+Não use frases absolutas quando houver exceções.
+
+---
+
+## 9.5. Mecanismo de valor
+
+Não encerre com:
+
+> cada caso é um caso.
+
+Explique por quê.
+
+Exemplo:
+
+> Para responder, é preciso comparar a data do fato, o tipo de vínculo, o histórico e os documentos que confirmam a sequela.
+
+---
+
+## 9.6. Delimitação jurídica do público
+
+Antes do CTA, revise a premissa jurídica central.
+
+Classifique-a como:
+
+- universal;
+- federal;
+- estadual ou municipal de ente identificado;
+- restrita a categoria;
+- restrita a regime;
+- dependente de data;
+- dependente de opção;
+- dependente de documento ou fato.
+
+Se não for universal, a delimitação deve aparecer:
+
+- na ficha estratégica;
+- na fala, com as condições materiais necessárias;
+- no gancho ou no início do desenvolvimento;
+- na segmentação recomendada.
+
+A ficha não corrige uma fala imprecisa.
+
+Se o ângulo depende de condições como ingresso até determinada data, ausência de opção por regime complementar, exercício efetivo em função específica, enquadramento legal, ente ou categoria, o roteiro precisa:
+
+- enunciar as condições centrais; ou
+- retirar a conclusão específica e tratar apenas da necessidade de análise.
+
+Não use como única proteção:
+
+- “depende de algumas condições”;
+- “entre outros pontos”;
+- “varia conforme o caso”;
+- “cada caso é um caso”;
+- “em alguns casos”.
+
+Não use uma ressalva no final como única correção para uma abertura ampla demais.
+
+Não generalize:
+
+- RPPS para qualquer pessoa chamada de servidor;
+- regra federal para todos os entes;
+- integralidade ou paridade para todo ingresso antigo;
+- fundo específico para todo regime complementar;
+- consequência jurídica sem as condições centrais.
+
+Quando a ressalva necessária ocupar mais espaço que a ideia, restrinja o público ou escolha outro ângulo.
+
+## 9.7. CTA
+
+O CTA depende do estágio.
+
+### Consciência da situação
+
+> Converse com a equipe para entender quais informações precisam ser verificadas no seu caso.
+
+### Consciência da solução
+
+> Uma análise individual permite comparar os cenários antes da decisão.
+
+### Consideração
+
+> Fale com o escritório para conhecer como funciona o diagnóstico.
+
+### Decisão
+
+> Entre em contato para receber as orientações sobre a próxima etapa.
+
+Use o CTA real do escritório quando fornecido.
+
+Não presuma:
+
+- consulta gratuita;
+- avaliação sem custo;
+- resposta imediata;
+- vaga limitada;
+- prazo;
+- canal.
+
+---
+
+# 10. ORIENTAÇÃO VISUAL
+
+A orientação visual deve reforçar a ideia, não apenas decorar.
+
+Pode incluir:
+
+- texto curto na tela;
+- troca de enquadramento;
+- documento genérico sem dados pessoais;
+- linha do tempo;
+- comparação visual;
+- duas opções na tela;
+- palavra-chave;
+- print de sistema autorizado e anonimizado;
+- B-roll relacionado;
+- quadro ou papel;
+- pausa e aproximação de câmera.
+
+Não use:
+
+- documento real com dados;
+- resultado não autorizado;
+- depoimento inventado;
+- dinheiro como promessa;
+- antes/depois enganoso;
+- imagem sensacionalista;
+- ambiente que contradiga a marca.
+
+---
+
+# 11. DURAÇÃO
+
+A duração não é obtida apenas contando palavras.
+
+Considere:
+
+- velocidade natural;
+- pausas;
+- ênfase;
+- texto na tela;
+- mudança visual;
+- complexidade do tema.
+
+Faixas orientativas:
+
+| Duração | Uso |
+|---|---|
+| 20–30 s | uma situação, um insight e CTA curto |
+| 35–45 s | situação, explicação, quebra e mecanismo |
+| 50–60 s | comparação ou explicação com mais variáveis |
+
+Não comprima assunto complexo até perder sentido.
+
+Não estenda uma ideia simples apenas para atingir tempo.
+
+---
+
+# 12. DIVERSIDADE ENTRE ROTEIROS
+
+Verifique diversidade em:
+
+- situação;
+- subpersona;
+- estágio;
+- tipo de gancho;
+- dor;
+- crença;
+- mecanismo;
+- CTA;
 - formato;
-- duração estimada.
+- ritmo.
 
-### Roteiro
+## Sinais de repetição
 
-1. **Gancho inicial**
-   - deve funcionar nos primeiros segundos;
-   - deve partir de situação, pergunta, contraste, erro ou decisão concreta;
-   - não deve depender de uma introdução longa.
-
-2. **Desenvolvimento**
-   - explique a situação em linguagem simples;
-   - mostre por que a dúvida importa;
-   - conecte a regra ou mecanismo à vida prática;
-   - mantenha o foco em uma ideia principal.
-
-3. **Quebra de crença ou insight**
-   - apresente a informação que muda a forma de enxergar o problema;
-   - não transforme a peça em aula;
-   - não conclua o caso individual.
-
-4. **Mecanismo de valor**
-   - explique o que a análise profissional compara, confirma, organiza ou previne;
-   - não use apenas “cada caso é um caso”.
-
-5. **CTA**
-   - convide para a próxima etapa real;
-   - convide para análise, orientação, diagnóstico ou conversa;
-   - não prometa resultado.
-
-6. **Orientação visual**
-   - indique o que gravar, mostrar, escrever na tela ou destacar;
-   - mantenha compatibilidade com o formato informado;
-   - não invente prova social.
-
-7. **Notas de gravação**
-   - ritmo;
-   - pausas;
-   - palavras de ênfase;
-   - elementos visuais;
-   - cuidados de oralidade.
+- todos começam com “Você sabia?”;
+- todos falam com a mesma subpersona;
+- todos usam medo de perder dinheiro;
+- todos explicam a mesma regra;
+- todos terminam com “cada caso é um caso”;
+- todos prometem análise sem mostrar o que será analisado;
+- muda apenas o exemplo, mas o conceito é o mesmo.
 
 ---
 
-## Etapa 7 — Autorrevisão
+# 13. AUTORREVISÃO DE FIDELIDADE
 
-### Conferência dos inputs
+Antes da revisão jurídica, compare a saída com a ficha de execução.
 
-Antes de revisar o conteúdo, confirme:
+Verifique:
 
-- a quantidade entregue é exatamente a solicitada?
-- a duração corresponde ao pedido?
-- o formato corresponde ao pedido?
-- o tom fornecido foi preservado?
-- o CTA fornecido foi utilizado, salvo conflito ético explicitado?
-- o canal e a próxima etapa estão corretos?
-- o público não foi ampliado ou reduzido silenciosamente?
-- todas as restrições expressas foram respeitadas?
-- algum dado fornecido foi marcado indevidamente como premissa?
-- alguma premissa foi criada apesar de o dado já estar disponível?
-
-Se houver divergência, corrija antes de continuar.
-
-### Revisão estratégica, jurídica e criativa
-
-Revise cada roteiro e responda internamente:
-
-- fala com uma situação concreta?
-- a pessoa consegue se reconhecer?
-- desperta uma dúvida relevante?
-- gera necessidade pelo serviço ou apenas explica uma regra?
-- diferencia aderência, complexidade, subperfil, prioridade e maturidade?
-- a classificação da matriz corresponde exatamente à situação objetiva daquela linha?
-- a coluna de classificação apenas repetiu a aderência geral do público?
-- algum subperfil ou fator de complexidade foi chamado de aderência?
-- renda, documentação, proximidade ou interesse comercial foram usados como qualificação sem base expressa?
-- deduz regime, enquadramento ou regra apenas a partir de rótulo como “concursado”, “servidor” ou “efetivo”?
-- transforma característica provável em fato universal?
-- a afirmação central é universal para o público realmente alcançado?
-- quando depende de ente, categoria ou regime, isso aparece cedo e com clareza?
-- contém promessa de resultado?
-- contém urgência artificial?
-- contém afirmação dependente do ente ou caso concreto?
-- apresenta a condição necessária?
-- usa intensidade, perda, ganho ou relação causal não confirmada?
-- afirma que uma instituição ou profissional faz ou deixa de fazer algo sem base suficiente?
-- diferencia funções sem desmerecer terceiros?
-- o texto na tela preserva as mesmas condições e limites da fala?
-- o CTA convida para análise em vez de prometer benefício?
-- o gancho corresponde ao restante do roteiro?
-- a fala soa natural em voz alta?
-- cabe na duração?
-- está suficientemente diferente dos demais?
-- poderia ser usado em outro nicho apenas trocando termos?
-- repete uma ideia já coberta por outro criativo?
-- depende de prova, estatística ou autoridade inventada?
-
-Corrija silenciosamente antes da entrega.
-
----
-
-# Estrutura da saída
-
-Entregue nesta ordem:
-
-## 1. Premissas e recorte da campanha
-
-Síntese curta com:
-
-- serviço;
-- público;
+- quantidade exata;
+- duração solicitada;
+- formato solicitado;
+- canal correto;
+- público e recorte;
 - objetivo;
 - etapa do funil;
-- quantidade;
-- duração;
-- formato;
 - tom;
 - CTA;
 - restrições;
-- premissas adotadas;
-- informações que ainda exigem validação.
+- condições comerciais;
+- fatos fornecidos;
+- premissas realmente necessárias.
 
-## 2. Diagnóstico estratégico
+Falhas típicas:
 
-Apresente:
+- entregar seis quando foram pedidos cinco, ou o inverso;
+- transformar tom informado em premissa;
+- substituir CTA fornecido por placeholder;
+- ampliar o público;
+- trocar a duração;
+- criar prova ou condição não fornecida;
+- ignorar restrição expressa.
 
-- mecanismo de valor do serviço;
-- situações de aderência;
-- fatores de complexidade;
-- níveis de maturidade;
-- dores e decisões exploráveis;
-- promessas permitidas;
-- riscos de comunicação.
+Corrija antes de prosseguir.
 
-Não reproduza o Mapeamento.
+# 14. AUTORREVISÃO JURÍDICA
 
-## 3. Matriz de ângulos
+Para cada roteiro, verifique:
 
-Use a estrutura definida na referência.
+- a categoria está corretamente delimitada?
+- o público do gancho corresponde ao público para o qual a afirmação vale?
+- a regra depende do ente, regime, categoria, data ou opção?
+- a delimitação aparece cedo, e não apenas numa ressalva final?
+- a data ou prazo está validado?
+- a consequência é possível ou certa?
+- a peça distingue requisito de prova?
+- a falta de documento foi tratada como ausência do direito?
+- o roteiro criou urgência não confirmada?
+- o roteiro afirmou que a pessoa tem direito?
+- o roteiro omitiu exceção capaz de tornar a mensagem enganosa?
+- o CTA promete um resultado?
+- o criativo atrai uma anti-persona por simplificação excessiva?
+- a classificação da matriz descreve o marcador da situação objetiva, e não apenas o perfil geral?
+- algum fator de subperfil, complexidade, prioridade ou potencial comercial foi chamado de aderência?
+- renda, documentação ou proximidade foram transformadas em qualificação sem base expressa?
+- o roteiro deduziu RPPS, RGPS, regra especial ou enquadramento apenas porque a pessoa foi chamada de concursada, servidora, efetiva ou integrante de determinada categoria?
+- o roteiro aumentou a intensidade da consequência sem validação?
+- o roteiro apresentou como fato que alguém trabalha mais tempo, recebe menos, perde valor ou trava benefício sem suporte suficiente?
+- o roteiro atribuiu omissão, erro ou limitação universal a RH, sindicato, órgão ou outro profissional?
+- o texto visual simplificou uma condição de modo mais amplo que a fala?
 
-## 4. Seleção recomendada
+Quando a afirmação puder ser corrigida com condição, condicione.
 
-Indique os conceitos escolhidos e a função de cada um na campanha.
-
-## 5. Roteiros completos
-
-Entregue as fichas estratégicas e os roteiros.
-
-## 6. Quadro de diversidade e revisão
-
-Apresente uma síntese final demonstrando:
-
-- subpersonas cobertas;
-- situações cobertas;
-- níveis de consciência cobertos;
-- tipos de gancho;
-- objetivos;
-- repetições evitadas;
-- pontos jurídicos condicionados;
-- riscos corrigidos.
-
-Não exponha raciocínio privado ou cadeia de pensamento. Apresente apenas conclusões úteis da revisão.
-
----
-
-# Regras de escrita e oralidade
-
-Os roteiros devem:
-
-- soar naturais quando falados;
-- usar frases curtas e compreensíveis;
-- manter uma ideia principal por vídeo;
-- começar pela consequência ou situação prática;
-- traduzir termos técnicos;
-- usar especificidade sem depender de personagem;
-- evitar introduções institucionais longas;
-- evitar listas extensas faladas;
-- evitar juridiquês;
-- evitar tom professoral;
-- evitar frases publicitárias vazias;
-- preservar autoridade natural;
-- ter CTA coerente com o nível de consciência.
-
-Use linguagem da persona para conexão, sem caricatura, erro forçado, gíria artificial ou intimidade excessiva.
-
-Não comece todos os roteiros com:
-
-- “Você sabia?”
-- “Atenção, servidor!”
-- “Se você...”
-- “Muita gente não sabe...”
-
-Varie os mecanismos de abertura:
-
-- pergunta específica;
-- contraste;
-- erro comum;
-- escolha;
-- situação cotidiana;
-- consequência;
-- dúvida;
-- afirmação contraintuitiva;
-- microcenário;
-- dado validado, quando houver.
+Quando a condição destruir a clareza ou exigir muitas ressalvas, escolha outro ângulo.
 
 ---
 
-# Revisão de publicidade jurídica
+# 15. AUTORREVISÃO CRIATIVA
 
-A saída deve passar por revisão específica de publicidade da advocacia.
+Verifique:
 
-Considere, no mínimo, o Estatuto da Advocacia, o Código de Ética e Disciplina, o Provimento CFOAB nº 205/2021 e normas posteriores aplicáveis.
+- o gancho para a atenção sem sensacionalismo?
+- o público se reconhece?
+- a fala tem uma pergunta ou tensão real?
+- a peça mostra por que o serviço é necessário?
+- existe uma única ideia principal?
+- o roteiro cabe na duração?
+- a linguagem é falável?
+- o visual reforça a ideia?
+- o CTA é consequência natural?
+- o roteiro é diferente dos demais?
+- a peça seria intercambiável com outro nicho?
+- há alguma frase publicitária vazia?
+- alguma frase parece forte apenas porque exagera consequência, perda ou causalidade?
+- fala, texto na tela e orientação visual preservam o mesmo recorte jurídico?
+- a diferenciação do serviço depende de desmerecer uma instituição ou outro profissional?
 
-O conteúdo deve permanecer:
+---
+
+## Auditoria de formulações de risco
+
+Antes de concluir, procure expressões como:
+
+- “todo”;
+- “sempre”;
+- “nunca”;
+- “muda bastante”;
+- “trava um valor menor”;
+- “receber menos pelo resto da vida”;
+- “trabalhando mais do que precisava”;
+- “dinheiro na mesa”;
+- “o RH não faz”;
+- “quem é efetivo tem RPPS”;
+- “servidor concursado segue regime próprio”.
+
+A presença dessas expressões não gera reprovação automática, mas exige resposta objetiva:
+
+1. a afirmação é verdadeira para todo o público alcançado?
+2. a intensidade está demonstrada?
+3. a relação causal foi validada?
+4. existe formulação mais precisa sem perder força?
+5. a frase diferencia funções ou acusa terceiros?
+
+Exemplos de reescrita:
+
+| Formulação de risco | Formulação mais segura |
+|---|---|
+| “pode mudar bastante o valor” | “pode alterar o cálculo ou o cenário aplicável” |
+| “trava um valor menor” | “pode levar a uma escolha menos favorável sem comparação prévia” |
+| “tem servidor trabalhando mais do que precisava” | “deixar o período fora da análise pode produzir uma decisão com histórico incompleto” |
+| “o RH normalmente não faz” | “o papel do setor costuma estar concentrado no procedimento e na conferência funcional; a comparação estratégica é uma análise diferente” |
+| “quem é efetivo tem regime próprio” | “o titular de cargo efetivo vinculado a RPPS segue as regras do regime próprio do ente” |
+
+# 16. PROTOCOLO DE AUDITORIA BASEADA EM EVIDÊNCIAS
+
+A autorrevisão não pode ser apenas declaratória.
+
+Ela deve verificar a versão integral de cada roteiro, inclusive:
+
+- ficha estratégica;
+- gancho;
+- desenvolvimento;
+- quebra de crença;
+- mecanismo de valor;
+- CTA;
+- orientação visual;
+- texto na tela;
+- notas de gravação;
+- quadro final.
+
+## 16.1. Matriz interna obrigatória
+
+| Critério | Evidência literal | Status | Ação |
+|---|---|---|---|
+| recorte preservado | trecho exato | aprovado/reprovado | corrigir se necessário |
+| condição material na fala | trecho exato | aprovado/reprovado/não aplicável |  |
+| intensidade sustentada | trecho ou termo localizado | aprovado/reprovado |  |
+| causalidade sustentada | trecho ou termo localizado | aprovado/reprovado |  |
+| tratamento de terceiros | trecho exato | aprovado/reprovado/não aplicável |  |
+| coerência fala × tela | comparação literal | aprovado/reprovado |  |
+| CTA | trecho exato | aprovado/reprovado |  |
+
+Conclusão sem evidência literal deve ser tratada como não comprovada.
+
+## 16.2. Varredura lexical e semântica
+
+Pesquise no texto integral:
+
+- universalizações: todo, sempre, nunca;
+- rótulos de vínculo: concursado, servidor, efetivo;
+- inferências: costuma estar, normalmente tem, em geral é;
+- posse ou disponibilidade: parado, já é seu, falta somar;
+- perda: recebe menos, perde, trava, deixa de ganhar;
+- irreversibilidade: não dá para voltar atrás;
+- intensificação: decisão mais cara, grande prejuízo, tarde demais, péssimo;
+- comportamento depreciativo: no chute, achismo;
+- acusações a terceiros: o RH não faz, o órgão não informa;
+- superlativos comparativos: melhor, mais vantajoso, ideal;
+- promessa: direito certo, resultado garantido.
+
+A varredura deve considerar equivalentes semânticos, não apenas correspondência literal.
+
+## 16.3. Teste de consistência entre camadas
+
+Compare:
+
+1. Mapeamento;
+2. diagnóstico;
+3. matriz;
+4. ficha estratégica;
+5. fala;
+6. texto na tela;
+7. quadro final.
+
+Pergunte:
+
+- a fala ampliou o público da ficha?
+- a ficha contém condição ausente na fala?
+- o texto na tela simplificou a condição?
+- o quadro final declara algo que o roteiro contradiz?
+- a promessa ficou mais forte durante a escrita?
+- o CTA ficou mais comercial que o input?
+
+## 16.4. Ciclo de correção
+
+Quando houver falha:
+
+1. altere o roteiro;
+2. altere todos os componentes afetados;
+3. repita a varredura;
+4. atualize a evidência literal;
+5. só então produza a conclusão final.
+
+Não entregue roteiro problemático acompanhado de revisão que afirma que o problema foi corrigido.
+
+## 16.5. Quadro público de conformidade
+
+A saída final deve incluir:
+
+| Roteiro | Recorte — evidência | Condição — evidência | Risco encontrado | Correção aplicada | Status |
+|---|---|---|---|---|---|
+
+O quadro precisa citar trechos reais da versão final.
+
+# 17. QUADRO FINAL DE DIVERSIDADE
+
+Use esta estrutura:
+
+| Roteiro | Situação | Subpersona | Consciência | Tipo de gancho | Dor/decisão | Mecanismo de valor | CTA | Cuidado jurídico |
+|---|---|---|---|---|---|---|---|---|
+
+Ao final, informe:
+
+- repetições corrigidas;
+- lacunas intencionais;
+- ângulos reservados para futura rodada;
+- pontos que dependem de validação antes de veiculação.
+
+---
+
+# 18. TESTE ANTIGENERICIDADE
+
+Pergunte:
+
+> Este roteiro poderia ser usado em outro nicho apenas trocando o nome do serviço?
+
+Se sim, reescreva.
+
+O roteiro precisa conter:
+
+- situação específica;
+- dúvida específica;
+- variável específica;
+- mecanismo específico.
+
+Não precisa conter artigo, número ou jargão para ser específico.
+
+---
+
+# 19. TESTE DE DESEJO PELO SERVIÇO
+
+Pergunte:
+
+> Depois de assistir, a pessoa apenas aprendeu uma regra ou compreendeu por que precisa de análise?
+
+O criativo pode ensinar, mas deve também mostrar:
+
+- o limite da informação genérica;
+- as variáveis do caso;
+- a decisão que precisa ser tomada;
+- o que o trabalho profissional organiza.
+
+Não esconda todo o conteúdo para “gerar curiosidade”.
+
+Entregue um insight real e conecte-o ao mecanismo.
+
+---
+
+# 20. REVISÃO DE PUBLICIDADE JURÍDICA
+
+A peça deve ser revisada conforme as normas éticas de publicidade aplicáveis à advocacia, especialmente o Estatuto da Advocacia, o Código de Ética e Disciplina e o Provimento CFOAB nº 205/2021, sem prejuízo de normas posteriores e orientações da Seccional competente.
+
+## 20.1. Critério geral
+
+O conteúdo deve ser:
 
 - informativo;
 - sóbrio;
 - discreto;
 - verdadeiro;
 - verificável;
-- compatível com a dignidade profissional.
+- não mercantilista.
 
-Revise se o anúncio:
+## 20.2. Verificações obrigatórias
 
-- induz diretamente à contratação;
-- estimula litígio;
-- mercantiliza o serviço;
-- usa chamada típica de varejo;
-- utiliza expressão persuasiva, autoengrandecimento ou comparação;
-- menciona honorários, descontos, gratuidade ou forma de pagamento como atração;
-- divulga resultado concreto, cliente, decisão ou caso patrocinado como oferta;
-- explora medo, vulnerabilidade ou urgência sem base;
-- apresenta especialidade ou autoridade não comprovada;
-- usa CTA incompatível com o caráter informativo.
+Pergunte:
 
-Dados de contato e aplicativos de mensagem podem ser indicados em caráter informativo, mas o CTA não deve converter o conteúdo em indução direta à contratação.
+- há indução direta à contratação?
+- há estímulo ao litígio?
+- a linguagem parece oferta varejista?
+- o CTA converte informação em pressão comercial?
+- há menção a preço, gratuidade, desconto ou pagamento como atrativo?
+- há promessa de ganho, êxito, prazo ou economia?
+- há resultado concreto, cliente, decisão ou caso patrocinado usado como oferta?
+- há autoengrandecimento, comparação ou especialidade não comprovada?
+- há medo ou vulnerabilidade explorados de forma abusiva?
+- a autoridade mencionada é real e comprovável?
+- a publicidade paga mantém caráter informativo?
 
-Quando a campanha for paga ou impulsionada, sinalize que a peça deve ser validada pelo advogado responsável à luz das regras éticas aplicáveis e das orientações da OAB competente.
+Dados de contato e aplicativos de mensagem podem aparecer de modo informativo, com sobriedade e discrição.
 
-A skill não certifica conformidade ética definitiva.
+A presença de WhatsApp não autoriza automaticamente uma chamada direta à contratação.
 
-# Compliance e limites
+## 20.3. Campanhas pagas
 
-Não use:
+Em anúncios pagos ou impulsionados:
 
-- garantia;
-- promessa de êxito;
-- promessa de valor;
-- promessa de prazo;
-- resultado certo;
-- comparação com concorrentes;
-- superioridade não comprovada;
-- medo exagerado;
-- urgência artificial;
-- estatística não validada;
-- prova social inventada;
-- dramatização enganosa;
-- frase que trate possibilidade como certeza;
-- chamada que explore vulnerabilidade de forma abusiva;
-- linguagem de mercantilização incompatível com a advocacia;
-- indução direta à contratação;
-- estímulo ao litígio;
-- chamada varejista como “contrate agora”, “garanta sua vaga” ou equivalente;
-- referência a honorários, gratuidade, desconto ou forma de pagamento como atrativo;
-- resultado concreto ou caso patrocinado usado como oferta.
+- evite oferta direta de serviços;
+- evite comando de compra ou contratação;
+- mantenha o foco em conteúdo informativo e esclarecimento;
+- sinalize a necessidade de validação pelo advogado responsável antes da veiculação.
 
-O criativo pode comunicar:
+A skill auxilia a revisão, mas não certifica conformidade ética definitiva.
 
-- relevância da análise;
-- existência de alternativas;
-- risco de decisão sem informação;
-- necessidade de confirmação;
-- organização de cenários;
-- clareza;
-- prevenção de erro;
-- compreensão de direitos;
-- orientação profissional;
-- possibilidade condicionada.
+# 21. CRITÉRIO DE CONCLUSÃO
 
----
+O processo está completo quando:
 
-# Critérios de conclusão
+- os inputs foram conferidos e preservados;
+- nenhum dado fornecido foi tratado como premissa;
+- o serviço foi compreendido;
+- o público foi segmentado por situação;
+- perfil, aderência, complexidade, subperfil, prioridade e maturidade foram separados;
+- cada linha da matriz classificou o marcador da própria situação objetiva;
+- renda, documentos, proximidade e interesse comercial não foram tratados como aderência sem base expressa;
+- regime, vínculo ou regra não foram deduzidos apenas de rótulos amplos;
+- as dores vieram de fatos concretos;
+- a matriz de ângulos foi criada;
+- os conceitos foram selecionados;
+- cada roteiro possui ficha estratégica;
+- os roteiros são faláveis;
+- o visual foi orientado;
+- o CTA é real;
+- as afirmações jurídicas estão seguras, delimitadas cedo ou condicionadas;
+- intensidade, causalidade e consequências estão sustentadas ou foram neutralizadas;
+- terceiros foram mencionados por diferença de função, sem acusação universal;
+- texto visual e fala preservam o mesmo alcance;
+- cada conclusão da revisão possui evidência literal;
+- a varredura lexical e semântica foi executada;
+- contradições entre ficha, fala, tela e quadro final foram corrigidas;
+- nenhuma condição sensível ficou apenas na ficha;
+- a peça passou pela revisão de publicidade jurídica;
+- não há promessa;
+- os conceitos são diversos;
+- o quadro final permite enxergar a campanha como conjunto.
 
-A saída está completa quando:
 
-- utilizou o Mapeamento de Persona específico da execução, ou matéria-prima equivalente explicitamente suficiente;
-- não confundiu o arquivo estrutural `mapeamento-persona-v3.md` com o documento-fonte produzido;
-- não partiu diretamente para os roteiros;
-- conferiu quantidade, duração, formato, tom, CTA, canal, público e restrições contra os inputs expressos;
-- não marcou como premissa um dado já fornecido;
-- compreendeu o serviço e seu mecanismo de valor;
-- separou perfil, aderência, complexidade, subperfil, prioridade e maturidade;
-- classificou o marcador específico de cada situação objetiva, sem apenas repetir a aderência geral do público;
-- não tratou renda, documentos, proximidade temporal ou interesse comercial como aderência sem base expressa;
-- não deduziu regime ou enquadramento jurídico apenas a partir de rótulos amplos;
-- extraiu dores de situações objetivas;
-- criou matriz de ângulos;
-- selecionou conceitos distintos;
-- escreveu os roteiros completos;
-- conectou cada roteiro a uma subpersona e nível de consciência;
-- apresentou CTA real e ético;
-- delimitou cedo afirmações dependentes de ente, categoria, regime, data ou condição;
-- condicionou afirmações dependentes do caso;
-- evitou intensidade, causalidade e consequências não validadas;
-- diferenciou funções de terceiros sem atribuir falha ou omissão universal;
-- manteve texto visual, fala e ficha estratégica juridicamente coerentes;
-- passou pela revisão específica de publicidade jurídica;
-- evitou promessas;
-- trouxe orientação visual;
-- preservou oralidade;
-- demonstrou diversidade;
-- revisou juridicamente e criativamente as peças;
-- entregou um processo de campanha, e não apenas textos isolados.
 
 
