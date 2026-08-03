@@ -1087,11 +1087,11 @@ Exemplos de reescrita:
 | “o RH normalmente não faz” | “o papel do setor costuma estar concentrado no procedimento e na conferência funcional; a comparação estratégica é uma análise diferente” |
 | “quem é efetivo tem regime próprio” | “o titular de cargo efetivo vinculado a RPPS segue as regras do regime próprio do ente” |
 
-# 16. PROTOCOLO DE AUDITORIA BASEADA EM EVIDÊNCIAS
+# 16. SEGUNDA LEITURA FINAL
 
-A autorrevisão não pode ser apenas declaratória.
+A revisão final é interna, curta e orientada à correção do texto.
 
-Ela deve verificar:
+Releia:
 
 - ficha estratégica;
 - gancho;
@@ -1099,134 +1099,38 @@ Ela deve verificar:
 - quebra de crença;
 - mecanismo de valor;
 - CTA;
-- orientação visual;
 - texto na tela;
+- orientação visual;
 - notas de gravação;
 - quadro final.
 
-## 16.1. Varredura por famílias de risco
+Verifique:
 
-Procure problemas de:
+1. o gancho mantém o recorte da ficha;
+2. nenhuma condição sensível ficou apenas na ficha;
+3. fala e texto visual dizem a mesma coisa;
+4. não há exagero, perda ou causalidade sem base;
+5. não há dedução de regime por rótulos amplos;
+6. terceiros são tratados por diferença de função;
+7. o CTA é informativo e coerente;
+8. a síntese final corresponde ao conteúdo entregue.
 
-- recorte e vínculo;
-- condição jurídica;
-- intensidade;
-- causalidade;
-- terceiros;
-- promessa e comercialidade;
-- coerência entre camadas.
+Quando houver problema:
 
-A varredura considera equivalentes semânticos, não apenas palavras isoladas.
+- reescreva a frase;
+- atualize as camadas relacionadas;
+- releia novamente.
 
-A presença de um termo potencialmente sensível não gera problema automaticamente. O contexto decide.
+Não produza:
 
-## 16.2. Regra de bloqueio
+- quadro público de auditoria;
+- lista de trechos originais;
+- contagem de ocorrências;
+- histórico de correções;
+- alegação de que uma palavra foi removida;
+- demonstração artificial de conformidade.
 
-A entrega fica bloqueada enquanto houver:
-
-- público mais amplo do que o recorte validado;
-- condição sensível apenas na ficha;
-- intensidade não sustentada;
-- causalidade não sustentada;
-- menção depreciativa ou universal a terceiro;
-- promessa ou comercialidade indevida;
-- contradição entre roteiro e revisão.
-
-Não produza contagem total de ocorrências.
-
-Números de busca não são prova de conformidade e podem gerar falsa precisão.
-
-## 16.3. Registro interno de problemas
-
-Registre somente formulações que exigem mudança:
-
-| Roteiro | Componente | Trecho problemático exato | Família | Correção | Trecho final |
-|---|---|---|---|---|---|
-
-Não registre palavra segura apenas para preencher a tabela.
-
-Não invente trecho original, versão cogitada ou condição ausente.
-
-## 16.4. Teste de correspondência literal
-
-Compare sempre a revisão com o texto final.
-
-### Revisão inválida
-
-Roteiro:
-
-> “O ano em que entrou muda o cenário.”
-
-Quadro:
-
-> “Condicionado com ‘pode’.”
-
-A revisão é inválida porque atribui ao roteiro uma palavra que não existe.
-
-### Revisão válida
-
-Trecho original:
-
-> “O ano em que entrou muda o cenário.”
-
-Correção:
-
-> “O ano em que entrou pode levar a cenários diferentes.”
-
-O quadro cita o trecho final exatamente como entregue.
-
-## 16.5. Teste de consistência entre camadas
-
-Compare:
-
-1. Mapeamento;
-2. diagnóstico;
-3. matriz;
-4. ficha estratégica;
-5. fala;
-6. texto na tela;
-7. quadro final.
-
-Pergunte:
-
-- a fala ampliou o público da ficha?
-- a ficha contém condição ausente na fala?
-- o texto na tela simplificou a condição?
-- o quadro final descreve algo que o roteiro não contém?
-- a promessa ficou mais forte durante a escrita?
-- o CTA ficou mais comercial que o input?
-
-## 16.6. Ciclo de correção
-
-Quando houver falha:
-
-1. cite o trecho real;
-2. altere o roteiro;
-3. altere as camadas afetadas;
-4. releia a versão final;
-5. atualize o registro de correção;
-6. só então conclua.
-
-Não selecione apenas evidências favoráveis.
-
-Uma frase precisa no desenvolvimento não corrige um gancho amplo.
-
-## 16.7. Quadro público de correções
-
-A saída final deve incluir:
-
-| Roteiro | Componente | Problema encontrado | Trecho original | Correção | Trecho final | Status |
-|---|---|---|---|---|---|---|
-
-O quadro deve:
-
-- listar somente problemas reais que exigiram alteração;
-- citar o trecho original efetivamente revisado;
-- citar o trecho final exatamente como entregue;
-- usar **Corrigido** quando houve alteração;
-- usar **Sem problema remanescente identificado na varredura final** quando nenhuma alteração foi necessária;
-- nunca apresentar como corrigido um problema que ainda apareça na saída;
-- nunca inventar contagens ou versões anteriores.
+A saída deve mostrar apenas a versão final já corrigida.
 
 # 17. QUADRO FINAL DE DIVERSIDADE
 
@@ -1237,10 +1141,14 @@ Use esta estrutura:
 
 Ao final, informe:
 
-- repetições corrigidas;
+- repetições evitadas;
 - lacunas intencionais;
-- ângulos reservados para futura rodada;
-- pontos que dependem de validação antes de veiculação.
+- ângulos reservados para futura rodada.
+
+Depois, apresente separadamente:
+
+- pontos jurídicos ainda dependentes de validação;
+- revisão breve de publicidade jurídica.
 
 ---
 
@@ -1351,10 +1259,9 @@ O processo está completo quando:
 - intensidade, causalidade e consequências estão sustentadas ou foram neutralizadas;
 - terceiros foram mencionados por diferença de função, sem acusação universal;
 - texto visual e fala preservam o mesmo alcance;
-- a varredura por famílias de risco foi executada em todos os componentes;
-- problemas reais foram registrados com trecho original e trecho final;
-- nenhuma contagem, versão anterior, condição ou evidência foi inventada;
-- nenhum problema identificado permaneceu na versão final;
+- a segunda leitura final foi executada sobre todos os componentes;
+- problemas evidentes foram corrigidos diretamente na versão final;
+- nenhuma auditoria pública, contagem ou versão intermediária foi produzida;
 - contradições entre ficha, fala, tela e quadro final foram corrigidas;
 - nenhuma condição sensível ficou apenas na ficha;
 - a peça passou pela revisão de publicidade jurídica;
