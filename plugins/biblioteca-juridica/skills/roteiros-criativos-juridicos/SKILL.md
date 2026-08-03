@@ -513,12 +513,27 @@ Antes de selecionar um conceito, determine se a afirmação central é:
 Quando não for universal:
 
 1. delimite o subperfil na ficha estratégica;
-2. deixe a delimitação perceptível no gancho ou no início do desenvolvimento;
-3. não use uma ressalva genérica no final para corrigir uma premissa ampla demais;
-4. não apresente regra federal como regra geral de servidores estaduais ou municipais;
-5. não apresente nome de fundo, regime ou programa específico para público que pode não estar abrangido.
+2. leve as condições materiais relevantes para a fala;
+3. deixe a delimitação perceptível no gancho ou no início do desenvolvimento;
+4. não use uma ressalva genérica no final para corrigir uma premissa ampla demais;
+5. não apresente regra federal como regra geral de servidores estaduais ou municipais;
+6. não apresente nome de fundo, regime ou programa específico para público que pode não estar abrangido.
 
-Se a delimitação tornar o roteiro confuso ou excessivamente carregado, descarte o ângulo ou restrinja a campanha.
+A ficha estratégica não corrige sozinha uma fala ampla.
+
+Se a ficha registra condições como data de ingresso, opção por regime complementar, exercício em determinada função, ente, categoria ou requisito adicional, a fala deve:
+
+- mencionar as condições centrais de modo compreensível; ou
+- abandonar a conclusão específica e reformular o ângulo para uma afirmação mais geral e segura.
+
+Não substitua condições relevantes apenas por expressões vagas como:
+
+- “depende de algumas condições”;
+- “varia conforme o caso”;
+- “entre outros pontos”;
+- “cada caso é um caso”.
+
+Se a delimitação tornar o roteiro confuso ou excessivamente carregado, descarte o ângulo, restrinja a campanha ou reformule a promessa comunicacional.
 
 ## Regra de precisão semântica e causal
 
@@ -729,6 +744,78 @@ Revise cada roteiro e responda internamente:
 
 Corrija silenciosamente antes da entrega.
 
+## Auditoria final baseada em evidências
+
+Depois da autorrevisão, faça uma segunda passagem obrigatória sobre a versão integral dos roteiros.
+
+Para cada roteiro, registre internamente:
+
+| Critério | Trecho exato que comprova | Status | Correção necessária |
+|---|---|---|---|
+| recorte jurídico preservado | citação literal | aprovado/reprovado |  |
+| condição jurídica material presente na fala | citação literal | aprovado/reprovado/não aplicável |  |
+| ausência de intensidade não validada | trecho ou resultado da busca | aprovado/reprovado |  |
+| ausência de causalidade não demonstrada | trecho ou resultado da busca | aprovado/reprovado |  |
+| terceiros tratados por diferença de função | citação literal | aprovado/reprovado/não aplicável |  |
+| texto visual coerente com a fala | comparação literal | aprovado/reprovado |  |
+| CTA compatível com os inputs e com a publicidade jurídica | citação literal | aprovado/reprovado |  |
+
+### Regra de prova
+
+Não declare um critério como cumprido apenas por conclusão abstrata.
+
+Toda aprovação deve estar sustentada por:
+
+- trecho literal do roteiro;
+- comparação literal entre fala e texto visual; ou
+- resultado de busca expressa por formulações de risco.
+
+Se não houver evidência suficiente, marque como reprovado.
+
+### Busca obrigatória por formulações de risco
+
+Procure no texto integral, inclusive em ficha, fala, CTA, orientação visual, notas e quadro final, termos ou construções equivalentes a:
+
+- todo, sempre, nunca;
+- concursado, servidor, efetivo, cargo efetivo;
+- costuma estar, normalmente é, em geral tem;
+- tempo parado, dinheiro parado, tempo que já é seu;
+- receber menos, perder valor, travar valor;
+- não dá para voltar atrás;
+- decisão mais cara;
+- resolver no chute, achismo;
+- tarde demais, seria péssimo;
+- trabalhando mais do que precisava;
+- dinheiro na mesa;
+- o RH não faz, o órgão não informa;
+- melhor, mais vantajoso, ideal;
+- resultado garantido, direito certo.
+
+A presença do termo não reprova automaticamente. Ela obriga a verificar:
+
+1. o recorte está explícito?
+2. a intensidade foi validada?
+3. a causalidade foi demonstrada?
+4. a comparação está sustentada?
+5. existe formulação mais precisa?
+
+### Ciclo obrigatório de correção
+
+Quando qualquer linha estiver reprovada:
+
+1. corrija o roteiro;
+2. atualize ficha, fala, texto visual e quadro final;
+3. repita a auditoria sobre a nova versão;
+4. somente entregue quando não houver contradição entre roteiro e revisão final.
+
+É proibido:
+
+- manter frase problemática e declarar que ela foi removida;
+- afirmar que o recorte foi preservado quando a fala usa público mais amplo;
+- afirmar ausência de intensidade quando há linguagem emocional ou causal não validada;
+- usar a ficha estratégica para justificar condição que não aparece na fala;
+- emitir conclusão de conformidade sem evidência textual.
+
 ---
 
 # Estrutura da saída
@@ -791,7 +878,23 @@ Apresente uma síntese final demonstrando:
 - pontos jurídicos condicionados;
 - riscos corrigidos.
 
-Não exponha raciocínio privado ou cadeia de pensamento. Apresente apenas conclusões úteis da revisão.
+## 7. Quadro de conformidade por evidência
+
+Apresente uma tabela final auditável:
+
+| Roteiro | Recorte jurídico — trecho exato | Condição material — trecho exato | Formulação de risco localizada | Correção realizada | Status final |
+|---|---|---|---|---|---|
+
+Regras:
+
+- copie trechos reais da versão final;
+- não use descrições genéricas como “está condicionado”;
+- quando não houver condição específica, registre “não aplicável”;
+- quando uma formulação de risco tiver sido encontrada, mostre a versão corrigida;
+- não declare “aprovado” se o trecho citado não comprovar a conclusão;
+- o quadro deve refletir os roteiros efetivamente entregues.
+
+Não exponha raciocínio privado ou cadeia de pensamento. Apresente apenas evidências textuais e conclusões úteis da revisão.
 
 ---
 
@@ -936,6 +1039,10 @@ A saída está completa quando:
 - evitou intensidade, causalidade e consequências não validadas;
 - diferenciou funções de terceiros sem atribuir falha ou omissão universal;
 - manteve texto visual, fala e ficha estratégica juridicamente coerentes;
+- comprovou as conclusões da revisão com trechos literais;
+- executou busca por formulações de risco em todos os componentes;
+- corrigiu contradições antes de produzir o quadro final;
+- não usou a ficha estratégica para compensar condição ausente na fala;
 - passou pela revisão específica de publicidade jurídica;
 - evitou promessas;
 - trouxe orientação visual;
