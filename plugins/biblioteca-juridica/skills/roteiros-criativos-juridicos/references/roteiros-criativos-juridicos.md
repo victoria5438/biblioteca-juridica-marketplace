@@ -574,6 +574,24 @@ Pergunta de controle:
 
 Quando a resposta for “não”, a coluna provavelmente está apenas repetindo a aderência geral.
 
+A dimensão secundária só pode ser adicionada quando também estiver descrita na situação objetiva.
+
+Não use:
+
+> aderência + prioridade
+
+apenas porque a campanha inteira fala com público aderente.
+
+Exemplo:
+
+| Situação objetiva | Classificação correta |
+|---|---|
+| está perto de se aposentar e acredita que basta completar o tempo | prioridade + maturidade |
+| aplica conteúdo do INSS ao caso | maturidade ou subperfil comportamental |
+| trabalhou no setor privado antes do cargo atual | complexidade ou subperfil |
+
+Aderência só entra quando a própria linha descreve o núcleo mínimo que torna o serviço pertinente.
+
 ## 7.1. Tipos de ângulo
 
 Varie entre:
@@ -1086,19 +1104,28 @@ Ela deve verificar a versão integral de cada roteiro, inclusive:
 - notas de gravação;
 - quadro final.
 
-## 16.1. Matriz interna obrigatória
+## 16.1. Matrizes internas obrigatórias
 
-| Critério | Evidência literal | Status | Ação |
+### Matriz de critérios
+
+| Critério | Todas as evidências relevantes | Status | Ação |
 |---|---|---|---|
-| recorte preservado | trecho exato | aprovado/reprovado | corrigir se necessário |
-| condição material na fala | trecho exato | aprovado/reprovado/não aplicável |  |
-| intensidade sustentada | trecho ou termo localizado | aprovado/reprovado |  |
-| causalidade sustentada | trecho ou termo localizado | aprovado/reprovado |  |
-| tratamento de terceiros | trecho exato | aprovado/reprovado/não aplicável |  |
-| coerência fala × tela | comparação literal | aprovado/reprovado |  |
-| CTA | trecho exato | aprovado/reprovado |  |
+| recorte preservado | todas as ocorrências de público, vínculo, regime, ente e categoria | aprovado/reprovado |  |
+| condição material na fala | todos os trechos ligados à conclusão sensível | aprovado/reprovado/não aplicável |  |
+| intensidade sustentada | todas as expressões de intensidade | aprovado/reprovado |  |
+| causalidade sustentada | todas as relações causais | aprovado/reprovado |  |
+| tratamento de terceiros | todas as menções ao terceiro | aprovado/reprovado/não aplicável |  |
+| coerência fala × tela | todos os textos visuais relevantes | aprovado/reprovado |  |
+| CTA | todas as chamadas de ação | aprovado/reprovado |  |
 
-Conclusão sem evidência literal deve ser tratada como não comprovada.
+### Inventário de ocorrências
+
+| Nº | Roteiro | Componente | Trecho exato | Família | Avaliação | Correção |
+|---|---|---|---|---|---|---|
+
+Conclusão sem inventário completo deve ser tratada como não comprovada.
+
+Uma ocorrência favorável não compensa outra desfavorável.
 
 ## 16.2. Varredura lexical e semântica
 
@@ -1118,7 +1145,31 @@ Pesquise no texto integral:
 
 A varredura deve considerar equivalentes semânticos, não apenas correspondência literal.
 
-## 16.3. Teste de consistência entre camadas
+## 16.3. Regra de exaustividade e contagem
+
+Para cada família, registre:
+
+| Família | Localizadas | Analisadas | Corrigidas | Remanescentes |
+|---|---:|---:|---:|---:|
+| recorte/vínculo |  |  |  |  |
+| intensidade |  |  |  |  |
+| causalidade |  |  |  |  |
+| terceiros |  |  |  |  |
+| promessa/comercialidade |  |  |  |  |
+| condição jurídica |  |  |  |  |
+
+Aprovação exige:
+
+- `Localizadas = Analisadas`;
+- `Remanescentes = 0`.
+
+Se houver cinco ocorrências da palavra “servidor”, as cinco devem ser verificadas no contexto.
+
+Não basta citar a ocorrência precisa do desenvolvimento e ignorar um gancho mais amplo.
+
+Toda ocorrência de rótulos de público, vínculo, regime, ente ou categoria deve ser auditada.
+
+## 16.4. Teste de consistência entre camadas
 
 Compare:
 
@@ -1139,7 +1190,7 @@ Pergunte:
 - a promessa ficou mais forte durante a escrita?
 - o CTA ficou mais comercial que o input?
 
-## 16.4. Ciclo de correção
+## 16.5. Ciclo de correção
 
 Quando houver falha:
 
@@ -1151,14 +1202,30 @@ Quando houver falha:
 
 Não entregue roteiro problemático acompanhado de revisão que afirma que o problema foi corrigido.
 
-## 16.5. Quadro público de conformidade
+Não selecione apenas evidências favoráveis.
+
+Quando houver várias ocorrências da mesma família:
+
+- liste todas;
+- avalie todas;
+- corrija todas as problemáticas;
+- repita a contagem;
+- só aprove quando não restar ocorrência pendente.
+
+## 16.6. Quadro público de conformidade
 
 A saída final deve incluir:
 
-| Roteiro | Recorte — evidência | Condição — evidência | Risco encontrado | Correção aplicada | Status |
-|---|---|---|---|---|---|
+| Roteiro | Família | Localizadas | Analisadas | Trechos e avaliação | Correções | Remanescentes | Status |
+|---|---|---:|---:|---|---|---:|---|
 
-O quadro precisa citar trechos reais da versão final.
+O quadro precisa:
+
+- citar todos os trechos relevantes da versão final;
+- identificar o componente de origem;
+- demonstrar que `Localizadas = Analisadas`;
+- demonstrar que `Remanescentes = 0`;
+- reprovar quando houver ocorrência omitida ou pendente.
 
 # 17. QUADRO FINAL DE DIVERSIDADE
 
@@ -1283,15 +1350,16 @@ O processo está completo quando:
 - intensidade, causalidade e consequências estão sustentadas ou foram neutralizadas;
 - terceiros foram mencionados por diferença de função, sem acusação universal;
 - texto visual e fala preservam o mesmo alcance;
-- cada conclusão da revisão possui evidência literal;
-- a varredura lexical e semântica foi executada;
+- cada conclusão da revisão possui inventário completo de ocorrências;
+- a varredura lexical e semântica foi executada em todos os componentes;
+- ocorrências localizadas, analisadas, corrigidas e remanescentes foram contabilizadas;
+- nenhuma família foi aprovada com ocorrência omitida ou pendente;
 - contradições entre ficha, fala, tela e quadro final foram corrigidas;
 - nenhuma condição sensível ficou apenas na ficha;
 - a peça passou pela revisão de publicidade jurídica;
 - não há promessa;
 - os conceitos são diversos;
 - o quadro final permite enxergar a campanha como conjunto.
-
 
 
 
