@@ -471,6 +471,29 @@ Antes dos roteiros, produza uma matriz com:
 - formato recomendado;
 - função do criativo na campanha.
 
+### Regra de classificação do marcador
+
+A coluna **“classificação do marcador central”** deve classificar o elemento descrito na coluna **“situação objetiva”** daquela mesma linha.
+
+Não use essa coluna para repetir a aderência geral do público quando a situação objetiva descreve outro fenômeno.
+
+Exemplos:
+
+| Situação objetiva | Classificação adequada |
+|---|---|
+| ocupa cargo efetivo, está vinculado a RPPS e possui decisão previdenciária em aberto | aderência |
+| pesquisa aposentadoria e aplica conteúdo de INSS ao próprio caso | maturidade ou subperfil comportamental |
+| trabalhou na iniciativa privada antes do concurso | complexidade ou subperfil |
+| está prestes a tomar uma decisão | prioridade |
+| acredita que o RH já resolve toda a análise | maturidade |
+| possui documento capaz de confirmar o período alegado | prova |
+
+Faça o teste:
+
+> Estou classificando exatamente o marcador descrito nesta linha ou apenas repetindo o perfil geral do público?
+
+Quando mais de uma dimensão estiver presente, escolha a dimensão que exerce a função principal naquele ângulo e registre a secundária apenas se isso for necessário para a clareza.
+
 Crie mais ângulos do que o número final de roteiros quando isso ajudar a selecionar melhor.
 
 Não escolha vários ângulos que apenas reformulem a mesma dúvida.
@@ -496,6 +519,81 @@ Quando não for universal:
 5. não apresente nome de fundo, regime ou programa específico para público que pode não estar abrangido.
 
 Se a delimitação tornar o roteiro confuso ou excessivamente carregado, descarte o ângulo ou restrinja a campanha.
+
+## Regra de precisão semântica e causal
+
+A redação deve ser tão precisa quanto o recorte jurídico validado.
+
+### Não deduza regime ou enquadramento a partir de rótulos amplos
+
+Não trate como equivalentes, sem confirmação:
+
+- concursado;
+- servidor;
+- servidor público;
+- ocupante de cargo efetivo;
+- vinculado a RPPS;
+- segurado do RGPS;
+- integrante de categoria especial.
+
+Não use formulações como:
+
+- “todo servidor concursado tem regime próprio”;
+- “quem é efetivo está no RPPS”;
+- “professor sempre tem regra reduzida”;
+- “servidor se aposenta por regra diferente do INSS”;
+
+quando o recorte necessário for mais específico.
+
+Prefira reproduzir o escopo confirmado no Mapeamento, por exemplo:
+
+> servidor titular de cargo efetivo vinculado a RPPS;
+
+ou outra formulação tecnicamente adequada ao serviço analisado.
+
+### Não aumente a intensidade da consequência
+
+Evite expressões como:
+
+- “muda bastante”;
+- “trava um valor menor”;
+- “vai receber menos pelo resto da vida”;
+- “está trabalhando mais do que precisava”;
+- “está deixando dinheiro na mesa”;
+- “perdeu a melhor regra”;
+
+quando a intensidade, o resultado ou a relação causal não tiverem sido validados.
+
+Prefira:
+
+- “pode alterar o cálculo”;
+- “pode modificar o cenário aplicável”;
+- “pode levar a uma decisão menos favorável”;
+- “pode deixar parte do histórico fora da análise”;
+- “merece comparação antes da decisão”.
+
+A possibilidade comunicável deve continuar sendo apresentada como possibilidade.
+
+### Diferencie funções sem atribuir falhas a terceiros
+
+Ao mencionar RH, sindicato, contador, banco, médico, órgão público ou outro profissional:
+
+- não presuma o que a instituição faz ou deixa de fazer em todos os casos;
+- não atribua omissão, erro ou incapacidade sem base;
+- não crie contraste depreciativo;
+- diferencie funções e escopos de atuação.
+
+Prefira:
+
+> o papel do setor costuma estar concentrado no procedimento administrativo e na conferência funcional; a comparação estratégica entre regras, datas e valores é uma análise diferente.
+
+Adapte a formulação ao contexto real, sem transformar o exemplo em afirmação universal.
+
+### Preserve a precisão também no texto visual
+
+Textos na tela, legendas e elementos gráficos não podem simplificar a regra além do que a fala permite.
+
+Se a fala diz “tempo efetivamente exercido em funções de magistério”, não reduza para “tempo em sala” se isso alterar o alcance jurídico.
 
 ## Etapa 5 — Selecionar os conceitos
 
@@ -604,8 +702,11 @@ Revise cada roteiro e responda internamente:
 - desperta uma dúvida relevante?
 - gera necessidade pelo serviço ou apenas explica uma regra?
 - diferencia aderência, complexidade, subperfil, prioridade e maturidade?
+- a classificação da matriz corresponde exatamente à situação objetiva daquela linha?
+- a coluna de classificação apenas repetiu a aderência geral do público?
 - algum subperfil ou fator de complexidade foi chamado de aderência?
 - renda, documentação, proximidade ou interesse comercial foram usados como qualificação sem base expressa?
+- deduz regime, enquadramento ou regra apenas a partir de rótulo como “concursado”, “servidor” ou “efetivo”?
 - transforma característica provável em fato universal?
 - a afirmação central é universal para o público realmente alcançado?
 - quando depende de ente, categoria ou regime, isso aparece cedo e com clareza?
@@ -613,6 +714,10 @@ Revise cada roteiro e responda internamente:
 - contém urgência artificial?
 - contém afirmação dependente do ente ou caso concreto?
 - apresenta a condição necessária?
+- usa intensidade, perda, ganho ou relação causal não confirmada?
+- afirma que uma instituição ou profissional faz ou deixa de fazer algo sem base suficiente?
+- diferencia funções sem desmerecer terceiros?
+- o texto na tela preserva as mesmas condições e limites da fala?
 - o CTA convida para análise em vez de prometer benefício?
 - o gancho corresponde ao restante do roteiro?
 - a fala soa natural em voz alta?
@@ -817,7 +922,9 @@ A saída está completa quando:
 - não marcou como premissa um dado já fornecido;
 - compreendeu o serviço e seu mecanismo de valor;
 - separou perfil, aderência, complexidade, subperfil, prioridade e maturidade;
+- classificou o marcador específico de cada situação objetiva, sem apenas repetir a aderência geral do público;
 - não tratou renda, documentos, proximidade temporal ou interesse comercial como aderência sem base expressa;
+- não deduziu regime ou enquadramento jurídico apenas a partir de rótulos amplos;
 - extraiu dores de situações objetivas;
 - criou matriz de ângulos;
 - selecionou conceitos distintos;
@@ -826,6 +933,9 @@ A saída está completa quando:
 - apresentou CTA real e ético;
 - delimitou cedo afirmações dependentes de ente, categoria, regime, data ou condição;
 - condicionou afirmações dependentes do caso;
+- evitou intensidade, causalidade e consequências não validadas;
+- diferenciou funções de terceiros sem atribuir falha ou omissão universal;
+- manteve texto visual, fala e ficha estratégica juridicamente coerentes;
 - passou pela revisão específica de publicidade jurídica;
 - evitou promessas;
 - trouxe orientação visual;
@@ -833,3 +943,4 @@ A saída está completa quando:
 - demonstrou diversidade;
 - revisou juridicamente e criativamente as peças;
 - entregou um processo de campanha, e não apenas textos isolados.
+
