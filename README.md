@@ -1,10 +1,10 @@
 # Biblioteca Jurídica Marketplace
 
-**Versão atual: 9.0**
+**Versão atual: 10.0**
 
 Marketplace de plugins e skills jurídicas para o Claude.
 
-A Biblioteca Jurídica reúne estruturas reutilizáveis para mapeamento de persona, criação de roteiros de criativos jurídicos, nutrição, pré-qualificação, agendamento, atendimento, fechamento, confirmação de atendimento e recuperação de no-show em escritórios de advocacia.
+A Biblioteca Jurídica reúne estruturas reutilizáveis para mapeamento de persona, criação de roteiros de criativos jurídicos, nutrição, pré-qualificação, configuração de agentes de atendimento com IA, agendamento, atendimento, fechamento, confirmação de atendimento e recuperação de no-show em escritórios de advocacia.
 
 As skills possuem arquitetura replicável entre diferentes nichos jurídicos. O raciocínio e a estrutura permanecem estáveis; o conteúdo gerado é adaptado ao nicho, à persona, ao serviço, ao canal e às condições reais do escritório.
 
@@ -168,6 +168,32 @@ Cria um roteiro falado para consulta jurídica e fechamento por ligação, video
 
 Cria um fluxo assíncrono de consulta, devolutiva e fechamento pelo WhatsApp.
 
+### 11. `configurador-agentes-beezlabs`
+
+Configura agentes jurídicos no modo básico do BeezLabs a partir do Mapeamento de Persona Jurídica, das decisões humanas aprovadas para o fluxo de atendimento e dos dados técnicos confirmados do workspace.
+
+A skill pode:
+
+- propor um plano inicial de pré-qualificação a partir do Mapeamento de Persona;
+- receber e respeitar um fluxo de pré-qualificação já definido pelo humano;
+- fazer validação de consistência entre o fluxo aprovado e o Mapeamento;
+- gerar as Regras completas do agente;
+- estruturar as Etapas do modo básico;
+- gerar FAQ específica para o nicho;
+- gerar uma Base de Conhecimento sanitizada para upload na aba Documentos;
+- configurar exclusões, roteamentos, escalonamentos e gatilhos transversais;
+- aplicar Smart Decisions e dados técnicos confirmados do workspace;
+- gerar o arquivo JSON final do agente para importação no BeezLabs;
+- produzir um relatório curto com a configuração adotada e eventuais pendências.
+
+A skill não utiliza o Formulário Guiado nem o Gerador nativo do BeezLabs como fluxo principal.
+
+O agente realiza o processo de qualificação, mas não atribui autonomamente status jurídico ou comercial ao lead.
+
+Quando houver um roteiro humano produzido por `/pre-qualificacao`, ele pode ser utilizado como entrada da skill e permanece soberano após a curadoria humana.
+
+A versão atual desta skill é oficial apenas para o modo básico do BeezLabs.
+
 ---
 
 ## Fluxos cobertos pelas skills
@@ -217,6 +243,52 @@ Consulta ou atendimento
 Decisão e contratação
 ```
 
+### Configuração de agente automatizado no BeezLabs
+
+Quando a própria skill propõe o plano de pré-qualificação:
+
+```text
+/mapear-persona
+        ↓
+Mapeamento de Persona Jurídica
+        ↓
+/configurador-agentes-beezlabs
+        ↓
+Proposta de pré-qualificação
+        ↓
+Curadoria humana
+        ↓
+Validação de consistência
+        ↓
+Aprovação humana
+        ↓
+Configuração completa do agente
+        ↓
+JSON final + Base de Conhecimento
+        ↓
+Importação e homologação no BeezLabs
+```
+
+Quando já existe um roteiro humano aprovado:
+
+```text
+/mapear-persona
+        ↓
+/pre-qualificacao
+        ↓
+Roteiro humano aprovado
+        ↓
+/configurador-agentes-beezlabs
+        ↓
+Validação de consistência
+        ↓
+Aprovação humana
+        ↓
+JSON final + Base de Conhecimento
+        ↓
+Importação e homologação no BeezLabs
+```
+
 Quando houver ausência:
 
 ```text
@@ -240,7 +312,8 @@ Cada skill deve executar uma função clara e terminar no ponto correto.
 - `/mapear-persona` cria o documento-fonte; não produz automaticamente todas as peças derivadas.
 - `/roteiros-criativos-juridicos` transforma o Mapeamento em diagnóstico de campanha, ângulos e roteiros; não cria o Mapeamento do zero nem configura a campanha no Gerenciador de Anúncios.
 - `/funil-nutricao` busca a primeira mensagem; não faz pré-qualificação.
-- `/pre-qualificacao` compreende os fatos iniciais e determina o próximo direcionamento; não agenda e não realiza consulta.
+- `/pre-qualificacao` cria e organiza a lógica humana de triagem e próximo direcionamento; não configura chatbot, CRM ou automação, não agenda e não realiza consulta.
+- `/configurador-agentes-beezlabs` transforma o Mapeamento de Persona e as decisões humanas aprovadas em uma configuração automatizada para o BeezLabs; não substitui o Mapeamento, não transforma critérios estratégicos em vereditos automáticos e não utiliza os Documentos para criar novas perguntas fora das Etapas aprovadas.
 - `/agendamento` parte de lead qualificado; não refaz toda a pré-qualificação.
 - `/confirmacao-agendamento` prepara um atendimento já marcado; não reabre toda a venda.
 - `/recuperacao-no-show` começa somente depois da ausência confirmada.
@@ -317,6 +390,15 @@ Algumas skills também utilizam referências metodológicas próprias. A skill `
 
 - `roteiros-criativos-juridicos.md` — diagnóstico do serviço, leitura da persona para mídia paga, extração de situações e dores, matriz de ângulos, seleção, escrita, diversidade e autorrevisão.
 
+A skill `/configurador-agentes-beezlabs` utiliza referências e templates próprios:
+
+- `PADRAO_MESTRE_CONFIGURACAO_AGENTE_BASICO_BEEZLABS.md` — define a arquitetura de Regras, Etapas, FAQ, Documentos, Smart Decisions, Perfil Técnico e homologação;
+- `PERFIL_TECNICO_PADRAO_AGENTE_BEEZLABS.md` — define os dados técnicos e operacionais necessários para instanciar o agente em um workspace real;
+- `JSON_BASE_MESTRE_AGENTE_BASICO_BEEZLABS.json` — estrutura técnica base do agente no modo básico;
+- `TEMPLATE_PERFIL_TECNICO_AGENTE_BEEZLABS.json` — estrutura preenchível dos dados técnicos do agente.
+
+Esses arquivos são específicos do configurador BeezLabs e permanecem dentro do diretório da própria skill.
+
 A pasta `plugins/biblioteca-juridica/references/` pode ser mantida como fonte-mestra das referências compartilhadas.
 
 Para compatibilidade com o Claude Web, cada skill deve conter dentro do próprio diretório a pasta `references/` com as referências que utiliza.
@@ -392,13 +474,41 @@ biblioteca-juridica-marketplace/
 │           ├── roteiro-consulta/
 │           │   ├── SKILL.md
 │           │   └── references/
-│           └── roteiro-whatsapp/
+│           ├── roteiro-whatsapp/
+│           │   ├── SKILL.md
+│           │   └── references/
+│           └── configurador-agentes-beezlabs/
 │               ├── SKILL.md
-│               └── references/
+│               ├── references/
+│               │   ├── PADRAO_MESTRE_CONFIGURACAO_AGENTE_BASICO_BEEZLABS.md
+│               │   └── PERFIL_TECNICO_PADRAO_AGENTE_BEEZLABS.md
+│               └── templates/
+│                   ├── JSON_BASE_MESTRE_AGENTE_BASICO_BEEZLABS.json
+│                   └── TEMPLATE_PERFIL_TECNICO_AGENTE_BEEZLABS.json
 └── README.md
 ```
 
 Cada diretório de skill deve possuir um arquivo chamado exatamente `SKILL.md`.
+
+---
+
+## Versão 10.0
+
+Esta versão:
+
+- adiciona a skill `/configurador-agentes-beezlabs`;
+- introduz uma arquitetura replicável para configuração de agentes no modo básico do BeezLabs;
+- elimina a dependência do Formulário Guiado e do Gerador nativo do BeezLabs no fluxo principal;
+- adiciona o Padrão Mestre de Configuração;
+- adiciona o Perfil Técnico do Agente;
+- adiciona um JSON-base mestre com estrutura reutilizável;
+- adiciona geração de Base de Conhecimento sanitizada;
+- separa Regras, Etapas, FAQ, Documentos e Smart Decisions por responsabilidade;
+- estabelece que o agente realiza o processo de qualificação, mas não emite veredito jurídico ou comercial;
+- adiciona validação de consistência com soberania da curadoria humana;
+- adiciona regras universais de antirrepetição, uso moderado do nome, empatia contextual e controle de extrapolação por Documentos;
+- preserva a função humana da skill `/pre-qualificacao` e permite que seus roteiros aprovados sejam utilizados como entrada do configurador;
+- limita a especificação técnica atual do configurador ao modo básico do BeezLabs.
 
 ---
 
@@ -441,6 +551,24 @@ Avalie cada skill separadamente em três dimensões:
 8. confirme que afirmações dependentes do ente ou do caso estão condicionadas;
 9. confirme que não há promessa de resultado, urgência artificial ou prova inventada;
 10. confirme que o CTA convida para a próxima etapa real.
+
+### Teste da skill de configuração de agentes BeezLabs
+
+1. execute `/mapear-persona` para um nicho jurídico;
+2. forneça o Mapeamento para `/configurador-agentes-beezlabs`;
+3. confirme que a skill propõe o plano de pré-qualificação e para para curadoria humana quando ainda não existir fluxo aprovado;
+4. altere, exclua ou aprove perguntas e confirme que a versão humana passa a ser soberana;
+5. confirme que a validação de consistência apresenta apenas alertas relevantes e não reinsere automaticamente perguntas removidas;
+6. confirme que Regras, Etapas, FAQ, Documentos e Smart Decisions permanecem em suas respectivas responsabilidades;
+7. confirme que a Base de Conhecimento não contém MQL, SQL, scoring, perguntas não aprovadas ou marcações pendentes de validação;
+8. confirme que o agente não atribui status de qualificado, desqualificado, elegível ou inelegível por iniciativa própria;
+9. confirme a presença das regras de antirrepetição, uso moderado do nome e empatia contextual;
+10. forneça um Perfil Técnico válido e confirme que apenas ações técnicas autorizadas são inseridas;
+11. confirme que nenhum ID técnico é inventado;
+12. confirme que o JSON final não contém placeholders `[[...]]` nem marcações `[VALIDAR ...]`;
+13. valide a estrutura do JSON no modo básico e importe no BeezLabs;
+14. após a importação, teste identificação, informação antecipada, resposta parcial, “não sei”, retomada, FAQ, Documentos, escalonamento, roteamento, exclusão, movimentação de card, notificação e interrupção do agente;
+15. repita o teste em pelo menos dois nichos diferentes antes de congelar uma nova versão da skill.
 
 ### Teste da jornada comercial
 
