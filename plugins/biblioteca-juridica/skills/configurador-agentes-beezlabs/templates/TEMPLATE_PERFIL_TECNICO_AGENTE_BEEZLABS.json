@@ -1,0 +1,154 @@
+{
+  "_meta": {
+    "documento": "Perfil Técnico do Agente BeezLabs",
+    "versao": "1.0.1",
+    "instrucao": "Preencher somente dados confirmados ou extraídos com proveniência. null = não confirmado. false = explicitamente não autorizado/não aplicável. Nunca inventar IDs ou políticas."
+  },
+  "origem_tecnica": {
+    "tipo": null,
+    "arquivo_export": "",
+    "modo_config_origem": null,
+    "mesmo_workspace_confirmado": null,
+    "observacoes": []
+  },
+  "identificacao": {
+    "nome_escritorio": "",
+    "nome_publico_agente": "",
+    "nome_tecnico_agente": "",
+    "servico_nicho": "",
+    "escopo_resumido": "",
+    "descricao_tecnica": "",
+    "cuidados_linguagem_especificos": []
+  },
+  "crm": {
+    "funil": {
+      "nome": "",
+      "id": "",
+      "origem": null
+    },
+    "etapas": {
+      "inicial": {
+        "nome": "",
+        "id": "",
+        "aplicavel": null,
+        "origem": null
+      },
+      "qualificacao": {
+        "nome": "",
+        "id": "",
+        "aplicavel": null,
+        "origem": null
+      },
+      "conclusao": {
+        "nome": "",
+        "id": "",
+        "aplicavel": null,
+        "origem": null
+      },
+      "encerramento": {
+        "nome": "",
+        "id": "",
+        "aplicavel": null,
+        "origem": null
+      },
+      "roteamento": {
+        "nome": "",
+        "id": "",
+        "aplicavel": null,
+        "origem": null
+      },
+      "urgencia": {
+        "nome": "",
+        "id": "",
+        "aplicavel": null,
+        "origem": null
+      },
+      "escalonamento": {
+        "nome": "",
+        "id": "",
+        "aplicavel": null,
+        "origem": null
+      }
+    }
+  },
+  "escalonamento_humano": {
+    "habilitado": null,
+    "responsavel": {
+      "nome": "",
+      "id_usuario": "",
+      "origem": null
+    },
+    "notificacao": {
+      "habilitada": null,
+      "nome": "",
+      "id": "",
+      "mensagem_template": "",
+      "origem": null
+    },
+    "particularidades": []
+  },
+  "persistencia_tecnica": {
+    "handoff_estruturado_exigido": null,
+    "mecanismo_esperado": null,
+    "mecanismo_confirmado": null,
+    "usa_resumo_automatico": null,
+    "estrutura_do_resumo_homologada": null,
+    "campos_criticos": [],
+    "observacoes_homologacao": []
+  },
+  "politicas_operacionais": {
+    "atendimento_humano_disponivel": null,
+    "horario_atendimento_humano": "",
+    "agente_24h": null,
+    "horario_agente": "",
+    "recebe_audio": null,
+    "responde_audio": null,
+    "pedido_resposta_audio_escalona": null,
+    "pedido_ligacao_escalona": null,
+    "agendamento_habilitado": null,
+    "regras_agendamento": "",
+    "parar_apos_intervencao_humana": null,
+    "tempo_intervencao_min": null
+  },
+  "institucional": {
+    "cidade_uf": "",
+    "endereco": "",
+    "atendimento_presencial": null,
+    "atendimento_online": null,
+    "abrangencia_territorial": "",
+    "telefone": "",
+    "whatsapp": "",
+    "email": "",
+    "site": "",
+    "instagram": "",
+    "advogado_responsavel": "",
+    "oab": "",
+    "pode_informar_honorarios": null,
+    "condicoes_comerciais_confirmadas": "",
+    "outras_politicas_confirmadas": []
+  },
+  "gatilhos": [],
+  "parametros": {
+    "usar_padrao_json_base": true,
+    "sobrescritas": {}
+  },
+  "acoes_tecnicas_autorizadas": {
+    "mover_etapa_inicial_apos_identificacao": null,
+    "mover_etapa_qualificacao": null,
+    "mover_etapa_conclusao": null,
+    "mover_etapa_encerramento": null,
+    "mover_etapa_roteamento": null,
+    "mover_etapa_urgencia": null,
+    "mover_etapa_escalonamento": null,
+    "atribuir_usuario_escalonamento": null,
+    "atribuir_usuario_roteamento": null,
+    "notificar_escalonamento": null,
+    "notificar_roteamento": null,
+    "notificar_urgencia": null,
+    "interromper_apos_conclusao": null,
+    "interromper_apos_exclusao": null,
+    "interromper_apos_escalonamento": null,
+    "interromper_apos_roteamento": null,
+    "outras": []
+  }
+}
